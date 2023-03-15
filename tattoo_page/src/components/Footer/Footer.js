@@ -19,9 +19,6 @@ function Footer() {
         <a href='https://www.instagram.com/pham.minh.phuc/' className='Icon'><FaInstagram /></a>
         <a href='https://www.facebook.com/profile.php?id=100010078476236' className='Icon'><FaFacebook /></a>
       </div>
-      <div className = 'Footer_text'>
-          Made In VietNam
-      </div>
     </div>
   )
 }

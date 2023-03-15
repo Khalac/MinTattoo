@@ -34,7 +34,7 @@ function Homepage() {
       </div>
 
       <div className='Author_text'>
-          FLY AWAY WITH ART 
+        A text
       </div>
 
       <div className='Homepage_footer'>
