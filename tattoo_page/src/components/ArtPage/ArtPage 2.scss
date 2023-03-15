@@ -1,0 +1,27 @@
+.ArtPage{
+    display: block;
+    height: 100vh;
+    background-color: black;
+    overflow: auto;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .ArtPage_img{
+        display: grid;
+        grid-template-columns: auto auto auto; 
+        row-gap: 20vh;
+        justify-items: center;
+    }
+    .imgArt{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10%;
+        max-height: 40vh;
+    }
+    .ArtPage_footer{
+        margin-top: 10%;
+        height: 50%;
+    }
+}
