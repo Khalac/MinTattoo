@@ -9,14 +9,14 @@ function ArtPage() {
     r.keys().forEach((item, index) => { images[item.replace('./', '')] = r(item); });
     return images
   }
-  const images = importAll(require.context('../../../imgArts', false, /\.JPG$/));
+  const images = importAll(require.context('../../../imgArts', false, /\.webp$/));
   let imgArr = []
   for (let i = 1; i <=5;++i){
-    imgArr.push(images[`${i}.JPG`])
+    imgArr.push(images[`${i}.webp`])
   }
 
   const listImg = imgArr.map(img => {
-    return <img src={img} alt='img' className='imgArt'/>
+    return <img src={img} alt='img' loading ="lazy" className='imgArt'/>
   })
   return (
     <div className='ArtPage'>

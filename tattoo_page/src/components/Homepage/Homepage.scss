@@ -1,5 +1,5 @@
 .Homepage{
-    background-image: url('../../../imgBrother/mybrother.jpeg');
+    background-image: url('../../../imgBrother/mybrother.webp');
     height: 100vh;
     overflow: auto;
     background-position: center;
@@ -26,7 +26,7 @@
         overflow: auto;
         .Tattoos_link{
             display: flex;
-            background-image: url('../../../imgBrother/mybrother3.jpg');
+            background-image: url('../../../imgBrother/mybrother3.webp');
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
@@ -48,7 +48,7 @@
         }
         .Art_link{
             display: flex;
-            background-image: url('../../../imgBrother/mybrother3.jpg');
+            background-image: url('../../../imgBrother/mybrother3.webp');
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
@@ -70,7 +70,7 @@
         }
         .About_link{
             display: flex;
-            background-image: url('../../../imgBrother/mybrother2.jpg');
+            background-image: url('../../../imgBrother/mybrother2.webp');
             background-position: top;
             background-repeat: no-repeat;
             background-size: cover;
@@ -92,7 +92,7 @@
         }
         .Contact_link{
             display: flex;
-            background-image: url('../../../imgBrother/mybrother4.jpg');
+            background-image: url('../../../imgBrother/mybrother4.webp');
             background-position: top;
             background-repeat: no-repeat;
             background-size: cover;
@@ -121,6 +121,7 @@
         color:white;
         align-items: center;
         justify-content: center;
+        font-family: Copperplate;
     }
 
     .Homepage_footer{

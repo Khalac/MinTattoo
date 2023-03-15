@@ -12,14 +12,14 @@ function TattoosPage() {
     r.keys().forEach((item, index) => { images[item.replace('./', '')] = r(item); });
     return images
   }
-  const images = importAll(require.context('../../../imgTattoo', false, /\.JPG$/));
+  const images = importAll(require.context('../../../imgTattoo', false, /\.webp$/));
   let imgArr = []
   for (let i = 1; i <=66;++i){
-    imgArr.push(images[`${i}.JPG`])
+    imgArr.push(images[`${i}.webp`])
   }
 
   const listImg = imgArr.map(img => {
-    return <img src={img} alt='img' className='imgTattoos'/>
+    return <img src={img} alt='img' loading="lazy" className='imgTattoos'/>
   })
 
   
