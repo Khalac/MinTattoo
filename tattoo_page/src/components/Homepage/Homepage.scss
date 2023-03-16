@@ -20,10 +20,15 @@
     }
     .link_page{
         height: 100%;
+        width: 100%;
         display: grid;
         grid-template-columns: 50% 50%;
         grid-template-rows: 50% 50%;
         overflow: auto;
+        background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
         .Tattoos_link{
             display: flex;
             background-image: url('../../../imgBrother/mybrother3.webp');
@@ -113,15 +118,22 @@
             }
         }
     }
-    .Author_text{
+    .Author_location{
         display: flex;
+        flex-direction: column;
         height: 30%;
-        font-size: 50px;
         background-color: rgb(121, 121, 121) ;
         color:white;
         align-items: center;
         justify-content: center;
         font-family: Copperplate;
+        .Author_location_text{
+            padding-top: 20px;
+            font-size: 40px;
+        }
+        .Author_location_icon{
+            font-size: 40px;
+        }
     }
 
     .Homepage_footer{

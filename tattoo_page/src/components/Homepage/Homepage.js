@@ -3,7 +3,7 @@ import Header from '../Header/Header'
 import Footer from '../Footer/Footer'
 import React from 'react'
 import {Link} from "react-router-dom"
-
+import { GoLocation } from "react-icons/go"
 
 
 function Homepage() {
@@ -14,7 +14,7 @@ function Homepage() {
           <Header/>
         </div>
         <div className='Homepage_text'>
-          MAKE YOU MORE BADASS
+        FLY AWAY WITH ART
         </div>
       </div>
 
@@ -33,8 +33,9 @@ function Homepage() {
         </Link>
       </div>
 
-      <div className='Author_text'>
-        FLY AWAY WITH ART
+      <div className='Author_location'>
+       <div className='Author_location_icon'> <GoLocation/> Location </div>
+       <div className='Author_location_text'>San Antonio, Texas</div>
       </div>
 
       <div className='Homepage_footer'>

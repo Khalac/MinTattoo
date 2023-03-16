@@ -3,6 +3,7 @@ import Header from '../Header/Header'
 import Footer from '../Footer/Footer'
 import './ContactPage.scss'
 import { FaFacebook,FaInstagram,FaPhoneAlt } from "react-icons/fa"
+import { GoLocation } from "react-icons/go"
 
 function ContactPage() {
   return (
@@ -23,6 +24,9 @@ function ContactPage() {
         <div className='Contact'>
           <FaFacebook className='Icon'/> Facebook: Pham Minh Phuc (Double Pi)
         </div>
+        <div className='Contact'>
+          <GoLocation className='Icon'/> Location: San Antonio, Texas
+          </div>
       </div>
       <div className='ContactPage_footer'>
         <Footer/>
