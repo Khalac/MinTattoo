@@ -28,6 +28,12 @@ function TattoosPage() {
       <div className='TattoosPage_header'>
         <Header/>
       </div>
+      <div className = 'TattoosPage_headImg'>
+        <div className='background'> </div>
+        <div className='headImg'>
+          <img src = '../mybrother5.webp' alt = 'img' className='img' />
+        </div>
+      </div>
       <div className='TattoosPage_img'>
           {
             listImg

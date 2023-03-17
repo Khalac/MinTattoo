@@ -12,6 +12,7 @@
         grid-template-columns: auto auto auto; 
         row-gap: 20vh;
         justify-items: center;
+        margin-top: 5%;
     }
     .imgArt{
         display: flex;
@@ -19,9 +20,43 @@
         align-items: center;
         border-radius: 10%;
         max-height: 40vh;
+        max-width: 25vw;
     }
     .ArtPage_footer{
         margin-top: 10%;
         height: 50%;
+    }
+    .ArtPage_headImg{
+        position:relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 90%;
+        width: 100%;
+        margin: 2% 0 ;
+        .headImg{
+            height: 70%;
+            width: 30%;
+            position:relative;
+            .img{
+                height: 100%;
+                width: 100%;
+                border-radius: 10%;
+            }
+        }
+        .background{
+            background-image: url('../../../imgBrother/mybrother5.webp');
+            background-position: 50% 35%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position:absolute;
+            height: 100%;
+            width: 100%;
+            -webkit-filter: blur(10px);
+            -moz-filter: blur(10px);
+            -o-filter: blur(10px);
+            -ms-filter: blur(10px);
+            filter: blur(10px);
+        }
     }
 }

@@ -9,7 +9,7 @@
     .Contact_text{
         display: flex;
         color: white;
-        font-size: 50px;
+        font-size: 300%;
         height: 40%;
         align-items: center;
         justify-content: center;
@@ -19,13 +19,13 @@
         flex-direction: column;
         color: white;
         background-color:  rgb(121, 121, 121);
-        font-size: 20px;
+        font-size: 150%;
         height: 50%;
         align-items: center;
         justify-content: center;
         .Contact{
             display: flex;
-            padding: 30px;
+            padding: 2%;
             .Icon{
                 padding-right: 10px;
             }

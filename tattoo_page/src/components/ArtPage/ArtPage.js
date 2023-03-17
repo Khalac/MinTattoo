@@ -23,6 +23,12 @@ function ArtPage() {
     <div className='ArtPage_header'>
       <Header/>
     </div>
+    <div className = 'ArtPage_headImg'>
+        <div className='background'> </div>
+        <div className='headImg'>
+          <img src = '../mybrother5.webp' alt = 'img' className='img' />
+        </div>
+      </div>
     <div className='ArtPage_img'>
         {
           listImg
