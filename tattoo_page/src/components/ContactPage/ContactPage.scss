@@ -6,10 +6,47 @@
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
+    width: 100%;
+}
+.Contact_text{
+    display: flex;
+    color: white;
+    font-size: 300%;
+    height: 40%;
+    align-items: center;
+    justify-content: center;
+}
+.Contact_number_socialMedia{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    background-color:  rgb(121, 121, 121);
+    height: 50%;
+    align-items: center;
+    justify-content: center;
+}
+.Contact{
+    display: flex;
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+    font-size: 150%;
+    padding: 2%;
+}
+.Icon{
+    font-size: 100%;
+    padding-right: 2%;
+}
+.ContactPage_footer{
+    height: 50%;
+}
+
+
+@media screen and (max-width: 700px){
     .Contact_text{
         display: flex;
         color: white;
-        font-size: 300%;
+        font-size: 200%;
         height: 40%;
         align-items: center;
         justify-content: center;
@@ -19,19 +56,20 @@
         flex-direction: column;
         color: white;
         background-color:  rgb(121, 121, 121);
-        font-size: 150%;
         height: 50%;
         align-items: center;
         justify-content: center;
-        .Contact{
-            display: flex;
-            padding: 2%;
-            .Icon{
-                padding-right: 10px;
-            }
-        }
     }
-    .ContactPage_footer{
-        height: 50%;
+    .Contact{
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        font-size: 100%;
+        padding: 5% 0%;
     }
+    .Icon{
+        padding-right: 1%;
+    }
+  
 }

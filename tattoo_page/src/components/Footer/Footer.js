@@ -16,8 +16,8 @@ function Footer() {
           
       </div>
       <div className='Icon_socialMedia'>
-        <a href='https://www.instagram.com/pham.minh.phuc/' className='Icon'><FaInstagram /></a>
-        <a href='https://www.facebook.com/profile.php?id=100010078476236' className='Icon'><FaFacebook /></a>
+        <a href='https://www.instagram.com/pham.minh.phuc/' className='Footer_Icon'><FaInstagram /></a>
+        <a href='https://www.facebook.com/profile.php?id=100010078476236' className='Footer_Icon'><FaFacebook /></a>
       </div>
       <div className="Footer_text">
         Made in VietNam

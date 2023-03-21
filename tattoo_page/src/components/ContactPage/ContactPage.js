@@ -16,7 +16,7 @@ function ContactPage() {
       </div>
       <div className='Contact_number_socialMedia'>
         <div className='Contact'>
-        <FaPhoneAlt className='Icon'/> Number: (210) 843-4253
+          <FaPhoneAlt className='Icon'/> Number: (210) 843-4253
         </div>
         <div className='Contact'>
           <FaInstagram className='Icon'/> Instagram: pham.minh.phuc 

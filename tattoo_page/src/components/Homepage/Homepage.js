@@ -14,7 +14,17 @@ function Homepage() {
           <Header/>
         </div>
         <div className='Homepage_text'>
-        FLY AWAY WITH ART
+          <div className='text1'>
+            PHAM MINH PHUC
+          </div>
+          <div className='text2'>
+           <div className='text2_1'>
+            FLY AWAY
+           </div>
+           <div className='text2_2'> 
+            WITH ART
+           </div>
+          </div>
         </div>
       </div>
 

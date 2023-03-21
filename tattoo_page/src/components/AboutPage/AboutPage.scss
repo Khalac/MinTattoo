@@ -6,10 +6,33 @@
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
+}
+.Author_name{
+    display: flex;
+    color: white;
+    font-size: 300%;
+    height: 40%;
+    align-items: center;
+    justify-content: center;
+}
+.About_text{
+    display: flex;
+    color: white;
+    background-color:  rgb(121, 121, 121);
+    font-size: 300%;
+    height: 50%;
+    align-items: center;
+    justify-content: center;
+}
+.AboutPage_footer{
+    height: 50%;
+}
+
+@media screen and (max-width: 700px){
     .Author_name{
         display: flex;
         color: white;
-        font-size: 300%;
+        font-size: 200%;
         height: 40%;
         align-items: center;
         justify-content: center;
@@ -18,7 +41,7 @@
         display: flex;
         color: white;
         background-color:  rgb(121, 121, 121);
-        font-size: 300%;
+        font-size: 200%;
         height: 50%;
         align-items: center;
         justify-content: center;

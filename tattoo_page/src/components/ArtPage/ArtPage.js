@@ -24,9 +24,9 @@ function ArtPage() {
       <Header/>
     </div>
     <div className = 'ArtPage_headImg'>
-        <div className='background'> </div>
-        <div className='headImg'>
-          <img src = '../mybrother5.webp' alt = 'img' className='img'  />
+        <div className='Art_background'> </div>
+        <div className='Art_headImg'>
+          
         </div>
       </div>
     <div className='ArtPage_img'>
