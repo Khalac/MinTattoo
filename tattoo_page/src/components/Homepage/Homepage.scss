@@ -1,66 +1,252 @@
-body{
-    padding:0;
-    margin:0;
-    height: 100%;
-    overflow: hidden;
+body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
 }
 
-.Homepage{
-    background-image: url('../../../imgBrother/mybrother.webp');
+.Homepage {
+  background-image: url("../../../imgBrother/Min.mp4");
+  height: 100vh;
+  overflow: auto;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.Homepage_header_text {
+  height: 100%;
+}
+.Homepage_text {
+  display: flex;
+  flex-direction: column;
+  height: 80%;
+  color: white;
+  font-size: 50px;
+  align-items: center;
+  justify-content: center;
+}
+.text1 {
+  color: #c99e3e;
+  font-family: Copperplate;
+}
+.text2 {
+  font-family: Copperplate;
+  padding-bottom: 20%;
+  padding-top: 10%;
+  font-size: 100px;
+}
+.text2_1 {
+  font-family: Copperplate;
+}
+.text2_2 {
+  font-family: Copperplate;
+}
+.link_page {
+  height: 260vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  align-items: center;
+  justify-content: center;
+}
+.Tattoos_link {
+  display: flex;
+  height: 50%;
+  width: 50%;
+  background-image: url("../../../imgBrother/mybrother3.webp");
+  background-position: 50% 40%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: 500%;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-family: Copperplate;
+  text-decoration: none;
+  -webkit-filter: brightness(100%);
+  margin-bottom: 15vh;
+  border: 2px solid white;
+  border-radius: 20px;
+  &:hover {
+    -webkit-filter: brightness(50%);
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+  }
+}
+.Art_link {
+  display: flex;
+  height: 50%;
+  width: 50%;
+  background-image: url("../../../imgBrother/mybrother5.webp");
+  background-position: 50% 60%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: 500%;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-family: Copperplate;
+  text-decoration: none;
+  -webkit-filter: brightness(100%);
+  margin-bottom: 15vh;
+  border: 2px solid white;
+  border-radius: 20px;
+  &:hover {
+    -webkit-filter: brightness(50%);
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+  }
+}
+.About_link {
+  display: flex;
+  height: 50%;
+  width: 50%;
+  background-image: url("../../../imgBrother/mybrother2.webp");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: 500%;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-family: Copperplate;
+  text-decoration: none;
+  -webkit-filter: brightness(100%);
+  margin-bottom: 15vh;
+  border: 2px solid white;
+  border-radius: 20px;
+  &:hover {
+    -webkit-filter: brightness(50%);
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+  }
+}
+.Contact_link {
+  display: flex;
+  height: 50%;
+  width: 50%;
+  background-image: url("../../../imgBrother/mybrother4.webp");
+  background-position: 50% 10%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: 500%;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-family: Copperplate;
+  text-decoration: none;
+  -webkit-filter: brightness(100%);
+  margin-bottom: 15vh;
+  border: 2px solid white;
+  border-radius: 20px;
+  &:hover {
+    -webkit-filter: brightness(50%);
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+  }
+}
+.Author_location {
+  display: flex;
+  flex-direction: column;
+  height: 30%;
+  background-color: rgb(121, 121, 121);
+  color: white;
+  align-items: center;
+  justify-content: center;
+}
+
+.Author_location_text {
+  padding-top: 2%;
+  font-size: 300%;
+  font-family: Copperplate;
+}
+.Author_location_icon {
+  font-size: 250%;
+  font-family: Copperplate;
+}
+
+.Homepage_footer {
+  height: 50%;
+}
+
+@media screen and (max-width: 700px) {
+  .Homepage {
+    background-image: url("../../../imgBrother/Min.mp4");
     height: 100vh;
     overflow: auto;
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
-}
-.Homepage_header_text{
+  }
+  .Homepage_header_text {
     height: 100%;
-}
-.Homepage_text{
+  }
+  .Homepage_text {
     display: flex;
     flex-direction: column;
     height: 80%;
     color: white;
-    font-size: 50px;
     align-items: center;
     justify-content: center;
-}
-.text1{
+  }
+  .text1 {
     color: #c99e3e;
     font-family: Copperplate;
-
-}
-.text2{
+    padding-bottom: 40px;
+    font-size: 30px;
+  }
+  .text2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 330px;
+    padding-top: 120px;
+    font-size: 60px;
+  }
+  .text2_1 {
+    align-items: center;
+    justify-content: center;
     font-family: Copperplate;
-    padding-bottom: 20%;
-    padding-top: 10%;
-    font-size: 100px;
-}
-.text2_1{
+  }
+  .text2_2 {
+    align-items: center;
+    justify-content: center;
     font-family: Copperplate;
-}
-.text2_2{
-    font-family: Copperplate;
-}
-.link_page{
-    height: 260vh;
+  }
+  .link_page {
+    height: 200vh;
     width: 100%;
     display: flex;
     flex-direction: column;
     overflow: auto;
     align-items: center;
     justify-content: center;
-}
-.Tattoos_link{
+  }
+  .Tattoos_link {
     display: flex;
     height: 50%;
     width: 50%;
-    background-image: url('../../../imgBrother/mybrother3.webp');
-    background-position: 50% 40%;
+    background-image: url("../../../imgBrother/mybrother3.webp");
+    background-position: 50% 50%;
     background-repeat: no-repeat;
     background-size: cover;
-    font-size: 500%;
+    font-size: 200%;
     align-items: center;
     justify-content: center;
     color: white;
@@ -68,26 +254,26 @@ body{
     text-decoration: none;
     -webkit-filter: brightness(100%);
     margin-bottom: 15vh;
-    border:2px solid white;
+    border: 2px solid white;
     border-radius: 20px;
-    &:hover{
-        -webkit-filter: brightness(50%);
-        -webkit-transition: all 1s ease;
-        -moz-transition: all 1s ease;
-        -o-transition: all 1s ease;
-        -ms-transition: all 1s ease;
-        transition: all 1s ease;
+    &:hover {
+      -webkit-filter: brightness(50%);
+      -webkit-transition: all 1s ease;
+      -moz-transition: all 1s ease;
+      -o-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+      transition: all 1s ease;
     }
-}
-.Art_link{
+  }
+  .Art_link {
     display: flex;
     height: 50%;
     width: 50%;
-    background-image: url('../../../imgBrother/mybrother5.webp');
-    background-position: 50% 60%;
+    background-image: url("../../../imgBrother/mybrother5.webp");
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    font-size: 500%;
+    font-size: 200%;
     align-items: center;
     justify-content: center;
     color: white;
@@ -95,26 +281,26 @@ body{
     text-decoration: none;
     -webkit-filter: brightness(100%);
     margin-bottom: 15vh;
-    border:2px solid white;
+    border: 2px solid white;
     border-radius: 20px;
-    &:hover{
-        -webkit-filter: brightness(50%);
-        -webkit-transition: all 1s ease;
-        -moz-transition: all 1s ease;
-        -o-transition: all 1s ease;
-        -ms-transition: all 1s ease;
-        transition: all 1s ease;
+    &:hover {
+      -webkit-filter: brightness(50%);
+      -webkit-transition: all 1s ease;
+      -moz-transition: all 1s ease;
+      -o-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+      transition: all 1s ease;
     }
-}
-.About_link{
+  }
+  .About_link {
     display: flex;
     height: 50%;
     width: 50%;
-    background-image: url('../../../imgBrother/mybrother2.webp');
-    background-position: top;
+    background-image: url("../../../imgBrother/mybrother2.webp");
+    background-position: 100% 50%;
     background-repeat: no-repeat;
     background-size: cover;
-    font-size: 500%;
+    font-size: 200%;
     align-items: center;
     justify-content: center;
     color: white;
@@ -122,26 +308,26 @@ body{
     text-decoration: none;
     -webkit-filter: brightness(100%);
     margin-bottom: 15vh;
-    border:2px solid white;
+    border: 2px solid white;
     border-radius: 20px;
-    &:hover{
-        -webkit-filter: brightness(50%);
-        -webkit-transition: all 1s ease;
-        -moz-transition: all 1s ease;
-        -o-transition: all 1s ease;
-        -ms-transition: all 1s ease;
-        transition: all 1s ease;
+    &:hover {
+      -webkit-filter: brightness(50%);
+      -webkit-transition: all 1s ease;
+      -moz-transition: all 1s ease;
+      -o-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+      transition: all 1s ease;
     }
-}
-.Contact_link{
+  }
+  .Contact_link {
     display: flex;
     height: 50%;
     width: 50%;
-    background-image: url('../../../imgBrother/mybrother4.webp');
+    background-image: url("../../../imgBrother/mybrother4.webp");
     background-position: 50% 10%;
     background-repeat: no-repeat;
     background-size: cover;
-    font-size: 500%;
+    font-size: 200%;
     align-items: center;
     justify-content: center;
     color: white;
@@ -149,225 +335,37 @@ body{
     text-decoration: none;
     -webkit-filter: brightness(100%);
     margin-bottom: 15vh;
-    border:2px solid white;
+    border: 2px solid white;
     border-radius: 20px;
-    &:hover{
-        -webkit-filter: brightness(50%);
-        -webkit-transition: all 1s ease;
-        -moz-transition: all 1s ease;
-        -o-transition: all 1s ease;
-        -ms-transition: all 1s ease;
-        transition: all 1s ease;
+    &:hover {
+      -webkit-filter: brightness(50%);
+      -webkit-transition: all 1s ease;
+      -moz-transition: all 1s ease;
+      -o-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+      transition: all 1s ease;
     }
-}
-.Author_location{
+  }
+  .Author_location {
     display: flex;
     flex-direction: column;
     height: 30%;
-    background-color: rgb(121, 121, 121) ;
-    color:white;
+    background-color: rgb(121, 121, 121);
+    color: white;
     align-items: center;
     justify-content: center;
-}
+  }
 
-.Author_location_text{
-    padding-top: 2%;
-    font-size: 300%;
+  .Author_location_text {
+    font-size: 200%;
     font-family: Copperplate;
-}
-.Author_location_icon{
-    font-size: 250%;
+  }
+  .Author_location_icon {
+    font-size: 200%;
     font-family: Copperplate;
-}
+  }
 
-.Homepage_footer{
+  .Homepage_footer {
     height: 50%;
-}
-
-
-@media screen and (max-width: 700px){
-    .Homepage{
-    background-image: url('../../../imgBrother/mybrother.webp');
-    height: 100vh;
-    overflow: auto;
-    background-position: 75% 50%;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-    .Homepage_header_text{
-        height: 100%;
-    }
-    .Homepage_text{
-        display: flex;
-        flex-direction: column;
-        height: 80%;
-        color: white;
-        align-items: center;
-        justify-content: center;
-    }
-    .text1{
-        color: #c99e3e;
-        font-family: Copperplate;
-        padding-bottom: 60px;
-        font-size: 30px;
-    }
-    .text2{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding-bottom: 330px;
-        padding-top: 120px;
-        font-size: 60px;
-    }
-    .text2_1{
-        align-items: center;
-        justify-content: center;
-        font-family: Copperplate;
-    }
-    .text2_2{
-        align-items: center;
-        justify-content: center;
-        font-family: Copperplate;
-    }
-    .link_page{
-        height: 200vh;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        overflow: auto;
-        align-items: center;
-        justify-content: center;
-    }
-    .Tattoos_link{
-        display: flex;
-        height: 50%;
-        width: 50%;
-        background-image: url('../../../imgBrother/mybrother3.webp');
-        background-position: 50% 50%;
-        background-repeat: no-repeat;
-        background-size: cover;
-        font-size: 200%;
-        align-items: center;
-        justify-content: center;
-        color: white;
-        font-family: Copperplate;
-        text-decoration: none;
-        -webkit-filter: brightness(100%);
-        margin-bottom: 15vh;
-        border:2px solid white;
-        border-radius: 20px;
-        &:hover{
-            -webkit-filter: brightness(50%);
-            -webkit-transition: all 1s ease;
-            -moz-transition: all 1s ease;
-            -o-transition: all 1s ease;
-            -ms-transition: all 1s ease;
-            transition: all 1s ease;
-        }
-    }
-    .Art_link{
-        display: flex;
-        height: 50%;
-        width: 50%;
-        background-image: url('../../../imgBrother/mybrother5.webp');
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        font-size: 200%;
-        align-items: center;
-        justify-content: center;
-        color: white;
-        font-family: Copperplate;
-        text-decoration: none;
-        -webkit-filter: brightness(100%);
-        margin-bottom: 15vh;
-        border:2px solid white;
-        border-radius: 20px;
-        &:hover{
-            -webkit-filter: brightness(50%);
-            -webkit-transition: all 1s ease;
-            -moz-transition: all 1s ease;
-            -o-transition: all 1s ease;
-            -ms-transition: all 1s ease;
-            transition: all 1s ease;
-        }
-    }
-    .About_link{
-        display: flex;
-        height: 50%;
-        width: 50%;
-        background-image: url('../../../imgBrother/mybrother2.webp');
-        background-position: 100% 50%;
-        background-repeat: no-repeat;
-        background-size: cover;
-        font-size: 200%;
-        align-items: center;
-        justify-content: center;
-        color: white;
-        font-family: Copperplate;
-        text-decoration: none;
-        -webkit-filter: brightness(100%);
-        margin-bottom: 15vh;
-        border:2px solid white;
-        border-radius: 20px;
-        &:hover{
-            -webkit-filter: brightness(50%);
-            -webkit-transition: all 1s ease;
-            -moz-transition: all 1s ease;
-            -o-transition: all 1s ease;
-            -ms-transition: all 1s ease;
-            transition: all 1s ease;
-        }
-    }
-    .Contact_link{
-        display: flex;
-        height: 50%;
-        width: 50%;
-        background-image: url('../../../imgBrother/mybrother4.webp');
-        background-position: 50% 10%;
-        background-repeat: no-repeat;
-        background-size: cover;
-        font-size: 200%;
-        align-items: center;
-        justify-content: center;
-        color: white;
-        font-family: Copperplate;
-        text-decoration: none;
-        -webkit-filter: brightness(100%);
-        margin-bottom: 15vh;
-        border:2px solid white;
-        border-radius: 20px;
-        &:hover{
-            -webkit-filter: brightness(50%);
-            -webkit-transition: all 1s ease;
-            -moz-transition: all 1s ease;
-            -o-transition: all 1s ease;
-            -ms-transition: all 1s ease;
-            transition: all 1s ease;
-        }
-    }
-    .Author_location{
-        display: flex;
-        flex-direction: column;
-        height: 30%;
-        background-color: rgb(121, 121, 121) ;
-        color:white;
-        align-items: center;
-        justify-content: center;
-    }
-    
-    .Author_location_text{
-        font-size: 200%;
-        font-family: Copperplate;
-    }
-    .Author_location_icon{
-        font-size: 200%;
-        font-family: Copperplate;
-    }
-    
-    .Homepage_footer{
-        height: 50%;
-    }
+  }
 }
