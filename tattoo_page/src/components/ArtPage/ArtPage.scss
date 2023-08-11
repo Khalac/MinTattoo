@@ -8,6 +8,10 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+.ArtPage_header{
+    height: 20%;
+}
+
 .ArtPage_img{
     display: grid;
     grid-template-columns: auto auto auto; 
@@ -20,8 +24,8 @@
     justify-content: center;
     align-items: center;
     border-radius: 10%;
-    max-height: 40vh;
-    max-width: 25vw;
+    max-height: 60vh;
+    max-width: 40vw;
 }
 .ArtPage_footer{
     margin-top: 10%;
@@ -34,7 +38,6 @@
     align-items: center;
     height: 90%;
     width: 100%;
-    margin: 2% 0 ;
 }
 
 .Art_headImg{
@@ -74,6 +77,9 @@
         height: 80%;
         width: 100%;
     }
+    .ArtPage_header{
+        height: 10%;
+    }
     .Art_headImg{
         height: 43%;
         width: 50%;
@@ -94,9 +100,14 @@
         filter: blur(10px);
     }
     .ArtPage_img{
+        width: 100%;
         display: grid;
         grid-template-columns: auto auto ; 
-        row-gap: 15vh;
+        row-gap: 20vh;
 
     }
+
+    .ArtPage_footer {
+        height: 55%;
+      }
 }

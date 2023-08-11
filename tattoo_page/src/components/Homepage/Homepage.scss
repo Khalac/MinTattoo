@@ -161,8 +161,8 @@ body {
 }
 .Author_location {
   display: flex;
-  flex-direction: column;
-  height: 30%;
+  flex-direction: row;
+  height: 80%;
   background-color: rgb(121, 121, 121);
   color: white;
   align-items: center;
@@ -170,12 +170,19 @@ body {
 }
 
 .Author_location_text {
-  padding-top: 2%;
-  font-size: 300%;
-  font-family: Copperplate;
+
+  width: 60%;
+  height: 70%;
+  .gg_map{
+    width: 80%;
+    height: 100%;
+    margin-left: 10%;
+  }
 }
 .Author_location_icon {
-  font-size: 250%;
+  font-size: 300%;
+  width: 20%;
+  margin-left: 5%;
   font-family: Copperplate;
 }
 
@@ -349,7 +356,7 @@ body {
   .Author_location {
     display: flex;
     flex-direction: column;
-    height: 30%;
+    height: 80%;
     background-color: rgb(121, 121, 121);
     color: white;
     align-items: center;
@@ -357,15 +364,32 @@ body {
   }
 
   .Author_location_text {
-    font-size: 200%;
-    font-family: Copperplate;
+    display: flex;
+    width: 100%;
+    height: 70%;
+    align-items: center;
+    justify-content: center;
+    .gg_map{
+      width: 90%;
+      height: 90%;
+      margin: 0;
+      padding: 0;
+      border: 5px solid rgb(48, 46, 46);
+      border-radius: 10px;
+    }
   }
   .Author_location_icon {
+    display: flex;
     font-size: 200%;
+    width: 90%;
     font-family: Copperplate;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5%;
+    margin-left: 0;
   }
 
   .Homepage_footer {
-    height: 50%;
+    height: 55%;
   }
 }

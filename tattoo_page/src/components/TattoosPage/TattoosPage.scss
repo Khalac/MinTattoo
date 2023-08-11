@@ -16,6 +16,10 @@
     margin-top: 5%;
     
 }
+.TattoosPage_header{
+    height: 20%;
+}
+
 .imgTattoos{
     display: flex;
     justify-items: center;
@@ -36,7 +40,7 @@
     align-items: center;
     height: 90%;
     width: 100%;
-    margin: 2% 0 ;
+
 }
 .Tattoo_headImg{
     background-image: url('./mybrother3.webp');
@@ -79,6 +83,9 @@
         width: 50%;
         position:relative;
     }
+    .TattoosPage_header{
+        height: 10%;
+    }
     .Tattoo_background{
         background-image: url('./mybrother3.webp');
         background-position: 50% 35%;
@@ -107,4 +114,7 @@
         max-width: 35vw;
         margin: auto;
     }
+    .TattoosPage_footer {
+        height: 55%;
+      }
 }

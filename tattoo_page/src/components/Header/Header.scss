@@ -21,6 +21,7 @@
     padding: 10%;
     text-decoration: none;
     color: white;
+    font-family: Copperplate;
     font-size: 100%;
     &:hover{
         color: rgb(165, 164, 164);
@@ -52,9 +53,11 @@
         top: 125px;
         transition: all 1s ease;
         z-index: 1;
+        font-family: Copperplate;
     }
     .left_header_component{
-        padding:30px;
+        padding:40px;
+        font-size:170% ;
 
     }
     .MenuIcon_mobile{

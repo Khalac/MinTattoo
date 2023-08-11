@@ -9,13 +9,15 @@ function AboutPage() {
       <div className="AboutPage_header">
         <Header />
       </div>
-      <div className="Author_name">Minh Phuc Pham</div>
+      <div className="Author_name">PHAM MINH PHUC</div>
       <div className="About_text">
+        <div className="About_img"></div>
         <p className="para">
           Hi, my name is Minh. I am Vietnamese born (1999) and raised. For the
           past 10 years, nothing has been more important to me than becoming a
           master inker.
         </p>
+        <p className="para_bg">My Background</p>
         <p className="para">
           I did my first tattoo when I was 16 and since then I got hooked on how
           to create perfect tattoos. At 18 years old I enrolled in university to
@@ -44,24 +46,122 @@ function AboutPage() {
         <p className="para_end">On your skin</p>
         <p className="para_end">Let’s do this!!!</p>
         <p className="para">
-          Minh Pham’s Awards Won:
+          <p className="para_prize">Minh Pham’s Awards Won:</p>
           <ul>
-            <li>1st Best of Small Color Female Villian Arts - Houston 2021</li>
-            <li>2nd Best of Show Villian Arts - Houston 2021</li>
-            <li>1st Best of Show Land of Ink - Bangkok 2022</li>
-            <li>2nd Minimal Color Land of Ink - Bangkok 2022</li>
-            <li>3rd Small Job Black and Grey Land of Ink- Bangkok 2022</li>
-            <li>1st Best of Show Body Art Expo - Los Angeles 2023</li>
-            <li>1st Portrait Star of Texas - Austin 2023</li>
-            <li>2nd Horror Star of Texas - Austin 2023</li>
-            <li>3rd Large Black and Grey Star of Texas - Austin 2023</li>
-            <li>1st Best of Show Palm City Tattoo Expo - McAllen 2023</li>
-            <li>st Cicatrizado Pachamama Convention- Peru </li>
-            <li>2nd Best of Grandes Pièces Epinal Show - France</li>
-            <li>1st Colorido Expo Tattoo Brasília - Brazil</li>
-            <li>1st Cicatrizado Expo Tattoo Brasília - Brazil</li>
-            <li>2nd Oriental Expo Tattoo Brasília - Brazil</li>
-            <li>1st Melhor do Evento Expo Tattoo Brasília Brazil</li>
+            <li>
+              <span className="para_prize_tilte">
+                1st Best of Small Color Female
+              </span>{" "}
+              Villian Arts - Houston 2021
+            </li>
+            <li>
+              {" "}
+              <span className="para_prize_tilte">2nd Best of Show</span> Villian
+              Arts - Houston 2021
+            </li>
+            <li>
+              {" "}
+              <span className="para_prize_tilte">1st Best of Show</span> Land of
+              Ink - Bangkok 2022
+            </li>
+            <li>
+              {" "}
+              <span className="para_prize_tilte">2nd Minimal Color</span> Land
+              of Ink - Bangkok 2022
+            </li>
+            <li>
+              {" "}
+              <span className="para_prize_tilte">
+                3rd Small Job Black and Grey
+              </span>{" "}
+              Land of Ink- Bangkok 2022
+            </li>
+            <li>
+              {" "}
+              <span className="para_prize_tilte">1st Best of Show</span> Body
+              Art Expo - Los Angeles 2023
+            </li>
+            <li>
+              {" "}
+              <span className="para_prize_tilte">1st Portrait</span> Star of
+              Texas - Austin 2023
+            </li>
+            <li>
+              {" "}
+              <span className="para_prize_tilte">2nd Horror</span> Star of Texas
+              - Austin 2023
+            </li>
+            <li>
+              {" "}
+              <span className="para_prize_tilte">
+                3rd Large Black and Grey
+              </span>{" "}
+              Star of Texas - Austin 2023
+            </li>
+            <li>
+              {" "}
+              <span className="para_prize_tilte">1st Best of Show</span> Palm
+              City Tattoo Expo - McAllen 2023
+            </li>
+            <li>
+              {" "}
+              <span className="para_prize_tilte">1st Cicatrizado</span>{" "}
+              Pachamama Convention- Peru{" "}
+            </li>
+            <li>
+              {" "}
+              <span className="para_prize_tilte">2nd Best of Grandes</span>{" "}
+              Pièces Epinal Show - France
+            </li>
+            <li>
+              {" "}
+              <span className="para_prize_tilte">1st Colorido</span> Expo Tattoo
+              Brasília - Brazil
+            </li>
+            <li>
+              {" "}
+              <span className="para_prize_tilte">1st Cicatrizado</span> Expo
+              Tattoo Brasília - Brazil
+            </li>
+            <li>
+              {" "}
+              <span className="para_prize_tilte">2nd Oriental</span> Expo Tattoo
+              Brasília - Brazil
+            </li>
+            <li>
+              {" "}
+              <span className="para_prize_tilte">
+                1st Melhor do Evento
+              </span>{" "}
+              Expo Tattoo Brasília Brazil
+            </li>
+            <li>
+              {" "}
+              <span className="para_prize_tilte">Top 3 Color</span> Tattoo
+              Collectors Expo - Dallas, USA
+            </li>
+            <li>
+              {" "}
+              <span className="para_prize_tilte">Best Asian</span> Tattoo
+              Collectors Expo - Dallas, USA
+            </li>
+            <li>
+              {" "}
+              <span className="para_prize_tilte">1st Best Oriental</span> Tattoo
+              Week - Brazil
+            </li>
+            <li>
+              {" "}
+              <span className="para_prize_tilte">1st Melhor do</span> Evento
+              Tattoo Week - Brazil
+            </li>
+            <li>
+              {" "}
+              <span className="para_prize_tilte">
+                1st Best Comic Style
+              </span>{" "}
+              Mayagna Convention - Nicaragua
+            </li>
           </ul>
         </p>
       </div>
