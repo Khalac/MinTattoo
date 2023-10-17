@@ -1,29 +1,38 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-import './Footer.scss'
-import { FaFacebook,FaInstagram } from "react-icons/fa"
+import React from "react";
+import { Link } from "react-router-dom";
+import "./Footer.scss";
+import { SlSocialFacebook, SlSocialInstagram } from "react-icons/sl";
 
-
+import MinhText from "../assets/Text/Minh.webp";
 
 function Footer() {
   return (
-    <div className='Footer'>
-      <div className='Footer_linkToPage'>
-          <Link to='/About' className='Footer_link'>About</Link>
-          <Link to='/Tattoos' className='Footer_link'>Tattoos</Link>
-          <Link to='/Art' className='Footer_link'>Art</Link>
-          <Link to='/Contact' className='Footer_link'>Contact</Link>
-          
+    <div className="Footer">
+      <div className="Footer_Infor">
+        <img src={MinhText} alt="" className="Footer_Infor_Logo" />
+        <div className="Footer_Infor_IG">ig: @pham.minh.phuc</div>
+        <div className="Footer_Infor_Phone">(210) 843-4253</div>
+        <div className="Footer_Infor_Icon">
+          <SlSocialFacebook className="Footer_Infor_Icon_Fb" />
+          <SlSocialInstagram className="Footer_Infor_Icon_Insta" />
+        </div>
       </div>
-      <div className='Icon_socialMedia'>
-        <a href='https://www.instagram.com/pham.minh.phuc/' className='Footer_Icon'><FaInstagram /></a>
-        <a href='https://www.facebook.com/profile.php?id=100010078476236' className='Footer_Icon'><FaFacebook /></a>
-      </div>
-      <div className="Footer_text">
-        Made in VietNam
+      <div className="Footer_Link">
+        <Link to="/About" className="Footer_Page">
+          About
+        </Link>
+        <Link to="/Awards" className="Footer_Page">
+          Awards
+        </Link>
+        <Link to="/Gallery" className="Footer_Page">
+          Gallery
+        </Link>
+        <Link to="/Contact" className="Footer_Page">
+          Contact
+        </Link>
       </div>
     </div>
-  )
+  );
 }
 
-export default Footer
+export default Footer;

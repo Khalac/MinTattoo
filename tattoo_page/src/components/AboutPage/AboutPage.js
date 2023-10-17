@@ -6,7 +6,7 @@ import "./AboutPage.scss";
 function AboutPage() {
   return (
     <div className="AboutPage">
-      <div className="AboutPage_header">
+      {/* <div className="AboutPage_header">
         <Header />
       </div>
       <div className="Author_name">PHAM MINH PHUC</div>
@@ -162,12 +162,55 @@ function AboutPage() {
               </span>{" "}
               Mayagna Convention - Nicaragua
             </li>
+
+            <li>
+              {" "}
+              <span className="para_prize_tilte">1st Best Oriental</span>{" "}
+              Inksane Tattoo Fest V - Puerto Rico
+            </li>
+            <li>
+              {" "}
+              <span className="para_prize_tilte">1st Best Over all</span>{" "}
+              Inksane Tattoo Fest V - Puerto Rico
+            </li>
+            <li>
+              {" "}
+              <span className="para_prize_tilte">Best of Show</span> Inksane
+              Tattoo Fest V - Puerto Rico
+            </li>
+            <li>
+              {" "}
+              <span className="para_prize_tilte">1st Arte Fusion</span> Cangaco
+              Tattoo Ink - Brazil
+            </li>
+            <li>
+              {" "}
+              <span className="para_prize_tilte">Melhor do Evento</span> Cangaco
+              Tattoo Ink - Brazil
+            </li>
+            <li>
+              {" "}
+              <span className="para_prize_tilte">
+                2nd Realismo Colorido
+              </span>{" "}
+              Cangaco Tattoo Ink - Brazil
+            </li>
+            <li>
+              {" "}
+              <span className="para_prize_tilte">1st Fechamento</span> Cangaco
+              Tattoo Ink - Brazil
+            </li>
+            <li>
+              {" "}
+              <span className="para_prize_tilte">1st Free Hand</span> Cangaco
+              Tattoo Ink - Brazil
+            </li>
           </ul>
         </p>
       </div>
       <div className="AboutPage_footer">
         <Footer />
-      </div>
+      </div> */}
     </div>
   );
 }

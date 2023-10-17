@@ -1,113 +1,113 @@
-.ArtPage{
-    display: block;
-    height: 100vh;
-    background-color: black;
-    overflow: auto;
-    background-position: center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.ArtPage_header{
-    height: 20%;
-}
+// .ArtPage{
+//     display: block;
+//     height: 100vh;
+//     background-color: black;
+//     overflow: auto;
+//     background-position: center;
+//     background-attachment: fixed;
+//     background-repeat: no-repeat;
+//     background-size: cover;
+// }
+// .ArtPage_header{
+//     height: 20%;
+// }
 
-.ArtPage_img{
-    display: grid;
-    grid-template-columns: auto auto auto; 
-    row-gap: 20vh;
-    justify-items: center;
-    margin-top: 5%;
-}
-.imgArt{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10%;
-    max-height: 60vh;
-    max-width: 40vw;
-}
-.ArtPage_footer{
-    margin-top: 10%;
-    height: 50%;
-}
-.ArtPage_headImg{
-    position:relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 90%;
-    width: 100%;
-}
+// .ArtPage_img{
+//     display: grid;
+//     grid-template-columns: auto auto auto; 
+//     row-gap: 20vh;
+//     justify-items: center;
+//     margin-top: 5%;
+// }
+// .imgArt{
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     border-radius: 10%;
+//     max-height: 50vh;
+//     max-width: 30vw;
+// }
+// .ArtPage_footer{
+//     margin-top: 10%;
+//     height: 50%;
+// }
+// .ArtPage_headImg{
+//     position:relative;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     height: 90%;
+//     width: 100%;
+// }
 
-.Art_headImg{
-    background-image: url('./mybrother5.webp');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 10%;
-    border: 3px solid white;
-    height: 70%;
-    width: 30%;
-    position:relative;
-}
-.Art_background{
-    background-image: url('./mybrother5.webp');
-    background-position: 50% 35%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position:absolute;
-    height: 100%;
-    width: 100%;
-    -webkit-filter: blur(10px);
-    -moz-filter: blur(10px);
-    -o-filter: blur(10px);
-    -ms-filter: blur(10px);
-    filter: blur(10px);
-}
+// .Art_headImg{
+//     background-image: url('./mybrother5.webp');
+//     background-position: center;
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//     border-radius: 10%;
+//     border: 3px solid white;
+//     height: 70%;
+//     width: 30%;
+//     position:relative;
+// }
+// .Art_background{
+//     background-image: url('./mybrother5.webp');
+//     background-position: 50% 35%;
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//     position:absolute;
+//     height: 100%;
+//     width: 100%;
+//     -webkit-filter: blur(10px);
+//     -moz-filter: blur(10px);
+//     -o-filter: blur(10px);
+//     -ms-filter: blur(10px);
+//     filter: blur(10px);
+// }
 
 
 
-@media screen and (max-width: 700px){
-    .ArtPage_headImg{
-        position:relative;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 80%;
-        width: 100%;
-    }
-    .ArtPage_header{
-        height: 10%;
-    }
-    .Art_headImg{
-        height: 43%;
-        width: 50%;
-        position:relative;
-    }
-    .Art_background{
-        background-image: url('./mybrother5.webp');
-        background-position: 50% 35%;
-        background-repeat: no-repeat;
-        background-size: cover;
-        position:absolute;
-        height: 80%;
-        width: 100%;
-        -webkit-filter: blur(10px);
-        -moz-filter: blur(10px);
-        -o-filter: blur(10px);
-        -ms-filter: blur(10px);
-        filter: blur(10px);
-    }
-    .ArtPage_img{
-        width: 100%;
-        display: grid;
-        grid-template-columns: auto auto ; 
-        row-gap: 20vh;
+// @media screen and (max-width: 700px){
+//     .ArtPage_headImg{
+//         position:relative;
+//         display: flex;
+//         justify-content: center;
+//         align-items: center;
+//         height: 80%;
+//         width: 100%;
+//     }
+//     .ArtPage_header{
+//         height: 10%;
+//     }
+//     .Art_headImg{
+//         height: 43%;
+//         width: 50%;
+//         position:relative;
+//     }
+//     .Art_background{
+//         background-image: url('./mybrother5.webp');
+//         background-position: 50% 35%;
+//         background-repeat: no-repeat;
+//         background-size: cover;
+//         position:absolute;
+//         height: 80%;
+//         width: 100%;
+//         -webkit-filter: blur(10px);
+//         -moz-filter: blur(10px);
+//         -o-filter: blur(10px);
+//         -ms-filter: blur(10px);
+//         filter: blur(10px);
+//     }
+//     .ArtPage_img{
+//         width: 100%;
+//         display: grid;
+//         grid-template-columns: auto auto ; 
+//         row-gap: 20vh;
 
-    }
+//     }
 
-    .ArtPage_footer {
-        height: 55%;
-      }
-}
+//     .ArtPage_footer {
+//         height: 55%;
+//       }
+// }

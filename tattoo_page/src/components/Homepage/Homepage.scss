@@ -1,395 +1,1033 @@
 body {
   padding: 0;
   margin: 0;
-  height: 100%;
-  overflow: hidden;
 }
 
-.Homepage {
-  background-image: url("../../../imgBrother/Min.mp4");
-  height: 100vh;
-  overflow: auto;
-  background-position: center;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
+@font-face {
+  font-family: "BancheroBold";
+  src: local("BancheroBold"),url("../assets/fonts/Banchero-Bold.otf") format("truetype");
 }
-.Homepage_header_text {
-  height: 100%;
+@font-face {
+  font-family: "CeniosdemoRegular";
+  src: local("CeniosdemoRegular"),url("../assets/fonts/CeniosdemoRegular-MVKzY.otf") format("truetype");
 }
-.Homepage_text {
-  display: flex;
-  flex-direction: column;
-  height: 80%;
-  color: white;
-  font-size: 50px;
-  align-items: center;
-  justify-content: center;
+@font-face {
+  font-family: "Ladyrose";
+  src: local("Ladyrose"),url("../assets/fonts/ladyrose.otf") format("truetype");
 }
-.text1 {
-  color: #c99e3e;
-  font-family: Copperplate;
+@font-face {
+  font-family: "SemiBold15";
+  src: local("SemiBold15"),url("../assets/fonts/SharpGrotesk-SemiBold15.otf") format("truetype");
 }
-.text2 {
-  font-family: Copperplate;
-  padding-bottom: 20%;
-  padding-top: 10%;
-  font-size: 100px;
+@font-face {
+  font-family: "Medium15";
+  src: local("Medium15"),url("../assets/fonts/SharpGrotesk-Medium15.otf") format("truetype");
 }
-.text2_1 {
-  font-family: Copperplate;
-}
-.text2_2 {
-  font-family: Copperplate;
-}
-.link_page {
-  height: 260vh;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  overflow: auto;
-  align-items: center;
-  justify-content: center;
-}
-.Tattoos_link {
-  display: flex;
-  height: 50%;
-  width: 50%;
-  background-image: url("../../../imgBrother/mybrother3.webp");
-  background-position: 50% 40%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  font-size: 500%;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  font-family: Copperplate;
-  text-decoration: none;
-  -webkit-filter: brightness(100%);
-  margin-bottom: 15vh;
-  border: 2px solid white;
-  border-radius: 20px;
-  &:hover {
-    -webkit-filter: brightness(50%);
-    -webkit-transition: all 1s ease;
-    -moz-transition: all 1s ease;
-    -o-transition: all 1s ease;
-    -ms-transition: all 1s ease;
-    transition: all 1s ease;
-  }
-}
-.Art_link {
-  display: flex;
-  height: 50%;
-  width: 50%;
-  background-image: url("../../../imgBrother/mybrother5.webp");
-  background-position: 50% 60%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  font-size: 500%;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  font-family: Copperplate;
-  text-decoration: none;
-  -webkit-filter: brightness(100%);
-  margin-bottom: 15vh;
-  border: 2px solid white;
-  border-radius: 20px;
-  &:hover {
-    -webkit-filter: brightness(50%);
-    -webkit-transition: all 1s ease;
-    -moz-transition: all 1s ease;
-    -o-transition: all 1s ease;
-    -ms-transition: all 1s ease;
-    transition: all 1s ease;
-  }
-}
-.About_link {
-  display: flex;
-  height: 50%;
-  width: 50%;
-  background-image: url("../../../imgBrother/mybrother2.webp");
-  background-position: top;
-  background-repeat: no-repeat;
-  background-size: cover;
-  font-size: 500%;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  font-family: Copperplate;
-  text-decoration: none;
-  -webkit-filter: brightness(100%);
-  margin-bottom: 15vh;
-  border: 2px solid white;
-  border-radius: 20px;
-  &:hover {
-    -webkit-filter: brightness(50%);
-    -webkit-transition: all 1s ease;
-    -moz-transition: all 1s ease;
-    -o-transition: all 1s ease;
-    -ms-transition: all 1s ease;
-    transition: all 1s ease;
-  }
-}
-.Contact_link {
-  display: flex;
-  height: 50%;
-  width: 50%;
-  background-image: url("../../../imgBrother/mybrother4.webp");
-  background-position: 50% 10%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  font-size: 500%;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  font-family: Copperplate;
-  text-decoration: none;
-  -webkit-filter: brightness(100%);
-  margin-bottom: 15vh;
-  border: 2px solid white;
-  border-radius: 20px;
-  &:hover {
-    -webkit-filter: brightness(50%);
-    -webkit-transition: all 1s ease;
-    -moz-transition: all 1s ease;
-    -o-transition: all 1s ease;
-    -ms-transition: all 1s ease;
-    transition: all 1s ease;
-  }
-}
-.Author_location {
-  display: flex;
-  flex-direction: row;
-  height: 80%;
-  background-color: rgb(121, 121, 121);
-  color: white;
-  align-items: center;
-  justify-content: center;
+@media screen and (min-width: 992px){
+
+  // .Homepage {
+  //   background-image: url("../../../imgBrother/Min.mp4");
+  //   height: 100vh;
+  //   overflow: auto;
+  //   background-position: center;
+  //   background-attachment: fixed;
+  //   background-repeat: no-repeat;
+  //   background-size: cover;
+  // }
+  // .Homepage_header_text {
+  //   height: 100%;
+  // }
+  // .Homepage_text {
+  //   display: flex;
+  //   flex-direction: column;
+  //   height: 80%;
+  //   color: white;
+  //   font-size: 50px;
+  //   align-items: center;
+  //   justify-content: center;
+  // }
+  // .text1 {
+  //   color: #c99e3e;
+  //   font-family: Copperplate;
+  // }
+  // .text2 {
+  //   font-family: Copperplate;
+  //   padding-bottom: 20%;
+  //   padding-top: 10%;
+  //   font-size: 100px;
+  // }
+  // .text2_1 {
+  //   font-family: Copperplate;
+  // }
+  // .text2_2 {
+  //   font-family: Copperplate;
+  // }
+  // .link_page {
+  //   height: 260vh;
+  //   width: 100%;
+  //   display: flex;
+  //   flex-direction: column;
+  //   overflow: auto;
+  //   align-items: center;
+  //   justify-content: center;
+  // }
+  // .Tattoos_link {
+  //   display: flex;
+  //   height: 50%;
+  //   width: 50%;
+  //   background-image: url("../../../imgBrother/mybrother3.webp");
+  //   background-position: 50% 40%;
+  //   background-repeat: no-repeat;
+  //   background-size: cover;
+  //   font-size: 500%;
+  //   align-items: center;
+  //   justify-content: center;
+  //   color: white;
+  //   font-family: Copperplate;
+  //   text-decoration: none;
+  //   -webkit-filter: brightness(100%);
+  //   margin-bottom: 15vh;
+  //   border: 2px solid white;
+  //   border-radius: 20px;
+  //   &:hover {
+  //     -webkit-filter: brightness(50%);
+  //     -webkit-transition: all 1s ease;
+  //     -moz-transition: all 1s ease;
+  //     -o-transition: all 1s ease;
+  //     -ms-transition: all 1s ease;
+  //     transition: all 1s ease;
+  //   }
+  // }
+  // .Art_link {
+  //   display: flex;
+  //   height: 50%;
+  //   width: 50%;
+  //   background-image: url("../../../imgBrother/mybrother5.webp");
+  //   background-position: 50% 60%;
+  //   background-repeat: no-repeat;
+  //   background-size: cover;
+  //   font-size: 500%;
+  //   align-items: center;
+  //   justify-content: center;
+  //   color: white;
+  //   font-family: Copperplate;
+  //   text-decoration: none;
+  //   -webkit-filter: brightness(100%);
+  //   margin-bottom: 15vh;
+  //   border: 2px solid white;
+  //   border-radius: 20px;
+  //   &:hover {
+  //     -webkit-filter: brightness(50%);
+  //     -webkit-transition: all 1s ease;
+  //     -moz-transition: all 1s ease;
+  //     -o-transition: all 1s ease;
+  //     -ms-transition: all 1s ease;
+  //     transition: all 1s ease;
+  //   }
+  // }
+  // .About_link {
+  //   display: flex;
+  //   height: 50%;
+  //   width: 50%;
+  //   background-image: url("../../../imgBrother/mybrother2.webp");
+  //   background-position: top;
+  //   background-repeat: no-repeat;
+  //   background-size: cover;
+  //   font-size: 500%;
+  //   align-items: center;
+  //   justify-content: center;
+  //   color: white;
+  //   font-family: Copperplate;
+  //   text-decoration: none;
+  //   -webkit-filter: brightness(100%);
+  //   margin-bottom: 15vh;
+  //   border: 2px solid white;
+  //   border-radius: 20px;
+  //   &:hover {
+  //     -webkit-filter: brightness(50%);
+  //     -webkit-transition: all 1s ease;
+  //     -moz-transition: all 1s ease;
+  //     -o-transition: all 1s ease;
+  //     -ms-transition: all 1s ease;
+  //     transition: all 1s ease;
+  //   }
+  // }
+  // .Contact_link {
+  //   display: flex;
+  //   height: 50%;
+  //   width: 50%;
+  //   background-image: url("../../../imgBrother/mybrother4.webp");
+  //   background-position: 50% 10%;
+  //   background-repeat: no-repeat;
+  //   background-size: cover;
+  //   font-size: 500%;
+  //   align-items: center;
+  //   justify-content: center;
+  //   color: white;
+  //   font-family: Copperplate;
+  //   text-decoration: none;
+  //   -webkit-filter: brightness(100%);
+  //   margin-bottom: 15vh;
+  //   border: 2px solid white;
+  //   border-radius: 20px;
+  //   &:hover {
+  //     -webkit-filter: brightness(50%);
+  //     -webkit-transition: all 1s ease;
+  //     -moz-transition: all 1s ease;
+  //     -o-transition: all 1s ease;
+  //     -ms-transition: all 1s ease;
+  //     transition: all 1s ease;
+  //   }
+  // }
+  // .Author_location {
+  //   display: flex;
+  //   flex-direction: row;
+  //   height: 80%;
+  //   background-color: rgb(121, 121, 121);
+  //   color: white;
+  //   align-items: center;
+  //   justify-content: center;
+  // }
+
+  // .Author_location_text {
+  //   width: 60%;
+  //   height: 70%;
+  //   margin-left: 7%;
+  // }
+  // .Author_location_icon {
+  //   font-size: 300%;
+  //   width: 20%;
+  //   margin-left: 5%;
+  //   font-family: Copperplate;
+  // }
+
+  // .Homepage_footer {
+  //   height: 50%;
+  // }
+
 }
 
-.Author_location_text {
+@media screen and (max-width:768px) {
+  .Homepage{
+    .Homepage_Header{
+      height: 5vh;
+      background-color: #E4E1D8;
+    }
+    .Homepage_PageName{
+      width: 100%;
+      height: 30vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      position: relative;
+         background-color: #E4E1D8;
+      .Homepage_PageName_Minh{
+        width: 50%;
+        height: 30%;
+        display: flex;
+        margin-left: 12%;
 
-  width: 60%;
-  height: 70%;
-  .gg_map{
-    width: 80%;
-    height: 100%;
-    margin-left: 10%;
-  }
-}
-.Author_location_icon {
-  font-size: 300%;
-  width: 20%;
-  margin-left: 5%;
-  font-family: Copperplate;
-}
+        .Homepage_PageName_Minh_Img{
+          width: 55%;
+          height: 100%;
+        }
+      }
+      .Homepage_PageName_PMP{
+        width: 60%;
+        height: 13%;
+        background-color: black;
+        display: flex;
+        align-items: center;
+        justify-content: right;
+        z-index: 1;
+        .Homepage_PageName_PMP_Img{
+          margin-right: 9%;
+          width: 70%;
+          height: 70%;
+        }
+      }
+      .Homepage_PageName_Text{
+        width: 50%;
+        height: 15%;
+        display: flex;
+        align-items: center;
+        margin-left: 12%;
+        font-family: "CeniosdemoRegular";
+      }
+      .Homepage_PageName_Brother_Img{
+        background-image:url('../assets/imgBrother/mybrother5.webp');
+        background-position: 50% 30%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 50%;
+        height: 100%;
+        position: absolute;
+        right: 0;
+        z-index: 0;
+      }
+    }
+    .Homepage_Seperate{
+      height: 5vh;
+      background-color: white;
+    }
+    .Homepage_Competition_Img{
+      height: 45vh;
+      background-color: #2d2e2d;
+      display: grid;
+      grid-template-columns: 25% 25% 25%;
+      grid-template-rows: 60% 30%;
+      grid-column-gap: 20px;
+      grid-row-gap: 20px;
+      justify-content: center;
+      padding-top: 4%;
+      .Homepage_Competition_Img1{
+        grid-column: 1 / 4;
+        background-image:url('../assets/imgHome/imgHome1.webp');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
 
-.Homepage_footer {
-  height: 50%;
-}
+      }
+      .Homepage_Competition_Img2{
+        background-image:url('../assets/imgHome/imgHome2.webp');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .Homepage_Competition_Img3{
+        background-image:url('../assets/imgHome/imgHome3.webp');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .Homepage_Competition_Img4{
+        background-image:url('../assets/imgHome/imgHome4.webp');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+    }
+    .Homepage_Competition_Logo{
+      height: 40vh;
+      width: 85%;
+      display: grid;
+      grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+      grid-template-rows: auto auto auto;
+      background-color: white;
+      align-items: center;
+      justify-content: center;
+      column-gap: 2%;
+      padding-left: 13%;
+      .Competition_Logo1{
+        width: 90%;
+        height: 40%;
+        grid-column: span 2;
+        margin: auto;
 
-@media screen and (max-width: 700px) {
-  .Homepage {
-    background-image: url("../../../imgBrother/Min.mp4");
-    height: 100vh;
-    overflow: auto;
-    background-position: center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  .Homepage_header_text {
-    height: 100%;
-  }
-  .Homepage_text {
-    display: flex;
-    flex-direction: column;
-    height: 80%;
-    color: white;
-    align-items: center;
-    justify-content: center;
-  }
-  .text1 {
-    color: #c99e3e;
-    font-family: Copperplate;
-    padding-bottom: 40px;
-    font-size: 30px;
-  }
-  .text2 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding-bottom: 330px;
-    padding-top: 120px;
-    font-size: 60px;
-  }
-  .text2_1 {
-    align-items: center;
-    justify-content: center;
-    font-family: Copperplate;
-  }
-  .text2_2 {
-    align-items: center;
-    justify-content: center;
-    font-family: Copperplate;
-  }
-  .link_page {
-    height: 200vh;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    overflow: auto;
-    align-items: center;
-    justify-content: center;
-  }
-  .Tattoos_link {
-    display: flex;
-    height: 50%;
-    width: 50%;
-    background-image: url("../../../imgBrother/mybrother3.webp");
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    font-size: 200%;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-family: Copperplate;
-    text-decoration: none;
-    -webkit-filter: brightness(100%);
-    margin-bottom: 15vh;
-    border: 2px solid white;
-    border-radius: 20px;
-    &:hover {
-      -webkit-filter: brightness(50%);
-      -webkit-transition: all 1s ease;
-      -moz-transition: all 1s ease;
-      -o-transition: all 1s ease;
-      -ms-transition: all 1s ease;
-      transition: all 1s ease;
+      }
+      .Competition_Logo2{
+        margin: auto;
+        width: 80%;
+        height: 60%;
+        grid-column: span 2;
+      }
+      .Competition_Logo3{
+        margin: auto;
+        width: 80%;
+        height: 50%;
+        grid-column: span 2;
+      }
+      .Competition_Logo4{
+        margin: auto;
+        width: 70%;
+        height: 45%;
+        grid-column: span 2;
+      }
+      .Competition_Logo5{
+        margin: auto;
+        width: 80%;
+        height: 40%;
+        grid-column: span 2;
+        background-color: black;
+      }
+      .Competition_Logo6{
+        margin: auto;
+        width: 70%;
+        height: 50%;
+        grid-column: span 2;
+      }
+      .Competition_Logo7{
+        margin: auto;
+        width: 80%;
+        height: 40%;
+        grid-column: span 2;
+      }
+      .Competition_Logo8{
+        margin: auto;
+        width: 70%;
+        height: 60%;
+        grid-column: span 2;
+      }
+      .Competition_Logo9{
+        margin: auto;
+        width: 90%;
+        height: 30%;
+        grid-column: span 2;
+      }
+      .Competition_Logo10{
+        width: 90%;
+        height: 50%;
+        grid-column: span 3;
+        margin: auto;
+      }
+      .Competition_Logo11{
+        width: 90%;
+        height: 50%;
+        grid-column: span 3;
+        margin: auto;
+      }
+    }
+    .Homepage_Introduce{
+      height: 50vh;
+      width: 100%;
+      background-color: #E4E1D8;
+      display: flex;
+      flex-direction: row;
+      .Homepage_Introduce_Video{
+        width: 60%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .Homepage_Introduce_Video_Control{
+          height: 65%;
+          width: 60%;
+        }
+      }
+      .Homepage_Introduce_Text{
+        height: 85%;
+        width: 35%;
+        display: flex;
+        justify-content: center;
+        align-items:end;
+        .Homepage_Introduce_Text_QuotationMark{
+          width: 100%;
+          height: 60%;
+          position: relative;
+          display: flex;
+
+          align-items: center;
+          .Homepage_Introduce_QuotationMark1{
+            width: 25%;
+            height: 25%;
+            position: absolute;
+            top: 0;
+            left: 0;
+          }
+          .Homepage_Introduce_MainText{
+            width: 80%;  
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-left: 10%;
+            .Homepage_Introduce_MainText1{
+              font-family: "BancheroBold";
+              font-size: 70%;
+            }
+            .Homepage_Introduce_MainText2{
+              font-family: "BancheroBold";
+              font-size: 70%;
+            }
+          }
+          .Homepage_Introduce_QuotationMark2{
+            width: 20%;
+            height: 25%;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+          }
+        }
+      }
+    }
+    .Homepage_Seperate2{
+      height: 5vh;
+      background-color: black;
+    }
+    .Homepage_About{
+      height: 70vh;
+      width: 100%;
+      background-color: #E4E1D8;
+      padding-top: 1%;
+      .Homepage_About_Title{
+        display: flex;
+        flex-direction: row;
+        height: 65%;
+        margin-top: 10%;
+        margin-left: 12%;
+
+        .Homepage_About_Title1{
+          font-size: 150%;
+          height: 100%;
+          width: 40%;
+          font-family: "Ladyrose";
+          padding-top: 5%;
+          position: relative;
+          text-align: right;
+        }
+        .Homepage_About_Title2{
+          height: 100%;
+          width: 60%;
+          background-image:url('../assets/imgBrother/mybrother7.webp');
+          background-position: 50% 50%;
+          background-repeat: no-repeat;
+          background-size: cover;
+          font-size: 150%;
+          font-family: "Ladyrose";
+          margin-left: 3%;
+          padding-left: 3%;
+          padding-top: 5%;
+          color: white;
+        }
+        .Homepage_About_Title_Img{
+          position: absolute;
+          top: 17%;
+          left: 15%;
+          height: 70%;
+          width: 130%;
+          background-image:url('../assets/imgBrother/mybrother5.webp');
+          background-position: 50% 50%;
+          background-repeat: no-repeat;
+          background-size: cover;
+          border: 10px solid #E4E1D8;
+        }
+      }
+      .Homepage_About_Text{
+        width: 80%;
+        height:10%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-left: 12%;
+        margin-top: 10%;
+        line-height: 15px;
+        .Homepage_About_Text1{
+          font-family: "Ladyrose";
+          font-size: 70%;
+        }
+        .Homepage_About_Text2{
+          width: 100%;
+          font-family: "Ladyrose";
+          font-size: 70%;
+        }
+      }
+      .Homepage_About_Button{
+        width: 90%;
+        height: 5%;
+        display: flex;
+        align-items: center;
+        justify-content: right;
+        .Homepage_About_Button_Text{
+          width: 100px;
+          height: 90%;
+          color: white;
+          background-color: black;
+          border: none;
+          font-family: "BancheroBold";
+        }
+      }
+    }
+    .Homepage_Achive{
+      height: 50vh;
+      width: 100%;
+      background-color: white;
+      .Homepage_Achive_Title{
+        height: 20%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 5%;
+
+        .Homepage_Achive_Title1{
+          font-size: 150%;
+          font-family: "Ladyrose";
+        }
+        .Homepage_Achive_Title2_Border{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 260px;
+          height: 40px;
+          background-color: black;
+          margin-top: 5px;
+          .Homepage_Achive_Title2{
+            color: #E4E1D8;
+            font-size: 150%;
+            font-family: "Ladyrose";
+            margin-top:5px ;
+          }
+        }
+      }
+      .Homepage_Achive_Text{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 15%;
+        margin-top: 5%;
+        margin-bottom: 7%;
+        .Homepage_Achive_Text_Content{
+          width: 80%;
+          font-family: "SemiBold15";
+          font-size: 90%;
+          text-align: center;
+          line-height: 20px;
+        }
+      }
+      .Homepage_Achive_Achive{
+        height: 50%;
+        width: 100%;
+        .Homepage_Achive_Achive_Content{
+          height: 70%;
+          width: 100%;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-evenly;
+          align-items: center;
+          .Homepage_Achive_Achive_Convention{
+            width: 25vw;
+            height: 25vw;
+            background-color: #E4E1D8;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 5px 5px 10px 1px grey;
+            .Homepage_Achive_Achive_Convention_Img{
+              width: 80%;
+              height: 50%;
+            }
+            .Homepage_Achive_Achive_Convention_Text{
+              width: 80%;
+              height: 10%;
+              font-family: "Ladyrose";
+              text-align: center;
+              font-size: 50%;
+            }
+          }
+          .Homepage_Achive_Achive_YrsExper{
+            width: 30vw;
+            height: 30vw;
+            background-color: #E4E1D8;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 5px 5px 10px 1px grey;
+            .Homepage_Achive_Achive_YrsExper_Img{
+              width: 50%;
+              height: 70%;
+            }
+            .Homepage_Achive_Achive_YrsExper_Text{
+              width: 80%;
+              height: 25%;
+              font-family: "Ladyrose";
+              text-align: center;
+              font-size: 70%;
+            }
+          }
+          .Homepage_Achive_Achive_Trophies{
+            width: 25vw;
+            height: 25vw;
+            background-color: #E4E1D8;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 5px 5px 10px 1px grey;
+            .Homepage_Achive_Achive_Trophies_Img{
+              width: 80%;
+              height: 50%;
+            }
+            .Homepage_Achive_Achive_Trophies_Text{
+              width: 80%;
+              height: 10%;
+              font-family: "Ladyrose";
+              text-align: center;
+              font-size: 50%;
+            }
+          }
+        }
+        .Homepage_Achive_Achive_Details{
+          height: 20%;
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          .Homepage_Achive_Achive_Details_Button{
+            height: 25px;
+            width: 120px;
+            margin-top: 5%;
+            font-family: "BancheroBold";
+            font-size: 90%;
+            border: 2px solid black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+        }
+      }
+    }
+    .Homepage_Gallery{
+      height: 70vh;
+      width: 100%;
+      background-color:#2d2e2d ;
+      .Homepage_Gallery_Name{
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        width: 100%;
+        height: 10%;
+        color:gray;
+        font-family: "CeniosdemoRegular";
+        font-size: 120%;
+        letter-spacing: 5px;
+      }
+      .Homepage_Gallery_Title{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 10%;
+        color:#b38632;
+        font-family: "Ladyrose";
+        font-size: 180%;
+        letter-spacing: 5px;
+      }
+      .Homepage_Gallery_Text{
+        height: 15%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        line-height: 18px;
+        .Homepage_Gallery_Text_Content{
+          width: 70%;
+          color: white;
+          font-family: "Medium15";
+          font-size: 80%;
+          text-align: center;
+        }
+      }
+    }
+    .Homepage_Seperate3{
+      height: 5vh;
+      background-color: #E4E1D8;
+    }
+    .Homepage_Contact{
+      height: 30vh;
+      width: 100%;
+      background-color: black;
+      .Homepage_Contact_Title{
+        height: 25%;
+        font-size: 180%;
+        font-family: "Ladyrose";
+        color:#b38632;
+        display: flex;
+        align-items: end;
+        margin-left: 12%;
+
+      }
+      .Homepage_Contact_Content{
+        height: 50%;
+        display: flex;
+        flex-direction: row;
+        margin-top: 5%;
+        .Homepage_Contact_Corlor{
+          height: 100%;
+          width: 10%;
+          background-color:  #E4E1D8;
+          margin-right: 5%;
+        }
+        .Homepage_Contact_Content_Icon_Color{
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          width: 70%;
+          justify-content: space-between;
+          .Homepage_Contact_Content_Phone{
+            height: 15%;
+            display: flex;
+            width: 100%;
+            flex-direction: row;
+            .Homepage_Contact_Content_Phone_Icon{
+              color: white;
+              margin-right: 7%;
+              font-size: 80%;
+            }
+            .Homepage_Contact_Content_Phone_Text{
+              color: white;
+              font-size: 80%;
+              font-family: "Medium15";
+            }
+          }
+          .Homepage_Contact_Content_Insta{
+            height: 15%;
+            display: flex;
+            width: 100%;
+            flex-direction: row;
+            .Homepage_Contact_Content_Insta_Icon{
+              color: white;
+              margin-right: 7%;
+              font-size: 80%;
+            }
+            .Homepage_Contact_Content_Insta_Text{
+              color: white;
+              font-size: 80%;
+              font-family: "Medium15";
+            }
+          }
+          .Homepage_Contact_Content_Mail{
+            height: 15%;
+            display: flex;
+            width: 100%;
+            flex-direction: row;
+            .Homepage_Contact_Content_Mail_Icon{
+              color: white;
+              margin-right: 7%;
+              font-size: 80%;
+            }
+            .Homepage_Contact_Content_Mail_Text{
+              color: white;
+              font-size: 80%;
+              font-family: "Medium15";
+            }
+          }
+          .Homepage_Contact_Content_Locate{
+            height: 15%;
+            display: flex;
+            width: 100%;
+            flex-direction: row;
+            .Homepage_Contact_Content_Locate_Icon{
+              color: white;
+              margin-right: 7%;
+              font-size: 80%;
+            }
+            .Homepage_Contact_Content_Locate_Text{
+              color: white;
+              font-size: 80%;
+              font-family: "Medium15";
+            }
+          }
+        }
+
+      }
+    }
+    .Homepage_Map{
+      height: 30vh;
+      width: 100%;
+      .Homepage_Map_Size{
+        height: 100%;
+        width: 100%;
+        border: none;
+      }
+    }
+    .Homepage_footer{
+      height: 25vh;
     }
   }
-  .Art_link {
-    display: flex;
-    height: 50%;
-    width: 50%;
-    background-image: url("../../../imgBrother/mybrother5.webp");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    font-size: 200%;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-family: Copperplate;
-    text-decoration: none;
-    -webkit-filter: brightness(100%);
-    margin-bottom: 15vh;
-    border: 2px solid white;
-    border-radius: 20px;
-    &:hover {
-      -webkit-filter: brightness(50%);
-      -webkit-transition: all 1s ease;
-      -moz-transition: all 1s ease;
-      -o-transition: all 1s ease;
-      -ms-transition: all 1s ease;
-      transition: all 1s ease;
-    }
-  }
-  .About_link {
-    display: flex;
-    height: 50%;
-    width: 50%;
-    background-image: url("../../../imgBrother/mybrother2.webp");
-    background-position: 100% 50%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    font-size: 200%;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-family: Copperplate;
-    text-decoration: none;
-    -webkit-filter: brightness(100%);
-    margin-bottom: 15vh;
-    border: 2px solid white;
-    border-radius: 20px;
-    &:hover {
-      -webkit-filter: brightness(50%);
-      -webkit-transition: all 1s ease;
-      -moz-transition: all 1s ease;
-      -o-transition: all 1s ease;
-      -ms-transition: all 1s ease;
-      transition: all 1s ease;
-    }
-  }
-  .Contact_link {
-    display: flex;
-    height: 50%;
-    width: 50%;
-    background-image: url("../../../imgBrother/mybrother4.webp");
-    background-position: 50% 10%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    font-size: 200%;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-family: Copperplate;
-    text-decoration: none;
-    -webkit-filter: brightness(100%);
-    margin-bottom: 15vh;
-    border: 2px solid white;
-    border-radius: 20px;
-    &:hover {
-      -webkit-filter: brightness(50%);
-      -webkit-transition: all 1s ease;
-      -moz-transition: all 1s ease;
-      -o-transition: all 1s ease;
-      -ms-transition: all 1s ease;
-      transition: all 1s ease;
-    }
-  }
-  .Author_location {
-    display: flex;
-    flex-direction: column;
-    height: 80%;
-    background-color: rgb(121, 121, 121);
-    color: white;
-    align-items: center;
-    justify-content: center;
-  }
+  // .Homepage {
+  //   background-image: url("../../../imgBrother/Min.mp4");
+  //   height: 100vh;
+  //   overflow: auto;
+  //   background-position: center;
+  //   background-attachment: fixed;
+  //   background-repeat: no-repeat;
+  //   background-size: cover;
+  // }
+  // .Homepage_header_text {
+  //   height: 100%;
+  // }
+  // .Homepage_text {
+  //   display: flex;
+  //   flex-direction: column;
+  //   height: 80%;
+  //   color: white;
+  //   align-items: center;
+  //   justify-content: center;
+  // }
+  // .text1 {
+  //   color: #c99e3e;
+  //   font-family: Copperplate;
+  //   padding-bottom: 40px;
+  //   font-size: 30px;
+  // }
+  // .text2 {
+  //   display: flex;
+  //   flex-direction: column;
+  //   align-items: center;
+  //   justify-content: center;
+  //   padding-bottom: 330px;
+  //   padding-top: 120px;
+  //   font-size: 60px;
+  // }
+  // .text2_1 {
+  //   align-items: center;
+  //   justify-content: center;
+  //   font-family: Copperplate;
+  // }
+  // .text2_2 {
+  //   align-items: center;
+  //   justify-content: center;
+  //   font-family: Copperplate;
+  // }
+  // .link_page {
+  //   height: 200vh;
+  //   width: 100%;
+  //   display: flex;
+  //   flex-direction: column;
+  //   overflow: auto;
+  //   align-items: center;
+  //   justify-content: center;
+  // }
+  // .Tattoos_link {
+  //   display: flex;
+  //   height: 50%;
+  //   width: 50%;
+  //   background-image: url("../../../imgBrother/mybrother3.webp");
+  //   background-position: 50% 50%;
+  //   background-repeat: no-repeat;
+  //   background-size: cover;
+  //   font-size: 200%;
+  //   align-items: center;
+  //   justify-content: center;
+  //   color: white;
+  //   font-family: Copperplate;
+  //   text-decoration: none;
+  //   -webkit-filter: brightness(100%);
+  //   margin-bottom: 15vh;
+  //   border: 2px solid white;
+  //   border-radius: 20px;
+  //   &:hover {
+  //     -webkit-filter: brightness(50%);
+  //     -webkit-transition: all 1s ease;
+  //     -moz-transition: all 1s ease;
+  //     -o-transition: all 1s ease;
+  //     -ms-transition: all 1s ease;
+  //     transition: all 1s ease;
+  //   }
+  // }
+  // .Art_link {
+  //   display: flex;
+  //   height: 50%;
+  //   width: 50%;
+  //   background-image: url("../../../imgBrother/mybrother5.webp");
+  //   background-position: center;
+  //   background-repeat: no-repeat;
+  //   background-size: cover;
+  //   font-size: 200%;
+  //   align-items: center;
+  //   justify-content: center;
+  //   color: white;
+  //   font-family: Copperplate;
+  //   text-decoration: none;
+  //   -webkit-filter: brightness(100%);
+  //   margin-bottom: 15vh;
+  //   border: 2px solid white;
+  //   border-radius: 20px;
+  //   &:hover {
+  //     -webkit-filter: brightness(50%);
+  //     -webkit-transition: all 1s ease;
+  //     -moz-transition: all 1s ease;
+  //     -o-transition: all 1s ease;
+  //     -ms-transition: all 1s ease;
+  //     transition: all 1s ease;
+  //   }
+  // }
+  // .About_link {
+  //   display: flex;
+  //   height: 50%;
+  //   width: 50%;
+  //   background-image: url("../../../imgBrother/mybrother2.webp");
+  //   background-position: 100% 50%;
+  //   background-repeat: no-repeat;
+  //   background-size: cover;
+  //   font-size: 200%;
+  //   align-items: center;
+  //   justify-content: center;
+  //   color: white;
+  //   font-family: Copperplate;
+  //   text-decoration: none;
+  //   -webkit-filter: brightness(100%);
+  //   margin-bottom: 15vh;
+  //   border: 2px solid white;
+  //   border-radius: 20px;
+  //   &:hover {
+  //     -webkit-filter: brightness(50%);
+  //     -webkit-transition: all 1s ease;
+  //     -moz-transition: all 1s ease;
+  //     -o-transition: all 1s ease;
+  //     -ms-transition: all 1s ease;
+  //     transition: all 1s ease;
+  //   }
+  // }
+  // .Contact_link {
+  //   display: flex;
+  //   height: 50%;
+  //   width: 50%;
+  //   background-image: url("../../../imgBrother/mybrother4.webp");
+  //   background-position: 50% 10%;
+  //   background-repeat: no-repeat;
+  //   background-size: cover;
+  //   font-size: 200%;
+  //   align-items: center;
+  //   justify-content: center;
+  //   color: white;
+  //   font-family: Copperplate;
+  //   text-decoration: none;
+  //   -webkit-filter: brightness(100%);
+  //   margin-bottom: 15vh;
+  //   border: 2px solid white;
+  //   border-radius: 20px;
+  //   &:hover {
+  //     -webkit-filter: brightness(50%);
+  //     -webkit-transition: all 1s ease;
+  //     -moz-transition: all 1s ease;
+  //     -o-transition: all 1s ease;
+  //     -ms-transition: all 1s ease;
+  //     transition: all 1s ease;
+  //   }
+  // }
+  // .Author_location {
+  //   display: flex;
+  //   flex-direction: column;
+  //   height: 80%;
+  //   background-color: rgb(121, 121, 121);
+  //   color: white;
+  //   align-items: center;
+  //   justify-content: center;
+  // }
 
-  .Author_location_text {
-    display: flex;
-    width: 100%;
-    height: 70%;
-    align-items: center;
-    justify-content: center;
-    .gg_map{
-      width: 90%;
-      height: 90%;
-      margin: 0;
-      padding: 0;
-      border: 5px solid rgb(48, 46, 46);
-      border-radius: 10px;
-    }
-  }
-  .Author_location_icon {
-    display: flex;
-    font-size: 200%;
-    width: 90%;
-    font-family: Copperplate;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 5%;
-    margin-left: 0;
-  }
+  // .Author_location_text {
+  //   width: 90%;
+  //   height: 70%;
+  //   border: 5px solid rgb(48, 46, 46);
+  //   border-radius: 10px;
+  //   margin-right: 5%;
+  // }
+  // .Author_location_icon {
+  //   display: flex;
+  //   font-size: 200%;
+  //   width: 90%;
+  //   font-family: Copperplate;
+  //   align-items: center;
+  //   justify-content: center;
+  //   margin-bottom: 5%;
+  //   margin-left: 0;
+  // }
+  
 
-  .Homepage_footer {
-    height: 55%;
-  }
+  // .Homepage_footer {
+  //   height: 55%;
+  // }
 }

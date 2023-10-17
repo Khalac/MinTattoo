@@ -4,28 +4,28 @@ import Footer from "../Footer/Footer";
 import "./TattoosPage.scss";
 
 function TattoosPage() {
-  function importAll(r) {
-    let images = {};
-    r.keys().forEach((item, index) => {
-      images[item.replace("./", "")] = r(item);
-    });
-    return images;
-  }
-  const images = importAll(
-    require.context("../../../imgTattoo", false, /\.webp$/)
-  );
-  let imgArr = [];
-  for (let i = 1; i <= 84; ++i) {
-    imgArr.push(images[`${i}.webp`]);
-  }
+  // function importAll(r) {
+  //   let images = {};
+  //   r.keys().forEach((item, index) => {
+  //     images[item.replace("./", "")] = r(item);
+  //   });
+  //   return images;
+  // }
+  // const images = importAll(
+  //   require.context("../../../imgTattoo", false, /\.webp$/)
+  // );
+  // let imgArr = [];
+  // for (let i = 1; i <= 84; ++i) {
+  //   imgArr.push(images[`${i}.webp`]);
+  // }
 
-  const listImg = imgArr.map((img) => {
-    return <img src={img} alt="img" loading="lazy" className="imgTattoos" />;
-  });
+  // const listImg = imgArr.map((img) => {
+  //   return <img src={img} alt="img" loading="lazy" className="imgTattoos" />;
+  // });
 
   return (
     <div className="TattoosPage">
-      <div className="TattoosPage_header">
+      {/* <div className="TattoosPage_header">
         <Header />
       </div>
       <div className="TattoosPage_headImg">
@@ -35,7 +35,7 @@ function TattoosPage() {
       <div className="TattoosPage_img">{listImg}</div>
       <div className="TattoosPage_footer">
         <Footer />
-      </div>
+      </div> */}
     </div>
   );
 }

@@ -43,45 +43,64 @@
 
 @media screen and (max-width: 700px) {
     .Footer{
-        height: 100%;
-        background-color: rgb(49, 49, 49);
-    }
-    .Footer_linkToPage{
         display: flex;
-        padding-top: 20%;
-        align-items: center;
-        justify-content: center;
-    }
-    .Footer_link{
-        text-decoration: none;
-        color: #c99e3e;
-        font-family: Copperplate;
-        font-size: 120%;
-        padding: 4%;
-        &:hover{
-            color:rgb(165, 164, 164);
+        flex-direction: row;
+
+        background-color: #E4E1D8;
+        .Footer_Infor{
+            height: 100%;
+            width: 60%;
+            display: flex;
+            flex-direction: column;
+            font-family: "Ladyrose";
+            margin-left: 12%;
+            .Footer_Infor_Logo{
+                width: 40%;
+                height: 30%;
+                margin-top: 8%;
+            }
+            .Footer_Infor_IG{
+                margin-bottom: 5%;
+                font-size: 80%;
+                height: 10%;
+            }
+            .Footer_Infor_Phone{
+                margin-bottom: 5%;
+                font-size: 80%;
+                height: 10%;
+            }
+            .Footer_Infor_Icon{
+                display: flex;
+                flex-direction: row;
+                height: 10%;
+
+                .Footer_Infor_Icon_Fb{
+                    font-size: 150%;
+                    margin-right: 10%;
+                }
+                .Footer_Infor_Icon_Insta{
+                    font-size: 150%;
+                }
+            }
+        }
+        .Footer_Link{
+            width: 20%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+
+            .Footer_Page{
+                font-family: "Ladyrose";
+                font-size: 80%;
+                cursor: pointer;
+                text-decoration: none;
+                color: black;
+            }
         }
     }
-    .Icon_socialMedia{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 250%;
-        padding-top: 7%;
-        padding-right:2% ;
-    }
-    .Footer_Icon{
-        color: white;
-        padding: 8%;
-    }
-    .Footer_text{
-        color: white;
-        display: flex;
-        align-items: center;
-        font-size: 120%;
-        padding-top: 7%;
-        justify-content: center;
-    }
+    
 }
 
 

@@ -15,8 +15,8 @@ root.render(
         <Route exac path="/" element={<Homepage />} />
         <Route exac path="About" element={<AboutPage />} />
         <Route exac path="Contact" element={<ContactPage />} />
-        <Route exac path="Tattoos" element={<TattoosPage />} />
-        <Route exac path="Art" element={<ArtPage />} />
+        <Route exac path="Gallery" element={<TattoosPage />} />
+        <Route exac path="Awards" element={<ArtPage />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
