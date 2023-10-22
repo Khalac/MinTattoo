@@ -2,6 +2,9 @@ import "./Homepage.scss";
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 import React from "react";
+import { useNavigate } from "react-router-dom";
+
+import { useEffect, useState } from "react";
 
 import {
   FaPhone,
@@ -33,6 +36,206 @@ import Exper from "../assets/Text/Exper.png";
 import Trophies from "../assets/Text/Trophies.png";
 
 function Homepage() {
+  const [nameStyle, setNameStyle] = useState("Realism");
+  const [style, setStyle] = useState();
+
+  const [activeRealism, setActiveRealism] = useState(true);
+  const [activeColor, setActiveColor] = useState(false);
+  const [activeFineLine, setActiveFineLine] = useState(false);
+  const [activeAsian, setActiveAsian] = useState(false);
+  const [activeBlackGrey, setActiveBlackGrey] = useState(false);
+  const [activePortrait, setActivePortrait] = useState(false);
+
+  useEffect(() => {
+    if (nameStyle === "Realism") setStyle(listImgRealism);
+    if (nameStyle === "Color") setStyle(listImgColor);
+    if (nameStyle === "FineLine") setStyle(listImgFineLine);
+    if (nameStyle === "BlackGrey") setStyle(listImgBlackGrey);
+    if (nameStyle === "Asian") setStyle(listImgAsian);
+    if (nameStyle === "Portrait") setStyle(listImgPortrait);
+  });
+  function importAll(r) {
+    let images = {};
+    r.keys().forEach((item, index) => {
+      images[item.replace("./", "")] = r(item);
+    });
+    return images;
+  }
+  const imagesRealism = importAll(
+    require.context("../assets/realism", false, /\.webp$/)
+  );
+  let imgRealism = [];
+  for (let i = 1; i <= 15; ++i) {
+    imgRealism.push(imagesRealism[`${i}.webp`]);
+  }
+  var realism = 0;
+  const listImgRealism = imgRealism.map((img) => {
+    realism++;
+    return (
+      <img
+        src={img}
+        alt="img"
+        loading="lazy"
+        className={`Realism_` + realism}
+      />
+    );
+  });
+
+  const imagesPortrait = importAll(
+    require.context("../assets/portrait", false, /\.webp$/)
+  );
+  let imgPortrait = [];
+  for (let i = 1; i <= 20; ++i) {
+    imgPortrait.push(imagesPortrait[`${i}.webp`]);
+  }
+  var portrait = 0;
+  const listImgPortrait = imgPortrait.map((img) => {
+    portrait++;
+    return (
+      <img
+        src={img}
+        alt="img"
+        loading="lazy"
+        className={`Portrait_` + portrait}
+      />
+    );
+  });
+
+  const imagesColor = importAll(
+    require.context("../assets/color", false, /\.webp$/)
+  );
+  let imgColor = [];
+  for (let i = 1; i <= 30; ++i) {
+    imgColor.push(imagesColor[`${i}.webp`]);
+  }
+  var color = 0;
+  const listImgColor = imgColor.map((img) => {
+    color++;
+    return (
+      <img src={img} alt="img" loading="lazy" className={`Color_` + color} />
+    );
+  });
+  console.log(listImgColor);
+
+  const imagesFineLine = importAll(
+    require.context("../assets/fineline", false, /\.webp$/)
+  );
+  let imgFineLine = [];
+  for (let i = 1; i <= 10; ++i) {
+    imgFineLine.push(imagesFineLine[`${i}.webp`]);
+  }
+  var fineline = 0;
+  const listImgFineLine = imgFineLine.map((img) => {
+    fineline++;
+    return (
+      <img
+        src={img}
+        alt="img"
+        loading="lazy"
+        className={`FineLine_` + fineline}
+      />
+    );
+  });
+
+  const imagesBlackGrey = importAll(
+    require.context("../assets/blackgrey", false, /\.webp$/)
+  );
+  let imgBlackGrey = [];
+  for (let i = 1; i <= 25; ++i) {
+    imgBlackGrey.push(imagesBlackGrey[`${i}.webp`]);
+  }
+  var blackgrey = 0;
+  const listImgBlackGrey = imgBlackGrey.map((img) => {
+    blackgrey++;
+    return (
+      <img
+        src={img}
+        alt="img"
+        loading="lazy"
+        className={`Blackgrey_` + blackgrey}
+      />
+    );
+  });
+
+  const imagesAsian = importAll(
+    require.context("../assets/asian", false, /\.webp$/)
+  );
+  let imgAsian = [];
+  for (let i = 1; i <= 9; ++i) {
+    imgAsian.push(imagesAsian[`${i}.webp`]);
+  }
+  var asian = 0;
+  const listImgAsian = imgAsian.map((img) => {
+    asian++;
+    return (
+      <img src={img} alt="img" loading="lazy" className={`Asian_` + asian} />
+    );
+  });
+
+  const setRealism = () => {
+    setNameStyle("Realism");
+    setActiveRealism(true);
+    setActivePortrait(false);
+    setActiveFineLine(false);
+    setActiveColor(false);
+    setActiveBlackGrey(false);
+    setActiveAsian(false);
+  };
+  const setPortrait = () => {
+    setNameStyle("Portrait");
+    setActiveRealism(false);
+    setActivePortrait(true);
+    setActiveFineLine(false);
+    setActiveColor(false);
+    setActiveBlackGrey(false);
+    setActiveAsian(false);
+  };
+  const setFineLine = () => {
+    setNameStyle("FineLine");
+    setActiveRealism(false);
+    setActivePortrait(false);
+    setActiveFineLine(true);
+    setActiveColor(false);
+    setActiveBlackGrey(false);
+    setActiveAsian(false);
+  };
+  const setColor = () => {
+    setNameStyle("Color");
+    setActiveRealism(false);
+    setActivePortrait(false);
+    setActiveFineLine(false);
+    setActiveColor(true);
+    setActiveBlackGrey(false);
+    setActiveAsian(false);
+  };
+  const setBlackGrey = () => {
+    setNameStyle("BlackGrey");
+    setActiveRealism(false);
+    setActivePortrait(false);
+    setActiveFineLine(false);
+    setActiveColor(false);
+    setActiveBlackGrey(true);
+    setActiveAsian(false);
+  };
+  const setAsian = () => {
+    setNameStyle("Asian");
+    setActiveRealism(false);
+    setActivePortrait(false);
+    setActiveFineLine(false);
+    setActiveColor(false);
+    setActiveBlackGrey(false);
+    setActiveAsian(true);
+  };
+  const nav = useNavigate();
+  const linkToAbout = () => {
+    nav("/About", { replace: true });
+  };
+  const linkToAwards = () => {
+    nav("/Awards", { replace: true });
+  };
+  const linkToGallery = () => {
+    nav("/Gallery", { replace: true });
+  };
   return (
     <div className="Homepage">
       <div className="Homepage_Header">
@@ -131,7 +334,9 @@ function Homepage() {
           </div>
         </div>
         <div className="Homepage_About_Button">
-          <button className="Homepage_About_Button_Text">Read more</button>
+          <button className="Homepage_About_Button_Text" onClick={linkToAbout}>
+            Read more
+          </button>
         </div>
       </div>
       <div className="Homepage_Achive">
@@ -183,7 +388,10 @@ function Homepage() {
             </div>
           </div>
           <div className="Homepage_Achive_Achive_Details">
-            <div className="Homepage_Achive_Achive_Details_Button">
+            <div
+              className="Homepage_Achive_Achive_Details_Button"
+              onClick={linkToAwards}
+            >
               View Details
             </div>
           </div>
@@ -196,6 +404,76 @@ function Homepage() {
           <div className="Homepage_Gallery_Text_Content">
             Minh's artistic journey began at a very young age, when his
             fascination with drawing small objects sparked his creative spirit.
+          </div>
+        </div>
+        <div className="Homepage_Gallery_Img">
+          <div className="Homepage_Gallery_Img_Styles">
+            <div
+              className={
+                activeRealism
+                  ? `Homepage_Gallery_Img_Styles_Style active`
+                  : `Homepage_Gallery_Img_Styles_Style`
+              }
+              onClick={setRealism}
+            >
+              Realism
+            </div>
+            <div
+              className={
+                activePortrait
+                  ? `Homepage_Gallery_Img_Styles_Style active`
+                  : `Homepage_Gallery_Img_Styles_Style`
+              }
+              onClick={setPortrait}
+            >
+              Portrait
+            </div>
+            <div
+              className={
+                activeFineLine
+                  ? `Homepage_Gallery_Img_Styles_Style active`
+                  : `Homepage_Gallery_Img_Styles_Style`
+              }
+              onClick={setFineLine}
+            >
+              Fine line
+            </div>
+            <div
+              className={
+                activeColor
+                  ? `Homepage_Gallery_Img_Styles_Style active`
+                  : `Homepage_Gallery_Img_Styles_Style`
+              }
+              onClick={setColor}
+            >
+              Color
+            </div>
+            <div
+              className={
+                activeBlackGrey
+                  ? `Homepage_Gallery_Img_Styles_Style active`
+                  : `Homepage_Gallery_Img_Styles_Style`
+              }
+              onClick={setBlackGrey}
+            >
+              Black&Grey
+            </div>
+            <div
+              className={
+                activeAsian
+                  ? `Homepage_Gallery_Img_Styles_Style active`
+                  : `Homepage_Gallery_Img_Styles_Style`
+              }
+              onClick={setAsian}
+            >
+              Asian
+            </div>
+          </div>
+          <div className="Homepage_Gallery_Img_Container">{style}</div>
+        </div>
+        <div className="Homepage_Gallery_Button">
+          <div className="Homepage_Gallery_Button_Text" onClick={linkToGallery}>
+            View more
           </div>
         </div>
       </div>

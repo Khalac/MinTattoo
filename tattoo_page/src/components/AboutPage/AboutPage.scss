@@ -1,120 +1,189 @@
-// .AboutPage {
-//   background-image: url("../../../imgBrother/mybrother.webp");
-//   height: 100vh;
-//   width: 100vw;
-//   overflow: auto;
-//   background-position: center;
-//   background-attachment: fixed;
-//   background-repeat: no-repeat;
-//   background-size: cover;
-// }
-// .Author_name {
-//   display: flex;
-//   color: #c99e3e;
-//   font-size: 300%;
-//   height: 40%;
-//   align-items: center;
-//   justify-content: center;
-//   font-family: Copperplate;
-// }
-// .About_text {
-//   display: flex;
-//   flex-direction: column;
-//   color: white;
-//   background-color: rgb(121, 121, 121);
-//   font-size: 150%;
-//   width: 100%;
-//   align-items: center;
-//   justify-content: center;
-//   .para {
-//     line-height: 4vh;
-//     width: 50%;
-//     text-align: left;
-//     font-family: "Lucida Console", "Courier New", monospace;
-//   }
-//   .para_end {
-//     line-height: 4vh;
-//     text-align: center;
-//     font-family: "Lucida Console", "Courier New", monospace;
-//   }
-//   .para_bg{
-//     font-size: 200%;
-//     font-family: Copperplate;
-//   }
-//   .para_prize{
-//     width: 100%;
-//     text-align: left;
-//     font-size: 200%;
-//     font-family: Copperplate;
-//   }
-//   .para_prize_tilte{
-//     font-size: 140%;
-//     color: rgb(246, 246, 156);
-//     font-family: Copperplate;
-//   }
-//   .About_img{
-//     background-image: url("../../../imgBrother/mybrother6.webp");
-//     background-position: 50% 20%;
-//     background-repeat: no-repeat;
-//     background-size: cover;
-//     width: 40vw;
-//     height: 90vh;
-//     border: 10px solid white;
-//     margin: 5%;
-//     box-shadow: 1px 1px 20px 10px rgb(52, 52, 52);
-//   }
-// }
+@media screen and (max-width:768px) {
+  .Aboutpage{
+    background-color: #E4E1D8;
+    .Aboutpage_Header{
+      height: 5vh;
+    }
+    .Aboutpage_About1{
+      height: 60vh;
+      width: 100%;
+      padding-top: 10%;
+      background-image:url('../assets/bg/About/Asset\ 25.jpg');
+      background-position: 50% 70%;
+      background-repeat: no-repeat;
+      background-size: 130%;
+      .Aboutpage_About_Title{
+        display: flex;
+        flex-direction: row;
+        height: 65%;
+        margin-left: 12%;
+        .Aboutpage_About_Title1{
+          font-size: 150%;
+          height: 100%;
+          width: 40%;
+          font-family: "Ladyrose";
+          padding-top: 5%;
+          position: relative;
+          text-align: right;
+        }
+        .Aboutpage_About_Title2{
+          height: 100%;
+          width: 60%;
+          background-image:url('../assets/imgBrother/mybrother7.webp');
+          background-position: 50% 50%;
+          background-repeat: no-repeat;
+          background-size: cover;
+          font-size: 150%;
+          font-family: "Ladyrose";
+          margin-left: 3%;
+          padding-left: 3%;
+          padding-top: 5%;
+          color: white;
+        }
+        .Aboutpage_About_Title_Img{
+          position: absolute;
+          top: 17%;
+          left: 15%;
+          height: 70%;
+          width: 130%;
+          background-image:url('../assets/imgBrother/mybrother5.webp');
+          background-position: 50% 50%;
+          background-repeat: no-repeat;
+          background-size: cover;
+          border: 10px solid #E4E1D8;
+        }
+      }
+      .Aboutpage_About_Text{
+        width: 80%;
+        height:20%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-left: 12%;
+        margin-top: 10%;
+        line-height: 15px;
+        .Aboutpage_About_Text1{
+          font-family: "Ladyrose";
+          font-size: 70%;
+        }
+        .Aboutpage_About_Text2{
+          width: 100%;
+          font-family: "Ladyrose";
+          font-size: 70%;
+        }
+      }
+    
+    }
+    .Aboutpage_About2{
+      display: flex;
+      flex-direction: column;
+      height: 45vh;
+      width: 100%;
+      background-color: #2d2e2d;
+      align-items: center;
 
-// .AboutPage_footer {
-//   height: 50%;
-// }
-
-// @media screen and (max-width: 700px) {
-//   .Author_name {
-//     display: flex;
-//     color: #c99e3e;
-//     font-family: Copperplate;
-//     font-size: 200%;
-//     height: 40%;
-//     align-items: center;
-//     justify-content: center;
-//   }
-//   .About_text {
-//     display: flex;
-//     flex-direction: column;
-//     color: white;
-//     background-color: rgb(121, 121, 121);
-//     font-size: 100%;
-//     width: 100%;
-//     align-items: center;
-//     justify-content: center;
-//     .para {
-//       line-height: 3.5vh;
-//       width: 65%;
-//       text-align: left;
-//     }
-//     .para_bg{
-//       line-height: 3.5vh;
-//     }
-//     .para_end {
-//       line-height: 3.5vh;
-//       text-align: center;
-//     }
-//     .About_img{
-//       margin-top: 20%;
-//       margin-bottom: 10%;
-//       width: 80vw;
-//       height: 60vh;
-//       border: 8px solid white;
-//       background-image: url("../../../imgBrother/mybrother6.webp");
-//       background-position: 50% 50% ;
-//       background-repeat: no-repeat;
-//       background-size: cover;
-//       box-shadow: 1px 1px 20px 10px rgb(52, 52, 52);
-//     }
-//   }
-
-//   .AboutPage_footer {
-//     height: 55%;
-//   }
-// }
+      .Aboutpage_About2_Img{
+        height: 70%;
+        width: 100%;
+        background-image:url('../assets/imgBrother/myBrother6.webp');
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .Aboutpage_About2_Text{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 30%;
+        width: 100%;
+        background-image:url('../assets/bg/About/Asset\ 26.jpg');
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+      background-size: 100%;
+        .Aboutpage_About2_Text_Content{
+          color: white;
+          font-family: "SemiBold15";
+          font-size: 80%;
+          text-align: left;
+          width: 80%;
+          line-height: 17px;
+        }
+      }
+    }
+    .Aboutpage_About3{
+      display: flex;
+      flex-direction: row;
+      height: 30vh;
+      width: 100%;
+      background-color: #E4E1D8;
+      align-items: center;
+      background-image:url('../assets/bg/About/Asset\ 27.jpg');
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+      background-size: 100%;
+      .Aboutpage_About3_Img{
+        height: 50%;
+        width: 50%;
+        background-image:url('../assets/imgBrother/imgBrother8.webp');
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-top: 10px solid #2d2e2d;
+        border-bottom: 10px solid #2d2e2d;
+      }
+      .Aboutpage_About3_Text{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 50%;
+        .Aboutpage_About3_Text_Content{
+          color: black;
+          font-family: "SemiBold15";
+          font-size: 80%;
+          text-align: left;
+          width: 80%;
+          line-height: 17px;
+        }
+      }
+    }
+    .Aboutpage_About4{
+      display: flex;
+      flex-direction: row;
+      height: 30vh;
+      width: 100%;
+      background-color: #2d2e2d;
+      align-items: center;
+      background-image:url('../assets/bg/About/Asset\ 28.jpg');
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+      background-size: 100%;
+      .Aboutpage_About4_Img{
+        height: 70%;
+        width: 30%;
+        background-image:url('../assets/imgBrother/imgBrother9.webp');
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .Aboutpage_About4_Text{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 60%;
+        .Aboutpage_About4_Text_Content{
+          color: white;
+          font-family: "SemiBold15";
+          font-size: 80%;
+          text-align: right;
+          width: 80%;
+          line-height: 17px;
+        }
+      }
+    }
+    .Aboutpage_Footer{
+      height: 25vh;
+    }
+  }
+}

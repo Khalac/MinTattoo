@@ -1,82 +1,123 @@
-// .ContactPage{
-//     background-image: url('../../../imgBrother/mybrother.webp');
-//     height: 100vh;
-//     overflow: auto;
-//     background-position: center;
-//     background-attachment: fixed;
-//     background-repeat: no-repeat;
-//     background-size: cover;
-//     width: 100%;
-// }
-// .Contact_text{
-//     display: flex;
-//     color: white;
-//     font-size: 300%;
-//     height: 40%;
-//     align-items: center;
-//     justify-content: center;
-//     font-family: Copperplate;
-//     color: #c99e3e;
-// }
-// .Contact_number_socialMedia{
-//     display: flex;
-//     flex-direction: column;
-//     color: white;
-//     background-color:  rgb(121, 121, 121);
-//     height: 50%;
-//     align-items: center;
-//     justify-content: center;
-// }
-// .Contact{
-//     display: flex;
-//     width: 80%;
-//     align-items: center;
-//     justify-content: center;
-//     font-size: 150%;
-//     padding: 2%;
-// }
-// .Icon{
-//     font-size: 100%;
-//     padding-right: 2%;
-// }
-// .ContactPage_footer{
-//     height: 50%;
-// }
 
 
-// @media screen and (max-width: 700px){
-//     .Contact_text{
-//         display: flex;
-//         color: white;
-//         font-size: 200%;
-//         height: 40%;
-//         align-items: center;
-//         justify-content: center;
-//         color: #c99e3e;
-//         font-family: Copperplate;
-//     }
-//     .Contact_number_socialMedia{
-//         display: flex;
-//         flex-direction: column;
-//         color: white;
-//         background-color:  rgb(121, 121, 121);
-//         height: 50%;
-//         align-items: center;
-//         justify-content: center;
-//     }
-//     .Contact{
-//         display: inline-flex;
-//         align-items: center;
-//         justify-content: center;
-//         width: 100%;
-//         font-size: 100%;
-//         padding: 5% 0%;
-        
-//     }
-//     .Icon{
-//         padding-right: 1%;
-//     }
-//     .ContactPage_footer {
-//         height: 55%;
-//       }
-// }
+@media screen and (max-width: 700px){
+  .ContactPage{
+    .ContactPage_Header{
+      height: 5vh;
+    }
+    .ContactPage_Background{
+      height: 30vh;
+      background-image:url('../assets/imgBrother/myBrother6.webp');
+          background-position: 50% 50%;
+          background-repeat: no-repeat;
+          background-size: cover;
+    }
+    .ContactPage_Content{
+      height: 40vh;
+      width: 100%;
+      background-color: #2d2e2d;
+      background-image:url('../assets/bg/mainpage/Asset\ 24.jpg');
+      background-position: 50% 80%;
+      background-repeat: no-repeat;
+      background-size: 100%;
+      .ContactPage_Title{
+        height: 25%;
+        font-size: 180%;
+        font-family: "Ladyrose";
+        color:#b38632;
+        display: flex;
+        align-items: end;
+        margin-left: 12%;
+
+      }
+      .ContactPage_Content{
+        height: 50%;
+        display: flex;
+        flex-direction: row;
+        margin-top: 5%;
+        background-color: #2d2e2d;
+        .ContactPage_Content_Corlor{
+          height: 100%;
+          width: 10%;
+          background-color:  #E4E1D8;
+          margin-right: 5%;
+        }
+        .ContactPage_Content_Icon{
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          width: 70%;
+          justify-content: space-between;
+          .ContactPage_Content_Icon_Phone{
+            height: 15%;
+            display: flex;
+            width: 100%;
+            flex-direction: row;
+            .ContactPage_Content_Icon_Phone_Icon{
+              color: white;
+              margin-right: 7%;
+              font-size: 80%;
+            }
+            .ContactPage_Content_Icon_Phone_Text{
+              color: white;
+              font-size: 80%;
+              font-family: "Medium15";
+            }
+          }
+          .ContactPage_Content_Icon_Insta{
+            height: 15%;
+            display: flex;
+            width: 100%;
+            flex-direction: row;
+            .ContactPage_Content_Icon_Insta_Icon{
+              color: white;
+              margin-right: 7%;
+              font-size: 80%;
+            }
+            .ContactPage_Content_Icon_Insta_Text{
+              color: white;
+              font-size: 80%;
+              font-family: "Medium15";
+            }
+          }
+          .ContactPage_Content_Icon_Mail{
+            height: 15%;
+            display: flex;
+            width: 100%;
+            flex-direction: row;
+            .ContactPage_Content_Icon_Mail_Icon{
+              color: white;
+              margin-right: 7%;
+              font-size: 80%;
+            }
+            .ContactPage_Content_Icon_Mail_Text{
+              color: white;
+              font-size: 80%;
+              font-family: "Medium15";
+            }
+          }
+          .ContactPage_Content_Icon_Locate{
+            height: 15%;
+            display: flex;
+            width: 100%;
+            flex-direction: row;
+            .ContactPage_Content_Icon_Locate_Icon{
+              color: white;
+              margin-right: 7%;
+              font-size: 80%;
+            }
+            .ContactPage_Content_Icon_Locate_Text{
+              color: white;
+              font-size: 80%;
+              font-family: "Medium15";
+            }
+          }
+        }
+    }
+  }
+    .ContactPage_Footer{
+      height: 25vh;
+    }
+  }
+
+}

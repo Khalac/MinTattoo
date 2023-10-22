@@ -1,0 +1,501 @@
+
+@media screen and (max-width: 800px){
+  .GalleryPage{
+    width: 100%;
+    .GalleryPage_Header{
+      width: 100%;
+      height: 5vh;
+    }
+    .GalleryPage_Title{
+      height: 30vh;
+      width: 100%;
+      background-image: url('../assets/bg/b.jpg');
+      background-position: 50% 10%;
+      background-repeat: no-repeat;
+      background-size: cover;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      .GalleryPage_Title_Text1{
+        width: 100%;
+        height: 20%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        margin-top: 5%;
+        .GalleryPage_Title_Text1_Img{
+          width: 70%;
+          height: 70%;
+        }
+      }
+      .GalleryPage_Title_Text2{
+        margin-top: 5%;
+        color: white;
+        height: 10%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: "Ladyrose";
+        font-size: 150%;
+        letter-spacing: 5px;
+      }
+    }
+    .GalleryPage_Text{
+      height: 20vh;
+      width: 100%;
+      background-color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-image: url('../assets/bg/Gallery/Asset\ 31.jpg');
+      background-position: 50% 0%;
+      background-repeat: no-repeat;
+      background-size: 130%;
+      .GalleryPage_Text_Content{
+        width: 80%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-family: "Medium15";
+        font-size: 80%;
+        line-height: 15px;
+      }
+    }
+    .GalleryPage_Img{
+      height: 60vh;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      background-color:#2d2e2d ;
+      background-image: url('../assets/bg/Gallery/Asset\ 31.jpg');
+      background-position: 50% 100%;
+      background-repeat: no-repeat;
+      background-size: cover;
+      .GalleryPage_Img_Styles{
+        width: 100%;
+        height: 15%;
+        display: grid;
+        grid-template-columns: 30% 30% 30%;
+        justify-content: center;
+        padding-bottom: 5%;
+        .GalleryPage_Img_Styles_Style{
+          color: white;
+          font-family: "Ladyrose";
+          font-size: 80%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          cursor: pointer;
+        }
+      }
+      .GalleryPage_Img_Container{
+        min-height: 80%;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 30% 30% 30%;
+        align-items: center;
+        justify-content: center;
+        overflow-y: auto;
+        overflow-x: hidden;
+        margin-left: 3%;
+        row-gap: 5%;
+
+        .imgTattoo{
+          width: 80%;
+          height: 90%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+      
+    }
+    .GalleryPage_Pricing{
+      height: 40vh;
+      width: 100%;
+      background-color: #2d2e2d;
+      background-image: url('../assets/bg/Gallery/Asset\ 33.jpg');
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+      background-size: cover;
+      .GalleryPage_Pricing_Title{
+        width: 80%;
+        font-family: "Ladyrose";
+        color:white;
+        height: 30%;
+        display: flex;
+        align-items: center;
+        padding-left: 10%;
+        font-size: 180%;
+      }
+      .GalleryPage_Pricing_Table{
+        height: 40%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .GalleryPage_Pricing_Table_Container{
+          height: 100%;
+          width: 80%;
+          background-color: white;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          .GalleryPage_Pricing_Table_Table1{
+            height: 25%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: "BancheroBold";
+            font-size: 120%;
+          }
+          .GalleryPage_Pricing_Table_Table2{
+            height: 40%;
+            width: 98%;
+            background-color: #2d2e2d;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            line-height: 18px;
+            .GalleryPage_Pricing_Table_Table2_Text{
+              width: 80%;
+              font-family: "Medium15";
+              font-size: 80%;
+            }
+          }
+          .GalleryPage_Pricing_Table_Table3{
+            margin-top: 1%;
+            height: 28%;
+            width: 98%;
+            background-color: #2d2e2d;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-family: "Medium15";
+              font-size: 110%;
+          }
+        }
+      }
+      .GalleryPage_Pricing_Booking{
+        height: 30%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        .GalleryPage_Pricing_Booking_Text1{
+          color: #b38632;
+          font-family: "Ladyrose";
+          font-size: 65%;
+          height: 10%;
+        }
+        .GalleryPage_Pricing_Booking_Text2{
+          color: white;
+          font-size: 130%;
+          font-family: "Ladyrose";
+        }
+      }
+    }
+    .GalleryPage_Img{
+      height: 65vh;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding-top: 5%;
+      .GalleryPage_Img_Styles{
+        width: 100%;
+        height: 20%;
+        display: grid;
+        grid-template-columns: 30% 30% 30%;
+        justify-content: center;
+        margin-bottom: 5%;
+        .GalleryPage_Img_Styles_Style{
+          color: gray;
+          font-family: "Ladyrose";
+          font-size: 80%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          cursor: pointer;
+        }
+        .active{
+          color: white;
+        }
+      }
+      .GalleryPage_Img_Container{
+        min-height: 70%;
+        width: 90%;
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        grid-template-rows: auto auto auto auto;
+        align-items: center;
+        justify-content: center;
+        overflow-y: auto;
+        overflow-x: hidden;
+        column-gap: 5%;
+        row-gap: 5%;
+        margin-bottom: 10%;
+        .Realism_1, .Realism_2, .Realism_3, .Realism_4, .Realism_5, .Realism_6, .Realism_7, .Realism_8, .Realism_9, .Realism_10,.Realism_11, .Realism_12, .Realism_13, .Realism_14, .Realism_15{
+          width: 100%;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        .Realism_1{
+          grid-column: span 2;
+          grid-row: span 2;
+        }
+        .Realism_8{
+          grid-row: span 2;
+           grid-column: span 2;
+        }
+        .Realism_11{
+          grid-column: span 2;
+          grid-row: span 2;
+        }
+        .Portrait_1,.Portrait_2,.Portrait_3,.Portrait_4,.Portrait_5,.Portrait_6,.Portrait_7,.Portrait_8,.Portrait_9,.Portrait_10,.Portrait_11,.Portrait_12,.Portrait_13,.Portrait_14,.Portrait_15,.Portrait_16,.Portrait_17,.Portrait_18,.Portrait_19,.Portrait_20{
+          width: 100%;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        .Portrait_1,.Portrait_8,.Portrait_11,.Portrait_18{
+          grid-column: span 2;
+          grid-row: span 2;
+        }
+        
+        .FineLine_1,.FineLine_2,.FineLine_3,.FineLine_4,.FineLine_5,.FineLine_6,.FineLine_7,.FineLine_8,.FineLine_9,.FineLine_10{
+          width: 100%;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        .FineLine_1,.FineLine_8{
+          grid-column: span 2;
+          grid-row: span 2;
+        }
+
+        .Color_1,.Color_2,.Color_3,.Color_4,.Color_5,.Color_6,.Color_7,.Color_8,.Color_9,.Color_10,.Color_11,.Color_12,.Color_13,.Color_14,.Color_15,.Color_16,.Color_17,.Color_18,.Color_19,.Color_20,.Color_21,.Color_22,.Color_23,.Color_24,.Color_25,.Color_26,.Color_27,.Color_28,.Color_29,.Color_30{
+          width: 100%;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        .Color_1,.Color_8,.Color_11,.Color_18,.Color_21,.Color_28{
+          grid-column: span 2;
+          grid-row: span 2;
+        }
+
+        .Blackgrey_1,.Blackgrey_2,.Blackgrey_3,.Blackgrey_4,.Blackgrey_5,.Blackgrey_6,.Blackgrey_7,.Blackgrey_8,.Blackgrey_9,.Blackgrey_10,.Blackgrey_11,.Blackgrey_12,.Blackgrey_13,.Blackgrey_14,.Blackgrey_15,.Blackgrey_16,.Blackgrey_17,.Blackgrey_18,.Blackgrey_19,.Blackgrey_20,.Blackgrey_21,.Blackgrey_22,.Blackgrey_23,.Blackgrey_24,.Blackgrey_25{
+          width: 100%;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        .Blackgrey_1,.Blackgrey_8,.Blackgrey_11,.Blackgrey_18,.Blackgrey_21{
+          grid-column: span 2;
+          grid-row: span 2;
+        }
+        .Asian_1,.Asian_2,.Asian_3,.Asian_4,.Asian_5,.Asian_6,.Asian_7,.Asian_8,.Asian_9{
+          width: 100%;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        .Asian_1{
+          grid-column: span 2;
+          grid-row: span 2;
+        }
+      }
+      
+    }
+    .GalleryPage_Video{
+      height: 75vh;
+      width: 100%;
+      background-image: url('../assets/bg/Gallery/Asset\ 32.jpg');
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+      background-size: cover;
+      .GalleryPage_Video_Title{
+        color: #b38632;
+        font-family: "BancheroBold";
+        font-size: 150%;
+        width: 100%;
+        height: 10%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .GalleryPage_Video_Video{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 40%;
+        .GalleryPage_Video_Video_Control{
+          width: 30%;
+          height: 80%;
+        }
+      }
+      .GalleryPage_Video_Text{
+        height: 40%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 5%;
+        .GalleryPage_Video_Text_Border{
+          height: 120%;
+          width: 90%;
+          background-color: #2d2e2d;
+          color: white;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          .GalleryPage_Video_Text_Border_Text{
+          color: white;
+          width: 90%;
+          height: 90%;
+          font-family: "Medium15";
+          font-size: 100%;
+          line-height: 18px;
+          }
+        }
+      }
+    }
+    .GalleryPage_Achive{
+      height: 45vh;
+      width: 100%;
+      background-color: white;
+      background-image: url('../assets/bg/Gallery/Asset\ 34.jpg');
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+      background-size: cover;
+        .GalleryPage_Achive_Content{
+          height: 60%;
+          width: 100%;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-evenly;
+          align-items: center;
+          .GalleryPage_Achive_Achive_Convention{
+            width: 25vw;
+            height: 25vw;
+            background-color: #2d2e2d;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 5px 5px 10px 1px grey;
+            .GalleryPage_Achive_Achive_Convention_Img{
+              width: 80%;
+              height: 50%;
+            }
+            .GalleryPage_Achive_Achive_Convention_Text{
+              width: 80%;
+              height: 10%;
+              font-family: "Ladyrose";
+              text-align: center;
+              font-size: 50%;
+              color: white;
+            }
+          }
+          .GalleryPage_Achive_Achive_YrsExper{
+            width: 30vw;
+            height: 30vw;
+            background-color: #2d2e2d;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 5px 5px 10px 1px grey;
+            .GalleryPage_Achive_Achive_YrsExper_Img{
+              width: 50%;
+              height: 70%;
+            }
+            .GalleryPage_Achive_Achive_YrsExper_Text{
+              width: 80%;
+              height: 25%;
+              font-family: "Ladyrose";
+              text-align: center;
+              font-size: 70%;
+              color: white;
+            }
+          }
+          .GalleryPage_Achive_Achive_Trophies{
+            width: 25vw;
+            height: 25vw;
+            background-color: #2d2e2d;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 5px 5px 10px 1px grey;
+            .GalleryPage_Achive_Achive_Trophies_Img{
+              width: 80%;
+              height: 50%;
+            }
+            .GalleryPage_Achive_Achive_Trophies_Text{
+              width: 80%;
+              height: 10%;
+              font-family: "Ladyrose";
+              text-align: center;
+              font-size: 50%;
+              color: white;
+            }
+          }
+        }
+        .GalleryPage_Achive_Text{
+          height: 30%;
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          .GalleryPage_Achive_Text_Container{
+            width: 90%;
+            height: 70%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+            .GalleryPage_Achive_Text_Container_Text1{
+              color: white;
+              font-family: "Ladyrose";
+              margin-bottom: 2%;
+            }
+            .GalleryPage_Achive_Text_Container_Text2{
+              color: white;
+              font-family: "Ladyrose";
+            } 
+          }
+        }
+    }
+    .GalleryPage_Footer{
+      height: 25vh;
+      background-color: white;
+    }
+  }
+}
+

@@ -25,186 +25,6 @@ body {
 }
 @media screen and (min-width: 992px){
 
-  // .Homepage {
-  //   background-image: url("../../../imgBrother/Min.mp4");
-  //   height: 100vh;
-  //   overflow: auto;
-  //   background-position: center;
-  //   background-attachment: fixed;
-  //   background-repeat: no-repeat;
-  //   background-size: cover;
-  // }
-  // .Homepage_header_text {
-  //   height: 100%;
-  // }
-  // .Homepage_text {
-  //   display: flex;
-  //   flex-direction: column;
-  //   height: 80%;
-  //   color: white;
-  //   font-size: 50px;
-  //   align-items: center;
-  //   justify-content: center;
-  // }
-  // .text1 {
-  //   color: #c99e3e;
-  //   font-family: Copperplate;
-  // }
-  // .text2 {
-  //   font-family: Copperplate;
-  //   padding-bottom: 20%;
-  //   padding-top: 10%;
-  //   font-size: 100px;
-  // }
-  // .text2_1 {
-  //   font-family: Copperplate;
-  // }
-  // .text2_2 {
-  //   font-family: Copperplate;
-  // }
-  // .link_page {
-  //   height: 260vh;
-  //   width: 100%;
-  //   display: flex;
-  //   flex-direction: column;
-  //   overflow: auto;
-  //   align-items: center;
-  //   justify-content: center;
-  // }
-  // .Tattoos_link {
-  //   display: flex;
-  //   height: 50%;
-  //   width: 50%;
-  //   background-image: url("../../../imgBrother/mybrother3.webp");
-  //   background-position: 50% 40%;
-  //   background-repeat: no-repeat;
-  //   background-size: cover;
-  //   font-size: 500%;
-  //   align-items: center;
-  //   justify-content: center;
-  //   color: white;
-  //   font-family: Copperplate;
-  //   text-decoration: none;
-  //   -webkit-filter: brightness(100%);
-  //   margin-bottom: 15vh;
-  //   border: 2px solid white;
-  //   border-radius: 20px;
-  //   &:hover {
-  //     -webkit-filter: brightness(50%);
-  //     -webkit-transition: all 1s ease;
-  //     -moz-transition: all 1s ease;
-  //     -o-transition: all 1s ease;
-  //     -ms-transition: all 1s ease;
-  //     transition: all 1s ease;
-  //   }
-  // }
-  // .Art_link {
-  //   display: flex;
-  //   height: 50%;
-  //   width: 50%;
-  //   background-image: url("../../../imgBrother/mybrother5.webp");
-  //   background-position: 50% 60%;
-  //   background-repeat: no-repeat;
-  //   background-size: cover;
-  //   font-size: 500%;
-  //   align-items: center;
-  //   justify-content: center;
-  //   color: white;
-  //   font-family: Copperplate;
-  //   text-decoration: none;
-  //   -webkit-filter: brightness(100%);
-  //   margin-bottom: 15vh;
-  //   border: 2px solid white;
-  //   border-radius: 20px;
-  //   &:hover {
-  //     -webkit-filter: brightness(50%);
-  //     -webkit-transition: all 1s ease;
-  //     -moz-transition: all 1s ease;
-  //     -o-transition: all 1s ease;
-  //     -ms-transition: all 1s ease;
-  //     transition: all 1s ease;
-  //   }
-  // }
-  // .About_link {
-  //   display: flex;
-  //   height: 50%;
-  //   width: 50%;
-  //   background-image: url("../../../imgBrother/mybrother2.webp");
-  //   background-position: top;
-  //   background-repeat: no-repeat;
-  //   background-size: cover;
-  //   font-size: 500%;
-  //   align-items: center;
-  //   justify-content: center;
-  //   color: white;
-  //   font-family: Copperplate;
-  //   text-decoration: none;
-  //   -webkit-filter: brightness(100%);
-  //   margin-bottom: 15vh;
-  //   border: 2px solid white;
-  //   border-radius: 20px;
-  //   &:hover {
-  //     -webkit-filter: brightness(50%);
-  //     -webkit-transition: all 1s ease;
-  //     -moz-transition: all 1s ease;
-  //     -o-transition: all 1s ease;
-  //     -ms-transition: all 1s ease;
-  //     transition: all 1s ease;
-  //   }
-  // }
-  // .Contact_link {
-  //   display: flex;
-  //   height: 50%;
-  //   width: 50%;
-  //   background-image: url("../../../imgBrother/mybrother4.webp");
-  //   background-position: 50% 10%;
-  //   background-repeat: no-repeat;
-  //   background-size: cover;
-  //   font-size: 500%;
-  //   align-items: center;
-  //   justify-content: center;
-  //   color: white;
-  //   font-family: Copperplate;
-  //   text-decoration: none;
-  //   -webkit-filter: brightness(100%);
-  //   margin-bottom: 15vh;
-  //   border: 2px solid white;
-  //   border-radius: 20px;
-  //   &:hover {
-  //     -webkit-filter: brightness(50%);
-  //     -webkit-transition: all 1s ease;
-  //     -moz-transition: all 1s ease;
-  //     -o-transition: all 1s ease;
-  //     -ms-transition: all 1s ease;
-  //     transition: all 1s ease;
-  //   }
-  // }
-  // .Author_location {
-  //   display: flex;
-  //   flex-direction: row;
-  //   height: 80%;
-  //   background-color: rgb(121, 121, 121);
-  //   color: white;
-  //   align-items: center;
-  //   justify-content: center;
-  // }
-
-  // .Author_location_text {
-  //   width: 60%;
-  //   height: 70%;
-  //   margin-left: 7%;
-  // }
-  // .Author_location_icon {
-  //   font-size: 300%;
-  //   width: 20%;
-  //   margin-left: 5%;
-  //   font-family: Copperplate;
-  // }
-
-  // .Homepage_footer {
-  //   height: 50%;
-  // }
-
 }
 
 @media screen and (max-width:768px) {
@@ -221,6 +41,10 @@ body {
       justify-content: center;
       position: relative;
          background-color: #E4E1D8;
+         background-image:url('../assets/bg/mainpage/Asset\ 20.jpg');
+        background-position: 0% 50%;
+        background-repeat: no-repeat;
+        background-size: 55%;
       .Homepage_PageName_Minh{
         width: 50%;
         height: 30%;
@@ -247,12 +71,14 @@ body {
         }
       }
       .Homepage_PageName_Text{
-        width: 50%;
+        width: 40%;
         height: 15%;
         display: flex;
         align-items: center;
         margin-left: 12%;
         font-family: "CeniosdemoRegular";
+        font-size: 12px;
+        letter-spacing: 2px;
       }
       .Homepage_PageName_Brother_Img{
         background-image:url('../assets/imgBrother/mybrother5.webp');
@@ -280,6 +106,10 @@ body {
       grid-row-gap: 20px;
       justify-content: center;
       padding-top: 4%;
+      background-image:url('../assets/bg/mainpage/Asset\ 21.jpg');
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+      background-size: cover;
       .Homepage_Competition_Img1{
         grid-column: 1 / 4;
         background-image:url('../assets/imgHome/imgHome1.webp');
@@ -309,19 +139,23 @@ body {
     }
     .Homepage_Competition_Logo{
       height: 40vh;
-      width: 85%;
+      width: 80%;
       display: grid;
-      grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+      grid-template-columns: 8% 8% 8% 8% 8% 8% 8% 8% 8% 8% 8% 8%;
       grid-template-rows: auto auto auto;
       background-color: white;
       align-items: center;
       justify-content: center;
       column-gap: 2%;
-      padding-left: 13%;
+      padding-left: 11%;
+      background-image:url('../assets/bg/mainpage/Asset\ 23.jpg');
+      background-position: 50% 0%;
+      background-repeat: no-repeat;
+      background-size: 150%;
       .Competition_Logo1{
         width: 90%;
         height: 40%;
-        grid-column: span 2;
+        grid-column: span 3;
         margin: auto;
 
       }
@@ -329,61 +163,61 @@ body {
         margin: auto;
         width: 80%;
         height: 60%;
-        grid-column: span 2;
+        grid-column: span 3;
       }
       .Competition_Logo3{
         margin: auto;
         width: 80%;
         height: 50%;
-        grid-column: span 2;
+        grid-column: span 3;
       }
       .Competition_Logo4{
         margin: auto;
         width: 70%;
         height: 45%;
-        grid-column: span 2;
+        grid-column: span 3;
       }
       .Competition_Logo5{
         margin: auto;
         width: 80%;
         height: 40%;
-        grid-column: span 2;
+        grid-column: span 3;
         background-color: black;
       }
       .Competition_Logo6{
         margin: auto;
         width: 70%;
         height: 50%;
-        grid-column: span 2;
+        grid-column: span 3;
       }
       .Competition_Logo7{
         margin: auto;
         width: 80%;
         height: 40%;
-        grid-column: span 2;
+        grid-column: span 3;
       }
       .Competition_Logo8{
         margin: auto;
         width: 70%;
         height: 60%;
-        grid-column: span 2;
+        grid-column: span 3;
       }
       .Competition_Logo9{
         margin: auto;
         width: 90%;
         height: 30%;
-        grid-column: span 2;
+        grid-column: span 4;
       }
       .Competition_Logo10{
         width: 90%;
         height: 50%;
-        grid-column: span 3;
+        grid-column: span 4;
         margin: auto;
       }
       .Competition_Logo11{
         width: 90%;
         height: 50%;
-        grid-column: span 3;
+        grid-column: span 4;
         margin: auto;
       }
     }
@@ -393,6 +227,10 @@ body {
       background-color: #E4E1D8;
       display: flex;
       flex-direction: row;
+      background-image:url('../assets/bg/mainpage/Asset\ 23.jpg');
+      background-position: 50% 22%;
+      background-repeat: no-repeat;
+      background-size: 150%;
       .Homepage_Introduce_Video{
         width: 60%;
         height: 100%;
@@ -458,6 +296,10 @@ body {
       width: 100%;
       background-color: #E4E1D8;
       padding-top: 1%;
+      background-image:url('../assets/bg/mainpage/Asset\ 23.jpg');
+      background-position: 50% 62%;
+      background-repeat: no-repeat;
+      background-size: 130%;
       .Homepage_About_Title{
         display: flex;
         flex-direction: row;
@@ -533,6 +375,7 @@ body {
           background-color: black;
           border: none;
           font-family: "BancheroBold";
+          cursor: pointer;
         }
       }
     }
@@ -540,13 +383,17 @@ body {
       height: 50vh;
       width: 100%;
       background-color: white;
+      background-image:url('../assets/bg/mainpage/Asset\ 23.jpg');
+      background-position: 50% 99%;
+      background-repeat: no-repeat;
+      background-size: 130%;
       .Homepage_Achive_Title{
         height: 20%;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        margin-top: 5%;
+
 
         .Homepage_Achive_Title1{
           font-size: 150%;
@@ -679,15 +526,19 @@ body {
       }
     }
     .Homepage_Gallery{
-      height: 70vh;
+      height: 100vh;
       width: 100%;
       background-color:#2d2e2d ;
+      background-image:url('../assets/bg/mainpage/Asset\ 24.jpg');
+      background-position: 50% 1%;
+      background-repeat: no-repeat;
+      background-size: 130%;
       .Homepage_Gallery_Name{
         display: flex;
         justify-content: center;
         align-items: end;
         width: 100%;
-        height: 10%;
+        height: 8%;
         color:gray;
         font-family: "CeniosdemoRegular";
         font-size: 120%;
@@ -705,7 +556,7 @@ body {
         letter-spacing: 5px;
       }
       .Homepage_Gallery_Text{
-        height: 15%;
+        height: 10%;
         width: 100%;
         display: flex;
         align-items: center;
@@ -719,6 +570,142 @@ body {
           text-align: center;
         }
       }
+      .Homepage_Gallery_Img{
+        height: 60%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        .Homepage_Gallery_Img_Styles{
+          width: 100%;
+          height: 15%;
+          display: grid;
+          grid-template-columns: 30% 30% 30%;
+          justify-content: center;
+          margin-bottom: 5%;
+          .Homepage_Gallery_Img_Styles_Style{
+            color: gray;
+            font-family: "Ladyrose";
+            font-size: 80%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+          }
+          .active{
+            color: white;
+          }
+        }
+        .Homepage_Gallery_Img_Container{
+          min-height: 80%;
+          width: 90%;
+          display: grid;
+          grid-template-columns: auto auto auto auto;
+          grid-template-rows: auto auto auto auto;
+          align-items: center;
+          justify-content: center;
+          overflow-y: auto;
+          overflow-x: hidden;
+          column-gap: 5%;
+          row-gap: 5%;
+          .Realism_1, .Realism_2, .Realism_3, .Realism_4, .Realism_5, .Realism_6, .Realism_7, .Realism_8, .Realism_9, .Realism_10,.Realism_11, .Realism_12, .Realism_13, .Realism_14, .Realism_15{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+          .Realism_1{
+            grid-column: span 2;
+            grid-row: span 2;
+          }
+          .Realism_8{
+            grid-row: span 2;
+             grid-column: span 2;
+          }
+          .Realism_11{
+            grid-column: span 2;
+            grid-row: span 2;
+          }
+          .Portrait_1,.Portrait_2,.Portrait_3,.Portrait_4,.Portrait_5,.Portrait_6,.Portrait_7,.Portrait_8,.Portrait_9,.Portrait_10,.Portrait_11,.Portrait_12,.Portrait_13,.Portrait_14,.Portrait_15,.Portrait_16,.Portrait_17,.Portrait_18,.Portrait_19,.Portrait_20{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+          .Portrait_1,.Portrait_8,.Portrait_11,.Portrait_18{
+            grid-column: span 2;
+            grid-row: span 2;
+          }
+          
+          .FineLine_1,.FineLine_2,.FineLine_3,.FineLine_4,.FineLine_5,.FineLine_6,.FineLine_7,.FineLine_8,.FineLine_9,.FineLine_10{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+          .FineLine_1,.FineLine_8{
+            grid-column: span 2;
+            grid-row: span 2;
+          }
+ 
+          .Color_1,.Color_2,.Color_3,.Color_4,.Color_5,.Color_6,.Color_7,.Color_8,.Color_9,.Color_10,.Color_11,.Color_12,.Color_13,.Color_14,.Color_15,.Color_16,.Color_17,.Color_18,.Color_19,.Color_20,.Color_21,.Color_22,.Color_23,.Color_24,.Color_25,.Color_26,.Color_27,.Color_28,.Color_29,.Color_30{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+          .Color_1,.Color_8,.Color_11,.Color_18,.Color_21,.Color_28{
+            grid-column: span 2;
+            grid-row: span 2;
+          }
+
+          .Blackgrey_1,.Blackgrey_2,.Blackgrey_3,.Blackgrey_4,.Blackgrey_5,.Blackgrey_6,.Blackgrey_7,.Blackgrey_8,.Blackgrey_9,.Blackgrey_10,.Blackgrey_11,.Blackgrey_12,.Blackgrey_13,.Blackgrey_14,.Blackgrey_15,.Blackgrey_16,.Blackgrey_17,.Blackgrey_18,.Blackgrey_19,.Blackgrey_20,.Blackgrey_21,.Blackgrey_22,.Blackgrey_23,.Blackgrey_24,.Blackgrey_25{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+          .Blackgrey_1,.Blackgrey_8,.Blackgrey_11,.Blackgrey_18,.Blackgrey_21{
+            grid-column: span 2;
+            grid-row: span 2;
+          }
+          .Asian_1,.Asian_2,.Asian_3,.Asian_4,.Asian_5,.Asian_6,.Asian_7,.Asian_8,.Asian_9{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+          .Asian_1{
+            grid-column: span 2;
+            grid-row: span 2;
+          }
+        }
+        
+      }
+      .Homepage_Gallery_Button{
+        width: 100%;
+        height: 10%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .Homepage_Gallery_Button_Text{
+          width: 30%;
+          height: 30%;
+          background-color: gray;
+          font-family: "Ladyrose";
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          cursor: pointer;
+        }
+      }
     }
     .Homepage_Seperate3{
       height: 5vh;
@@ -728,6 +715,10 @@ body {
       height: 30vh;
       width: 100%;
       background-color: black;
+      background-image:url('../assets/bg/mainpage/Asset\ 24.jpg');
+      background-position: 50% 70%;
+      background-repeat: no-repeat;
+      background-size: 130%;
       .Homepage_Contact_Title{
         height: 25%;
         font-size: 180%;
@@ -836,198 +827,4 @@ body {
       height: 25vh;
     }
   }
-  // .Homepage {
-  //   background-image: url("../../../imgBrother/Min.mp4");
-  //   height: 100vh;
-  //   overflow: auto;
-  //   background-position: center;
-  //   background-attachment: fixed;
-  //   background-repeat: no-repeat;
-  //   background-size: cover;
-  // }
-  // .Homepage_header_text {
-  //   height: 100%;
-  // }
-  // .Homepage_text {
-  //   display: flex;
-  //   flex-direction: column;
-  //   height: 80%;
-  //   color: white;
-  //   align-items: center;
-  //   justify-content: center;
-  // }
-  // .text1 {
-  //   color: #c99e3e;
-  //   font-family: Copperplate;
-  //   padding-bottom: 40px;
-  //   font-size: 30px;
-  // }
-  // .text2 {
-  //   display: flex;
-  //   flex-direction: column;
-  //   align-items: center;
-  //   justify-content: center;
-  //   padding-bottom: 330px;
-  //   padding-top: 120px;
-  //   font-size: 60px;
-  // }
-  // .text2_1 {
-  //   align-items: center;
-  //   justify-content: center;
-  //   font-family: Copperplate;
-  // }
-  // .text2_2 {
-  //   align-items: center;
-  //   justify-content: center;
-  //   font-family: Copperplate;
-  // }
-  // .link_page {
-  //   height: 200vh;
-  //   width: 100%;
-  //   display: flex;
-  //   flex-direction: column;
-  //   overflow: auto;
-  //   align-items: center;
-  //   justify-content: center;
-  // }
-  // .Tattoos_link {
-  //   display: flex;
-  //   height: 50%;
-  //   width: 50%;
-  //   background-image: url("../../../imgBrother/mybrother3.webp");
-  //   background-position: 50% 50%;
-  //   background-repeat: no-repeat;
-  //   background-size: cover;
-  //   font-size: 200%;
-  //   align-items: center;
-  //   justify-content: center;
-  //   color: white;
-  //   font-family: Copperplate;
-  //   text-decoration: none;
-  //   -webkit-filter: brightness(100%);
-  //   margin-bottom: 15vh;
-  //   border: 2px solid white;
-  //   border-radius: 20px;
-  //   &:hover {
-  //     -webkit-filter: brightness(50%);
-  //     -webkit-transition: all 1s ease;
-  //     -moz-transition: all 1s ease;
-  //     -o-transition: all 1s ease;
-  //     -ms-transition: all 1s ease;
-  //     transition: all 1s ease;
-  //   }
-  // }
-  // .Art_link {
-  //   display: flex;
-  //   height: 50%;
-  //   width: 50%;
-  //   background-image: url("../../../imgBrother/mybrother5.webp");
-  //   background-position: center;
-  //   background-repeat: no-repeat;
-  //   background-size: cover;
-  //   font-size: 200%;
-  //   align-items: center;
-  //   justify-content: center;
-  //   color: white;
-  //   font-family: Copperplate;
-  //   text-decoration: none;
-  //   -webkit-filter: brightness(100%);
-  //   margin-bottom: 15vh;
-  //   border: 2px solid white;
-  //   border-radius: 20px;
-  //   &:hover {
-  //     -webkit-filter: brightness(50%);
-  //     -webkit-transition: all 1s ease;
-  //     -moz-transition: all 1s ease;
-  //     -o-transition: all 1s ease;
-  //     -ms-transition: all 1s ease;
-  //     transition: all 1s ease;
-  //   }
-  // }
-  // .About_link {
-  //   display: flex;
-  //   height: 50%;
-  //   width: 50%;
-  //   background-image: url("../../../imgBrother/mybrother2.webp");
-  //   background-position: 100% 50%;
-  //   background-repeat: no-repeat;
-  //   background-size: cover;
-  //   font-size: 200%;
-  //   align-items: center;
-  //   justify-content: center;
-  //   color: white;
-  //   font-family: Copperplate;
-  //   text-decoration: none;
-  //   -webkit-filter: brightness(100%);
-  //   margin-bottom: 15vh;
-  //   border: 2px solid white;
-  //   border-radius: 20px;
-  //   &:hover {
-  //     -webkit-filter: brightness(50%);
-  //     -webkit-transition: all 1s ease;
-  //     -moz-transition: all 1s ease;
-  //     -o-transition: all 1s ease;
-  //     -ms-transition: all 1s ease;
-  //     transition: all 1s ease;
-  //   }
-  // }
-  // .Contact_link {
-  //   display: flex;
-  //   height: 50%;
-  //   width: 50%;
-  //   background-image: url("../../../imgBrother/mybrother4.webp");
-  //   background-position: 50% 10%;
-  //   background-repeat: no-repeat;
-  //   background-size: cover;
-  //   font-size: 200%;
-  //   align-items: center;
-  //   justify-content: center;
-  //   color: white;
-  //   font-family: Copperplate;
-  //   text-decoration: none;
-  //   -webkit-filter: brightness(100%);
-  //   margin-bottom: 15vh;
-  //   border: 2px solid white;
-  //   border-radius: 20px;
-  //   &:hover {
-  //     -webkit-filter: brightness(50%);
-  //     -webkit-transition: all 1s ease;
-  //     -moz-transition: all 1s ease;
-  //     -o-transition: all 1s ease;
-  //     -ms-transition: all 1s ease;
-  //     transition: all 1s ease;
-  //   }
-  // }
-  // .Author_location {
-  //   display: flex;
-  //   flex-direction: column;
-  //   height: 80%;
-  //   background-color: rgb(121, 121, 121);
-  //   color: white;
-  //   align-items: center;
-  //   justify-content: center;
-  // }
-
-  // .Author_location_text {
-  //   width: 90%;
-  //   height: 70%;
-  //   border: 5px solid rgb(48, 46, 46);
-  //   border-radius: 10px;
-  //   margin-right: 5%;
-  // }
-  // .Author_location_icon {
-  //   display: flex;
-  //   font-size: 200%;
-  //   width: 90%;
-  //   font-family: Copperplate;
-  //   align-items: center;
-  //   justify-content: center;
-  //   margin-bottom: 5%;
-  //   margin-left: 0;
-  // }
-  
-
-  // .Homepage_footer {
-  //   height: 55%;
-  // }
 }

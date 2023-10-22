@@ -18,6 +18,9 @@ function Footer() {
         </div>
       </div>
       <div className="Footer_Link">
+        <Link to="/" className="Footer_Page">
+          Home
+        </Link>
         <Link to="/About" className="Footer_Page">
           About
         </Link>
