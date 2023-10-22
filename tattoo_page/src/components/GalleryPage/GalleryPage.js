@@ -321,7 +321,7 @@ function GalleryPage() {
             muted
             preload="none"
           >
-            <source src={require("../assets/video/2.MOV")} type="video/mp4" />
+            <source src={require("../assets/video/1.MOV")} type="video/mp4" />
             Your browser does not support the video tag.
           </video>
         </div>
