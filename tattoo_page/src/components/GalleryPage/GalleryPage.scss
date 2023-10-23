@@ -24,7 +24,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: white;
+        background-color:#e4e1d8;
         margin-top: 5%;
         .GalleryPage_Title_Text1_Img{
           width: 70%;
@@ -33,7 +33,7 @@
       }
       .GalleryPage_Title_Text2{
         margin-top: 5%;
-        color: white;
+        color: #e4e1d8;
         height: 10%;
         width: 100%;
         display: flex;
@@ -67,56 +67,7 @@
         line-height: 15px;
       }
     }
-    .GalleryPage_Img{
-      height: 60vh;
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
-      background-color:#2d2e2d ;
-      background-image: url('../assets/bg/Gallery/Asset\ 31.jpg');
-      background-position: 50% 100%;
-      background-repeat: no-repeat;
-      background-size: cover;
-      .GalleryPage_Img_Styles{
-        width: 100%;
-        height: 15%;
-        display: grid;
-        grid-template-columns: 30% 30% 30%;
-        justify-content: center;
-        padding-bottom: 5%;
-        .GalleryPage_Img_Styles_Style{
-          color: white;
-          font-family: "Ladyrose";
-          font-size: 80%;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          cursor: pointer;
-        }
-      }
-      .GalleryPage_Img_Container{
-        min-height: 80%;
-        width: 100%;
-        display: grid;
-        grid-template-columns: 30% 30% 30%;
-        align-items: center;
-        justify-content: center;
-        overflow-y: auto;
-        overflow-x: hidden;
-        margin-left: 3%;
-        row-gap: 5%;
-
-        .imgTattoo{
-          width: 80%;
-          height: 90%;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-        }
-      }
-      
-    }
+    
     .GalleryPage_Pricing{
       height: 40vh;
       width: 100%;
@@ -209,20 +160,26 @@
       }
     }
     .GalleryPage_Img{
-      height: 65vh;
+      height: 60vh;
       width: 100%;
       display: flex;
       justify-content: center;
       align-items: center;
       flex-direction: column;
-      padding-top: 5%;
+      background-color:#2d2e2d ;
+      background-image: url('../assets/bg/Gallery/Asset\ 31.jpg');
+      background-position: 50% 100%;
+      background-repeat: no-repeat;
+      background-size: 120%;
+
+
       .GalleryPage_Img_Styles{
         width: 100%;
-        height: 20%;
+        height: 15%;
         display: grid;
         grid-template-columns: 30% 30% 30%;
         justify-content: center;
-        margin-bottom: 5%;
+        padding-bottom: 5%;
         .GalleryPage_Img_Styles_Style{
           color: gray;
           font-family: "Ladyrose";
@@ -237,8 +194,8 @@
         }
       }
       .GalleryPage_Img_Container{
-        min-height: 70%;
-        width: 90%;
+        height: 70%;
+        width: 80%;
         display: grid;
         grid-template-columns: auto auto auto auto;
         grid-template-rows: auto auto auto auto;
@@ -246,9 +203,9 @@
         justify-content: center;
         overflow-y: auto;
         overflow-x: hidden;
-        column-gap: 5%;
-        row-gap: 5%;
-        margin-bottom: 10%;
+        column-gap: 15px;
+        row-gap: 15px;
+
         .Realism_1, .Realism_2, .Realism_3, .Realism_4, .Realism_5, .Realism_6, .Realism_7, .Realism_8, .Realism_9, .Realism_10,.Realism_11, .Realism_12, .Realism_13, .Realism_14, .Realism_15{
           width: 100%;
           height: 100%;
@@ -330,7 +287,7 @@
       
     }
     .GalleryPage_Video{
-      height: 75vh;
+      height: 80vh;
       width: 100%;
       background-image: url('../assets/bg/Gallery/Asset\ 32.jpg');
       background-position: 50% 50%;
@@ -342,6 +299,7 @@
         font-size: 150%;
         width: 100%;
         height: 10%;
+        padding-top:5%;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -352,21 +310,22 @@
         flex-direction: row;
         justify-content: space-evenly;
         align-items: center;
-        height: 40%;
+        height: 35%;
         .GalleryPage_Video_Video_Control{
           width: 30%;
           height: 80%;
         }
       }
       .GalleryPage_Video_Text{
-        height: 40%;
+        margin-top: 5%;
+        height: 45%;
         width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
-        padding-top: 5%;
+
         .GalleryPage_Video_Text_Border{
-          height: 120%;
+          height: 100%;
           width: 90%;
           background-color: #2d2e2d;
           color: white;

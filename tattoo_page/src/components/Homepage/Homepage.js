@@ -6,13 +6,6 @@ import { useNavigate } from "react-router-dom";
 
 import { useEffect, useState } from "react";
 
-import {
-  FaPhone,
-  FaInstagram,
-  FaRegEnvelope,
-  FaLocationDot,
-} from "react-icons/fa6";
-
 import MinhLogo from "../assets/Text/Minh.webp";
 import PMPLogo from "../assets/Text/PMP.webp";
 
@@ -416,7 +409,7 @@ function Homepage() {
               }
               onClick={setRealism}
             >
-              Realism
+              REALISM
             </div>
             <div
               className={
@@ -426,7 +419,7 @@ function Homepage() {
               }
               onClick={setPortrait}
             >
-              Portrait
+              PORTRAI
             </div>
             <div
               className={
@@ -436,7 +429,7 @@ function Homepage() {
               }
               onClick={setFineLine}
             >
-              Fine line
+              FINE LINE
             </div>
             <div
               className={
@@ -446,7 +439,7 @@ function Homepage() {
               }
               onClick={setColor}
             >
-              Color
+              COLOR
             </div>
             <div
               className={
@@ -456,7 +449,7 @@ function Homepage() {
               }
               onClick={setBlackGrey}
             >
-              Black&Grey
+              BLACK&GREY
             </div>
             <div
               className={
@@ -466,7 +459,7 @@ function Homepage() {
               }
               onClick={setAsian}
             >
-              Asian
+              ASIAN
             </div>
           </div>
           <div className="Homepage_Gallery_Img_Container">{style}</div>
@@ -481,33 +474,20 @@ function Homepage() {
       <div className="Homepage_Contact">
         <div className="Homepage_Contact_Title">CONTACT</div>
         <div className="Homepage_Contact_Content">
-          <div className="Homepage_Contact_Corlor"></div>
-          <div className="Homepage_Contact_Content_Icon_Color">
-            {" "}
-            <div className="Homepage_Contact_Content_Phone">
-              <FaPhone className="Homepage_Contact_Content_Phone_Icon" />
-              <div className="Homepage_Contact_Content_Phone_Text">
-                (210) 843-4253
-              </div>
-            </div>
-            <div className="Homepage_Contact_Content_Insta">
-              <FaInstagram className="Homepage_Contact_Content_Insta_Icon" />
-              <div className="Homepage_Contact_Content_Insta_Text">
-                pham.minh.phuc
-              </div>
-            </div>
-            <div className="Homepage_Contact_Content_Mail">
-              <FaRegEnvelope className="Homepage_Contact_Content_Mail_Icon" />
-              <div className="Homepage_Contact_Content_Mail_Text">
-                phamminhphuc3673@gmail.com
-              </div>
-            </div>
-            <div className="Homepage_Contact_Content_Locate">
-              <FaLocationDot className="Homepage_Contact_Content_Locate_Icon" />
-              <div className="Homepage_Contact_Content_Locate_Text">
-                San Antonio, Texas
-              </div>
-            </div>
+          <div className="Homepage_Contact_Content_Text">
+            Tel: (210) 843-4253
+          </div>
+
+          <div className="Homepage_Contact_Content_Text">
+            Ig: pham.minh.phuc
+          </div>
+
+          <div className="Homepage_Contact_Content_Text">
+            Add: San Antonio, Texas
+          </div>
+
+          <div className="Homepage_Contact_Content_Text">
+            Mail: phamminhphuc3673@gmail.com
           </div>
         </div>
       </div>

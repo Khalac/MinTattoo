@@ -54,10 +54,11 @@ function AboutPage() {
         <div className="Aboutpage_About4_Text">
           <div className="Aboutpage_About4_Text_Content">
             {" "}
-            This move was the turning point of my life, it brought so many
-            challenges that required serious adjustment. But, fortune favors the
-            brave, I still managed to land a job at one of the best tattoo shop
-            in the city, the Firme Copias San Antonio, Texas.
+            Since then, my lifechanged forever, I met and learned from some of
+            best and most amazing artists in town, and with self-learning about
+            original art and digital art, my skil set has improved rapidly. So
+            much so that I have competed in and won many competitions, all
+            across the States and the world.
           </div>
         </div>
         <div className="Aboutpage_About4_Img"></div>

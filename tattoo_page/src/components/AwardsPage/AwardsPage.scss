@@ -90,15 +90,15 @@
               justify-content: center;
               box-shadow: 5px 5px 10px 1px grey;
               .Awardspage_Achive_Achive_Convention_Img{
-                width: 80%;
-                height: 50%;
+                width: 60%;
+                height: 40%;
               }
               .Awardspage_Achive_Achive_Convention_Text{
                 width: 80%;
                 height: 10%;
                 font-family: "Ladyrose";
                 text-align: center;
-                font-size: 50%;
+                font-size: 60%;
               }
             }
             .Awardspage_Achive_Achive_YrsExper{
@@ -111,8 +111,8 @@
               justify-content: center;
               box-shadow: 5px 5px 10px 1px grey;
               .Awardspage_Achive_Achive_YrsExper_Img{
-                width: 50%;
-                height: 70%;
+                width: 40%;
+                height: 60%;
               }
               .Awardspage_Achive_Achive_YrsExper_Text{
                 width: 80%;
@@ -132,15 +132,15 @@
               justify-content: center;
               box-shadow: 5px 5px 10px 1px grey;
               .Awardspage_Achive_Achive_Trophies_Img{
-                width: 80%;
-                height: 50%;
+                width: 60%;
+                height: 40%;
               }
               .Awardspage_Achive_Achive_Trophies_Text{
                 width: 80%;
                 height: 10%;
                 font-family: "Ladyrose";
                 text-align: center;
-                font-size: 50%;
+                font-size: 60%;
               }
             }
           }
@@ -307,8 +307,8 @@
             margin-top: 5%;
             margin-bottom: 10%;
             .Awardspage_List_Border_Item_Prize{
-              height: 60px;
-              width:15%;
+              height: 50px;
+              width:13%;
               color: white;
               background-color: black;
               font-family: "Ladyrose";
@@ -318,10 +318,10 @@
                 font-size: 80%;         
             }
             .Awardspage_List_Border_Item_Content{
-              width: 80%;
-              height: 60px;
-              color: white;
-              background-color: black;
+              width: 70%;
+              height: 50px;
+              color: black;
+            border: 1px solid black;
               display: flex; 
               flex-direction: column;    
               justify-content: space-evenly;
