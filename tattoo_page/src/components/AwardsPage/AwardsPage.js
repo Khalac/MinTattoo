@@ -3,9 +3,9 @@ import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 import "./AwardsPage.scss";
 
-import Conven from "../assets/Text/Conven.png";
-import Exper from "../assets/Text/Exper.png";
-import Trophies from "../assets/Text/Trophies.png";
+import Conven from "../assets/Text/Conven.webp";
+import Exper from "../assets/Text/Exper.webp";
+import Trophies from "../assets/Text/Trophies.webp";
 
 import lgcom1 from "../assets/lgcom/lgcom1.webp";
 import lgcom2 from "../assets/lgcom/lgcom2.webp";

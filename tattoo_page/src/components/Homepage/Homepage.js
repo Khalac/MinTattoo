@@ -24,9 +24,9 @@ import lgcom11 from "../assets/lgcom/lgcom11.webp";
 import upperMark from "../assets/Text/upperMark.png";
 import lowerMark from "../assets/Text/lowerMark.png";
 
-import Conven from "../assets/Text/Conven.png";
-import Exper from "../assets/Text/Exper.png";
-import Trophies from "../assets/Text/Trophies.png";
+import Conven from "../assets/Text/Conven.webp";
+import Exper from "../assets/Text/Exper.webp";
+import Trophies from "../assets/Text/Trophies.webp";
 
 function Homepage() {
   const [nameStyle, setNameStyle] = useState("Realism");
@@ -299,8 +299,8 @@ function Homepage() {
               </div>
               <div className="Homepage_Introduce_MainText2">
                 I am Vietnamese born (1999) and raised. For the past 10 years,
-                nothing has been more important to me than becoming a master
-                inker.
+                nothing has been more important to me than becoming{" "}
+                <div>a master inker.</div>
               </div>
             </div>
             <img
@@ -395,8 +395,11 @@ function Homepage() {
         <div className="Homepage_Gallery_Title">GALLERY</div>
         <div className="Homepage_Gallery_Text">
           <div className="Homepage_Gallery_Text_Content">
-            Minh's artistic journey began at a very young age, when his
-            fascination with drawing small objects sparked his creative spirit.
+            Minh's artistic journey began at a very young age,{" "}
+            <div>
+              when his fascination with drawing small objects sparked his
+              creative spirit.
+            </div>
           </div>
         </div>
         <div className="Homepage_Gallery_Img">
