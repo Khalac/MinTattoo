@@ -58,7 +58,7 @@ function Homepage() {
     require.context("../assets/realism", false, /\.webp$/)
   );
   let imgRealism = [];
-  for (let i = 1; i <= 15; ++i) {
+  for (let i = 1; i <= 10; ++i) {
     imgRealism.push(imagesRealism[`${i}.webp`]);
   }
   var realism = 0;
@@ -78,7 +78,7 @@ function Homepage() {
     require.context("../assets/portrait", false, /\.webp$/)
   );
   let imgPortrait = [];
-  for (let i = 1; i <= 20; ++i) {
+  for (let i = 1; i <= 10; ++i) {
     imgPortrait.push(imagesPortrait[`${i}.webp`]);
   }
   var portrait = 0;
@@ -98,7 +98,7 @@ function Homepage() {
     require.context("../assets/color", false, /\.webp$/)
   );
   let imgColor = [];
-  for (let i = 1; i <= 30; ++i) {
+  for (let i = 1; i <= 10; ++i) {
     imgColor.push(imagesColor[`${i}.webp`]);
   }
   var color = 0;
@@ -134,7 +134,7 @@ function Homepage() {
     require.context("../assets/blackgrey", false, /\.webp$/)
   );
   let imgBlackGrey = [];
-  for (let i = 1; i <= 25; ++i) {
+  for (let i = 1; i <= 10; ++i) {
     imgBlackGrey.push(imagesBlackGrey[`${i}.webp`]);
   }
   var blackgrey = 0;
