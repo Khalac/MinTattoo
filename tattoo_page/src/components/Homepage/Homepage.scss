@@ -27,7 +27,7 @@ body {
 
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:800px) {
   .Homepage{
     .Homepage_Header{
       height: 5vh;
@@ -618,12 +618,14 @@ body {
           overflow-x: hidden;
           column-gap: 15px;
           row-gap: 15px;
+          
           .Realism_1, .Realism_2, .Realism_3, .Realism_4, .Realism_5, .Realism_6, .Realism_7, .Realism_8, .Realism_9, .Realism_10,.Realism_11, .Realism_12, .Realism_13, .Realism_14, .Realism_15{
             width: 100%;
             height: 100%;
             display: flex;
             align-items: center;
             justify-content: center;
+            object-fit: cover;
           }
           .Realism_1{
             grid-column: span 2;
@@ -643,6 +645,7 @@ body {
             display: flex;
             align-items: center;
             justify-content: center;
+            object-fit: cover;
           }
           .Portrait_1,.Portrait_8,.Portrait_11,.Portrait_18{
             grid-column: span 2;
@@ -655,6 +658,7 @@ body {
             display: flex;
             align-items: center;
             justify-content: center;
+            object-fit: cover;
           }
           .FineLine_1,.FineLine_8{
             grid-column: span 2;
@@ -667,6 +671,7 @@ body {
             display: flex;
             align-items: center;
             justify-content: center;
+            object-fit: cover;
           }
           .Color_1,.Color_8,.Color_11,.Color_18,.Color_21,.Color_28{
             grid-column: span 2;
@@ -679,6 +684,7 @@ body {
             display: flex;
             align-items: center;
             justify-content: center;
+            object-fit: cover;
           }
           .Blackgrey_1,.Blackgrey_8,.Blackgrey_11,.Blackgrey_18,.Blackgrey_21{
             grid-column: span 2;
@@ -690,6 +696,7 @@ body {
             display: flex;
             align-items: center;
             justify-content: center;
+            object-fit: cover;
           }
           .Asian_1{
             grid-column: span 2;
