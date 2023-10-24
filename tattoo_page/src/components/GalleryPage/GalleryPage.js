@@ -3,7 +3,7 @@ import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 import "./GalleryPage.scss";
 
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 
 import Conven from "../assets/Text/Conven.webp";
 import Exper from "../assets/Text/Exper.webp";
@@ -202,6 +202,50 @@ function GalleryPage() {
     setActiveBlackGrey(false);
     setActiveAsian(true);
   };
+
+  const video1Ref = useRef();
+  const video2Ref = useRef();
+  const video3Ref = useRef();
+  const [stop1, setStop1] = useState(true);
+  const [stop2, setStop2] = useState(true);
+  const [stop3, setStop3] = useState(true);
+
+  const handleVideo1 = () => {
+    setStop1(!stop1);
+    if (stop1 === true) {
+      video1Ref.current.pause();
+    } else {
+      video1Ref.current.play();
+      video2Ref.current.pause();
+      video3Ref.current.pause();
+      setStop2(true);
+      setStop3(true);
+    }
+  };
+  const handleVideo2 = () => {
+    setStop2(!stop2);
+    if (stop2 === true) {
+      video2Ref.current.pause();
+    } else {
+      video2Ref.current.play();
+      video3Ref.current.pause();
+      video1Ref.current.pause();
+      setStop1(true);
+      setStop3(true);
+    }
+  };
+  const handleVideo3 = () => {
+    setStop3(!stop3);
+    if (stop3 === true) {
+      video3Ref.current.pause();
+    } else {
+      video3Ref.current.play();
+      video1Ref.current.pause();
+      video2Ref.current.pause();
+      setStop2(true);
+      setStop1(true);
+    }
+  };
   return (
     <div className="GalleryPage">
       <div className="GalleryPage_Header">
@@ -299,19 +343,13 @@ function GalleryPage() {
             controls
             muted
             preload="none"
-          >
-            <source src={require("../assets/video/1.MOV")} type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
-          <video
-            className="GalleryPage_Video_Video_Control"
-            controls
-            muted
-            preload="none"
+            onClick={handleVideo1}
+            ref={video1Ref}
           >
             <source
-              src={require("../assets/video/main.mp4")}
+              src={require("../assets/video/1.MOV")}
               type="video/mp4"
+              onClick={handleVideo1}
             />
             Your browser does not support the video tag.
           </video>
@@ -320,8 +358,29 @@ function GalleryPage() {
             controls
             muted
             preload="none"
+            onClick={handleVideo2}
+            ref={video2Ref}
           >
-            <source src={require("../assets/video/1.MOV")} type="video/mp4" />
+            <source
+              src={require("../assets/video/main.mp4")}
+              type="video/mp4"
+              onClick={handleVideo2}
+            />
+            Your browser does not support the video tag.
+          </video>
+          <video
+            className="GalleryPage_Video_Video_Control"
+            controls
+            muted
+            preload="none"
+            onClick={handleVideo3}
+            ref={video3Ref}
+          >
+            <source
+              src={require("../assets/video/1.MOV")}
+              type="video/mp4"
+              onClick={handleVideo3}
+            />
             Your browser does not support the video tag.
           </video>
         </div>
