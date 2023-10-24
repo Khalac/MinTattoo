@@ -6,14 +6,14 @@
       height: 5vh;
     }
     .ContactPage_Background{
-      height: 30vh;
+      height: 35vh;
       background-image:url('../assets/imgBrother/myBrother6.webp');
           background-position: 50% 50%;
           background-repeat: no-repeat;
           background-size: cover;
     }
     .ContactPage_Content{
-      height: 40vh;
+      height: 35vh;
       width: 100%;
       background-color: black;
       background-image:url('../assets/bg/bg/MainPage/10.jpg');
@@ -23,7 +23,7 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      padding-top: 15%;
+      padding-top: 10%;
       .ContactPage_Title{
         height: 20%;
         font-size: 180%;

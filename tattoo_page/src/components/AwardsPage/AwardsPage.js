@@ -106,7 +106,7 @@ function AwardsPage() {
           <div className="Awardspage_List_Border_Item">
             <div className="Awardspage_List_Border_Item_Prize">1st</div>
             <div className="Awardspage_List_Border_Item_Content">
-              <div className="Awardspage_List_Border_Item_Content1">
+              <div className="Awardspage_List_Border_Item_Content_1">
                 BEST OF SMALL COLOR FEMALE
               </div>
               <div className="Awardspage_List_Border_Item_Content2">

@@ -403,8 +403,8 @@ function Homepage() {
             <div
               className={
                 activeRealism
-                  ? `Homepage_Gallery_Img_Styles_Style active`
-                  : `Homepage_Gallery_Img_Styles_Style`
+                  ? `Homepage_Gallery_Img_Styles_Style_Left active`
+                  : `Homepage_Gallery_Img_Styles_Style_Left`
               }
               onClick={setRealism}
             >
@@ -423,8 +423,8 @@ function Homepage() {
             <div
               className={
                 activeFineLine
-                  ? `Homepage_Gallery_Img_Styles_Style active`
-                  : `Homepage_Gallery_Img_Styles_Style`
+                  ? `Homepage_Gallery_Img_Styles_Style_Right active`
+                  : `Homepage_Gallery_Img_Styles_Style_Right`
               }
               onClick={setFineLine}
             >
@@ -433,8 +433,8 @@ function Homepage() {
             <div
               className={
                 activeColor
-                  ? `Homepage_Gallery_Img_Styles_Style active`
-                  : `Homepage_Gallery_Img_Styles_Style`
+                  ? `Homepage_Gallery_Img_Styles_Style_Left active`
+                  : `Homepage_Gallery_Img_Styles_Style_Left`
               }
               onClick={setColor}
             >
@@ -453,8 +453,8 @@ function Homepage() {
             <div
               className={
                 activeAsian
-                  ? `Homepage_Gallery_Img_Styles_Style active`
-                  : `Homepage_Gallery_Img_Styles_Style`
+                  ? `Homepage_Gallery_Img_Styles_Style_Right active`
+                  : `Homepage_Gallery_Img_Styles_Style_Right`
               }
               onClick={setAsian}
             >

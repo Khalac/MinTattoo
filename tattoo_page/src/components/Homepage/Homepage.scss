@@ -60,7 +60,7 @@ body {
       }
       .Homepage_PageName_PMP{
         width: 60%;
-        height: 15%;
+        height: 17%;
         background-color: black;
         display: flex;
         align-items: center;
@@ -74,7 +74,7 @@ body {
       }
       .Homepage_PageName_Text{
         width: 40%;
-        height: 10%;
+        height: 13%;
         display: flex;
         align-items: center;
         margin-left: 10%;
@@ -263,7 +263,7 @@ body {
             width: 25%;
             height: 30%;
             position: absolute;
-            top: 3%;
+            top: 2%;
             left: 0;
           }
           .Homepage_Introduce_MainText{
@@ -596,7 +596,7 @@ body {
         align-items: center;
         flex-direction: column;
         .Homepage_Gallery_Img_Styles{
-          width: 100%;
+          width: 85%;
           height: 10%;
           display: grid;
           grid-template-columns: 30% 30% 30%;
@@ -609,6 +609,26 @@ body {
             display: flex;
             justify-content: center;
             align-items: center;
+            cursor: pointer;
+          }
+          .Homepage_Gallery_Img_Styles_Style_Left{
+            color: gray;
+          font-family: "Ladyrose";
+          font-size: 80%;
+          display: flex;
+
+          align-items: center;
+
+          cursor: pointer;
+          }
+          .Homepage_Gallery_Img_Styles_Style_Right{
+            color: gray;
+            font-family: "Ladyrose";
+            font-size: 80%;
+            display: flex;
+            justify-content: end;
+            align-items: center;
+            text-align: left;
             cursor: pointer;
           }
           .active{

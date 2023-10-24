@@ -9,7 +9,9 @@ function Footer() {
   return (
     <div className="Footer">
       <div className="Footer_Infor">
-        <img src={MinhText} alt="" className="Footer_Infor_Logo" />
+        <div className="Footer_Infor_Img">
+          <img src={MinhText} alt="" className="Footer_Infor_Logo" />
+        </div>
         <div className="Footer_Infor_IG">ig: @pham.minh.phuc</div>
         <div className="Footer_Infor_Phone">(210) 843-4253</div>
         <div className="Footer_Infor_Icon">

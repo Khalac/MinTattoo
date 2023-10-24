@@ -13,19 +13,23 @@
             flex-direction: column;
             font-family: "Ladyrose";
             margin-left: 12%;
-            .Footer_Infor_Logo{
-                width: 50%;
-                height: 30%;
+            .Footer_Infor_Img{
                 margin-top: 9%;
+                width: 50%;
+                height: 25%;
+                .Footer_Infor_Logo{
+                    width: 100%;
+                    height: 120%;
+                }
             }
             .Footer_Infor_IG{
                 margin-top: 5%;
-                margin-bottom: 9%;
+                margin-bottom: 10%;
                 font-size: 80%;
                 height: 5%;
             }
             .Footer_Infor_Phone{
-                margin-bottom: 7%;
+                margin-bottom: 9%;
                 font-size: 80%;
                 height: 5%;
             }

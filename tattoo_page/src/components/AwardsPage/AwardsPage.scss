@@ -329,7 +329,7 @@
                 font-size: 80%;         
             }
             .Awardspage_List_Border_Item_Content{
-              width: 70%;
+              width: 75%;
               height: 45px;
               color: black;
             border: 1px solid black;
@@ -340,12 +340,18 @@
               .Awardspage_List_Border_Item_Content1{
                 width: 90%;
                 font-family: "Ladyrose";
-                font-size: 80%;
+                font-size: 70%;
+                text-align: left;
+              } 
+              .Awardspage_List_Border_Item_Content_1{
+                width: 90%;
+                font-family: "Ladyrose";
+                font-size: 65%;
                 text-align: left;
               } 
               .Awardspage_List_Border_Item_Content2{
                 font-family: "Medium15";
-                font-size: 90%;
+                font-size: 80%;
                 width: 90%;
                 text-align: left;
               }
