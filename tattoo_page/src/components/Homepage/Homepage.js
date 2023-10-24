@@ -46,7 +46,7 @@ function Homepage() {
     if (nameStyle === "BlackGrey") setStyle(listImgBlackGrey);
     if (nameStyle === "Asian") setStyle(listImgAsian);
     if (nameStyle === "Portrait") setStyle(listImgPortrait);
-  });
+  }, [nameStyle]);
   function importAll(r) {
     let images = {};
     r.keys().forEach((item, index) => {
@@ -58,19 +58,16 @@ function Homepage() {
     require.context("../assets/realism", false, /\.webp$/)
   );
   let imgRealism = [];
-  for (let i = 1; i <= 10; ++i) {
+  for (let i = 1; i <= 15; ++i) {
     imgRealism.push(imagesRealism[`${i}.webp`]);
   }
   var realism = 0;
   const listImgRealism = imgRealism.map((img) => {
     realism++;
     return (
-      <img
-        src={img}
-        alt="img"
-        loading="lazy"
-        className={`Realism_` + realism}
-      />
+      <div className={`Realism_div_` + realism}>
+        <img src={img} alt="" className={`Realism_` + realism}></img>{" "}
+      </div>
     );
   });
 
@@ -78,19 +75,17 @@ function Homepage() {
     require.context("../assets/portrait", false, /\.webp$/)
   );
   let imgPortrait = [];
-  for (let i = 1; i <= 10; ++i) {
+
+  for (let i = 1; i <= 20; ++i) {
     imgPortrait.push(imagesPortrait[`${i}.webp`]);
   }
   var portrait = 0;
   const listImgPortrait = imgPortrait.map((img) => {
     portrait++;
     return (
-      <img
-        src={img}
-        alt="img"
-        loading="lazy"
-        className={`Portrait_` + portrait}
-      />
+      <div className={`Portrait_div_` + portrait}>
+        <img src={img} alt="" className={`Portrait_` + portrait}></img>{" "}
+      </div>
     );
   });
 
@@ -98,14 +93,16 @@ function Homepage() {
     require.context("../assets/color", false, /\.webp$/)
   );
   let imgColor = [];
-  for (let i = 1; i <= 10; ++i) {
+  for (let i = 1; i <= 30; ++i) {
     imgColor.push(imagesColor[`${i}.webp`]);
   }
   var color = 0;
   const listImgColor = imgColor.map((img) => {
     color++;
     return (
-      <img src={img} alt="img" loading="lazy" className={`Color_` + color} />
+      <div className={`Color_div_` + color}>
+        <img src={img} alt="" className={`Color_` + color}></img>{" "}
+      </div>
     );
   });
   console.log(listImgColor);
@@ -121,12 +118,9 @@ function Homepage() {
   const listImgFineLine = imgFineLine.map((img) => {
     fineline++;
     return (
-      <img
-        src={img}
-        alt="img"
-        loading="lazy"
-        className={`FineLine_` + fineline}
-      />
+      <div className={`FineLine_div_` + fineline}>
+        <img src={img} alt="" className={`FineLine_` + fineline}></img>{" "}
+      </div>
     );
   });
 
@@ -134,19 +128,16 @@ function Homepage() {
     require.context("../assets/blackgrey", false, /\.webp$/)
   );
   let imgBlackGrey = [];
-  for (let i = 1; i <= 10; ++i) {
+  for (let i = 1; i <= 25; ++i) {
     imgBlackGrey.push(imagesBlackGrey[`${i}.webp`]);
   }
   var blackgrey = 0;
   const listImgBlackGrey = imgBlackGrey.map((img) => {
     blackgrey++;
     return (
-      <img
-        src={img}
-        alt="img"
-        loading="lazy"
-        className={`Blackgrey_` + blackgrey}
-      />
+      <div className={`Blackgrey_div_` + blackgrey}>
+        <img src={img} alt="" className={`Blackgrey_` + blackgrey}></img>{" "}
+      </div>
     );
   });
 
@@ -161,7 +152,9 @@ function Homepage() {
   const listImgAsian = imgAsian.map((img) => {
     asian++;
     return (
-      <img src={img} alt="img" loading="lazy" className={`Asian_` + asian} />
+      <div className={`Asian_div_` + asian}>
+        <img src={img} alt="" className={`Asian_` + asian}></img>{" "}
+      </div>
     );
   });
 
