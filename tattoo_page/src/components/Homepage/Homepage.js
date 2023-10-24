@@ -291,8 +291,11 @@ function Homepage() {
                 Hi, my name is Minh.
               </div>
               <div className="Homepage_Introduce_MainText2">
-                I am Vietnamese born (1999) and raised. For the past 10 years,
-                nothing has been more important to me than becoming{" "}
+                I am Vietnamese born <div>(1999) and raised.</div>
+                <div>
+                  For the past 10 years, nothing has been more important to me{" "}
+                </div>
+                <div> than becoming</div>
                 <div>a master inker.</div>
               </div>
             </div>

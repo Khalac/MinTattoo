@@ -20,34 +20,17 @@ function ContactPage() {
       <div className="ContactPage_Content">
         {" "}
         <div className="ContactPage_Title">CONTACT</div>
-        <div className="ContactPage_Content">
-          <div className="ContactPage_Content_Corlor"></div>
-          <div className="ContactPage_Content_Icon">
-            {" "}
-            <div className="ContactPage_Content_Icon_Phone">
-              <FaPhone className="ContactPage_Content_Icon_Phone_Icon" />
-              <div className="ContactPage_Content_Icon_Phone_Text">
-                (210) 843-4253
-              </div>
-            </div>
-            <div className="ContactPage_Content_Icon_Insta">
-              <FaInstagram className="ContactPage_Content_Icon_Insta_Icon" />
-              <div className="ContactPage_Content_Icon_Insta_Text">
-                pham.minh.phuc
-              </div>
-            </div>
-            <div className="ContactPage_Content_Icon_Mail">
-              <FaRegEnvelope className="ContactPage_Content_Icon_Mail_Icon" />
-              <div className="ContactPage_Content_Icon_Mail_Text">
-                phamminhphuc3673@gmail.com
-              </div>
-            </div>
-            <div className="ContactPage_Content_Icon_Locate">
-              <FaLocationDot className="ContactPage_Content_Icon_Locate_Icon" />
-              <div className="ContactPage_Content_Icon_Locate_Text">
-                San Antonio, Texas
-              </div>
-            </div>
+        <div className="ContactPage_Content_Content">
+          <div className="ContactPage_Content_Text">Tel: (210) 843-4253</div>
+
+          <div className="ContactPage_Content_Text">Ig: pham.minh.phuc</div>
+
+          <div className="ContactPage_Content_Text">
+            Add: San Antonio, Texas
+          </div>
+
+          <div className="ContactPage_Content_Text">
+            Mail: phamminhphuc3673@gmail.com
           </div>
         </div>
       </div>

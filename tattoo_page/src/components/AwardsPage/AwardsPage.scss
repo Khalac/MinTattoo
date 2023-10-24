@@ -24,6 +24,7 @@
           align-items: end;
           height: 15%;
           color: #b38632;
+          letter-spacing: 2px;
         }
         .Awardspage_Achive_Title{
           height: 20%;
@@ -36,20 +37,22 @@
             font-size: 150%;
             font-family: "Ladyrose";
             height: 30px;
+          letter-spacing: 2px;
           }
           .Awardspage_Achive_Title2_Border{
             display: flex;
             align-items: center;
             justify-content: center;
-            width: 260px;
-            height: 40px;
-            background-color: black;
-            margin-top: 5px;
+            width: 240px;
+          height: 40px;
+          background-color: #2d2e2d;
+
             .Awardspage_Achive_Title2{
               color: #E4E1D8;
               font-size: 150%;
               font-family: "Ladyrose";
               margin-top:5px ;
+              
             }
           }
         }
@@ -60,7 +63,7 @@
           width: 100%;
           height: 15%;
           margin-top: 5%;
-          margin-bottom: 7%;
+        margin-bottom: 10%;
           .Awardspage_Achive_Text_Content{
             width: 80%;
             font-family: "SemiBold15";
@@ -90,15 +93,15 @@
               justify-content: center;
               box-shadow: 5px 5px 10px 1px grey;
               .Awardspage_Achive_Achive_Convention_Img{
-                width: 60%;
-                height: 33%;
+                width: 70%;
+                height: 43%;
               }
               .Awardspage_Achive_Achive_Convention_Text{
-                width: 80%;
-                height: 10%;
-                font-family: "Ladyrose";
-                text-align: center;
-                font-size: 60%;
+                width: 100%;
+              height: 10%;
+              font-family: "Ladyrose";
+              text-align: center;
+              font-size: 60%;
               }
             }
             .Awardspage_Achive_Achive_YrsExper{
@@ -111,11 +114,11 @@
               justify-content: center;
               box-shadow: 5px 5px 10px 1px grey;
               .Awardspage_Achive_Achive_YrsExper_Img{
-                width: 40%;
-                height: 60%;
+                width: 45%;
+              height: 65%;
               }
               .Awardspage_Achive_Achive_YrsExper_Text{
-                width: 80%;
+                width: 100%;
                 height: 25%;
                 font-family: "Ladyrose";
                 text-align: center;
@@ -132,22 +135,22 @@
               justify-content: center;
               box-shadow: 5px 5px 10px 1px grey;
               .Awardspage_Achive_Achive_Trophies_Img{
-                width: 60%;
-                height: 33%;
+                width: 70%;
+                height: 43%;
               }
               .Awardspage_Achive_Achive_Trophies_Text{
-                width: 80%;
+                width: 100%;
                 height: 10%;
                 font-family: "Ladyrose";
                 text-align: center;
-                font-size: 60%;
+                font-size: 70%;
               }
             }
           }
         }
       }
       .Awards_Awards{
-        height: 60vh;
+        height: 50vh;
         width: 100%;
         background-image:url('../assets/bg/bg/Awards/Asset\ 62.jpg');
       background-position: 50% 50%;
@@ -208,41 +211,41 @@
           column-gap: 2%;
           padding-left: 11%;
           .Competition_Logo1{
-            width: 90%;
-            height: 40%;
+            width: 70%;
+            height: 30%;
             grid-column: span 3;
             margin: auto;
     
           }
           .Competition_Logo2{
             margin: auto;
-            width: 80%;
-            height: 60%;
+            width: 70%;
+            height: 50%;
             grid-column: span 3;
           }
           .Competition_Logo3{
             margin: auto;
-            width: 80%;
+            width: 70%;
             height: 50%;
             grid-column: span 3;
           }
           .Competition_Logo4{
             margin: auto;
-            width: 70%;
-            height: 45%;
+            width: 50%;
+            height: 35%;
             grid-column: span 3;
           }
           .Competition_Logo5{
             margin: auto;
-            width: 80%;
-            height: 40%;
+            width: 70%;
+            height: 30%;
             grid-column: span 3;
             background-color: black;
           }
           .Competition_Logo6{
             margin: auto;
-            width: 70%;
-            height: 50%;
+            width: 60%;
+            height: 40%;
             grid-column: span 3;
           }
           .Competition_Logo7{
@@ -253,25 +256,25 @@
           }
           .Competition_Logo8{
             margin: auto;
-            width: 70%;
-            height: 60%;
+            width: 60%;
+            height: 40%;
             grid-column: span 3;
           }
           .Competition_Logo9{
             margin: auto;
-            width: 90%;
+            width: 80%;
             height: 30%;
             grid-column: span 4;
           }
           .Competition_Logo10{
-            width: 90%;
-            height: 50%;
+            width: 80%;
+            height: 40%;
             grid-column: span 4;
             margin: auto;
           }
           .Competition_Logo11{
-            width: 90%;
-            height: 50%;
+            width: 80%;
+            height: 40%;
             grid-column: span 4;
             margin: auto;
           }
@@ -307,7 +310,7 @@
             margin-top: 5%;
             margin-bottom: 10%;
             .Awardspage_List_Border_Item_Prize{
-              height: 50px;
+              height: 45px;
               width:13%;
               color: white;
               background-color: black;
@@ -319,7 +322,7 @@
             }
             .Awardspage_List_Border_Item_Content{
               width: 70%;
-              height: 50px;
+              height: 45px;
               color: black;
             border: 1px solid black;
               display: flex; 
@@ -334,7 +337,7 @@
               } 
               .Awardspage_List_Border_Item_Content2{
                 font-family: "Medium15";
-                font-size: 80%;
+                font-size: 90%;
                 width: 90%;
                 text-align: left;
               }

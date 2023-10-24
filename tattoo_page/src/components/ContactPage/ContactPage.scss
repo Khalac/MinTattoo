@@ -15,104 +15,42 @@
     .ContactPage_Content{
       height: 40vh;
       width: 100%;
-      background-color: #2d2e2d;
+      background-color: black;
       background-image:url('../assets/bg/bg/MainPage/10.jpg');
-      background-position: 50% 80%;
+      background-position: 50% 50%;
       background-repeat: no-repeat;
-      background-size: 100%;
+      background-size: cover;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 10%;
       .ContactPage_Title{
-        height: 25%;
+        height: 20%;
         font-size: 180%;
         font-family: "Ladyrose";
         color:#b38632;
         display: flex;
         align-items: end;
-        margin-left: 12%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 8%;
+        letter-spacing: 5px;
 
       }
-      .ContactPage_Content{
-        height: 50%;
+      .ContactPage_Content_Content{
+        height: 40%;
         display: flex;
-        flex-direction: row;
-        margin-top: 5%;
-        background-color: #2d2e2d;
-        .ContactPage_Content_Corlor{
-          height: 100%;
-          width: 10%;
-          background-color:  #E4E1D8;
-          margin-right: 5%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        .ContactPage_Content_Text{
+          color: #E4E1D8;
+          font-family: "Medium15";
+          margin-top: 12%;
+          letter-spacing: 2px;
         }
-        .ContactPage_Content_Icon{
-          height: 100%;
-          display: flex;
-          flex-direction: column;
-          width: 70%;
-          justify-content: space-between;
-          .ContactPage_Content_Icon_Phone{
-            height: 15%;
-            display: flex;
-            width: 100%;
-            flex-direction: row;
-            .ContactPage_Content_Icon_Phone_Icon{
-              color: white;
-              margin-right: 7%;
-              font-size: 80%;
-            }
-            .ContactPage_Content_Icon_Phone_Text{
-              color: white;
-              font-size: 80%;
-              font-family: "Medium15";
-            }
-          }
-          .ContactPage_Content_Icon_Insta{
-            height: 15%;
-            display: flex;
-            width: 100%;
-            flex-direction: row;
-            .ContactPage_Content_Icon_Insta_Icon{
-              color: white;
-              margin-right: 7%;
-              font-size: 80%;
-            }
-            .ContactPage_Content_Icon_Insta_Text{
-              color: white;
-              font-size: 80%;
-              font-family: "Medium15";
-            }
-          }
-          .ContactPage_Content_Icon_Mail{
-            height: 15%;
-            display: flex;
-            width: 100%;
-            flex-direction: row;
-            .ContactPage_Content_Icon_Mail_Icon{
-              color: white;
-              margin-right: 7%;
-              font-size: 80%;
-            }
-            .ContactPage_Content_Icon_Mail_Text{
-              color: white;
-              font-size: 80%;
-              font-family: "Medium15";
-            }
-          }
-          .ContactPage_Content_Icon_Locate{
-            height: 15%;
-            display: flex;
-            width: 100%;
-            flex-direction: row;
-            .ContactPage_Content_Icon_Locate_Icon{
-              color: white;
-              margin-right: 7%;
-              font-size: 80%;
-            }
-            .ContactPage_Content_Icon_Locate_Text{
-              color: white;
-              font-size: 80%;
-              font-family: "Medium15";
-            }
-          }
-        }
+       
     }
   }
     .ContactPage_Footer{

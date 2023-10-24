@@ -18,13 +18,14 @@
         height: 65%;
         margin-left: 12%;
         .Aboutpage_About_Title1{
-          font-size: 150%;
+          font-size: 180%;
           height: 100%;
           width: 40%;
           font-family: "Ladyrose";
           padding-top: 5%;
           position: relative;
           text-align: right;
+          letter-spacing: 2px;
         }
         .Aboutpage_About_Title2{
           height: 100%;
@@ -33,12 +34,14 @@
           background-position: 50% 50%;
           background-repeat: no-repeat;
           background-size: cover;
-          font-size: 150%;
+          font-size: 180%;
           font-family: "Ladyrose";
           margin-left: 3%;
           padding-left: 3%;
           padding-top: 5%;
-          color: white;
+
+          color: #E4E1D8;
+          letter-spacing: 2px;
         }
         .Aboutpage_About_Title_Img{
           position: absolute;
@@ -46,7 +49,7 @@
           left: 15%;
           height: 70%;
           width: 130%;
-          background-image:url('../assets/imgBrother/mybrother5.webp');
+          background-image:url('../assets/imgBrother/mybrother8.webp');
           background-position: 50% 50%;
           background-repeat: no-repeat;
           background-size: cover;
@@ -102,11 +105,11 @@
         background-size: cover;
         .Aboutpage_About2_Text_Content{
           color: white;
-          font-family: "SemiBold15";
+          font-family: "Ladyrose";
           font-size: 60%;
           text-align: left;
           width: 80%;
-          line-height: 17px;
+          line-height: 13px;
         }
       }
     }
@@ -139,11 +142,11 @@
         width: 50%;
         .Aboutpage_About3_Text_Content{
           color: black;
-          font-family: "SemiBold15";
+          font-family: "Ladyrose";
           font-size: 60%;
           text-align: left;
-          width: 80%;
-          line-height: 17px;
+          width: 70%;
+          line-height: 13px;
         }
       }
     }
@@ -174,11 +177,11 @@
         width: 60%;
         .Aboutpage_About4_Text_Content{
           color: #E4E1D8;
-          font-family: "SemiBold15";
+          font-family: "Ladyrose";
           font-size: 60%;
           text-align: right;
-          width: 80%;
-          line-height: 17px;
+          width: 70%;
+          line-height: 13px;
         }
       }
     }
