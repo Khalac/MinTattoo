@@ -175,8 +175,8 @@
       background-size: cover;
 
       .GalleryPage_Img_Styles{
-        width: 100%;
-        height: 5%;
+        width: 85%;
+        height: 10%;
         display: grid;
         grid-template-columns: 30% 30% 30%;
         justify-content: center;
@@ -188,6 +188,26 @@
           display: flex;
           justify-content: center;
           align-items: center;
+          cursor: pointer;
+        }
+        .GalleryPage_Img_Styles_Style_Left{
+          color: gray;
+          font-family: "Ladyrose";
+          font-size: 80%;
+          display: flex;
+
+          align-items: center;
+
+          cursor: pointer;
+        }
+        .GalleryPage_Img_Styles_Style_Right{
+          color: gray;
+          font-family: "Ladyrose";
+          font-size: 80%;
+          display: flex;
+          justify-content: end;
+          align-items: center;
+          text-align: left;
           cursor: pointer;
         }
         .active{

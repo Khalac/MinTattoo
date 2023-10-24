@@ -268,12 +268,12 @@ function GalleryPage() {
           <div
             className={
               activeRealism
-                ? `GalleryPage_Img_Styles_Style active`
-                : `GalleryPage_Img_Styles_Style`
+                ? `GalleryPage_Img_Styles_Style_Left active`
+                : `GalleryPage_Img_Styles_Style_Left`
             }
             onClick={setRealism}
           >
-            Realism
+            REALISM
           </div>
           <div
             className={
@@ -283,27 +283,27 @@ function GalleryPage() {
             }
             onClick={setPortrait}
           >
-            Portrait
+            PORTRAI
           </div>
           <div
             className={
               activeFineLine
-                ? `GalleryPage_Img_Styles_Style active`
-                : `GalleryPage_Img_Styles_Style`
+                ? `GalleryPage_Img_Styles_Style_Right active`
+                : `GalleryPage_Img_Styles_Style_Right`
             }
             onClick={setFineLine}
           >
-            Fine line
+            FINE LINE
           </div>
           <div
             className={
               activeColor
-                ? `GalleryPage_Img_Styles_Style active`
-                : `GalleryPage_Img_Styles_Style`
+                ? `GalleryPage_Img_Styles_Style_Left active`
+                : `GalleryPage_Img_Styles_Style_Left`
             }
             onClick={setColor}
           >
-            Color
+            COLOR
           </div>
           <div
             className={
@@ -313,17 +313,17 @@ function GalleryPage() {
             }
             onClick={setBlackGrey}
           >
-            Black&Grey
+            BLACK&GREY
           </div>
           <div
             className={
               activeAsian
-                ? `GalleryPage_Img_Styles_Style active`
-                : `GalleryPage_Img_Styles_Style`
+                ? `GalleryPage_Img_Styles_Style_Right active`
+                : `GalleryPage_Img_Styles_Style_Right`
             }
             onClick={setAsian}
           >
-            Asian
+            ASIAN
           </div>
         </div>
         <div className="GalleryPage_Img_Container">{style}</div>
