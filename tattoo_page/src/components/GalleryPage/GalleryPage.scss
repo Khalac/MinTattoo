@@ -51,11 +51,13 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      background-image:url('../assets/bg/bg/Tattoo/1.jpg');
-
-      background-position: 50% 50%;
-      background-repeat: no-repeat;
-      background-size: cover;
+      position: relative;
+      .GalleryPage_Text_Bg{
+        position:absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 0;
+      }
       .GalleryPage_Text_Content{
         width: 80%;
         height: 100%;
@@ -68,8 +70,9 @@
         line-height: 15px;
         color: #2d2e2d;
         letter-spacing: 0.5px;
+        z-index: 1;
         .GalleryPage_Text_Content1{
-          margin-bottom:2%;
+          margin-bottom:1%;
         }
       }
     }
@@ -78,11 +81,15 @@
       height: 40vh;
       width: 100%;
       background-color: #2d2e2d;
-      background-image:url('../assets/bg/bg/Tattoo/4.jpg');
-      background-position: 50% 50%;
-      background-repeat: no-repeat;
-      background-size: cover;
       padding-bottom: 3%;
+      position: relative;
+      z-index: -2;
+      .GalleryPage_Pricing_Bg{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+      }
       .GalleryPage_Pricing_Title{
         width: 80%;
         font-family: "Ladyrose";
@@ -92,6 +99,7 @@
         align-items: center;
         padding-left: 10%;
         font-size: 180%;
+        z-index: 1;
       }
       .GalleryPage_Pricing_Table{
         height: 40%;
@@ -108,6 +116,8 @@
           flex-direction: column;
           align-items: center;
           justify-content: center;
+          z-index: 1;
+          letter-spacing: 1px;
           .GalleryPage_Pricing_Table_Table1{
             height: 25%;
             width: 100%;
@@ -115,7 +125,7 @@
             justify-content: center;
             align-items: center;
             font-family: "BancheroBold";
-            font-size: 120%;
+            font-size: 110%;
           }
           .GalleryPage_Pricing_Table_Table2{
             height: 40%;
@@ -129,7 +139,7 @@
             .GalleryPage_Pricing_Table_Table2_Text{
               width: 80%;
               font-family: "Medium15";
-              font-size: 80%;
+              font-size: 70%;
             }
           }
           .GalleryPage_Pricing_Table_Table3{
@@ -142,7 +152,8 @@
             align-items: center;
             color: #e4e1d8;
             font-family: "BancheroBold";
-              font-size: 110%;
+              font-size: 90%;
+              
           }
         }
       }
@@ -153,16 +164,19 @@
         flex-direction: column;
         align-items: center;
         justify-content: space-evenly;
+        
         .GalleryPage_Pricing_Booking_Text1{
           color: #b38632;
           font-family: "Ladyrose";
           font-size: 65%;
           height: 10%;
+          z-index: 1;
         }
         .GalleryPage_Pricing_Booking_Text2{
           color: #e4e1d8;
           font-size: 130%;
           font-family: "Ladyrose";
+          z-index: 1;
         }
       }
     }
@@ -174,10 +188,13 @@
       align-items: center;
       flex-direction: column;
       background-color:#2d2e2d ;
-      background-image:url('../assets/bg/bg/Tattoo/2.jpg');
-      background-position: 50% 50%;
-      background-repeat: no-repeat;
-      background-size: cover;
+      position: relative;
+      .GalleryPage_Img_Bg{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 0;
+      }
 
       .GalleryPage_Img_Styles{
         width: 85%;
@@ -185,7 +202,8 @@
         display: grid;
         grid-template-columns: 30% 30% 30%;
         justify-content: center;
-        padding-bottom: 5%;
+        margin-bottom: 3%;
+          letter-spacing: 1.5px;
         .GalleryPage_Img_Styles_Style{
           color: gray;
           font-family: "Ladyrose";
@@ -194,13 +212,14 @@
           justify-content: center;
           align-items: center;
           cursor: pointer;
+          z-index: 1;
         }
         .GalleryPage_Img_Styles_Style_Left{
           color: gray;
           font-family: "Ladyrose";
           font-size: 60%;
           display: flex;
-
+          z-index: 1;
           align-items: center;
 
           cursor: pointer;
@@ -214,6 +233,7 @@
           align-items: center;
           text-align: left;
           cursor: pointer;
+          z-index: 1;
         }
         .active{
           color: white;
@@ -224,14 +244,14 @@
         width: 80%;
         display: grid;
         grid-template-columns: auto auto auto auto;
-
+        background-color: #2d2e2d;
         align-items: center;
         justify-content: center;
         overflow-y: auto;
         overflow-x: hidden;
         column-gap: 15px;
         row-gap: 15px;
-
+        z-index: 1;
         .Realism_div_1, .Realism_div_2, .Realism_div_3, .Realism_div_4, .Realism_div_5, .Realism_div_6, .Realism_div_7, .Realism_div_8, .Realism_div_9, .Realism_div_10,.Realism_div_11, .Realism_div_12, .Realism_div_13, .Realism_div_14, .Realism_div_15{
           width: 100%;
           height: 100%;
@@ -345,10 +365,13 @@
     .GalleryPage_Video{
       height: 80vh;
       width: 100%;
-      background-image:url('../assets/bg/bg/Tattoo/3.jpg');
-      background-position: 50% 50%;
-      background-repeat: no-repeat;
-      background-size: cover;
+     position: relative;
+     .GalleryPage_Video_Bg{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+     }
       .GalleryPage_Video_Title{
         color: #b38632;
         font-family: "BancheroBold";
@@ -359,6 +382,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        z-index: 1;
       }
       .GalleryPage_Video_Video{
         width: 100%;
@@ -367,14 +391,14 @@
         justify-content: space-evenly;
         align-items: center;
         height: 35%;
-        
+        z-index: 1;
         .GalleryPage_Video_Video_Control{
           width: 30%;
           height: 80%;
         }
       }
       .GalleryPage_Video_Text{
-        margin-top: 5%;
+        margin-top: 3%;
         height: 45%;
         width: 100%;
         display: flex;
@@ -389,6 +413,7 @@
           display: flex;
           justify-content: center;
           align-items: center;
+          z-index: 1;
           .GalleryPage_Video_Text_Border_Text{
           color: #e4e1d8;
           width: 90%;
@@ -400,8 +425,9 @@
           justify-content: center;
           align-items: center;
           flex-direction: column;
+          z-index: 1;
           .GalleryPage_Video_Text_Border_Text1{
-            margin-bottom: 2%;
+            margin-bottom: 1%;
           }
           }
         }
@@ -411,10 +437,14 @@
       height: 45vh;
       width: 100%;
 
-      background-image:url('../assets/bg/bg/Tattoo/5.jpg');
-      background-position: 50% 50%;
-      background-repeat: no-repeat;
-      background-size: cover;
+      position: relative;
+      background-color: #e4e1d8;
+      .GalleryPage_Achive_Bg{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 0;
+      }
         .GalleryPage_Achive_Content{
           height: 60%;
           width: 100%;
@@ -432,6 +462,7 @@
             align-items: center;
             justify-content: center;
             box-shadow: 5px 5px 10px 1px grey;
+            z-index: 1;
             .GalleryPage_Achive_Achive_Convention_Img{
               width: 67%;
               height: 35%;
@@ -455,9 +486,10 @@
             align-items: center;
             justify-content: center;
             box-shadow: 5px 5px 10px 1px grey;
+            z-index: 1;
             .GalleryPage_Achive_Achive_YrsExper_Img{
-              width: 35%;
-              height: 50%;
+              width: 40%;
+              height: 55%;
             }
             .GalleryPage_Achive_Achive_YrsExper_Text{
               width: 80%;
@@ -478,8 +510,9 @@
             align-items: center;
             justify-content: center;
             box-shadow: 5px 5px 10px 1px grey;
+            z-index: 1;
             .GalleryPage_Achive_Achive_Trophies_Img{
-              width: 67%;
+              width: 70%;
               height: 35%;
             }
             .GalleryPage_Achive_Achive_Trophies_Text{
@@ -500,23 +533,30 @@
           justify-content: center;
           .GalleryPage_Achive_Text_Container{
             width: 90%;
-            height: 70%;
+            height: 50%;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             background-color: #2d2e2d;
+            z-index: 1;
             .GalleryPage_Achive_Text_Container_Text1{
               color: #e4e1d8;
               font-family: "Ladyrose";
               margin-bottom: 2%;
+              font-size: 80%;
             }
             .GalleryPage_Achive_Text_Container_Text2{
               color: #e4e1d8;
               font-family: "Ladyrose";
+              font-size: 80%;
             } 
           }
         }
+    }
+    .GalleryPage_Seperate{
+      height: 5vh;
+      background-color: #8b8c8b;
     }
     .GalleryPage_Footer{
       height: 25vh;

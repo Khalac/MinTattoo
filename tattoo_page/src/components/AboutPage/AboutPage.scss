@@ -8,10 +8,15 @@
       height: 60vh;
       width: 100%;
       padding-top: 5%;
-      background-image:url('../assets/bg/bg/About/Asset\ 57.jpg');
-      background-position: 50% 50%;
-      background-repeat: no-repeat;
-      background-size: cover;
+    position: relative;
+    .Aboutpage_About1_Bg
+    {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      z-index: 0;
+    }
       .Aboutpage_About_Title{
         display: flex;
         flex-direction: row;
@@ -22,10 +27,11 @@
           height: 100%;
           width: 40%;
           font-family: "Ladyrose";
-          padding-top: 5%;
+          padding-top: 4%;
           position: relative;
           text-align: right;
           letter-spacing: 2px;
+          z-index: 1;
         }
         .Aboutpage_About_Title2{
           height: 100%;
@@ -38,22 +44,24 @@
           font-family: "Ladyrose";
           margin-left: 3%;
           padding-left: 3%;
-          padding-top: 5%;
+          padding-top: 4%;
 
           color: #E4E1D8;
           letter-spacing: 2px;
+          z-index: 0;
         }
         .Aboutpage_About_Title_Img{
           position: absolute;
           top: 20%;
-          left: 15%;
+          left: 10%;
           height: 65%;
           width: 130%;
           background-image:url('../assets/imgBrother/mybrother8.webp');
           background-position: 50% 50%;
           background-repeat: no-repeat;
           background-size: cover;
-          border: 10px solid #E4E1D8;
+          border: 12px solid #E4E1D8;
+          z-index: 1;
         }
       }
       .Aboutpage_About_Text{
@@ -68,12 +76,14 @@
         letter-spacing: 0.5px;
         .Aboutpage_About_Text1{
           font-family: "SemiBold15";
-          font-size: 60%;
+          font-size: 65%;
+          z-index: 1;
         }
         .Aboutpage_About_Text2{
           width: 100%;
           font-family: "SemiBold15";
-          font-size: 60%;
+          font-size: 65%;
+          z-index: 1;
         }
       }
     
@@ -100,10 +110,13 @@
         align-items: center;
         height: 30%;
         width: 100%;
-        background-image:url('../assets/bg/bg/About/Asset\ 58.jpg');
-        background-position: 50% 50%;
-        background-repeat: no-repeat;
-        background-size: cover;
+        position: relative;
+        .Aboutpage_About2_Text_Bg{
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          z-index: 0;
+        }
         .Aboutpage_About2_Text_Content{
           color: white;
           font-family: "SemiBold15";
@@ -112,6 +125,7 @@
           width: 80%;
           line-height: 13px;
           letter-spacing: 0.5px;
+          z-index: 1;
         }
       }
     }
@@ -122,10 +136,13 @@
       width: 100%;
       background-color: #E4E1D8;
       align-items: center;
-      background-image:url('../assets/bg/bg/About/Asset\ 59.jpg');
-      background-position: 50% 50%;
-      background-repeat: no-repeat;
-      background-size: cover;
+      position: relative;
+      .Aboutpage_About3_Bg{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 0;
+      }
       .Aboutpage_About3_Img{
         height: 50%;
         width: 50%;
@@ -135,6 +152,7 @@
         background-size: cover;
         border-top: 10px solid #2d2e2d;
         border-bottom: 10px solid #2d2e2d;
+        z-index: 1;
       }
       .Aboutpage_About3_Text{
         display: flex;
@@ -143,7 +161,7 @@
         height: 100%;
         width: 50%;
         .Aboutpage_About3_Text_Content{
-          color: black;
+          color: #2d2e2d;
           font-family: "SemiBold15";
           font-size: 65%;
           text-align: left;
@@ -151,6 +169,7 @@
           line-height: 13px;
 
           letter-spacing: 0.5px;
+          z-index: 1;
         }
       }
     }
@@ -161,10 +180,13 @@
       width: 100%;
       background-color: #2d2e2d;
       align-items: center;
-      background-image:url('../assets/bg/bg/About/Asset\ 60.jpg');
-      background-position: 50% 50%;
-      background-repeat: no-repeat;
-      background-size: cover;
+     position: relative;
+     .Aboutpage_About4_Bg{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+     }
       .Aboutpage_About4_Img{
         height: 70%;
         width: 30%;
@@ -172,6 +194,7 @@
         background-position: 50% 50%;
         background-repeat: no-repeat;
         background-size: cover;
+        z-index: 1;
       }
       .Aboutpage_About4_Text{
         display: flex;
@@ -186,7 +209,9 @@
           text-align: right;
           width: 70%;
           line-height: 13px;
+
           letter-spacing: 0.5px;
+          z-index: 1;
         }
       }
     }

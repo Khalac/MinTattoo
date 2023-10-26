@@ -21,6 +21,10 @@ import lgcom11 from "../assets/lgcom/lgcom11.webp";
 
 import { BsFillStarFill } from "react-icons/bs";
 
+import BgAW1 from "../assets/bg/bg1/awards/1.png";
+import BgAW2 from "../assets/bg/bg1/awards/2.png";
+import BgAW3 from "../assets/bg/bg1/awards/3.png";
+
 function AwardsPage() {
   return (
     <div className="Awardspage">
@@ -28,6 +32,7 @@ function AwardsPage() {
         <Header />
       </div>
       <div className="Awardspage_Achive">
+        <img src={BgAW1} alt="" className="Awardspage_Achive_Bg" />
         <div className="Awardspage_Achive_Pagename">AWARDS</div>
         <div className="Awardspage_Achive_Title">
           <div className="Awardspage_Achive_Title1">WHY YOU SHOULD</div>
@@ -79,6 +84,7 @@ function AwardsPage() {
         </div>
       </div>
       <div className="Awards_Awards">
+        <img src={BgAW2} alt="" className="Awards_Awards_Bg" />
         <div className="Awards_Awards_Title">
           <div className="Awards_Awards_Title_Title1">
             <div className="Awards_Awards_Title_Title1_Box">MINH PHAM'S</div>
@@ -121,20 +127,10 @@ function AwardsPage() {
           <div className="Awards_Awards_Competition_Logo_Container11">
             <img src={lgcom11} alt="Logo" className="Competition_Logo11"></img>
           </div>
-          {/* <img src={lgcom1} alt="Logo" className="Competition_Logo1"></img>
-          <img src={lgcom2} alt="Logo" className="Competition_Logo2"></img>
-          <img src={lgcom3} alt="Logo" className="Competition_Logo3"></img>
-          <img src={lgcom4} alt="Logo" className="Competition_Logo4"></img>
-          <img src={lgcom5} alt="Logo" className="Competition_Logo5"></img>
-          <img src={lgcom6} alt="Logo" className="Competition_Logo6"></img>
-          <img src={lgcom7} alt="Logo" className="Competition_Logo7"></img>
-          <img src={lgcom8} alt="Logo" className="Competition_Logo8"></img>
-          <img src={lgcom9} alt="Logo" className="Competition_Logo9"></img>
-          <img src={lgcom10} alt="Logo" className="Competition_Logo10"></img>
-          <img src={lgcom11} alt="Logo" className="Competition_Logo11"></img> */}
         </div>
       </div>
       <div className="Awardspage_List">
+        <img src={BgAW3} alt="" className="Awardspage_List_Bg" />
         <div className="Awardspage_List_Border">
           <div className="Awardspage_List_Border_Item">
             <div className="Awardspage_List_Border_Item_Prize">1st</div>

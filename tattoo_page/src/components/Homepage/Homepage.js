@@ -28,6 +28,16 @@ import Conven from "../assets/Text/Conven.webp";
 import Exper from "../assets/Text/Exper.webp";
 import Trophies from "../assets/Text/Trophies.webp";
 
+import BgMP2 from "../assets/bg/bg1/mainpage/2.png";
+import BgMP3 from "../assets/bg/bg1/mainpage/3.png";
+import BgMP4 from "../assets/bg/bg1/mainpage/4.png";
+import BgMP5 from "../assets/bg/bg1/mainpage/5.png";
+import BgMP6 from "../assets/bg/bg1/mainpage/6.png";
+import BgMP7 from "../assets/bg/bg1/mainpage/7.png";
+import BgMP8 from "../assets/bg/bg1/mainpage/8.png";
+import BgMP9 from "../assets/bg/bg1/mainpage/9.png";
+import BgMP10 from "../assets/bg/bg1/mainpage/10.png";
+
 function Homepage() {
   const [nameStyle, setNameStyle] = useState("Realism");
   const [style, setStyle] = useState();
@@ -247,12 +257,14 @@ function Homepage() {
       </div>
       <div className="Homepage_Seperate"></div>
       <div className="Homepage_Competition_Img">
+        <img src={BgMP2} alt="" className="Homepage_Competition_Img_Bg" />
         <div className="Homepage_Competition_Img1"></div>
         <div className="Homepage_Competition_Img2"></div>
         <div className="Homepage_Competition_Img3"></div>
         <div className="Homepage_Competition_Img4"></div>
       </div>
       <div className="Homepage_Competition_Logo">
+        <img src={BgMP3} alt="" className="Homepage_Competition_Logo_Bg" />
         <img src={lgcom1} alt="Logo" className="Competition_Logo1"></img>
         <img src={lgcom2} alt="Logo" className="Competition_Logo2"></img>
         <img src={lgcom3} alt="Logo" className="Competition_Logo3"></img>
@@ -266,6 +278,7 @@ function Homepage() {
         <img src={lgcom11} alt="Logo" className="Competition_Logo11"></img>
       </div>
       <div className="Homepage_Introduce">
+        <img src={BgMP4} alt="" className="Homepage_Introduce_Bg" />
         <div className="Homepage_Introduce_Video">
           <video
             className="Homepage_Introduce_Video_Control"
@@ -303,8 +316,11 @@ function Homepage() {
           </div>
         </div>
       </div>
-      <div className="Homepage_Seperate2"></div>
+      <div className="Homepage_Seperate2">
+        <img src={BgMP5} alt="" className="Homepage_Seperate2_Bg" />
+      </div>
       <div className="Homepage_About">
+        <img src={BgMP6} alt="" className="Homepage_About_Bg" />
         <div className="Homepage_About_Title">
           <div className="Homepage_About_Title1">
             ABOUT
@@ -326,6 +342,7 @@ function Homepage() {
         </div>
       </div>
       <div className="Homepage_Achive">
+        <img src={BgMP7} alt="" className="Homepage_Achive_Bg" />
         <div className="Homepage_Achive_Title">
           <div className="Homepage_Achive_Title1">WHY YOU SHOULD</div>
           <div className="Homepage_Achive_Title2_Border">
@@ -384,6 +401,7 @@ function Homepage() {
         </div>
       </div>
       <div className="Homepage_Gallery">
+        <img src={BgMP8} alt="" className="Homepage_Gallery_Bg" />
         <div className="Homepage_Gallery_Name">PHAM MINH PHUC</div>
         <div className="Homepage_Gallery_Title">GALLERY</div>
         <div className="Homepage_Gallery_Text">
@@ -415,7 +433,7 @@ function Homepage() {
               }
               onClick={setPortrait}
             >
-              PORTRAI
+              PORTRAIt
             </div>
             <div
               className={
@@ -466,8 +484,11 @@ function Homepage() {
           </div>
         </div>
       </div>
-      <div className="Homepage_Seperate3"></div>
+      <div className="Homepage_Seperate3">
+        <img src={BgMP9} alt="" className="Homepage_Seperate3_Bg" />
+      </div>
       <div className="Homepage_Contact">
+        <img src={BgMP10} alt="" className="Homepage_Contact_Bg" />
         <div className="Homepage_Contact_Title">CONTACT</div>
         <div className="Homepage_Contact_Content">
           <div className="Homepage_Contact_Content_Text">
@@ -496,7 +517,7 @@ function Homepage() {
           className="Homepage_Map_Size"
         ></iframe>
       </div>
-      <div className="Homepage_Seperate2"></div>
+      <div className="Homepage_Seperate4"></div>
       <div className="Homepage_footer">
         <Footer />
       </div>

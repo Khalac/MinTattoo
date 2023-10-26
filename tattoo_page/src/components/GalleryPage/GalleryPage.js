@@ -11,6 +11,12 @@ import Trophies from "../assets/Text/Trophies.webp";
 
 import PMP from "../assets/Text/PMP.webp";
 
+import BgGR1 from "../assets/bg/bg1/tattoo/1.png";
+import BgGR2 from "../assets/bg/bg1/tattoo/2.png";
+import BgGR3 from "../assets/bg/bg1/tattoo/3.png";
+import BgGR4 from "../assets/bg/bg1/tattoo/4.png";
+import BgGR5 from "../assets/bg/bg1/tattoo/5.png";
+
 function GalleryPage() {
   const [nameStyle, setNameStyle] = useState("Realism");
   const [style, setStyle] = useState();
@@ -251,6 +257,7 @@ function GalleryPage() {
         <div className="GalleryPage_Title_Text2">TATTOO GALLERY</div>
       </div>
       <div className="GalleryPage_Text">
+        <img src={BgGR1} alt="" className="GalleryPage_Text_Bg" />
         <div className="GalleryPage_Text_Content">
           <div className="GalleryPage_Text_Content1">
             Meet a talented individual named Minh, who hails from Vietnam and
@@ -264,6 +271,7 @@ function GalleryPage() {
         </div>
       </div>
       <div className="GalleryPage_Img">
+        <img src={BgGR2} alt="" className="GalleryPage_Img_Bg" />
         <div className="GalleryPage_Img_Styles">
           <div
             className={
@@ -283,7 +291,7 @@ function GalleryPage() {
             }
             onClick={setPortrait}
           >
-            PORTRAI
+            PORTRAIT
           </div>
           <div
             className={
@@ -329,6 +337,7 @@ function GalleryPage() {
         <div className="GalleryPage_Img_Container">{style}</div>
       </div>
       <div className="GalleryPage_Video">
+        <img src={BgGR3} alt="" className="GalleryPage_Video_Bg" />
         <div className="GalleryPage_Video_Title">CHECK THIS OUT!!!</div>
         <div className="GalleryPage_Video_Video">
           <video
@@ -401,6 +410,7 @@ function GalleryPage() {
         </div>
       </div>
       <div className="GalleryPage_Pricing">
+        <img src={BgGR4} alt="" className="GalleryPage_Pricing_Bg" />
         <div className="GalleryPage_Pricing_Title">PRICING</div>
         <div className="GalleryPage_Pricing_Table">
           <div className="GalleryPage_Pricing_Table_Container">
@@ -429,6 +439,7 @@ function GalleryPage() {
         </div>
       </div>
       <div className="GalleryPage_Achive">
+        <img src={BgGR5} alt="" className="GalleryPage_Achive_Bg" />
         <div className="GalleryPage_Achive_Content">
           <div className="GalleryPage_Achive_Achive_Convention">
             <img
@@ -472,6 +483,7 @@ function GalleryPage() {
           </div>
         </div>
       </div>
+      <div className="GalleryPage_Seperate"></div>
       <div className="GalleryPage_Footer">
         <Footer />
       </div>
