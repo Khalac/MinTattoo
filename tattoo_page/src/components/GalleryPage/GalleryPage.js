@@ -2,6 +2,7 @@ import React from "react";
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 import "./GalleryPage.scss";
+import { useNavigate } from "react-router-dom";
 
 import { useEffect, useState, useRef } from "react";
 
@@ -245,6 +246,10 @@ function GalleryPage() {
       setStop1(true);
     }
   };
+  const nav = useNavigate();
+  const goToAwards = () => {
+    nav("/Awards", { replace: true });
+  };
   return (
     <div className="GalleryPage">
       <div className="GalleryPage_Header">
@@ -473,7 +478,10 @@ function GalleryPage() {
           </div>
         </div>
         <div className="GalleryPage_Achive_Text">
-          <div className="GalleryPage_Achive_Text_Container">
+          <div
+            className="GalleryPage_Achive_Text_Container"
+            onClick={goToAwards}
+          >
             <div className="GalleryPage_Achive_Text_Container_Text1">
               VIEW ALL
             </div>

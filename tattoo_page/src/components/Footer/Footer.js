@@ -15,8 +15,18 @@ function Footer() {
         <div className="Footer_Infor_IG">ig: @pham.minh.phuc</div>
         <div className="Footer_Infor_Phone">(210) 843-4253</div>
         <div className="Footer_Infor_Icon">
-          <SlSocialFacebook className="Footer_Infor_Icon_Fb" />
-          <SlSocialInstagram className="Footer_Infor_Icon_Insta" />
+          <a
+            href="https://www.facebook.com/phamminhphuc3673"
+            className="Footer_Infor_Icon_Link"
+          >
+            <SlSocialFacebook className="Footer_Infor_Icon_Icon" />
+          </a>
+          <a
+            href="https://www.instagram.com/pham.minh.phuc/"
+            className="Footer_Infor_Icon_Link"
+          >
+            <SlSocialInstagram className="Footer_Infor_Icon_Icon" />
+          </a>
         </div>
       </div>
       <div className="Footer_Link">

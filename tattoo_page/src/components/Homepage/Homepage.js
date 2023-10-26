@@ -433,7 +433,7 @@ function Homepage() {
               }
               onClick={setPortrait}
             >
-              PORTRAIt
+              PORTRAIT
             </div>
             <div
               className={
