@@ -12,7 +12,7 @@ function Footer() {
         <div className="Footer_Infor_Img">
           <img src={MinhText} alt="" className="Footer_Infor_Logo" />
         </div>
-        <div className="Footer_Infor_IG">ig: @pham.minh.phuc</div>
+        <div className="Footer_Infor_IG">Ig: @pham.minh.phuc</div>
         <div className="Footer_Infor_Phone">(210) 843-4253</div>
         <div className="Footer_Infor_Icon">
           <a
