@@ -13,10 +13,10 @@ root.render(
     <BrowserRouter>
       <Routes>
         <Route exac path="/" element={<Homepage />} />
-        <Route exac path="About" element={<AboutPage />} />
-        <Route exac path="Contact" element={<ContactPage />} />
-        <Route exac path="Gallery" element={<GalleryPage />} />
-        <Route exac path="Awards" element={<AwardsPage />} />
+        <Route path="/About" element={<AboutPage />} />
+        <Route path="/Contact" element={<ContactPage />} />
+        <Route path="/Gallery" element={<GalleryPage />} />
+        <Route path="/Awards" element={<AwardsPage />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

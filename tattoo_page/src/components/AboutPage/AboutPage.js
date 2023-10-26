@@ -68,9 +68,11 @@ function AboutPage() {
             {" "}
             Since then, my lifechanged forever, I met and learned from some of
             best and most amazing artists in town, and with self-learning about
-            original art and digital art, my skil set has improved rapidly. So
-            much so that I have competed in and won many competitions, all
-            across the States and the world.
+            original art and digital art, my skil set has improved rapidly.{" "}
+            <div>
+              So much so that I have competed in and won many competitions, all
+              across the States and the world.
+            </div>
           </div>
         </div>
         <div className="Aboutpage_About4_Img"></div>

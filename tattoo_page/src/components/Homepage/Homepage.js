@@ -335,10 +335,8 @@ function Homepage() {
             nothing has been more important to me than becoming a master inker.
           </div>
         </div>
-        <div className="Homepage_About_Button">
-          <button className="Homepage_About_Button_Text" onClick={linkToAbout}>
-            Read more
-          </button>
+        <div className="Homepage_About_Button" onClick={linkToAbout}>
+          <button className="Homepage_About_Button_Text">Read more</button>
         </div>
       </div>
       <div className="Homepage_Achive">
@@ -390,11 +388,11 @@ function Homepage() {
               </div>
             </div>
           </div>
-          <div className="Homepage_Achive_Achive_Details">
-            <div
-              className="Homepage_Achive_Achive_Details_Button"
-              onClick={linkToAwards}
-            >
+          <div
+            className="Homepage_Achive_Achive_Details"
+            onClick={linkToAwards}
+          >
+            <div className="Homepage_Achive_Achive_Details_Button">
               View Details
             </div>
           </div>
@@ -478,10 +476,8 @@ function Homepage() {
           </div>
           <div className="Homepage_Gallery_Img_Container">{style}</div>
         </div>
-        <div className="Homepage_Gallery_Button">
-          <div className="Homepage_Gallery_Button_Text" onClick={linkToGallery}>
-            View more
-          </div>
+        <div className="Homepage_Gallery_Button" onClick={linkToGallery}>
+          <div className="Homepage_Gallery_Button_Text">View more</div>
         </div>
       </div>
       <div className="Homepage_Seperate3">

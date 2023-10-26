@@ -157,18 +157,19 @@
       }
       .Aboutpage_About3_Text{
         display: flex;
-        justify-content: center;
+
         align-items: center;
         height: 100%;
         width: 50%;
         .Aboutpage_About3_Text_Content{
           color: #2d2e2d;
           font-family: "SemiBold15";
-          font-size: 65%;
-          text-align: left;
-          width: 70%;
-          line-height: 13px;
+          font-size: 67%;
 
+          text-align: left;
+          width: 75%;
+          line-height: 13px;
+          padding-left: 10%;
           letter-spacing: 0.5px;
           z-index: 1;
         }
@@ -199,7 +200,7 @@
       }
       .Aboutpage_About4_Text{
         display: flex;
-        justify-content: center;
+        justify-content: end;
         align-items: center;
         height: 100%;
         width: 60%;
@@ -208,9 +209,9 @@
           font-family: "SemiBold15";
           font-size: 60%;
           text-align: right;
-          width: 70%;
+          width: 75%;
           line-height: 13px;
-
+          padding-right: 10%;
           letter-spacing: 0.5px;
           z-index: 1;
         }
