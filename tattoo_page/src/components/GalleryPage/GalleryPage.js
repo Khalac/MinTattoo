@@ -381,16 +381,21 @@ function GalleryPage() {
           <div className="GalleryPage_Video_Text_Border">
             <div className="GalleryPage_Video_Text_Border_Text">
               {" "}
-              He finds inspiration in a multitude of genres, with a simple
-              criterion: if it looks good, it captivates him. This constant
-              desire to explore and learn keeps Minh open to new artistic
-              horizons. His portfolio proudly showcases his expertise in Black
-              and Grey realism, Color Realism, and a deep appreciation for
-              Oriental style tattoos. Beyond these specialties, Minh is always
-              ready to embrace and excel in any style requested by his clients.
-              His dedication to his craft and his boundless creativity make him
-              a remarkable tattoo artist, ready to turn your artistic visions
-              into permanent masterpieces.
+              <div className="GalleryPage_Video_Text_Border_Text1">
+                He finds inspiration in a multitude of genres, with a simple
+                criterion: if it looks good, it captivates him. This constant
+                desire to explore and learn keeps Minh open to new artistic
+                horizons. His portfolio proudly showcases his expertise in Black
+                and Grey realism, Color Realism, and a deep appreciation for
+                Oriental style tattoos.{" "}
+              </div>
+              <div>
+                Beyond these specialties, Minh is always ready to embrace and
+                excel in any style requested by his clients. His dedication to
+                his craft and his boundless creativity make him a remarkable
+                tattoo artist, ready to turn your artistic visions into
+                permanent masterpieces.
+              </div>
             </div>
           </div>
         </div>

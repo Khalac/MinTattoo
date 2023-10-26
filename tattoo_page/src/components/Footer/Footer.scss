@@ -8,7 +8,7 @@
         background-color: #E4E1D8;
         .Footer_Infor{
             height: 100%;
-            width: 60%;
+            width: 55%;
             display: flex;
             flex-direction: column;
             font-family: "Ladyrose";
@@ -25,12 +25,12 @@
             .Footer_Infor_IG{
                 margin-top: 5%;
                 margin-bottom: 10%;
-                font-size: 80%;
+                font-size: 70%;
                 height: 5%;
             }
             .Footer_Infor_Phone{
                 margin-bottom: 9%;
-                font-size: 80%;
+                font-size: 70%;
                 height: 5%;
             }
             .Footer_Infor_Icon{
@@ -54,10 +54,11 @@
             flex-direction: column;
             align-items: end;
             justify-content: space-evenly;
+
             .Footer_Page{
 
                 font-family: "Ladyrose";
-                font-size: 80%;
+                font-size: 70%;
                 cursor: pointer;
                 text-decoration: none;
                 color: black;
