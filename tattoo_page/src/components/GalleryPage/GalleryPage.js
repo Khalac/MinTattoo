@@ -347,7 +347,7 @@ function GalleryPage() {
             }
             onClick={setFineLine}
           >
-            LINE WORK
+            LINEWORK
           </div>
           <div
             className={

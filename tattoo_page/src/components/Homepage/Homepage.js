@@ -485,7 +485,7 @@ function Homepage() {
               }
               onClick={setFineLine}
             >
-              LINE WORK
+              LINEWORK
             </div>
             <div
               className={
