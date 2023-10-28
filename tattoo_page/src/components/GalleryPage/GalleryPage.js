@@ -29,6 +29,19 @@ function GalleryPage() {
   const [activeBlackGrey, setActiveBlackGrey] = useState(false);
   const [activePortrait, setActivePortrait] = useState(false);
 
+  const [popUp, setPopUp] = useState(false);
+  const [img, setImg] = useState();
+
+  const popUpImg = (img) => {
+    setImg(img);
+    setPopUp(!popUp);
+    if (popUp === true) {
+      document.body.style.overflow = "auto";
+    } else {
+      document.body.style.overflow = "hidden";
+    }
+  };
+
   useEffect(() => {
     if (nameStyle === "Realism") setStyle(listImgRealism);
     if (nameStyle === "Color") setStyle(listImgColor);
@@ -48,7 +61,7 @@ function GalleryPage() {
     require.context("../assets/realism", false, /\.webp$/)
   );
   let imgRealism = [];
-  for (let i = 1; i <= 15; ++i) {
+  for (let i = 1; i <= 25; ++i) {
     imgRealism.push(imagesRealism[`${i}.webp`]);
   }
   var realism = 0;
@@ -56,7 +69,12 @@ function GalleryPage() {
     realism++;
     return (
       <div className={`Realism_div_` + realism}>
-        <img src={img} alt="" className={`Realism_` + realism}></img>{" "}
+        <img
+          src={img}
+          alt=""
+          className={`Realism_` + realism}
+          onClick={() => popUpImg(img)}
+        ></img>{" "}
       </div>
     );
   });
@@ -74,7 +92,12 @@ function GalleryPage() {
     portrait++;
     return (
       <div className={`Portrait_div_` + portrait}>
-        <img src={img} alt="" className={`Portrait_` + portrait}></img>{" "}
+        <img
+          src={img}
+          alt=""
+          className={`Portrait_` + portrait}
+          onClick={() => popUpImg(img)}
+        ></img>{" "}
       </div>
     );
   });
@@ -83,7 +106,7 @@ function GalleryPage() {
     require.context("../assets/color", false, /\.webp$/)
   );
   let imgColor = [];
-  for (let i = 1; i <= 30; ++i) {
+  for (let i = 1; i <= 35; ++i) {
     imgColor.push(imagesColor[`${i}.webp`]);
   }
   var color = 0;
@@ -91,17 +114,21 @@ function GalleryPage() {
     color++;
     return (
       <div className={`Color_div_` + color}>
-        <img src={img} alt="" className={`Color_` + color}></img>{" "}
+        <img
+          src={img}
+          alt=""
+          className={`Color_` + color}
+          onClick={() => popUpImg(img)}
+        ></img>{" "}
       </div>
     );
   });
-  console.log(listImgColor);
 
   const imagesFineLine = importAll(
     require.context("../assets/fineline", false, /\.webp$/)
   );
   let imgFineLine = [];
-  for (let i = 1; i <= 10; ++i) {
+  for (let i = 1; i <= 15; ++i) {
     imgFineLine.push(imagesFineLine[`${i}.webp`]);
   }
   var fineline = 0;
@@ -109,7 +136,12 @@ function GalleryPage() {
     fineline++;
     return (
       <div className={`FineLine_div_` + fineline}>
-        <img src={img} alt="" className={`FineLine_` + fineline}></img>{" "}
+        <img
+          src={img}
+          alt=""
+          className={`FineLine_` + fineline}
+          onClick={() => popUpImg(img)}
+        ></img>{" "}
       </div>
     );
   });
@@ -118,7 +150,7 @@ function GalleryPage() {
     require.context("../assets/blackgrey", false, /\.webp$/)
   );
   let imgBlackGrey = [];
-  for (let i = 1; i <= 25; ++i) {
+  for (let i = 1; i <= 20; ++i) {
     imgBlackGrey.push(imagesBlackGrey[`${i}.webp`]);
   }
   var blackgrey = 0;
@@ -126,7 +158,12 @@ function GalleryPage() {
     blackgrey++;
     return (
       <div className={`Blackgrey_div_` + blackgrey}>
-        <img src={img} alt="" className={`Blackgrey_` + blackgrey}></img>{" "}
+        <img
+          src={img}
+          alt=""
+          className={`Blackgrey_` + blackgrey}
+          onClick={() => popUpImg(img)}
+        ></img>{" "}
       </div>
     );
   });
@@ -135,7 +172,7 @@ function GalleryPage() {
     require.context("../assets/asian", false, /\.webp$/)
   );
   let imgAsian = [];
-  for (let i = 1; i <= 9; ++i) {
+  for (let i = 1; i <= 15; ++i) {
     imgAsian.push(imagesAsian[`${i}.webp`]);
   }
   var asian = 0;
@@ -143,11 +180,15 @@ function GalleryPage() {
     asian++;
     return (
       <div className={`Asian_div_` + asian}>
-        <img src={img} alt="" className={`Asian_` + asian}></img>{" "}
+        <img
+          src={img}
+          alt=""
+          className={`Asian_` + asian}
+          onClick={() => popUpImg(img)}
+        ></img>{" "}
       </div>
     );
   });
-
   const setRealism = () => {
     setNameStyle("Realism");
     setActiveRealism(true);
@@ -306,7 +347,7 @@ function GalleryPage() {
             }
             onClick={setFineLine}
           >
-            FINE LINE
+            LINE WORK
           </div>
           <div
             className={
@@ -339,7 +380,23 @@ function GalleryPage() {
             ASIAN
           </div>
         </div>
-        <div className="GalleryPage_Img_Container">{style}</div>
+        <div className="GalleryPage_Img_Container">
+          {style}
+          {popUp && (
+            <div className="popUp">
+              <div onClick={popUpImg} className="overlay"></div>
+              <div
+                className="popUP_Content"
+                style={{
+                  backgroundImage: `url(${img})`,
+                  backgroundPosition: "center",
+                  backgroundRepeat: "no-repeat",
+                  backgroundSize: "80%",
+                }}
+              ></div>
+            </div>
+          )}
+        </div>
       </div>
       <div className="GalleryPage_Video">
         <img src={BgGR3} alt="" className="GalleryPage_Video_Bg" />

@@ -700,20 +700,20 @@ body {
             grid-row: span 2;
           }
  
-          .Color_div_1,.Color_div_2,.Color_div_3,.Color_div_4,.Color_div_5,.Color_div_6,.Color_div_7,.Color_div_8,.Color_div_9,.Color_div_10,.Color_div_11,.Color_div_12,.Color_div_13,.Color_div_14,.Color_div_15,.Color_div_16,.Color_div_17,.Color_div_18,.Color_div_19,.Color_div_20,.Color_div_21,.Color_div_22,.Color_div_23,.Color_div_24,.Color_div_25,.Color_div_26,.Color_div_27,.Color_div_28,.Color_div_29,.Color_div_30{
+          .Color_div_1,.Color_div_2,.Color_div_3,.Color_div_4,.Color_div_5,.Color_div_6,.Color_div_7,.Color_div_8,.Color_div_9,.Color_div_10,.Color_div_11,.Color_div_12,.Color_div_13,.Color_div_14,.Color_div_15,.Color_div_16,.Color_div_17,.Color_div_18,.Color_div_19,.Color_div_20,.Color_div_21,.Color_div_22,.Color_div_23,.Color_div_24,.Color_div_25,.Color_div_26,.Color_div_27,.Color_div_28,.Color_div_29,.Color_div_30,.Color_div_31,.Color_div_32,.Color_div_33,.Color_div_34,.Color_div_35{
             width: 100%;
             height: 100%;
-            .Color_1,.Color_2,.Color_3,.Color_4,.Color_5,.Color_6,.Color_7,.Color_8,.Color_9,.Color_10,.Color_11,.Color_12,.Color_13,.Color_14,.Color_15,.Color_16,.Color_17,.Color_18,.Color_19,.Color_20,.Color_21,.Color_22,.Color_23,.Color_24,.Color_25,.Color_26,.Color_27,.Color_28,.Color_29,.Color_30{
+            .Color_1,.Color_2,.Color_3,.Color_4,.Color_5,.Color_6,.Color_7,.Color_8,.Color_9,.Color_10,.Color_11,.Color_12,.Color_13,.Color_14,.Color_15,.Color_16,.Color_17,.Color_18,.Color_19,.Color_20,.Color_21,.Color_22,.Color_23,.Color_24,.Color_25,.Color_26,.Color_27,.Color_28,.Color_29,.Color_30,.Color_31,.Color_32,.Color_33,.Color_34,.Color_35{
               width: 100%;
               height: 100%;
             }
 
           }
-          .Color_div_2,.Color_div_3,.Color_div_4,.Color_div_5,.Color_div_6,.Color_div_7,.Color_div_9,.Color_div_10,.Color_div_12,.Color_div_13,.Color_div_14,.Color_div_15,.Color_div_16,.Color_div_17,.Color_div_19,.Color_div_20,.Color_div_22,.Color_div_23,.Color_div_24,.Color_div_25,.Color_div_26,.Color_div_27,.Color_div_29,.Color_div_30{
+          .Color_div_2,.Color_div_3,.Color_div_4,.Color_div_5,.Color_div_6,.Color_div_7,.Color_div_9,.Color_div_10,.Color_div_12,.Color_div_13,.Color_div_14,.Color_div_15,.Color_div_16,.Color_div_17,.Color_div_19,.Color_div_20,.Color_div_22,.Color_div_23,.Color_div_24,.Color_div_25,.Color_div_26,.Color_div_27,.Color_div_29,.Color_div_30,.Color_div_32,.Color_div_33,.Color_div_34,.Color_div_35{
             grid-column: span 1;
             grid-row: span 1;
           }
-          .Color_div_1,.Color_div_8,.Color_div_11,.Color_div_18,.Color_div_21,.Color_div_28{
+          .Color_div_1,.Color_div_8,.Color_div_11,.Color_div_18,.Color_div_21,.Color_div_28,.Color_div_31{
             grid-column: span 2;
             grid-row: span 2;
           }
@@ -837,6 +837,7 @@ body {
 }
 
 @media screen and (max-width:800px) {
+  
   .Homepage{
     .Homepage_Header{
       height: 5vh;
@@ -1520,6 +1521,7 @@ body {
             color: white;
           }
         }
+
         .Homepage_Gallery_Img_Container{
           height: 80%;
           width: 80%;
@@ -1532,20 +1534,50 @@ body {
           row-gap: 20px;
           font-size: 100%;
           z-index: 4;
-          .Realism_div_1, .Realism_div_2, .Realism_div_3, .Realism_div_4, .Realism_div_5, .Realism_div_6, .Realism_div_7, .Realism_div_8, .Realism_div_9, .Realism_div_10,.Realism_div_11, .Realism_div_12, .Realism_div_13, .Realism_div_14, .Realism_div_15{
+          position: relative;
+          .popUp, .overlay {
+            width: 100%;
+            max-height: 100%;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            position: fixed;
+            z-index: 2;
+
+
+        }
+        
+        .overlay {
+            background: rgba(49,49,49,0.8);
+            
+        }
+        .popUP_Content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 70%;
+            height: 80%;
+          z-index: 3;
+        }
+        
+        
+          .Realism_div_1, .Realism_div_2, .Realism_div_3, .Realism_div_4, .Realism_div_5, .Realism_div_6, .Realism_div_7, .Realism_div_8, .Realism_div_9, .Realism_div_10,.Realism_div_11, .Realism_div_12, .Realism_div_13, .Realism_div_14, .Realism_div_15, .Realism_div_23, .Realism_div_24, .Realism_div_25, .Realism_div_16, .Realism_div_17, .Realism_div_18, .Realism_div_19, .Realism_div_20, .Realism_div_21, .Realism_div_22{
             width: 100%;
             height: 100%;
-            .Realism_1,.Realism_8,.Realism_11,.Realism_2, .Realism_3, .Realism_4, .Realism_5, .Realism_6, .Realism_7, .Realism_9, .Realism_10, .Realism_12, .Realism_13, .Realism_14, .Realism_15{
+            .Realism_1,.Realism_8,.Realism_11,.Realism_2, .Realism_3, .Realism_4, .Realism_5, .Realism_6, .Realism_7, .Realism_9, .Realism_10, .Realism_12, .Realism_13, .Realism_14, .Realism_15, .Realism_16, .Realism_17, .Realism_18, .Realism_19, .Realism_20, .Realism_21, .Realism_22, .Realism_23, .Realism_24, .Realism_25{
               width: 100%;
               height: 100%;
+              object-fit: cover;
             }
           }
-           .Realism_div_2, .Realism_div_3, .Realism_div_4, .Realism_div_5, .Realism_div_6, .Realism_div_7, .Realism_div_9, .Realism_div_10, .Realism_div_12, .Realism_div_13, .Realism_div_14, .Realism_div_15{
+           .Realism_div_2, .Realism_div_3, .Realism_div_4, .Realism_div_5, .Realism_div_6, .Realism_div_7, .Realism_div_9, .Realism_div_10, .Realism_div_12, .Realism_div_13, .Realism_div_14, .Realism_div_15, .Realism_div_23, .Realism_div_24, .Realism_div_25, .Realism_div_16, .Realism_div_17, .Realism_div_19, .Realism_div_20, .Realism_div_22{
             grid-column: span 1;
             grid-row: span 1;
 
            }
-          .Realism_div_1,.Realism_div_8,.Realism_div_11{
+          .Realism_div_1,.Realism_div_8,.Realism_div_11,.Realism_div_18,.Realism_div_21{
             grid-column: span 2;
             grid-row: span 2;
 
@@ -1557,6 +1589,7 @@ body {
             .Portrait_1,.Portrait_2,.Portrait_3,.Portrait_4,.Portrait_5,.Portrait_6,.Portrait_7,.Portrait_8,.Portrait_9,.Portrait_10,.Portrait_11,.Portrait_12,.Portrait_13,.Portrait_14,.Portrait_15,.Portrait_16,.Portrait_17,.Portrait_18,.Portrait_19,.Portrait_20{
               width: 100%;
             height: 100%;
+            object-fit: cover;
             }
 
           }
@@ -1569,38 +1602,40 @@ body {
             grid-row: span 2;
           }
           
-          .FineLine_div_1,.FineLine_div_2,.FineLine_div_3,.FineLine_div_4,.FineLine_div_5,.FineLine_div_6,.FineLine_div_7,.FineLine_div_8,.FineLine_div_9,.FineLine_div_10{
+          .FineLine_div_1,.FineLine_div_2,.FineLine_div_3,.FineLine_div_4,.FineLine_div_5,.FineLine_div_6,.FineLine_div_7,.FineLine_div_8,.FineLine_div_9,.FineLine_div_10,.FineLine_div_11,.FineLine_div_12,.FineLine_div_13,.FineLine_div_14,.FineLine_div_15{
             width: 100%;
             height: 100%;
-            .FineLine_1,.FineLine_2,.FineLine_3,.FineLine_4,.FineLine_5,.FineLine_6,.FineLine_7,.FineLine_8,.FineLine_9,.FineLine_10{
+            .FineLine_1,.FineLine_2,.FineLine_3,.FineLine_4,.FineLine_5,.FineLine_6,.FineLine_7,.FineLine_8,.FineLine_9,.FineLine_10,.FineLine_11,.FineLine_12,.FineLine_13,.FineLine_14,.FineLine_15{
               height: 100%;
               width: 100%;
+              object-fit: cover;
             }
 
           }
-          .FineLine_div_2,.FineLine_div_3,.FineLine_div_4,.FineLine_div_5,.FineLine_div_6,.FineLine_div_7,.FineLine_div_9,.FineLine_div_10{
+          .FineLine_div_2,.FineLine_div_3,.FineLine_div_4,.FineLine_div_5,.FineLine_div_6,.FineLine_div_7,.FineLine_div_9,.FineLine_div_10,.FineLine_div_12,.FineLine_div_13,.FineLine_div_14,.FineLine_div_15{
             grid-column: span 1;
             grid-row: span 1;
           }
-          .FineLine_div_1,.FineLine_div_8{
+          .FineLine_div_1,.FineLine_div_8,.FineLine_div_11{
             grid-column: span 2;
             grid-row: span 2;
           }
  
-          .Color_div_1,.Color_div_2,.Color_div_3,.Color_div_4,.Color_div_5,.Color_div_6,.Color_div_7,.Color_div_8,.Color_div_9,.Color_div_10,.Color_div_11,.Color_div_12,.Color_div_13,.Color_div_14,.Color_div_15,.Color_div_16,.Color_div_17,.Color_div_18,.Color_div_19,.Color_div_20,.Color_div_21,.Color_div_22,.Color_div_23,.Color_div_24,.Color_div_25,.Color_div_26,.Color_div_27,.Color_div_28,.Color_div_29,.Color_div_30{
+          .Color_div_1,.Color_div_2,.Color_div_3,.Color_div_4,.Color_div_5,.Color_div_6,.Color_div_7,.Color_div_8,.Color_div_9,.Color_div_10,.Color_div_11,.Color_div_12,.Color_div_13,.Color_div_14,.Color_div_15,.Color_div_16,.Color_div_17,.Color_div_18,.Color_div_19,.Color_div_20,.Color_div_21,.Color_div_22,.Color_div_23,.Color_div_24,.Color_div_25,.Color_div_26,.Color_div_27,.Color_div_28,.Color_div_29,.Color_div_30,.Color_div_31,.Color_div_32,.Color_div_33,.Color_div_34,.Color_div_35{
             width: 100%;
             height: 100%;
-            .Color_1,.Color_2,.Color_3,.Color_4,.Color_5,.Color_6,.Color_7,.Color_8,.Color_9,.Color_10,.Color_11,.Color_12,.Color_13,.Color_14,.Color_15,.Color_16,.Color_17,.Color_18,.Color_19,.Color_20,.Color_21,.Color_22,.Color_23,.Color_24,.Color_25,.Color_26,.Color_27,.Color_28,.Color_29,.Color_30{
+            .Color_1,.Color_2,.Color_3,.Color_4,.Color_5,.Color_6,.Color_7,.Color_8,.Color_9,.Color_10,.Color_11,.Color_12,.Color_13,.Color_14,.Color_15,.Color_16,.Color_17,.Color_18,.Color_19,.Color_20,.Color_21,.Color_22,.Color_23,.Color_24,.Color_25,.Color_26,.Color_27,.Color_28,.Color_29,.Color_30,.Color_31,.Color_32,.Color_33,.Color_34,.Color_35{
               width: 100%;
               height: 100%;
+              object-fit: cover;
             }
 
           }
-          .Color_div_2,.Color_div_3,.Color_div_4,.Color_div_5,.Color_div_6,.Color_div_7,.Color_div_9,.Color_div_10,.Color_div_12,.Color_div_13,.Color_div_14,.Color_div_15,.Color_div_16,.Color_div_17,.Color_div_19,.Color_div_20,.Color_div_22,.Color_div_23,.Color_div_24,.Color_div_25,.Color_div_26,.Color_div_27,.Color_div_29,.Color_div_30{
+          .Color_div_2,.Color_div_3,.Color_div_4,.Color_div_5,.Color_div_6,.Color_div_7,.Color_div_9,.Color_div_10,.Color_div_12,.Color_div_13,.Color_div_14,.Color_div_15,.Color_div_16,.Color_div_17,.Color_div_19,.Color_div_20,.Color_div_22,.Color_div_23,.Color_div_24,.Color_div_25,.Color_div_26,.Color_div_27,.Color_div_29,.Color_div_30,.Color_div_32,.Color_div_33,.Color_div_34,.Color_div_35{
             grid-column: span 1;
             grid-row: span 1;
           }
-          .Color_div_1,.Color_div_8,.Color_div_11,.Color_div_18,.Color_div_21,.Color_div_28{
+          .Color_div_1,.Color_div_8,.Color_div_11,.Color_div_18,.Color_div_21,.Color_div_28,.Color_div_31{
             grid-column: span 2;
             grid-row: span 2;
           }
@@ -1611,6 +1646,7 @@ body {
             .Blackgrey_1,.Blackgrey_2,.Blackgrey_3,.Blackgrey_4,.Blackgrey_5,.Blackgrey_6,.Blackgrey_7,.Blackgrey_8,.Blackgrey_9,.Blackgrey_10,.Blackgrey_11,.Blackgrey_12,.Blackgrey_13,.Blackgrey_14,.Blackgrey_15,.Blackgrey_16,.Blackgrey_17,.Blackgrey_18,.Blackgrey_19,.Blackgrey_20,.Blackgrey_21,.Blackgrey_22,.Blackgrey_23,.Blackgrey_24,.Blackgrey_25{
               width: 100%;
               height: 100%;
+              object-fit: cover;
             }
 
           }
@@ -1622,20 +1658,21 @@ body {
             grid-column: span 2;
             grid-row: span 2;
           }
-          .Asian_div_1,.Asian_div_2,.Asian_div_3,.Asian_div_4,.Asian_div_5,.Asian_div_6,.Asian_div_7,.Asian_div_8,.Asian_div_9{
+          .Asian_div_1,.Asian_div_2,.Asian_div_3,.Asian_div_4,.Asian_div_5,.Asian_div_6,.Asian_div_7,.Asian_div_8,.Asian_div_9,.Asian_div_10,.Asian_div_11,.Asian_div_12,.Asian_div_13,.Asian_div_14,.Asian_div_15{
             width: 100%;
             height: 100%;
-            .Asian_1,.Asian_2,.Asian_3,.Asian_4,.Asian_5,.Asian_6,.Asian_7,.Asian_8,.Asian_9{
+            .Asian_1,.Asian_2,.Asian_3,.Asian_4,.Asian_5,.Asian_6,.Asian_7,.Asian_8,.Asian_9,.Asian_10,.Asian_11,.Asian_12,.Asian_13,.Asian_14,.Asian_15,{
               width: 100%;
             height: 100%;
+            object-fit: cover;
             }
 
           }
-          .Asian_div_2,.Asian_div_3,.Asian_div_4,.Asian_div_5,.Asian_div_6,.Asian_div_7,.Asian_div_8,.Asian_div_9{
+          .Asian_div_2,.Asian_div_3,.Asian_div_4,.Asian_div_5,.Asian_div_6,.Asian_div_7,.Asian_div_8,.Asian_div_9,.Asian_div_9,.Asian_div_10,.Asian_div_12,.Asian_div_13,.Asian_div_14,.Asian_div_15{
             grid-column: span 1;
           grid-row: span 1;
           }
-          .Asian_div_1{
+          .Asian_div_1,.Asian_div_8,.Asian_div_11{
             grid-column: span 2;
             grid-row: span 2;
           }
@@ -1668,6 +1705,7 @@ body {
       width: 100%;
       position: relative;
       background-color: #8a8989;
+      z-index: -1;
       .Homepage_Seperate3_Bg{
         position: absolute;
         width: 100%;
@@ -1685,6 +1723,7 @@ body {
       align-items: center;
       padding-top: 10%;
       padding-bottom: 10%;
+      z-index: -1;
       .Homepage_Contact_Bg{
         position: absolute;
         width: 100%;
