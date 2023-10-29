@@ -852,19 +852,19 @@ body {
 
   }
   
-  .overlay {
-      background: rgba(49,49,49,0.8);
-      
-  }
-  .popUP_Content {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      width: 70%;
-      height: 80%;
-    z-index: 3;
-  }
+    .overlay {
+        background: rgba(49,49,49,0.8);
+        
+    }
+    .popUP_Content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 70%;
+        height: 80%;
+      z-index: 3;
+    }
     .Homepage_Header{
       height: 5vh;
       background-color: #E4E1D8;
