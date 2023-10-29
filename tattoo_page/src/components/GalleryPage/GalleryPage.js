@@ -391,7 +391,7 @@ function GalleryPage() {
                   backgroundImage: `url(${img})`,
                   backgroundPosition: "center",
                   backgroundRepeat: "no-repeat",
-                  backgroundSize: "80%",
+                  backgroundSize: "30%",
                 }}
               ></div>
             </div>
