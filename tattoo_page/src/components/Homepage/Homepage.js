@@ -278,6 +278,21 @@ function Homepage() {
 
   return (
     <div className="Homepage">
+      {popUp && (
+        <div className="popUp">
+          <div onClick={popUpImg} className="overlay"></div>
+          <div
+            onClick={popUpImg}
+            className="popUP_Content"
+            style={{
+              backgroundImage: `url(${img})`,
+              backgroundPosition: "center",
+              backgroundRepeat: "no-repeat",
+              backgroundSize: "80%",
+            }}
+          ></div>
+        </div>
+      )}
       <div className="Homepage_Header">
         <Header />
       </div>
@@ -518,23 +533,7 @@ function Homepage() {
               ASIAN
             </div>
           </div>
-          <div className="Homepage_Gallery_Img_Container ">
-            {style}
-            {popUp && (
-              <div className="popUp">
-                <div onClick={popUpImg} className="overlay"></div>
-                <div
-                  className="popUP_Content"
-                  style={{
-                    backgroundImage: `url(${img})`,
-                    backgroundPosition: "center",
-                    backgroundRepeat: "no-repeat",
-                    backgroundSize: "80%",
-                  }}
-                ></div>
-              </div>
-            )}
-          </div>
+          <div className="Homepage_Gallery_Img_Container ">{style}</div>
         </div>
         <div className="Homepage_Gallery_Button" onClick={linkToGallery}>
           <div className="Homepage_Gallery_Button_Text">View more</div>
