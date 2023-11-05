@@ -338,12 +338,14 @@ body {
       }
     }
     .Homepage_About{
-      height: 90vh;
+      height: 80vh;
       width: 100%;
-      padding-top: 10%;
+      padding-top: 5%;
       background-color: #E4E1D8;
       position: relative;
       z-index: 0;
+      display: flex;
+      flex-direction: column;
       .Homepage_About_Bg{
         position: absolute;
         top: 0;
@@ -356,10 +358,10 @@ body {
         flex-direction: row;
         height: 40%;
         margin-left: 12%;
-
+        margin-top: 5%;
         .Homepage_About_Title1{
           font-size: 350%;
-          height: 100%;
+          height: 110%;
           width: 35%;
           font-family: "Ladyrose";
           padding-top: 3%;
@@ -372,7 +374,7 @@ body {
           align-items: end;
         }
         .Homepage_About_Title2{
-          height: 100%;
+          height: 110%;
           width: 20%;
           display: flex;
 
@@ -407,26 +409,26 @@ body {
         }
       }
       .Homepage_About_Text{
-        width: 50%;
+        width: 60%;
         height:10%;
         display: flex;
         justify-content: center;
         flex-direction: column;
-        margin-left: 12%;
-        margin-top: 10%;
-        line-height: 13px;
+        margin-left: 10%;
+        margin-top: 6.5%;
+        line-height: 20px;
         letter-spacing: 0.5px;
         z-index: 1;
-
+        text-align: right;
         .Homepage_About_Text{
-        font-family: "SemiBold15";
-          font-size: 65%;
+          font-family: "SemiBold15";
+          font-size: 90%;
           height: 30%;
         }
     
       }
       .Homepage_About_Button{
-        width: 30%;
+        width: 55%;
         height: 10%;
         display: flex;
         align-items: center;
