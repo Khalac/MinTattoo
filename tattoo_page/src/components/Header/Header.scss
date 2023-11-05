@@ -1,6 +1,31 @@
 
 @media screen and (min-width: 992px){
-  
+  .Header{
+    background-color: #cec8ba;
+    height: 100%;
+
+  }
+  .Pages{
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+
+    .Page{
+      font-family: 'Noto Sans Multani', sans-serif;
+      font-size: 90%;
+      font-family: "Ladyrose";
+      cursor: pointer;
+      color: black;
+      text-decoration: none;
+    }
+    .Pages_Img{
+      width: 10%;
+      height: 90%;
+      margin-top: 1%;
+    }
+}   
 }
 
 @media screen and (max-width:768px) {
@@ -24,6 +49,11 @@
               cursor: pointer;
               color: black;
               text-decoration: none;
+            }
+            .Pages_Img{
+              width: 15%;
+              height: 90%;
+              margin-top: 1%;
             }
         }   
     }

@@ -3,14 +3,18 @@ import "./Header.scss";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
+import Minh from "../assets/Text/Minh.webp";
+import { useNavigate } from "react-router-dom";
 
 function Header() {
+  const nav = useNavigate();
+  const linkToHome = () => {
+    nav("/", { replace: true });
+  };
   return (
     <div className="Header">
       <div className="Pages">
-        <Link to="/" className="Page">
-          Home
-        </Link>
+        <img src={Minh} alt="" className="Pages_Img" />
         <Link to="/About" className="Page">
           About
         </Link>
