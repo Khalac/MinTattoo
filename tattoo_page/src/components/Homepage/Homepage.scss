@@ -26,26 +26,26 @@ body {
 @media screen and (min-width: 992px){
   .Homepage{
     .Homepage_Header{
-      height: 5vh;
+      height: 8vh;
       background-color: #E4E1D8;
     }
     .Homepage_PageName{
       width: 100%;
-      height: 30vh;
+      height: 80vh;
       display: flex;
       flex-direction: column;
       justify-content: center;
       position: relative;
-         background-color: #E4E1D8;
-         background-image:url('../assets/bg/bg/MainPage/1.jpg');
-        background-position: 0% 60%;
-        background-repeat: no-repeat;
-        background-size: 50%;
+      background-color: #E4E1D8;
+      background-image:url('../assets/bg/bg/MainPage/1.jpg');
+      background-position: 0% 60%;
+      background-repeat: no-repeat;
+      background-size: 50%;
       .Homepage_PageName_Minh{
         width: 50%;
         height: 28%;
         display: flex;
-        margin-left: 9%;
+        margin-left: 13%;
         align-items: center;
 
         .Homepage_PageName_Minh_Img{
@@ -55,17 +55,17 @@ body {
         }
       }
       .Homepage_PageName_PMP{
-        width: 60%;
-        height: 17%;
+        width: 58%;
+        height: 15%;
         background-color: black;
         display: flex;
         align-items: center;
         justify-content: right;
         z-index: 1;
         .Homepage_PageName_PMP_Img{
-          margin-right: 14%;
+          margin-right: 7%;
           width: 70%;
-          height: 60%;
+          height: 70%;
         }
       }
       .Homepage_PageName_Text{
@@ -73,14 +73,14 @@ body {
         height: 13%;
         display: flex;
         align-items: center;
-        margin-left: 9%;
+        margin-left: 13%;
         font-family: "CeniosdemoRegular";
-        font-size: 12px;
-        letter-spacing: 2px;
+        font-size: 30px;
+        letter-spacing: 7px;
       }
       .Homepage_PageName_Brother_Img{
         background-image:url('../assets/imgBrother/mybrother5.webp');
-        background-position: 50% 30%;
+        background-position: 50% 50%;
         background-repeat: no-repeat;
         background-size: cover;
         width: 50%;
@@ -91,160 +91,198 @@ body {
       }
     }
     .Homepage_Seperate{
-      height: 5vh;
+      height: 10vh;
       background-color: #cec8ba;
     }
     .Homepage_Competition_Img{
-      height: 45vh;
+      height: 80vh;
       background-color: #2d2e2d;
       display: grid;
-      grid-template-columns: 25% 25% 25%;
-      grid-template-rows: 60% 30%;
+      grid-template-columns: 20% 20% 25%;
+      grid-template-rows: 55% 35%;
       grid-column-gap: 20px;
       grid-row-gap: 20px;
       justify-content: center;
-      padding-top: 10%;
+      padding-top: 5%;
+
+      padding-bottom: 1%;
+      position: relative;
+    
+      .Homepage_Competition_Img_Bg{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 0;
+      }
       .Homepage_Competition_Img1{
-        grid-column: span 3;
-        background-image:url('../assets/imgHome/imgHome1.webp');
+        grid-column: span 2;
+        background-image:url('../assets/imgHome/imgHomePC1.webp');
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
+        z-index: 1;
 
       }
       .Homepage_Competition_Img2{
-        background-image:url('../assets/imgHome/imgHome2.webp');
+        grid-row: span 2;
+        background-image:url('../assets/imgHome/imgHomePC2.webp');
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
+        z-index: 1;
+
       }
       .Homepage_Competition_Img3{
-        background-image:url('../assets/imgHome/imgHome3.webp');
+        
+        background-image:url('../assets/imgHome/imgHomePC3.webp');
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
+        z-index: 1;
       }
       .Homepage_Competition_Img4{
-        background-image:url('../assets/imgHome/imgHome4.webp');
+        background-image:url('../assets/imgHome/imgHomePC4.webp');
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
+        z-index: 1;
       }
     }
     .Homepage_Competition_Logo{
-      height: 27vh;
-      width: 80%;
-      display: grid;
-      grid-template-columns: 8% 8% 8% 8% 8% 8% 8% 8% 8% 8% 8% 8%;
-      grid-template-rows: auto auto auto;
-  padding-top: 5%;
-      padding-bottom: 5%;
+      position: relative;
+      height: 70vh;
+      width: 100%;
+      display: flex;
       align-items: center;
       justify-content: center;
-      column-gap: 2%;
-      padding-left: 11%;
-
-      background-position: 50% 50%;
-      background-repeat: no-repeat;
-      background-size: 98%;
-      .Competition_Logo1{
+      .Homepage_Competition_Logo_Container{
         width: 60%;
-        height: 40%;
-        grid-column: span 3;
-        margin: auto;
-
+        height: 80%;
+        display: grid;
+        grid-template-columns: 8% 8% 8% 8% 8% 8% 8% 8% 8% 8% 8% 8%;
+        grid-template-rows: auto auto auto;
+        .Competition_Logo1{
+          width: 60%;
+          height: 47%;
+          grid-column: span 3;
+          margin: auto;
+          z-index: 1;
+        }
+        .Competition_Logo2{
+          margin: auto;
+          width: 50%;
+          height: 63%;
+          grid-column: span 3;
+          z-index: 1;
+        }
+        .Competition_Logo3{
+          margin: auto;
+          width: 55%;
+          height: 65%;
+          grid-column: span 3;
+          z-index: 1;
+        }
+        .Competition_Logo4{
+          margin: auto;
+          width: 40%;
+          height: 47%;
+          grid-column: span 3;
+          z-index: 1;
+        }
+        .Competition_Logo5{
+          margin: auto;
+          width: 65%;
+          height: 50%;
+          grid-column: span 3;
+          background-color: black;
+          z-index: 1;
+        }
+        .Competition_Logo6{
+          margin: auto;
+          width: 48%;
+          height: 65%;
+          grid-column: span 3;
+          z-index: 1;
+        }
+        .Competition_Logo7{
+          margin: auto;
+          width: 70%;
+          height: 47%;
+          grid-column: span 3;
+          z-index: 1;
+        }
+        .Competition_Logo8{
+          margin: auto;
+          width: 50%;
+          height: 65%;
+          grid-column: span 3;
+          z-index: 1;
+        }
+        .Competition_Logo9{
+          margin: auto;
+          width: 70%;
+          height: 35%;
+          grid-column: span 4;
+          z-index: 1;
+        }
+        .Competition_Logo10{
+          width: 70%;
+          height: 52%;
+          grid-column: span 4;
+          margin: auto;
+          z-index: 1;
+        }
+        .Competition_Logo11{
+          width: 75%;
+          height: 63%;
+          grid-column: span 4;
+          margin: auto;
+          z-index: 1;
+        }
       }
-      .Competition_Logo2{
-        margin: auto;
-        width: 50%;
-        height: 60%;
-        grid-column: span 3;
+      .Homepage_Competition_Logo_Bg{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 0;
       }
-      .Competition_Logo3{
-        margin: auto;
-        width: 55%;
-        height: 60%;
-        grid-column: span 3;
-      }
-      .Competition_Logo4{
-        margin: auto;
-        width: 40%;
-        height: 45%;
-        grid-column: span 3;
-      }
-      .Competition_Logo5{
-        margin: auto;
-        width: 65%;
-        height: 45%;
-        grid-column: span 3;
-        background-color: black;
-      }
-      .Competition_Logo6{
-        margin: auto;
-        width: 50%;
-        height: 60%;
-        grid-column: span 3;
-      }
-      .Competition_Logo7{
-        margin: auto;
-        width: 70%;
-        height: 50%;
-        grid-column: span 3;
-      }
-      .Competition_Logo8{
-        margin: auto;
-        width: 50%;
-        height: 60%;
-        grid-column: span 3;
-      }
-      .Competition_Logo9{
-        margin: auto;
-        width: 70%;
-        height: 30%;
-        grid-column: span 4;
-      }
-      .Competition_Logo10{
-        width: 70%;
-        height: 50%;
-        grid-column: span 4;
-        margin: auto;
-      }
-      .Competition_Logo11{
-        width: 70%;
-        height: 60%;
-        grid-column: span 4;
-        margin: auto;
-      }
+      
     }
     .Homepage_Introduce{
-      height: 39vh;
+      height: 60vh;
       width: 100%;
       background-color: #E4E1D8;
       display: flex;
       flex-direction: row;
-      background-image:url('../assets/bg/bg/MainPage/4.jpg');
-      background-position: 50% 50%;
-      background-repeat: no-repeat;
-      background-size: 100%;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      .Homepage_Introduce_Bg{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 0;
+      }
       .Homepage_Introduce_Video{
-        width: 55%;
+        width: 40%;
         height: 100%;
         display: flex;
         align-items: center;
         justify-content: end;
+        z-index: 1;
         .Homepage_Introduce_Video_Control{
           height: 70%;
           width: 70%;
-          margin-right: 5%;
+          margin-right: 8%;
         }
       }
       .Homepage_Introduce_Text{
-        height: 85%;
-        width: 40%;
+        height: 80%;
+        width: 20%;
         display: flex;
         justify-content: center;
-        align-items:end;
-
+        align-items:center;
+        z-index: 1;
         .Homepage_Introduce_Text_QuotationMark{
           width: 100%;
           height: 60%;
@@ -253,10 +291,10 @@ body {
 
           align-items: center;
           .Homepage_Introduce_QuotationMark1{
-            width: 25%;
+            width: 15%;
             height: 30%;
             position: absolute;
-            top: 2%;
+            top: 1%;
             left: 0;
           }
           .Homepage_Introduce_MainText{
@@ -265,19 +303,20 @@ body {
             flex-direction: column;
             justify-content: center;
             margin-left: 5%;
-            line-height: 15px;
+            line-height: 25px;
             letter-spacing: 0.5px;
+            text-align: center;
             .Homepage_Introduce_MainText1{
               font-family: "BancheroBold";
-              font-size: 50%;
+              font-size: 100%;
             }
             .Homepage_Introduce_MainText2{
               font-family: "BancheroBold";
-              font-size: 50%;
+              font-size: 100%;
             }
           }
           .Homepage_Introduce_QuotationMark2{
-            width: 25%;
+            width: 15%;
             height: 30%;
             position: absolute;
             bottom: 5%;
@@ -287,63 +326,83 @@ body {
       }
     }
     .Homepage_Seperate2{
-      height: 5vh;
-      background-image:url('../assets/bg/bg/MainPage/5.jpg');
-      background-position: 50% 50%;
-      background-repeat: no-repeat;
-      background-size: cover;
+      height: 10vh;
+      width: 100%;
+      background-color: #555555;
+      position: relative;
+      .Homepage_Seperate2_Bg{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+      }
     }
     .Homepage_About{
-      height: 60vh;
+      height: 90vh;
       width: 100%;
       padding-top: 10%;
-      background-image:url('../assets/bg/bg/MainPage/6.jpg');
-      background-position: 50% 50%;
-      background-repeat: no-repeat;
-      background-size: cover;
+      background-color: #E4E1D8;
+      position: relative;
+      z-index: 0;
+      .Homepage_About_Bg{
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -2;
+      }
       .Homepage_About_Title{
         display: flex;
         flex-direction: row;
-        height: 65%;
+        height: 40%;
         margin-left: 12%;
 
         .Homepage_About_Title1{
-          font-size: 180%;
+          font-size: 400%;
           height: 100%;
           width: 40%;
           font-family: "Ladyrose";
-          padding-top: 5%;
+          padding-top: 3%;
           position: relative;
           text-align: right;
           letter-spacing: 2px;
+          z-index: 1;
+          display: flex;
+          justify-content: end;
+          align-items: end;
         }
         .Homepage_About_Title2{
           height: 100%;
-          width: 60%;
-          background-image:url('../assets/imgBrother/mybrother7.webp');
-          background-position: 50% 50%;
-          background-repeat: no-repeat;
-          background-size: cover;
-          font-size: 180%;
-          font-family: "Ladyrose";
-          margin-left: 3%;
-          padding-left: 3%;
-          padding-top: 5%;
-          color: #E4E1D8;
-          letter-spacing: 2px;
-        }
-        .Homepage_About_Title_Img{
-          position: absolute;
-          top: 18%;
-          left: 15%;
-          height: 70%;
-          width: 130%;
+          width: 20%;
+          display: flex;
+
+          align-items: end;
           background-image:url('../assets/imgBrother/mybrother8.webp');
           background-position: 50% 50%;
           background-repeat: no-repeat;
           background-size: cover;
-          border: 10px solid #E4E1D8;
-          
+          font-size: 180%;
+          font-family: "Ladyrose";
+          margin-left: 1%;
+          padding-left: 1%;
+          padding-top: 3%;
+          color: #E4E1D8;
+          letter-spacing: 2px;
+          z-index: 1;
+          border-right: 12px solid #E4E1D8;
+          border-bottom: 12px solid #E4E1D8;
+        }
+        .Homepage_About_Title_Img{
+          position: absolute;
+          top: 50%;
+          right: -100%;
+          height: 100%;
+          width: 70%;
+          background-image:url('../assets/imgBrother/mybrother7.webp');
+          background-position: 50% 50%;
+          background-repeat: no-repeat;
+          background-size: cover;
+
+          z-index: 0;
         }
       }
       .Homepage_About_Text{
@@ -354,18 +413,19 @@ body {
         flex-direction: column;
         margin-left: 12%;
         margin-top: 10%;
-        line-height: 15px;
+        line-height: 13px;
         letter-spacing: 0.5px;
+        z-index: 1;
         .Homepage_About_Text1{
         font-family: "SemiBold15";
-          font-size: 60%;
+          font-size: 65%;
           height: 30%;
         }
         .Homepage_About_Text2{
           width: 100%;
           font-family: "SemiBold15";
-          font-size: 60%;
-          height: 70%;
+          font-size: 65%;
+
         }
       }
       .Homepage_About_Button{
@@ -374,11 +434,12 @@ body {
         display: flex;
         align-items: center;
         justify-content: right;
+
         .Homepage_About_Button_Text{
           width: 80px;
           height: 40%;
           color: #E4E1D8;
-          background-color: black;
+          background-color: #2d2e2d;
           border: none;
           font-family: "BancheroBold";
           cursor: pointer;
@@ -387,15 +448,21 @@ body {
       }
     }
     .Homepage_Achive{
+      position: relative;
       height: 50vh;
       width: 100%;
       background-color: white;
-      background-image:url('../assets/bg/bg/MainPage/7.jpg');
-      background-position: 50% 50%;
-      background-repeat: no-repeat;
-      background-size: cover;
       padding-top: 10%;
       padding-bottom: 8%;
+      z-index: 0;
+      .Homepage_Achive_Bg
+      {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        z-index: -2;
+      }
       .Homepage_Achive_Title{
         height: 20%;
         display: flex;
@@ -403,10 +470,12 @@ body {
         align-items: center;
         justify-content: space-evenly;
         padding-top: 2%;
+
         .Homepage_Achive_Title1{
           font-size: 150%;
           font-family: "Ladyrose";
           letter-spacing: 2px;
+          z-index: 1;
         }
         .Homepage_Achive_Title2_Border{
           display: flex;
@@ -415,12 +484,14 @@ body {
           width: 225px;
           height: 30px;
           background-color: #2d2e2d;
+          
           .Homepage_Achive_Title2{
             color: #E4E1D8;
             font-size: 145%;
             font-family: "Ladyrose";
             letter-spacing: 2px;
-            height: 60%;
+
+            z-index: 1;
           }
         }
       }
@@ -433,17 +504,20 @@ body {
         margin-top: 5%;
         margin-bottom: 7%;
         letter-spacing: 0.5px;
+
         .Homepage_Achive_Text_Content{
           width: 80%;
           font-family: "SemiBold15";
           font-size: 65%;
           text-align: center;
           line-height: 15px;
+          z-index: 1;
         }
       }
       .Homepage_Achive_Achive{
         height: 50%;
         width: 100%;
+        
         .Homepage_Achive_Achive_Content{
           height: 70%;
           width: 100%;
@@ -451,6 +525,7 @@ body {
           flex-direction: row;
           justify-content: space-evenly;
           align-items: center;
+          
           .Homepage_Achive_Achive_Convention{
             width: 25vw;
             height: 25vw;
@@ -460,6 +535,7 @@ body {
             align-items: center;
             justify-content: center;
             box-shadow: 5px 5px 10px 1px grey;
+            z-index: 1;
             .Homepage_Achive_Achive_Convention_Img{
               width: 67%;
               height: 35%;
@@ -482,9 +558,10 @@ body {
             align-items: center;
             justify-content: center;
             box-shadow: 5px 5px 10px 1px grey;
+            z-index: 1;
             .Homepage_Achive_Achive_YrsExper_Img{
-              width: 35%;
-              height: 50%;
+              width: 40%;
+              height: 55%;
             }
             .Homepage_Achive_Achive_YrsExper_Text{
               width: 80%;
@@ -504,8 +581,9 @@ body {
             align-items: center;
             justify-content: center;
             box-shadow: 5px 5px 10px 1px grey;
+            z-index: 1;
             .Homepage_Achive_Achive_Trophies_Img{
-              width: 67%;
+              width: 75%;
               height: 35%;
             }
             .Homepage_Achive_Achive_Trophies_Text{
@@ -525,70 +603,77 @@ body {
           align-items: center;
           cursor: pointer;
           .Homepage_Achive_Achive_Details_Button{
-            height: 25px;
-            width: 120px;
+            height: 20px;
+            width: 85px;
             margin-top: 10%;
             font-family: "BancheroBold";
-            font-size: 80%;
+            font-size: 60%;
             background-color: #2d2e2d;
             display: flex;
             align-items: center;
             justify-content: center;
-
             color: #E4E1D8;
           }
         }
       }
     }
     .Homepage_Gallery{
-      height: 90vh;
+      position: relative;
+      height: 110vh;
       width: 100%;
       background-color:#2d2e2d ;
-      background-image:url('../assets/bg/bg/MainPage/8.jpg');
-      background-position: 50% 50%;
-      background-repeat: no-repeat;
-      background-size: cover;
       padding-bottom: 3%;
+      z-index: 0;
+      .Homepage_Gallery_Bg{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: -2;
+      }
       .Homepage_Gallery_Name{
         display: flex;
         justify-content: center;
         align-items: end;
         width: 100%;
-        height: 8%;
+        height: 7%;
         color:gray;
         font-family: "CeniosdemoRegular";
         font-size: 120%;
         letter-spacing: 5px;
+        z-index:1;
       }
       .Homepage_Gallery_Title{
         display: flex;
         justify-content: center;
         align-items: center;
         width: 100%;
-        height: 7%;
+        height: 6%;
         color:#b38632;
         font-family: "Ladyrose";
         font-size: 180%;
         letter-spacing: 5px;
+        z-index: 1;
       }
       .Homepage_Gallery_Text{
-        height: 15%;
+        height: 13%;
         width: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
         line-height: 18px;
         letter-spacing: 0.5px;
+        
         .Homepage_Gallery_Text_Content{
-          width: 70%;
+          width: 80%;
           color: #E4E1D8;
           font-family: "Medium15";
           font-size: 80%;
           text-align: center;
+          z-index: 1;
         }
       }
       .Homepage_Gallery_Img{
-        height: 60%;
+        height: 65%;
         width: 100%;
         display: flex;
         justify-content: center;
@@ -596,11 +681,12 @@ body {
         flex-direction: column;
         .Homepage_Gallery_Img_Styles{
           width: 85%;
-          height: 10%;
+          height: 7%;
           display: grid;
           grid-template-columns: 30% 30% 30%;
           justify-content: center;
-          margin-bottom: 5%;
+          margin-bottom: 3%;
+          letter-spacing: 1.5px;
           .Homepage_Gallery_Img_Styles_Style{
             color: gray;
             font-family: "Ladyrose";
@@ -609,6 +695,7 @@ body {
             justify-content: center;
             align-items: center;
             cursor: pointer;
+            z-index: 2;
           }
           .Homepage_Gallery_Img_Styles_Style_Left{
             color: gray;
@@ -618,6 +705,7 @@ body {
 
           align-items: center;
 
+          z-index: 2;
           cursor: pointer;
           }
           .Homepage_Gallery_Img_Styles_Style_Right{
@@ -629,36 +717,44 @@ body {
             align-items: center;
             text-align: left;
             cursor: pointer;
+            z-index: 2;
           }
           .active{
             color: white;
           }
         }
+
         .Homepage_Gallery_Img_Container{
-          height: 80%;
+          height: 90%;
           width: 80%;
           display: grid;
           grid-template-columns: auto auto auto auto;
-
+          background-color: #2d2e2d;
           overflow-y: auto;
           overflow-x: hidden;
           column-gap: 15px;
           row-gap: 20px;
           font-size: 100%;
-          .Realism_div_1, .Realism_div_2, .Realism_div_3, .Realism_div_4, .Realism_div_5, .Realism_div_6, .Realism_div_7, .Realism_div_8, .Realism_div_9, .Realism_div_10,.Realism_div_11, .Realism_div_12, .Realism_div_13, .Realism_div_14, .Realism_div_15{
+          z-index: 4;
+          position: relative;
+
+        
+        
+          .Realism_div_1, .Realism_div_2, .Realism_div_3, .Realism_div_4, .Realism_div_5, .Realism_div_6, .Realism_div_7, .Realism_div_8, .Realism_div_9, .Realism_div_10,.Realism_div_11, .Realism_div_12, .Realism_div_13, .Realism_div_14, .Realism_div_15, .Realism_div_23, .Realism_div_24, .Realism_div_25, .Realism_div_16, .Realism_div_17, .Realism_div_18, .Realism_div_19, .Realism_div_20, .Realism_div_21, .Realism_div_22{
             width: 100%;
             height: 100%;
-            .Realism_1,.Realism_8,.Realism_11,.Realism_2, .Realism_3, .Realism_4, .Realism_5, .Realism_6, .Realism_7, .Realism_9, .Realism_10, .Realism_12, .Realism_13, .Realism_14, .Realism_15{
+            .Realism_1,.Realism_8,.Realism_11,.Realism_2, .Realism_3, .Realism_4, .Realism_5, .Realism_6, .Realism_7, .Realism_9, .Realism_10, .Realism_12, .Realism_13, .Realism_14, .Realism_15, .Realism_16, .Realism_17, .Realism_18, .Realism_19, .Realism_20, .Realism_21, .Realism_22, .Realism_23, .Realism_24, .Realism_25{
               width: 100%;
               height: 100%;
+              object-fit: cover;
             }
           }
-           .Realism_div_2, .Realism_div_3, .Realism_div_4, .Realism_div_5, .Realism_div_6, .Realism_div_7, .Realism_div_9, .Realism_div_10, .Realism_div_12, .Realism_div_13, .Realism_div_14, .Realism_div_15{
+           .Realism_div_2, .Realism_div_3, .Realism_div_4, .Realism_div_5, .Realism_div_6, .Realism_div_7, .Realism_div_9, .Realism_div_10, .Realism_div_12, .Realism_div_13, .Realism_div_14, .Realism_div_15, .Realism_div_23, .Realism_div_24, .Realism_div_25, .Realism_div_16, .Realism_div_17, .Realism_div_19, .Realism_div_20, .Realism_div_22{
             grid-column: span 1;
             grid-row: span 1;
 
            }
-          .Realism_div_1,.Realism_div_8,.Realism_div_11{
+          .Realism_div_1,.Realism_div_8,.Realism_div_11,.Realism_div_18,.Realism_div_21{
             grid-column: span 2;
             grid-row: span 2;
 
@@ -670,6 +766,7 @@ body {
             .Portrait_1,.Portrait_2,.Portrait_3,.Portrait_4,.Portrait_5,.Portrait_6,.Portrait_7,.Portrait_8,.Portrait_9,.Portrait_10,.Portrait_11,.Portrait_12,.Portrait_13,.Portrait_14,.Portrait_15,.Portrait_16,.Portrait_17,.Portrait_18,.Portrait_19,.Portrait_20{
               width: 100%;
             height: 100%;
+            object-fit: cover;
             }
 
           }
@@ -682,20 +779,21 @@ body {
             grid-row: span 2;
           }
           
-          .FineLine_div_1,.FineLine_div_2,.FineLine_div_3,.FineLine_div_4,.FineLine_div_5,.FineLine_div_6,.FineLine_div_7,.FineLine_div_8,.FineLine_div_9,.FineLine_div_10{
+          .FineLine_div_1,.FineLine_div_2,.FineLine_div_3,.FineLine_div_4,.FineLine_div_5,.FineLine_div_6,.FineLine_div_7,.FineLine_div_8,.FineLine_div_9,.FineLine_div_10,.FineLine_div_11,.FineLine_div_12,.FineLine_div_13,.FineLine_div_14,.FineLine_div_15{
             width: 100%;
             height: 100%;
-            .FineLine_1,.FineLine_2,.FineLine_3,.FineLine_4,.FineLine_5,.FineLine_6,.FineLine_7,.FineLine_8,.FineLine_9,.FineLine_10{
+            .FineLine_1,.FineLine_2,.FineLine_3,.FineLine_4,.FineLine_5,.FineLine_6,.FineLine_7,.FineLine_8,.FineLine_9,.FineLine_10,.FineLine_11,.FineLine_12,.FineLine_13,.FineLine_14,.FineLine_15{
               height: 100%;
               width: 100%;
+              object-fit: cover;
             }
 
           }
-          .FineLine_div_2,.FineLine_div_3,.FineLine_div_4,.FineLine_div_5,.FineLine_div_6,.FineLine_div_7,.FineLine_div_9,.FineLine_div_10{
+          .FineLine_div_2,.FineLine_div_3,.FineLine_div_4,.FineLine_div_5,.FineLine_div_6,.FineLine_div_7,.FineLine_div_9,.FineLine_div_10,.FineLine_div_12,.FineLine_div_13,.FineLine_div_14,.FineLine_div_15{
             grid-column: span 1;
             grid-row: span 1;
           }
-          .FineLine_div_1,.FineLine_div_8{
+          .FineLine_div_1,.FineLine_div_8,.FineLine_div_11{
             grid-column: span 2;
             grid-row: span 2;
           }
@@ -706,6 +804,7 @@ body {
             .Color_1,.Color_2,.Color_3,.Color_4,.Color_5,.Color_6,.Color_7,.Color_8,.Color_9,.Color_10,.Color_11,.Color_12,.Color_13,.Color_14,.Color_15,.Color_16,.Color_17,.Color_18,.Color_19,.Color_20,.Color_21,.Color_22,.Color_23,.Color_24,.Color_25,.Color_26,.Color_27,.Color_28,.Color_29,.Color_30,.Color_31,.Color_32,.Color_33,.Color_34,.Color_35{
               width: 100%;
               height: 100%;
+              object-fit: cover;
             }
 
           }
@@ -724,6 +823,7 @@ body {
             .Blackgrey_1,.Blackgrey_2,.Blackgrey_3,.Blackgrey_4,.Blackgrey_5,.Blackgrey_6,.Blackgrey_7,.Blackgrey_8,.Blackgrey_9,.Blackgrey_10,.Blackgrey_11,.Blackgrey_12,.Blackgrey_13,.Blackgrey_14,.Blackgrey_15,.Blackgrey_16,.Blackgrey_17,.Blackgrey_18,.Blackgrey_19,.Blackgrey_20,.Blackgrey_21,.Blackgrey_22,.Blackgrey_23,.Blackgrey_24,.Blackgrey_25{
               width: 100%;
               height: 100%;
+              object-fit: cover;
             }
 
           }
@@ -735,20 +835,21 @@ body {
             grid-column: span 2;
             grid-row: span 2;
           }
-          .Asian_div_1,.Asian_div_2,.Asian_div_3,.Asian_div_4,.Asian_div_5,.Asian_div_6,.Asian_div_7,.Asian_div_8,.Asian_div_9{
+          .Asian_div_1,.Asian_div_2,.Asian_div_3,.Asian_div_4,.Asian_div_5,.Asian_div_6,.Asian_div_7,.Asian_div_8,.Asian_div_9,.Asian_div_10,.Asian_div_11,.Asian_div_12,.Asian_div_13,.Asian_div_14,.Asian_div_15{
             width: 100%;
             height: 100%;
-            .Asian_1,.Asian_2,.Asian_3,.Asian_4,.Asian_5,.Asian_6,.Asian_7,.Asian_8,.Asian_9{
+            .Asian_1,.Asian_2,.Asian_3,.Asian_4,.Asian_5,.Asian_6,.Asian_7,.Asian_8,.Asian_9,.Asian_10,.Asian_11,.Asian_12,.Asian_13,.Asian_14,.Asian_15,{
               width: 100%;
             height: 100%;
+            object-fit: cover;
             }
 
           }
-          .Asian_div_2,.Asian_div_3,.Asian_div_4,.Asian_div_5,.Asian_div_6,.Asian_div_7,.Asian_div_8,.Asian_div_9{
+          .Asian_div_2,.Asian_div_3,.Asian_div_4,.Asian_div_5,.Asian_div_6,.Asian_div_7,.Asian_div_8,.Asian_div_9,.Asian_div_9,.Asian_div_10,.Asian_div_12,.Asian_div_13,.Asian_div_14,.Asian_div_15{
             grid-column: span 1;
           grid-row: span 1;
           }
-          .Asian_div_1{
+          .Asian_div_1,.Asian_div_8,.Asian_div_11{
             grid-column: span 2;
             grid-row: span 2;
           }
@@ -763,7 +864,7 @@ body {
         justify-content: center;
 
         .Homepage_Gallery_Button_Text{
-          width: 30%;
+          width: 95px;
           height: 30%;
           background-color: gray;
           font-family: "Ladyrose";
@@ -772,29 +873,41 @@ body {
           justify-content: center;
           cursor: pointer;
           font-size: 70%;
+          z-index: 1;
         }
       }
     }
     .Homepage_Seperate3{
       height: 5vh;
-      background-image:url('../assets/bg/bg/MainPage/9.jpg');
-      background-position: 50% 50%;
-      background-repeat: no-repeat;
-      background-size: cover;
+      width: 100%;
+      position: relative;
+      background-color: #8a8989;
+      z-index: -1;
+      .Homepage_Seperate3_Bg{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+      }
     }
     .Homepage_Contact{
+      position: relative;
+      background-color:#2d2e2d ;
       height: 30vh;
       width: 100%;
-      background-color: black;
-      background-image:url('../assets/bg/bg/MainPage/10.jpg');
-      background-position: 50% 50%;
-      background-repeat: no-repeat;
-      background-size: cover;
+
       display: flex;
       flex-direction: column;
       align-items: center;
       padding-top: 10%;
       padding-bottom: 10%;
+      z-index: -1;
+      .Homepage_Contact_Bg{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        z-index: 0;
+      }
       .Homepage_Contact_Title{
         height: 20%;
         font-size: 180%;
@@ -805,6 +918,7 @@ body {
         align-items: center;
         margin-bottom: 7%;
         letter-spacing: 5px;
+        z-index: 1;
       }
       .Homepage_Contact_Content{
         height: 50%;
@@ -818,8 +932,13 @@ body {
           margin-top: 10%;
           letter-spacing: 2px;
           font-size: 80%;
+          z-index: 1;
         }
       }
+    }
+    .Homepage_Seperate4{
+      height: 5vh;
+      background-color: #2d2e2d;
     }
     .Homepage_Map{
       height: 30vh;
@@ -988,21 +1107,23 @@ body {
     .Homepage_Competition_Logo{
       position: relative;
       height: 27vh;
-      width: 80%;
-      display: grid;
-      grid-template-columns: 8% 8% 8% 8% 8% 8% 8% 8% 8% 8% 8% 8%;
-      grid-template-rows: auto auto auto;
-  padding-top: 5%;
-      padding-bottom: 5%;
+      width: 100%;
+      display: flex;
       align-items: center;
       justify-content: center;
-      column-gap: 2%;
-      padding-left: 11%;
+    
       .Homepage_Competition_Logo_Bg{
         position: absolute;
-        width: 110%;
+        width: 100%;
         height: 100%;
         z-index: 0;
+      }
+      .Homepage_Competition_Logo_Container{
+        width: 80%;
+        height: 80%;
+        display: grid;
+        grid-template-columns: 9% 9% 9% 9% 9% 9% 9% 9% 9% 9% 9% 9%;
+        grid-template-rows: auto auto auto;
       }
       .Competition_Logo1{
         width: 60%;
@@ -1013,21 +1134,21 @@ body {
       }
       .Competition_Logo2{
         margin: auto;
-        width: 50%;
-        height: 63%;
+        width: 45%;
+        height: 65%;
         grid-column: span 3;
         z-index: 1;
       }
       .Competition_Logo3{
         margin: auto;
-        width: 55%;
-        height: 65%;
+        width: 50%;
+        height: 70%;
         grid-column: span 3;
         z-index: 1;
       }
       .Competition_Logo4{
         margin: auto;
-        width: 40%;
+        width: 35%;
         height: 50%;
         grid-column: span 3;
         z-index: 1;
@@ -1043,21 +1164,21 @@ body {
       .Competition_Logo6{
         margin: auto;
         width: 48%;
-        height: 65%;
+        height: 70%;
         grid-column: span 3;
         z-index: 1;
       }
       .Competition_Logo7{
         margin: auto;
         width: 70%;
-        height: 47%;
+        height: 55%;
         grid-column: span 3;
         z-index: 1;
       }
       .Competition_Logo8{
         margin: auto;
         width: 50%;
-        height: 65%;
+        height: 75%;
         grid-column: span 3;
         z-index: 1;
       }
