@@ -695,10 +695,12 @@ function Homepage() {
           <div className="Homepage_About_Title2"> ME</div>
         </div>
         <div className="Homepage_About_Text">
-          <div className="Homepage_About_Text1">Hi, my name is Minh.</div>
-          <div className="Homepage_About_Text2">
-            I am Vietnamese born (1999) and raised. For the past 10 years,
-            nothing has been more important to me than becoming a master inker.
+          <div className="Homepage_About_Text">
+            I did my first tattoo when I was 16 and since then I got hooked on
+            how to create perfect tattoos. At 18 years old I enrolled in
+            university to learn graphic design as I thought it was the right
+            path, but 2 years later (2019) I moved to the United States so I was
+            unable to complete my degree.
           </div>
         </div>
         <div className="Homepage_About_Button" onClick={linkToAbout}>
