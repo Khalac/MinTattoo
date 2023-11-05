@@ -1443,7 +1443,7 @@ body {
     }
     .Homepage_Gallery{
       position: relative;
-      height: 90vh;
+      height: 110vh;
       width: 100%;
       background-color:#2d2e2d ;
       padding-bottom: 3%;
@@ -1459,7 +1459,7 @@ body {
         justify-content: center;
         align-items: end;
         width: 100%;
-        height: 8%;
+        height: 7%;
         color:gray;
         font-family: "CeniosdemoRegular";
         font-size: 120%;
@@ -1471,7 +1471,7 @@ body {
         justify-content: center;
         align-items: center;
         width: 100%;
-        height: 7%;
+        height: 6%;
         color:#b38632;
         font-family: "Ladyrose";
         font-size: 180%;
@@ -1479,7 +1479,7 @@ body {
         z-index: 1;
       }
       .Homepage_Gallery_Text{
-        height: 15%;
+        height: 13%;
         width: 100%;
         display: flex;
         align-items: center;
@@ -1497,7 +1497,7 @@ body {
         }
       }
       .Homepage_Gallery_Img{
-        height: 60%;
+        height: 65%;
         width: 100%;
         display: flex;
         justify-content: center;
@@ -1505,7 +1505,7 @@ body {
         flex-direction: column;
         .Homepage_Gallery_Img_Styles{
           width: 85%;
-          height: 10%;
+          height: 7%;
           display: grid;
           grid-template-columns: 30% 30% 30%;
           justify-content: center;
@@ -1549,7 +1549,7 @@ body {
         }
 
         .Homepage_Gallery_Img_Container{
-          height: 80%;
+          height: 90%;
           width: 80%;
           display: grid;
           grid-template-columns: auto auto auto auto;

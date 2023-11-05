@@ -18,6 +18,8 @@ import BgGR3 from "../assets/bg/bg1/tattoo/3.png";
 import BgGR4 from "../assets/bg/bg1/tattoo/4.png";
 import BgGR5 from "../assets/bg/bg1/tattoo/5.png";
 
+import bg from "../assets/bg/bgGallery.webp";
+
 function GalleryPage() {
   const [nameStyle, setNameStyle] = useState("Realism");
   const [style, setStyle] = useState();
@@ -293,6 +295,21 @@ function GalleryPage() {
   };
   return (
     <div className="GalleryPage">
+      {popUp && (
+        <div className="popUp">
+          <div onClick={popUpImg} className="overlay"></div>
+          <div
+            className="popUP_Content"
+            onClick={popUpImg}
+            style={{
+              backgroundImage: `url(${img})`,
+              backgroundPosition: "center",
+              backgroundRepeat: "no-repeat",
+              backgroundSize: "50%",
+            }}
+          ></div>
+        </div>
+      )}
       <div className="GalleryPage_Header">
         <Header />
       </div>
@@ -300,7 +317,9 @@ function GalleryPage() {
         <div className="GalleryPage_Title_Text1">
           <img src={PMP} alt="" className="GalleryPage_Title_Text1_Img" />
         </div>
-        <div className="GalleryPage_Title_Text2">TATTOO GALLERY</div>
+        <div className="GalleryPage_Title_Text2">
+          <img src={bg} alt="" className="GalleryPage_Title_Text2_Img" />
+        </div>
       </div>
       <div className="GalleryPage_Text">
         <img src={BgGR1} alt="" className="GalleryPage_Text_Bg" />
@@ -380,23 +399,7 @@ function GalleryPage() {
             ASIAN
           </div>
         </div>
-        <div className="GalleryPage_Img_Container">
-          {style}
-          {popUp && (
-            <div className="popUp">
-              <div onClick={popUpImg} className="overlay"></div>
-              <div
-                className="popUP_Content"
-                style={{
-                  backgroundImage: `url(${img})`,
-                  backgroundPosition: "center",
-                  backgroundRepeat: "no-repeat",
-                  backgroundSize: "30%",
-                }}
-              ></div>
-            </div>
-          )}
-        </div>
+        <div className="GalleryPage_Img_Container">{style}</div>
       </div>
       <div className="GalleryPage_Video">
         <img src={BgGR3} alt="" className="GalleryPage_Video_Bg" />
