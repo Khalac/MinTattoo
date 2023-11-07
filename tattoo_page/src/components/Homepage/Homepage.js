@@ -707,14 +707,13 @@ function Homepage() {
           <button className="Homepage_About_Button_Text">Read more</button>
         </div>
       </div>
-      {/*
+      <div className="sepereate"></div>
       <div className="Homepage_Achive">
         <img src={BgMP7} alt="" className="Homepage_Achive_Bg" />
         <div className="Homepage_Achive_Title">
           <div className="Homepage_Achive_Title1">WHY YOU SHOULD</div>
-          <div className="Homepage_Achive_Title2_Border">
-            <div className="Homepage_Achive_Title2">CHOOSE ME?</div>
-          </div>
+
+          <div className="Homepage_Achive_Title2">CHOOSE ME?</div>
         </div>
         <div className="Homepage_Achive_Text">
           <div className="Homepage_Achive_Text_Content">
@@ -727,33 +726,54 @@ function Homepage() {
         <div className="Homepage_Achive_Achive">
           <div className="Homepage_Achive_Achive_Content">
             <div className="Homepage_Achive_Achive_Convention">
-              <img
-                src={Conven}
-                alt=""
-                className="Homepage_Achive_Achive_Convention_Img"
-              ></img>
+              <div className="Homepage_Achive_Achive_Convention_Img_Container">
+                <img
+                  src={Conven}
+                  alt=""
+                  className="Homepage_Achive_Achive_Convention_Img"
+                ></img>
+              </div>
+
               <div className="Homepage_Achive_Achive_Convention_Text">
                 WORLD CONVENTION
               </div>
+              <div className="Homepage_Achive_Achive_Convention_Text_Detail">
+                Minh has competed in and won many competitions, all across the
+                States and the world.{" "}
+              </div>
             </div>
             <div className="Homepage_Achive_Achive_YrsExper">
-              <img
-                src={Exper}
-                alt=""
-                className="Homepage_Achive_Achive_YrsExper_Img"
-              ></img>
+              <div className="Homepage_Achive_Achive_YrsExper_Img_Container">
+                <img
+                  src={Exper}
+                  alt=""
+                  className="Homepage_Achive_Achive_YrsExper_Img"
+                ></img>
+              </div>
+
               <div className="Homepage_Achive_Achive_YrsExper_Text">
                 YEARS EXPERIENCE
               </div>
+              <div className="Homepage_Achive_Achive_YrsExper_Text_Detail">
+                Minh did his first tattoo when he was 16 and since then he got
+                hooked on how to create perfect tattoos.
+              </div>
             </div>
             <div className="Homepage_Achive_Achive_Trophies">
-              <img
-                src={Trophies}
-                alt=""
-                className="Homepage_Achive_Achive_Trophies_Img"
-              ></img>
+              <div className="Homepage_Achive_Achive_Trophies_Img_Container">
+                <img
+                  src={Trophies}
+                  alt=""
+                  className="Homepage_Achive_Achive_Trophies_Img"
+                ></img>
+              </div>
+
               <div className="Homepage_Achive_Achive_Trophies_Text">
-                TROPHIES
+                TROPHIES AWARDS
+              </div>
+              <div className="Homepage_Achive_Achive_Trophies_Text_Detail">
+                Minh dedication to his craft and boundless creativity make him a
+                remarkable tattoo artist.
               </div>
             </div>
           </div>
@@ -767,6 +787,7 @@ function Homepage() {
           </div>
         </div>
       </div>
+      {/*
       <div className="Homepage_Gallery">
         <img src={BgMP8} alt="" className="Homepage_Gallery_Bg" />
         <div className="Homepage_Gallery_Name">PHAM MINH PHUC</div>
