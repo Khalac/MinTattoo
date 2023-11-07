@@ -787,18 +787,15 @@ function Homepage() {
           </div>
         </div>
       </div>
-      {/*
+
       <div className="Homepage_Gallery">
         <img src={BgMP8} alt="" className="Homepage_Gallery_Bg" />
         <div className="Homepage_Gallery_Name">PHAM MINH PHUC</div>
         <div className="Homepage_Gallery_Title">GALLERY</div>
         <div className="Homepage_Gallery_Text">
           <div className="Homepage_Gallery_Text_Content">
-            Minh's artistic journey began at a very young age,{" "}
-            <div>
-              when his fascination with drawing small objects sparked his
-              creative spirit.
-            </div>
+            Minh's artistic journey began at a very young age, when his
+            fascination with drawing small objects sparked his creative spirit.
           </div>
         </div>
         <div className="Homepage_Gallery_Img">
@@ -806,8 +803,8 @@ function Homepage() {
             <div
               className={
                 activeRealism
-                  ? `Homepage_Gallery_Img_Styles_Style_Left active`
-                  : `Homepage_Gallery_Img_Styles_Style_Left`
+                  ? `Homepage_Gallery_Img_Styles_Style active`
+                  : `Homepage_Gallery_Img_Styles_Style`
               }
               onClick={setRealism}
             >
@@ -826,8 +823,8 @@ function Homepage() {
             <div
               className={
                 activeFineLine
-                  ? `Homepage_Gallery_Img_Styles_Style_Right active`
-                  : `Homepage_Gallery_Img_Styles_Style_Right`
+                  ? `Homepage_Gallery_Img_Styles_Style active`
+                  : `Homepage_Gallery_Img_Styles_Style`
               }
               onClick={setFineLine}
             >
@@ -836,8 +833,8 @@ function Homepage() {
             <div
               className={
                 activeColor
-                  ? `Homepage_Gallery_Img_Styles_Style_Left active`
-                  : `Homepage_Gallery_Img_Styles_Style_Left`
+                  ? `Homepage_Gallery_Img_Styles_Style active`
+                  : `Homepage_Gallery_Img_Styles_Style`
               }
               onClick={setColor}
             >
@@ -856,8 +853,8 @@ function Homepage() {
             <div
               className={
                 activeAsian
-                  ? `Homepage_Gallery_Img_Styles_Style_Right active`
-                  : `Homepage_Gallery_Img_Styles_Style_Right`
+                  ? `Homepage_Gallery_Img_Styles_Style active`
+                  : `Homepage_Gallery_Img_Styles_Style`
               }
               onClick={setAsian}
             >
@@ -870,6 +867,7 @@ function Homepage() {
           <div className="Homepage_Gallery_Button_Text">View more</div>
         </div>
       </div>
+
       <div className="Homepage_Seperate3">
         <img src={BgMP9} alt="" className="Homepage_Seperate3_Bg" />
       </div>
@@ -903,6 +901,7 @@ function Homepage() {
           className="Homepage_Map_Size"
         ></iframe>
       </div>
+      {/*
       <div className="Homepage_Seperate4"></div>
       <div className="Homepage_footer">
         <Footer />
