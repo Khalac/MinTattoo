@@ -872,8 +872,20 @@ function Homepage() {
         <img src={BgMP9} alt="" className="Homepage_Seperate3_Bg" />
       </div>
       <div className="Homepage_Contact">
-        <img src={BgMP10} alt="" className="Homepage_Contact_Bg" />
+        {/* <img src={BgMP10} alt="" className="Homepage_Contact_Bg" /> */}
         <div className="Homepage_Contact_Title">CONTACT</div>
+        <div className="Homepage_Contact_Text">
+          TEXT ME FOR BOOKING OR MORE INFORMATION
+        </div>
+        <div className="Homepage_Map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3471.7987797855076!2d-98.3705113238811!3d29.522223875190804!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f20.1!3m3!1m2!1s0x865cf3339e4553b7%3A0x2e4edb779891b59d!2s1920%20Ponce%20De%20Leon%2C%20San%20Antonio%2C%20TX%2078239%2C%20USA!5e0!3m2!1sen!2s!4v1697542751821!5m2!1sen!2s"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            className="Homepage_Map_Size"
+          ></iframe>
+        </div>
         <div className="Homepage_Contact_Content">
           <div className="Homepage_Contact_Content_Text">
             Tel: (210) 843-4253
@@ -892,20 +904,9 @@ function Homepage() {
           </div>
         </div>
       </div>
-      <div className="Homepage_Map">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3471.7987797855076!2d-98.3705113238811!3d29.522223875190804!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f20.1!3m3!1m2!1s0x865cf3339e4553b7%3A0x2e4edb779891b59d!2s1920%20Ponce%20De%20Leon%2C%20San%20Antonio%2C%20TX%2078239%2C%20USA!5e0!3m2!1sen!2s!4v1697542751821!5m2!1sen!2s"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-          className="Homepage_Map_Size"
-        ></iframe>
-      </div>
-      {/*
-      <div className="Homepage_Seperate4"></div>
       <div className="Homepage_footer">
         <Footer />
-      </div>*/}
+      </div>
     </div>
   );
 }

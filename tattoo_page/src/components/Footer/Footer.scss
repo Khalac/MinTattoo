@@ -1,4 +1,56 @@
+@media screen and (min-width: 992px){
+    .Footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        height:100%;
+        background-color: #2d2e2d;
+        .Footer_Infor{
+            height: 20%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            font-family: "Ladyrose";
+            .Footer_Infor_Icon{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                height: 100%;
+                .Footer_Infor_Icon_Link{
+                    text-decoration: none;
+                    margin-right: 2%;
+                    .Footer_Infor_Icon_Icon{
+                        font-size: 200%;
+                        text-decoration: none;
+                        color: #E4E1D8;
+                    }
+                }
+                
+            }
+        }
+        .Footer_Link{
+            width: 80%;
+            height: 30%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-evenly;
+            .Footer_Img{width: 10%;
+                height: 90%;
+                margin-top: 1%;}
+            .Footer_Page{
 
+                font-family: "Ladyrose";
+                font-size: 100%;
+                cursor: pointer;
+                text-decoration: none;
+                color: #E4E1D8;
+            }
+        }
+    }
+}
 
 @media screen and (max-width: 700px) {
     .Footer{

@@ -14,7 +14,7 @@ function Header() {
   return (
     <div className="Header">
       <div className="Pages">
-        <img src={Minh} alt="" className="Pages_Img" />
+        <img src={Minh} alt="" className="Pages_Img" onClick={linkToHome} />
         <Link to="/About" className="Page">
           About
         </Link>
