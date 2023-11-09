@@ -1,3 +1,231 @@
+@media screen and (min-width: 992px){
+  .Aboutpage{
+    background-color: #E4E1D8;
+    .Aboutpage_Header{
+      height: 8vh;
+    }
+    .Aboutpage_About1{
+      height: 80vh;
+      width: 100%;
+      padding-top: 5%;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      .Aboutpage_About1_Bg{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      z-index: 0;
+      }
+      .Aboutpage_About_Title{
+        display: flex;
+        flex-direction: row;
+        height: 40%;
+        margin-left: 12%;
+        margin-top: 3%;
+        .Aboutpage_About_Title1{
+          font-size: 350%;
+          height: 110%;
+          width: 35%;
+          font-family: "Ladyrose";
+          padding-top: 3%;
+          position: relative;
+          text-align: right;
+          letter-spacing: 2px;
+          z-index: 1;
+          display: flex;
+          justify-content: end;
+          align-items: end;
+        }
+        .Aboutpage_About_Title2{
+          height: 110%;
+          width: 20%;
+          display: flex;
+
+          align-items: end;
+          background-image:url('../assets/imgBrother/mybrother8.webp');
+          background-position: 50% 50%;
+          background-repeat: no-repeat;
+          background-size: cover;
+          font-size: 350%;
+          font-family: "Ladyrose";
+          margin-left: 1%;
+          padding-left: 1%;
+          padding-top: 3%;
+          color: #E4E1D8;
+          letter-spacing: 2px;
+          z-index: 1;
+          border-right: 12px solid #E4E1D8;
+          border-bottom: 12px solid #E4E1D8;
+        }
+        .Aboutpage_About_Title_Img{
+          position: absolute;
+          top: 30%;
+          right: -120%;
+          height: 120%;
+          width: 80%;
+          background-image:url('../assets/imgBrother/mybrother7.webp');
+          background-position: 50% 50%;
+          background-repeat: no-repeat;
+          background-size: cover;
+          z-index: 0;
+        }
+      }
+      .Aboutpage_About_Text{
+        width: 60%;
+        height: 30%;
+        line-height: 20px;
+        letter-spacing: 0.5px;
+        z-index: 1;
+        text-align: right;
+        position: absolute;
+        top: 52%;
+        left: 10%;
+        .Aboutpage_About_Text_Text{
+          font-family: "SemiBold15";
+          font-size: 90%;
+          height: 30%;
+          z-index: 1;
+        }
+        
+      }
+    
+    }
+    .Aboutpage_About2{
+      display: flex;
+      flex-direction: column;
+      height: 50vh;
+      width: 100%;
+      background-color: #2d2e2d;
+      align-items: center;
+
+      .Aboutpage_About2_Img{
+        height: 70%;
+        width: 100%;
+        background-image:url('../assets/imgBrother/myBrother6.webp');
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .Aboutpage_About2_Text{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 30%;
+        width: 100%;
+        position: relative;
+
+        .Aboutpage_About2_Text_Bg{
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          z-index: 0;
+        }
+        .Aboutpage_About2_Text_Content{
+          color: white;
+          font-family: "SemiBold15";
+          font-size: 60%;
+          text-align: left;
+          width: 80%;
+          line-height: 13px;
+          letter-spacing: 0.5px;
+          z-index: 1;
+        }
+      }
+    }
+    .Aboutpage_About3{
+      display: flex;
+      flex-direction: row;
+      height: 30vh;
+      width: 100%;
+      background-color: #E4E1D8;
+      align-items: center;
+      position: relative;
+      .Aboutpage_About3_Bg{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 0;
+      }
+      .Aboutpage_About3_Img{
+        height: 50%;
+        width: 50%;
+        background-image:url('../assets/imgBrother/imgBrother8.webp');
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-top: 10px solid #2d2e2d;
+        border-bottom: 10px solid #2d2e2d;
+        z-index: 1;
+      }
+      .Aboutpage_About3_Text{
+        display: flex;
+
+        align-items: center;
+        height: 100%;
+        width: 50%;
+        .Aboutpage_About3_Text_Content{
+          color: #2d2e2d;
+          font-family: "SemiBold15";
+          font-size: 67%;
+
+          text-align: left;
+          width: 75%;
+          line-height: 13px;
+          padding-left: 10%;
+          letter-spacing: 0.5px;
+          z-index: 1;
+        }
+      }
+    }
+    .Aboutpage_About4{
+      display: flex;
+      flex-direction: row;
+      height: 30vh;
+      width: 100%;
+      background-color: #2d2e2d;
+      align-items: center;
+     position: relative;
+     .Aboutpage_About4_Bg{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+     }
+      .Aboutpage_About4_Img{
+        height: 70%;
+        width: 30%;
+        background-image:url('../assets/imgBrother/imgBrother9.webp');
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: 1;
+      }
+      .Aboutpage_About4_Text{
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        height: 100%;
+        width: 60%;
+        .Aboutpage_About4_Text_Content{
+          color: #E4E1D8;
+          font-family: "SemiBold15";
+          font-size: 60%;
+          text-align: right;
+          width: 75%;
+          line-height: 13px;
+          padding-right: 10%;
+          letter-spacing: 0.5px;
+          z-index: 1;
+        }
+      }
+    }
+    .Aboutpage_Footer{
+      height: 25vh;
+    }
+  }
+}
 @media screen and (max-width:768px) {
   .Aboutpage{
     background-color: #E4E1D8;

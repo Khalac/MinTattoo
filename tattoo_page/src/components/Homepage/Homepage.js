@@ -695,7 +695,7 @@ function Homepage() {
           <div className="Homepage_About_Title2"> ME</div>
         </div>
         <div className="Homepage_About_Text">
-          <div className="Homepage_About_Text">
+          <div className="Homepage_About_Text_Text">
             I did my first tattoo when I was 16 and since then I got hooked on
             how to create perfect tattoos. At 18 years old I enrolled in
             university to learn graphic design as I thought it was the right

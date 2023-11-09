@@ -448,7 +448,7 @@ body {
         position: absolute;
         top: 52%;
         left: 10%;
-        .Homepage_About_Text{
+        .Homepage_About_Text_Text{
           font-family: "SemiBold15";
           font-size: 90%;
           height: 30%;
@@ -945,7 +945,7 @@ body {
         z-index: 0;
       }
       .Homepage_Contact_Title{
-        width: 100%;
+        width: 40%;
         height: 10%;
         font-family: "Ladyrose";
         color:#2d2e2d;
@@ -955,17 +955,17 @@ body {
         letter-spacing: 5px;
         z-index: 1;
         margin-top: 4%;
-        margin-left: 60%;
+
 
       }
       .Homepage_Contact_Text{
-        width: 100%;
+        width: 70%;
         height: 10%;
         font-size: 120%;
         font-family: "Ladyrose";
         color:#b38632;
         display: flex;
-        margin-left: 60%;
+        margin-left: 30%;
         align-items: center;
       }
       .Homepage_Map{
