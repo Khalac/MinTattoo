@@ -293,7 +293,8 @@ function GalleryPage() {
   const goToAwards = () => {
     nav("/Awards", { replace: true });
   };
-  return (
+  const isMobile = /iPhone|iPod|Android/i.test(navigator.userAgent);
+  return isMobile ? (
     <div className="GalleryPage">
       {popUp && (
         <div className="popUp">
@@ -552,6 +553,218 @@ function GalleryPage() {
         </div>
       </div>
       <div className="GalleryPage_Seperate"></div>
+      <div className="GalleryPage_Footer">
+        <Footer />
+      </div>
+    </div>
+  ) : (
+    <div className="GalleryPage">
+      {popUp && (
+        <div className="popUp">
+          <div onClick={popUpImg} className="overlay"></div>
+          <div
+            onClick={popUpImg}
+            className="popUP_Content"
+            style={{
+              backgroundImage: `url(${img})`,
+              backgroundPosition: "center",
+              backgroundRepeat: "no-repeat",
+              backgroundSize: "80%",
+            }}
+          ></div>
+        </div>
+      )}
+      <div className="GalleryPage_Header">
+        <Header />
+      </div>
+      <div className="GalleryPage_Gallery">
+        <div className="GalleryPage_Gallery_Name">PHAM MINH PHUC</div>
+        <div className="GalleryPage_Gallery_Title">GALLERY</div>
+        <div className="GalleryPage_Gallery_Text">
+          <div className="GalleryPage_Gallery_Text_Content">
+            Minh's artistic journey began at a very young age, when his
+            fascination with drawing small objects sparked his creative spirit.
+          </div>
+        </div>
+        <div className="GalleryPage_Gallery_Img">
+          <div className="GalleryPage_Gallery_Img_Styles">
+            <div
+              className={
+                activeRealism
+                  ? `GalleryPage_Gallery_Img_Styles_Style active`
+                  : `GalleryPage_Gallery_Img_Styles_Style`
+              }
+              onClick={setRealism}
+            >
+              REALISM
+            </div>
+            <div
+              className={
+                activePortrait
+                  ? `GalleryPage_Gallery_Img_Styles_Style active`
+                  : `GalleryPage_Gallery_Img_Styles_Style`
+              }
+              onClick={setPortrait}
+            >
+              PORTRAIT
+            </div>
+            <div
+              className={
+                activeFineLine
+                  ? `GalleryPage_Gallery_Img_Styles_Style active`
+                  : `GalleryPage_Gallery_Img_Styles_Style`
+              }
+              onClick={setFineLine}
+            >
+              LINEWORK
+            </div>
+            <div
+              className={
+                activeColor
+                  ? `GalleryPage_Gallery_Img_Styles_Style active`
+                  : `GalleryPage_Gallery_Img_Styles_Style`
+              }
+              onClick={setColor}
+            >
+              COLOR
+            </div>
+            <div
+              className={
+                activeBlackGrey
+                  ? `GalleryPage_Gallery_Img_Styles_Style active`
+                  : `GalleryPage_Gallery_Img_Styles_Style`
+              }
+              onClick={setBlackGrey}
+            >
+              BLACK&GREY
+            </div>
+            <div
+              className={
+                activeAsian
+                  ? `GalleryPage_Gallery_Img_Styles_Style active`
+                  : `GalleryPage_Gallery_Img_Styles_Style`
+              }
+              onClick={setAsian}
+            >
+              ASIAN
+            </div>
+          </div>
+          <div className="GalleryPage_Gallery_Img_Container ">{style}</div>
+        </div>
+      </div>
+      <div className="GalleryPage_Video">
+        <img src={BgGR3} alt="" className="GalleryPage_Video_Bg" />
+        <div className="GalleryPage_Video_Container">
+          <div className="GalleryPage_Video_Uper">
+            <div className="GalleryPage_Video_Video">
+              <video
+                className="GalleryPage_Video_Video_Control"
+                controls
+                muted
+                preload="none"
+                onClick={handleVideo1}
+                ref={video1Ref}
+              >
+                <source
+                  src={require("../assets/video/1.MOV")}
+                  type="video/mp4"
+                  onClick={handleVideo1}
+                />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <div className="GalleryPage_Video_Text_Img">
+              <div className="GalleryPage_Video_Text">
+                Meet a talented individual named Minh, who hails from Vietnam
+                and was born in 1999. At just 24 years old, he has already spent
+                7 years honing his craft as a tattoo artist. Minh's artistic
+                journey began at a very young age, when his fascination with
+                drawing small objects sparked his creative spirit.
+              </div>
+              <div className="GalleryPage_Video_Img">
+                <div className="GalleryPage_Video_Img1"></div>
+                <div className="GalleryPage_Video_Img2"></div>
+                <div className="GalleryPage_Video_Img3"></div>
+              </div>
+            </div>
+          </div>
+          <div className="GalleryPage_Video_Lower">
+            He finds inspiration in a multitude of genres, with a simple
+            criterion: if it looks good, it captivates him. This constant desire
+            to explore and learn keeps Minh open to new artistic horizons. His
+            portfolio proudly showcases his expertise in Black and Grey realism,
+            Color Realism, and a deep appreciation for Oriental style tattoos.
+            Beyond these specialties, Minh is always ready to embrace and excel
+            in any style requested by his clients. His dedication to his craft
+            and his boundless cre-ativity make him a remarkable tattoo artist,
+            ready to turn your artistic visions into permanent masterpieces
+          </div>
+        </div>
+      </div>
+      <div className="GalleryPage_Pricing">
+        <div className="GalleryPage_Pricing_Container">
+          <div className="GalleryPage_Pricing_Text">PRICING</div>
+          <div className="GalleryPage_Pricing_Pricing">220$ per hours</div>
+        </div>
+        <div className="GalleryPage_Pricing_Infor">
+          The Price depeands on the size and details of the sketch on the
+          artist.
+        </div>
+        <div className="GalleryPage_Pricing_Booking">
+          <div className="GalleryPage_Pricing_Booking_Text1">
+            TEXT ME FOR BOOKING OR MORE INFORMATION
+          </div>
+          <dvi className="GalleryPage_Pricing_Booking_Text2">
+            (210) 843-4253
+          </dvi>
+        </div>
+      </div>
+      <div className="GalleryPage_Achive">
+        <img src={BgGR5} alt="" className="GalleryPage_Achive_Bg" />
+        <div className="GalleryPage_Achive_Content">
+          <div className="GalleryPage_Achive_Achive_Convention">
+            <img
+              src={Conven}
+              alt=""
+              className="GalleryPage_Achive_Achive_Convention_Img"
+            ></img>
+            <div className="GalleryPage_Achive_Achive_Convention_Text">
+              WORLD CONVENTION
+            </div>
+          </div>
+          <div className="GalleryPage_Achive_Achive_YrsExper">
+            <img
+              src={Exper}
+              alt=""
+              className="GalleryPage_Achive_Achive_YrsExper_Img"
+            ></img>
+            <div className="GalleryPage_Achive_Achive_YrsExper_Text">
+              YEARS EXPERIENCE
+            </div>
+          </div>
+          <div className="GalleryPage_Achive_Achive_Trophies">
+            <img
+              src={Trophies}
+              alt=""
+              className="GalleryPage_Achive_Achive_Trophies_Img"
+            ></img>
+            <div className="GalleryPage_Achive_Achive_Trophies_Text">
+              TROPHIES
+            </div>
+          </div>
+        </div>
+        <div className="GalleryPage_Achive_Text">
+          <div
+            className="GalleryPage_Achive_Text_Container"
+            onClick={goToAwards}
+          >
+            <div className="GalleryPage_Achive_Text_Container_Text">
+              VIEW ALL MINH’S THE BEST AWARDS!!!
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div className="GalleryPage_Footer">
         <Footer />
       </div>

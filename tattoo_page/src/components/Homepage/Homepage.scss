@@ -439,15 +439,15 @@ body {
         }
       }
       .Homepage_About_Text{
-        width: 60%;
+        width: 40%;
         height: 30%;
         line-height: 20px;
         letter-spacing: 0.5px;
         z-index: 1;
         text-align: right;
         position: absolute;
-        top: 52%;
-        left: 10%;
+        top: 68%;
+        left: 12%;
         .Homepage_About_Text_Text{
           font-family: "SemiBold15";
           font-size: 90%;
@@ -718,6 +718,7 @@ body {
             align-items: center;
             justify-content: center;
             color: #E4E1D8;
+
           }
         }
       }
@@ -930,12 +931,9 @@ body {
       background-color:#E4E1D8 ;
       height: 80vh;
       width: 100%;
-
       display: flex;
       flex-direction: column;
       align-items: center;
-
-
       z-index: -1;
       .Homepage_Contact_Bg{
         position: absolute;

@@ -5,7 +5,7 @@
       height: 8vh;
     }
     .Aboutpage_About1{
-      height: 80vh;
+      height: 120vh;
       width: 100%;
       padding-top: 5%;
       position: relative;
@@ -26,7 +26,7 @@
         margin-top: 3%;
         .Aboutpage_About_Title1{
           font-size: 350%;
-          height: 110%;
+          height: 80%;
           width: 35%;
           font-family: "Ladyrose";
           padding-top: 3%;
@@ -39,7 +39,7 @@
           align-items: end;
         }
         .Aboutpage_About_Title2{
-          height: 110%;
+          height: 80%;
           width: 20%;
           display: flex;
 
@@ -61,9 +61,9 @@
         }
         .Aboutpage_About_Title_Img{
           position: absolute;
-          top: 30%;
+          top: 35%;
           right: -120%;
-          height: 120%;
+          height: 110%;
           width: 80%;
           background-image:url('../assets/imgBrother/mybrother7.webp');
           background-position: 50% 50%;
@@ -73,14 +73,14 @@
         }
       }
       .Aboutpage_About_Text{
-        width: 60%;
+        width: 40%;
         height: 30%;
         line-height: 20px;
         letter-spacing: 0.5px;
         z-index: 1;
         text-align: right;
         position: absolute;
-        top: 52%;
+        top: 48%;
         left: 10%;
         .Aboutpage_About_Text_Text{
           font-family: "SemiBold15";
@@ -95,132 +95,111 @@
     .Aboutpage_About2{
       display: flex;
       flex-direction: column;
-      height: 50vh;
+      height: 70vh;
       width: 100%;
       background-color: #2d2e2d;
       align-items: center;
-
+      position: relative;
       .Aboutpage_About2_Img{
-        height: 70%;
-        width: 100%;
-        background-image:url('../assets/imgBrother/myBrother6.webp');
-        background-position: 50% 50%;
+        position: absolute;
+        height: 130%;
+        width: 70%;
+        bottom: 0;
+        right: 0;
+        background-image:linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),url('../assets/imgBrother/imgBrother9.webp');
+        background-position: 50% 20%;
         background-repeat: no-repeat;
         background-size: cover;
       }
-      .Aboutpage_About2_Text{
+      .Aboutpage_About2_Text_Img{
+        height: 100%;
+        width: 60%;
         display: flex;
-        justify-content: center;
+        flex-direction: column;
         align-items: center;
-        height: 30%;
-        width: 100%;
-        position: relative;
-
-        .Aboutpage_About2_Text_Bg{
-          position: absolute;
+        justify-content: center;
+        z-index: 3;
+        position: absolute;
+        bottom: 50%;
+        .Aboutpage_About2_Text_Img_Img{
+          height: 85%;
           width: 100%;
-          height: 100%;
-          z-index: 0;
+          background-image:url('../assets/imgBrother/imgBrother8.webp');
+          background-position: 50% 50%;
+          background-repeat: no-repeat;
+          background-size: cover;
         }
-        .Aboutpage_About2_Text_Content{
-          color: white;
+        .Aboutpage_About2_Text_Img_Text{
+          width: 65%;
+          height: 15%;
+          color: #E4E1D8;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
           font-family: "SemiBold15";
-          font-size: 60%;
-          text-align: left;
-          width: 80%;
-          line-height: 13px;
-          letter-spacing: 0.5px;
-          z-index: 1;
+          line-height: 20px;
+          font-size: 90%;
+          
         }
       }
+     
     }
     .Aboutpage_About3{
       display: flex;
       flex-direction: row;
       height: 30vh;
       width: 100%;
-      background-color: #E4E1D8;
+      background-color: white;
       align-items: center;
       position: relative;
-      .Aboutpage_About3_Bg{
+      .Aboutpage_About3_Img_Text{
+        z-index: 3;
+        height: 55%;
+        width: 80%;
         position: absolute;
-        width: 100%;
-        height: 100%;
-        z-index: 0;
-      }
-      .Aboutpage_About3_Img{
-        height: 50%;
-        width: 50%;
-        background-image:url('../assets/imgBrother/imgBrother8.webp');
-        background-position: 50% 50%;
-        background-repeat: no-repeat;
-        background-size: cover;
-        border-top: 10px solid #2d2e2d;
-        border-bottom: 10px solid #2d2e2d;
-        z-index: 1;
-      }
-      .Aboutpage_About3_Text{
+        right: 0;
+        top: 0;
         display: flex;
 
-        align-items: center;
-        height: 100%;
-        width: 50%;
-        .Aboutpage_About3_Text_Content{
-          color: #2d2e2d;
-          font-family: "SemiBold15";
-          font-size: 67%;
+        .Aboutpage_About3_Img{
+          position: absolute;
+          height: 270%;
+          width: 30%;
+          background-image:url('../assets/imgBrother/imgBrother9.webp');
+          background-position: 50% 50%;
+          background-repeat: no-repeat;
+          background-size: cover;
+          bottom: 0;
+        }
+        .Aboutpage_About3_Img_Container{
+          width: 80%;
+          height: 100%;
+          display: flex;
+          align-items: center;
 
-          text-align: left;
-          width: 75%;
-          line-height: 13px;
-          padding-left: 10%;
-          letter-spacing: 0.5px;
-          z-index: 1;
+          background-color: #E4E1D8;
+          position: absolute;
+          bottom: 0;
+          right: 0;
+          .Aboutpage_About3_Text{
+            margin-left: 10%;
+            width: 65%;
+            height: 100%;
+            font-size: 90%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: left;
+            font-family: "SemiBold15";
+            line-height: 20px;
+            font-size: 90%;
+            letter-spacing: 0.8px;
+          }
         }
       }
-    }
-    .Aboutpage_About4{
-      display: flex;
-      flex-direction: row;
-      height: 30vh;
-      width: 100%;
-      background-color: #2d2e2d;
-      align-items: center;
-     position: relative;
-     .Aboutpage_About4_Bg{
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      z-index: 0;
-     }
-      .Aboutpage_About4_Img{
-        height: 70%;
-        width: 30%;
-        background-image:url('../assets/imgBrother/imgBrother9.webp');
-        background-position: 50% 50%;
-        background-repeat: no-repeat;
-        background-size: cover;
-        z-index: 1;
       }
-      .Aboutpage_About4_Text{
-        display: flex;
-        justify-content: end;
-        align-items: center;
-        height: 100%;
-        width: 60%;
-        .Aboutpage_About4_Text_Content{
-          color: #E4E1D8;
-          font-family: "SemiBold15";
-          font-size: 60%;
-          text-align: right;
-          width: 75%;
-          line-height: 13px;
-          padding-right: 10%;
-          letter-spacing: 0.5px;
-          z-index: 1;
-        }
-      }
-    }
+    
     .Aboutpage_Footer{
       height: 25vh;
     }

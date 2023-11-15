@@ -108,50 +108,31 @@ function AboutPage() {
       </div>
       <div className="Aboutpage_About2">
         <div className="Aboutpage_About2_Img"></div>
-        <div className="Aboutpage_About2_Text">
-          <img src={BgAB2} alt="" className="Aboutpage_About2_Text_Bg" />
-          <div className="Aboutpage_About2_Text_Content">
-            {" "}
-            I did my first tattoo when I was 16 and since then I got hooked on
-            how to create perfect tattoos. At 18 years old I enrolled in
-            university to learn graphic design as I thought it was the right
-            path, but 2 years later (2019) I moved to the United States so I was
-            unable to complete my degree.
+        <div className="Aboutpage_About2_Text_Img">
+          <div className="Aboutpage_About2_Text_Img_Img"></div>
+          <div className="Aboutpage_About2_Text_Img_Text">
+            This move was the turning point of my life, it brought so many
+            challenges that required serious adjustment. But, fortune favors the
+            brave, I still managed to land a job at one of the best tattoo shop
+            in the city, the Firme Copias San Antonio, Texas.
           </div>
         </div>
       </div>
       <div className="Aboutpage_About3">
-        <img src={BgAB3} alt="" className="Aboutpage_About3_Bg" />
-        <div className="Aboutpage_About3_Img"></div>
-        <div className="Aboutpage_About3_Text">
-          <div className="Aboutpage_About3_Text_Content">
-            {" "}
-            This move was the turning point of my life, it brought so many
-            challenges that required serious adjustment.
-            <div>
-              But, fortune favors the brave, I still managed to land a job at
-              one of the best tattoo shop in the city, the Firme Copias San
-              Antonio, Texas.
+        <div className="Aboutpage_About3_Img_Text">
+          <div className="Aboutpage_About3_Img"></div>
+          <div className="Aboutpage_About3_Img_Container">
+            <div className="Aboutpage_About3_Text">
+              Since then, my lifechanged forever, I met and learned from some of
+              best and most amazing artists in town, and with self-learning
+              about original art anddigital art, my skillset has improved
+              rapidly. So much so that I have competed in and won many
+              competitions, all across the States and the world.
             </div>
           </div>
         </div>
       </div>
-      <div className="Aboutpage_About4">
-        <img src={BgAB4} alt="" className="Aboutpage_About4_Bg" />
-        <div className="Aboutpage_About4_Text">
-          <div className="Aboutpage_About4_Text_Content">
-            {" "}
-            Since then, my lifechanged forever, I met and learned from some of
-            best and most amazing artists in town, and with self-learning about
-            original art and digital art, my skil set has improved rapidly.{" "}
-            <div>
-              So much so that I have competed in and won many competitions, all
-              across the States and the world.
-            </div>
-          </div>
-        </div>
-        <div className="Aboutpage_About4_Img"></div>
-      </div>
+
       <div className="Aboutpage_Footer">
         <Footer />
       </div>
