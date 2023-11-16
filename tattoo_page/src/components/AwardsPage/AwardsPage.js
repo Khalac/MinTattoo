@@ -25,6 +25,10 @@ import BgAW1 from "../assets/bg/bg1/awards/1.png";
 import BgAW2 from "../assets/bg/bg1/awards/2.png";
 import BgAW3 from "../assets/bg/bg1/awards/3.png";
 
+import BgAWpc1 from "../assets/bg/bgPC/awards/18.png";
+import BgAWpc2 from "../assets/bg/bgPC/awards/19.png";
+import BgAWpc3 from "../assets/bg/bgPC/awards/20.png";
+
 function AwardsPage() {
   const isMobile = /iPhone|iPod|Android/i.test(navigator.userAgent);
   return isMobile ? (
@@ -466,6 +470,7 @@ function AwardsPage() {
         <Header />
       </div>
       <div className="Awardspage_Achive">
+        <img src={BgAWpc1} alt="" className="Awardspage_Achive_Bg" />
         <div className="Awardspage_Achive_Title">
           <div className="Awardspage_Achive_Title1">WHY YOU SHOULD</div>
 
@@ -537,6 +542,7 @@ function AwardsPage() {
       </div>
       <div className="Awards_Seperate1"></div>
       <div className="Awards_Awards">
+        <img src={BgAWpc2} alt="" className="Awards_Awards_Bg" />
         <div className="Awards_Awards_Competition_Logo">
           <div className="Awards_Awards_Competition_Logo_Container1">
             <img src={lgcom1} alt="Logo" className="Competition_Logo1"></img>
@@ -574,6 +580,7 @@ function AwardsPage() {
         </div>
       </div>
       <div className="Awardspage_List">
+        <img src={BgAWpc3} alt="" className="Awardspage_List_Bg" />
         <div className="Awardspage_List_Title">
           <div className="Awardspage_List_Title_Title1">
             <div className="Awardspage_List_Title_Title1_Box">MINH PHAM'S</div>

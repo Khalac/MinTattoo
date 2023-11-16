@@ -18,7 +18,34 @@ import BgGR3 from "../assets/bg/bg1/tattoo/3.png";
 import BgGR4 from "../assets/bg/bg1/tattoo/4.png";
 import BgGR5 from "../assets/bg/bg1/tattoo/5.png";
 
+import BgGRpc1 from "../assets/bg/bgPC/gallery/21.png";
+import BgGRpc2 from "../assets/bg/bgPC/gallery/22.png";
+import BgGRpc3 from "../assets/bg/bgPC/gallery/23.png";
+import BgGRpc4 from "../assets/bg/bgPC/gallery/24.png";
+
 import bg from "../assets/bg/bgGallery.webp";
+import ReactPlayer from "react-player";
+import "bootstrap/dist/css/bootstrap.css";
+import { Carousel } from "react-bootstrap";
+
+import vid1 from "../assets/video/1.MOV";
+
+import vid2 from "../assets/video/main.mp4";
+
+const videoProperties = [
+  {
+    id: 1,
+    src: vid1,
+  },
+  {
+    id: 2,
+    src: vid2,
+  },
+  {
+    id: 3,
+    src: vid1,
+  },
+];
 
 function GalleryPage() {
   const [nameStyle, setNameStyle] = useState("Realism");
@@ -265,30 +292,6 @@ function GalleryPage() {
       setStop3(true);
     }
   };
-  const handleVideo2 = () => {
-    setStop2(!stop2);
-    if (stop2 === true) {
-      video2Ref.current.pause();
-    } else {
-      video2Ref.current.play();
-      video3Ref.current.pause();
-      video1Ref.current.pause();
-      setStop1(true);
-      setStop3(true);
-    }
-  };
-  const handleVideo3 = () => {
-    setStop3(!stop3);
-    if (stop3 === true) {
-      video3Ref.current.pause();
-    } else {
-      video3Ref.current.play();
-      video1Ref.current.pause();
-      video2Ref.current.pause();
-      setStop2(true);
-      setStop1(true);
-    }
-  };
   const nav = useNavigate();
   const goToAwards = () => {
     nav("/Awards", { replace: true });
@@ -339,65 +342,77 @@ function GalleryPage() {
       <div className="GalleryPage_Img">
         <img src={BgGR2} alt="" className="GalleryPage_Img_Bg" />
         <div className="GalleryPage_Img_Styles">
-          <div
-            className={
-              activeRealism
-                ? `GalleryPage_Img_Styles_Style_Left active`
-                : `GalleryPage_Img_Styles_Style_Left`
-            }
-            onClick={setRealism}
-          >
-            REALISM
+          <div className="GalleryPage_Gallery_Img_Styles_Border">
+            <div
+              className={
+                activeRealism
+                  ? `GalleryPage_Img_Styles_Style1 active`
+                  : `GalleryPage_Img_Styles_Style1`
+              }
+              onClick={setRealism}
+            >
+              REALISM
+            </div>
           </div>
-          <div
-            className={
-              activePortrait
-                ? `GalleryPage_Img_Styles_Style active`
-                : `GalleryPage_Img_Styles_Style`
-            }
-            onClick={setPortrait}
-          >
-            PORTRAIT
+          <div className="GalleryPage_Gallery_Img_Styles_Border">
+            <div
+              className={
+                activePortrait
+                  ? `GalleryPage_Img_Styles_Style2 active`
+                  : `GalleryPage_Img_Styles_Style2`
+              }
+              onClick={setPortrait}
+            >
+              PORTRAIT
+            </div>
           </div>
-          <div
-            className={
-              activeFineLine
-                ? `GalleryPage_Img_Styles_Style_Right active`
-                : `GalleryPage_Img_Styles_Style_Right`
-            }
-            onClick={setFineLine}
-          >
-            LINEWORK
+          <div className="GalleryPage_Gallery_Img_Styles_Border">
+            <div
+              className={
+                activeFineLine
+                  ? `GalleryPage_Img_Styles_Style3 active`
+                  : `GalleryPage_Img_Styles_Style3`
+              }
+              onClick={setFineLine}
+            >
+              LINEWORK
+            </div>
           </div>
-          <div
-            className={
-              activeColor
-                ? `GalleryPage_Img_Styles_Style_Left active`
-                : `GalleryPage_Img_Styles_Style_Left`
-            }
-            onClick={setColor}
-          >
-            COLOR
+          <div className="GalleryPage_Gallery_Img_Styles_Border">
+            <div
+              className={
+                activeColor
+                  ? `GalleryPage_Img_Styles_Style4 active`
+                  : `GalleryPage_Img_Styles_Style4`
+              }
+              onClick={setColor}
+            >
+              COLOR
+            </div>
           </div>
-          <div
-            className={
-              activeBlackGrey
-                ? `GalleryPage_Img_Styles_Style active`
-                : `GalleryPage_Img_Styles_Style`
-            }
-            onClick={setBlackGrey}
-          >
-            BLACK&GREY
+          <div className="GalleryPage_Gallery_Img_Styles_Border">
+            <div
+              className={
+                activeBlackGrey
+                  ? `GalleryPage_Img_Styles_Style5 active`
+                  : `GalleryPage_Img_Styles_Style5`
+              }
+              onClick={setBlackGrey}
+            >
+              BLACK&GREY
+            </div>
           </div>
-          <div
-            className={
-              activeAsian
-                ? `GalleryPage_Img_Styles_Style_Right active`
-                : `GalleryPage_Img_Styles_Style_Right`
-            }
-            onClick={setAsian}
-          >
-            ASIAN
+          <div className="GalleryPage_Gallery_Img_Styles_Border">
+            <div
+              className={
+                activeAsian
+                  ? `GalleryPage_Img_Styles_Style6 active`
+                  : `GalleryPage_Img_Styles_Style6`
+              }
+              onClick={setAsian}
+            >
+              ASIAN
+            </div>
           </div>
         </div>
         <div className="GalleryPage_Img_Container">{style}</div>
@@ -406,51 +421,38 @@ function GalleryPage() {
         <img src={BgGR3} alt="" className="GalleryPage_Video_Bg" />
         <div className="GalleryPage_Video_Title">CHECK THIS OUT!!!</div>
         <div className="GalleryPage_Video_Video">
-          <video
-            className="GalleryPage_Video_Video_Control"
-            controls
-            muted
-            preload="none"
-            onClick={handleVideo1}
-            ref={video1Ref}
-          >
-            <source
-              src={require("../assets/video/1.MOV")}
-              type="video/mp4"
-              onClick={handleVideo1}
-            />
-            Your browser does not support the video tag.
-          </video>
-          <video
-            className="GalleryPage_Video_Video_Control"
-            controls
-            muted
-            preload="none"
-            onClick={handleVideo2}
-            ref={video2Ref}
-          >
-            <source
-              src={require("../assets/video/main.mp4")}
-              type="video/mp4"
-              onClick={handleVideo2}
-            />
-            Your browser does not support the video tag.
-          </video>
-          <video
-            className="GalleryPage_Video_Video_Control"
-            controls
-            muted
-            preload="none"
-            onClick={handleVideo3}
-            ref={video3Ref}
-          >
-            <source
-              src={require("../assets/video/1.MOV")}
-              type="video/mp4"
-              onClick={handleVideo3}
-            />
-            Your browser does not support the video tag.
-          </video>
+          <Carousel interval={null}>
+            <Carousel.Item>
+              <ReactPlayer
+                url={vid1}
+                pip={true}
+                controls={true}
+                playing={false}
+                width="100%"
+                height="100%"
+              />
+            </Carousel.Item>
+            <Carousel.Item>
+              <ReactPlayer
+                url={vid2}
+                pip={true}
+                controls={true}
+                playing={false}
+                width="100%"
+                height="100%"
+              />
+            </Carousel.Item>
+            <Carousel.Item>
+              <ReactPlayer
+                url={vid1}
+                pip={true}
+                controls={true}
+                playing={false}
+                width="100%"
+                height="100%"
+              />
+            </Carousel.Item>
+          </Carousel>
         </div>
         <div className="GalleryPage_Video_Text">
           <div className="GalleryPage_Video_Text_Border">
@@ -578,6 +580,7 @@ function GalleryPage() {
         <Header />
       </div>
       <div className="GalleryPage_Gallery">
+        <img src={BgGRpc1} alt="" className="GalleryPage_Gallery_Bg" />
         <div className="GalleryPage_Gallery_Name">PHAM MINH PHUC</div>
         <div className="GalleryPage_Gallery_Title">GALLERY</div>
         <div className="GalleryPage_Gallery_Text">
@@ -588,72 +591,84 @@ function GalleryPage() {
         </div>
         <div className="GalleryPage_Gallery_Img">
           <div className="GalleryPage_Gallery_Img_Styles">
-            <div
-              className={
-                activeRealism
-                  ? `GalleryPage_Gallery_Img_Styles_Style active`
-                  : `GalleryPage_Gallery_Img_Styles_Style`
-              }
-              onClick={setRealism}
-            >
-              REALISM
+            <div className="GalleryPage_Gallery_Img_Styles_Border">
+              <div
+                className={
+                  activeRealism
+                    ? `GalleryPage_Img_Styles_Style1 active`
+                    : `GalleryPage_Img_Styles_Style1`
+                }
+                onClick={setRealism}
+              >
+                REALISM
+              </div>
             </div>
-            <div
-              className={
-                activePortrait
-                  ? `GalleryPage_Gallery_Img_Styles_Style active`
-                  : `GalleryPage_Gallery_Img_Styles_Style`
-              }
-              onClick={setPortrait}
-            >
-              PORTRAIT
+            <div className="GalleryPage_Gallery_Img_Styles_Border">
+              <div
+                className={
+                  activePortrait
+                    ? `GalleryPage_Img_Styles_Style2 active`
+                    : `GalleryPage_Img_Styles_Style2`
+                }
+                onClick={setPortrait}
+              >
+                PORTRAIT
+              </div>
             </div>
-            <div
-              className={
-                activeFineLine
-                  ? `GalleryPage_Gallery_Img_Styles_Style active`
-                  : `GalleryPage_Gallery_Img_Styles_Style`
-              }
-              onClick={setFineLine}
-            >
-              LINEWORK
+            <div className="GalleryPage_Gallery_Img_Styles_Border">
+              <div
+                className={
+                  activeFineLine
+                    ? `GalleryPage_Img_Styles_Style3 active`
+                    : `GalleryPage_Img_Styles_Style3`
+                }
+                onClick={setFineLine}
+              >
+                LINEWORK
+              </div>
             </div>
-            <div
-              className={
-                activeColor
-                  ? `GalleryPage_Gallery_Img_Styles_Style active`
-                  : `GalleryPage_Gallery_Img_Styles_Style`
-              }
-              onClick={setColor}
-            >
-              COLOR
+            <div className="GalleryPage_Gallery_Img_Styles_Border">
+              <div
+                className={
+                  activeColor
+                    ? `GalleryPage_Img_Styles_Style4 active`
+                    : `GalleryPage_Img_Styles_Style4`
+                }
+                onClick={setColor}
+              >
+                COLOR
+              </div>
             </div>
-            <div
-              className={
-                activeBlackGrey
-                  ? `GalleryPage_Gallery_Img_Styles_Style active`
-                  : `GalleryPage_Gallery_Img_Styles_Style`
-              }
-              onClick={setBlackGrey}
-            >
-              BLACK&GREY
+            <div className="GalleryPage_Gallery_Img_Styles_Border">
+              <div
+                className={
+                  activeBlackGrey
+                    ? `GalleryPage_Img_Styles_Style5 active`
+                    : `GalleryPage_Img_Styles_Style5`
+                }
+                onClick={setBlackGrey}
+              >
+                BLACK&GREY
+              </div>
             </div>
-            <div
-              className={
-                activeAsian
-                  ? `GalleryPage_Gallery_Img_Styles_Style active`
-                  : `GalleryPage_Gallery_Img_Styles_Style`
-              }
-              onClick={setAsian}
-            >
-              ASIAN
+            <div className="GalleryPage_Gallery_Img_Styles_Border">
+              <div
+                className={
+                  activeAsian
+                    ? `GalleryPage_Img_Styles_Style6 active`
+                    : `GalleryPage_Img_Styles_Style6`
+                }
+                onClick={setAsian}
+              >
+                ASIAN
+              </div>
             </div>
           </div>
           <div className="GalleryPage_Gallery_Img_Container ">{style}</div>
         </div>
       </div>
       <div className="GalleryPage_Video">
-        <img src={BgGR3} alt="" className="GalleryPage_Video_Bg" />
+        <img src={BgGRpc2} alt="" className="GalleryPage_Video_Bg" />
         <div className="GalleryPage_Video_Container">
           <div className="GalleryPage_Video_Uper">
             <div className="GalleryPage_Video_Video">
@@ -702,6 +717,8 @@ function GalleryPage() {
         </div>
       </div>
       <div className="GalleryPage_Pricing">
+        <img src={BgGRpc3} alt="" className="GalleryPage_Pricing_Bg" />
+
         <div className="GalleryPage_Pricing_Container">
           <div className="GalleryPage_Pricing_Text">PRICING</div>
           <div className="GalleryPage_Pricing_Pricing">220$ per hours</div>
@@ -720,7 +737,7 @@ function GalleryPage() {
         </div>
       </div>
       <div className="GalleryPage_Achive">
-        <img src={BgGR5} alt="" className="GalleryPage_Achive_Bg" />
+        <img src={BgGRpc4} alt="" className="GalleryPage_Achive_Bg" />
         <div className="GalleryPage_Achive_Content">
           <div className="GalleryPage_Achive_Achive_Convention">
             <img

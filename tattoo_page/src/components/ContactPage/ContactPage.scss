@@ -28,7 +28,7 @@
       align-items: center;
       font-size: 250%;
       letter-spacing: 5px;
-      z-index: 1;
+      z-index: 3;
       margin-top: 4%;
 
 
@@ -42,16 +42,20 @@
       display: flex;
       margin-left: 30%;
       align-items: center;
+      z-index: 3;
     }
     .ContactPage_Map{
       height: 50%;
       width: 100%;
+      z-index: 3;
+
 
       .ContactPage_Map_Size{
         margin-left: 30%;
         height: 100%;
         width: 40%;
         border: none;
+        z-index: 3;
       }
     }
     .ContactPage_Contact_Content{

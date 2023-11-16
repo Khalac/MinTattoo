@@ -9,6 +9,7 @@ import {
   FaRegEnvelope,
   FaLocationDot,
 } from "react-icons/fa6";
+import BgMPpc8 from "../assets/bg/bgPC/main/14.png";
 
 function ContactPage() {
   const isMobile = /iPhone|iPod|Android/i.test(navigator.userAgent);
@@ -45,6 +46,7 @@ function ContactPage() {
         <Header />
       </div>
       <div className="ContactPage_Content">
+        <img src={BgMPpc8} alt="" className="ContactPage_Contact_Bg" />
         {/* <img src={BgMP10} alt="" className="Homepage_Contact_Bg" /> */}
         <div className="ContactPage_Title">CONTACT</div>
         <div className="ContactPage_Text">

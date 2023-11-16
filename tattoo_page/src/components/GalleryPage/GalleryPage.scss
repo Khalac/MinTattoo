@@ -46,8 +46,8 @@
       z-index: -2;
       .GalleryPage_Pricing_Bg{
         position: absolute;
-        width: 70%;
-        height: 80%;
+        width: 100%;
+        height: 100%;
         z-index: -1;
       }
       .GalleryPage_Pricing_Container{
@@ -181,27 +181,61 @@
         align-items: center;
         flex-direction: column;
         .GalleryPage_Gallery_Img_Styles{
-          width: 70%;
+          width: 60%;
 
           display: flex;
           align-items: center;
-          justify-content: space-evenly;
+          justify-content: flex-start;
           margin-bottom: 3%;
           letter-spacing: 1.5px;
-          .GalleryPage_Gallery_Img_Styles_Style{
-            color: gray;
-            font-family: "Ladyrose";
-            font-size: 80%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            cursor: pointer;
-            z-index: 2;
-          }
-         
-          .active{
-            color: white;
-          }
+          overflow-x:auto ;
+          overflow-y: hidden;
+          .GalleryPage_Gallery_Img_Styles_Border{
+
+            height: 100%;
+            padding-left: 10%;
+            padding-right: 10%;
+            z-index: 3;
+            .GalleryPage_Img_Styles_Style1,.GalleryPage_Img_Styles_Style2,.GalleryPage_Img_Styles_Style3,.GalleryPage_Img_Styles_Style4,.GalleryPage_Img_Styles_Style5,.GalleryPage_Img_Styles_Style6{
+              color: gray;
+              font-family: "Ladyrose";
+              font-size: 90%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              cursor: pointer;
+              z-index: 3;
+            }
+            .GalleryPage_Img_Styles_Style1{
+              width: 100%;
+              height: 80%;
+            }
+            .GalleryPage_Img_Styles_Style2{
+              width: 100%;
+              height: 80%;
+            }
+            .GalleryPage_Img_Styles_Style3{
+              width: 100%;
+              height: 80%;
+            }
+          .GalleryPage_Img_Styles_Style4{
+              width: 100%;
+              height: 80%;
+            }
+            .GalleryPage_Img_Styles_Style5{
+              width: 100%;
+              height: 80%;
+            }
+            .GalleryPage_Img_Styles_Style6{
+              width: 100%;
+              height: 80%;
+            }
+       
+        .active{
+          border-bottom: 2px solid white;
+          color: white;
+        }}
+
         }
 
         .GalleryPage_Gallery_Img_Container{
@@ -751,47 +785,62 @@
       }
 
       .GalleryPage_Img_Styles{
-        width: 85%;
-        height: 7%;
-        display: grid;
-        grid-template-columns: 30% 30% 30%;
-        justify-content: center;
-        margin-bottom: 3%;
+          width: 80%;
+          height: 7%;
+          display: flex;
+         flex-direction: row;
+          justify-content: flex-start;
+          align-items: center;
+          margin-bottom: 3%;
           letter-spacing: 1.5px;
-        .GalleryPage_Img_Styles_Style{
-          color: gray;
-          font-family: "Ladyrose";
-          font-size: 60%;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          cursor: pointer;
-          z-index: 1;
-        }
-        .GalleryPage_Img_Styles_Style_Left{
-          color: gray;
-          font-family: "Ladyrose";
-          font-size: 60%;
-          display: flex;
-          z-index: 1;
-          align-items: center;
+          overflow-x:auto ;
+          overflow-y: hidden;
+          .GalleryPage_Gallery_Img_Styles_Border{
 
-          cursor: pointer;
-        }
-        .GalleryPage_Img_Styles_Style_Right{
-          color: gray;
-          font-family: "Ladyrose";
-          font-size: 60%;
-          display: flex;
-          justify-content: end;
-          align-items: center;
-          text-align: left;
-          cursor: pointer;
-          z-index: 1;
-        }
+            height: 100%;
+            padding-left: 10%;
+            padding-right: 10%;
+            z-index: 3;
+            .GalleryPage_Img_Styles_Style1,.GalleryPage_Img_Styles_Style2,.GalleryPage_Img_Styles_Style3,.GalleryPage_Img_Styles_Style4,.GalleryPage_Img_Styles_Style5,.GalleryPage_Img_Styles_Style6{
+              color: gray;
+              font-family: "Ladyrose";
+              font-size: 60%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              cursor: pointer;
+              z-index: 3;
+            }
+            .GalleryPage_Img_Styles_Style1{
+              width: 100%;
+              height: 80%;
+            }
+            .GalleryPage_Img_Styles_Style2{
+              width: 100%;
+              height: 80%;
+            }
+            .GalleryPage_Img_Styles_Style3{
+              width: 100%;
+              height: 80%;
+            }
+          .GalleryPage_Img_Styles_Style4{
+              width: 100%;
+              height: 80%;
+            }
+            .GalleryPage_Img_Styles_Style5{
+              width: 100%;
+              height: 80%;
+            }
+            .GalleryPage_Img_Styles_Style6{
+              width: 100%;
+              height: 80%;
+            }
+       
         .active{
+          border-bottom: 2px solid white;
           color: white;
         }
+      }
       }
       .GalleryPage_Img_Container{
         height: 80%;
@@ -955,9 +1004,32 @@
         align-items: center;
         height: 35%;
         z-index: 1;
+        margin-top: 5%;
+        margin-bottom: 5%;
         .GalleryPage_Video_Video_Control{
-          width: 30%;
-          height: 80%;
+          width: 100%;
+          height: 100%;
+        }
+        .carousel {
+          width: 35%;
+          height: 100%;
+          .carousel-indicators{
+            top: 0;
+          }
+          .carousel-control-prev {
+            height: 100%;
+          }
+          .carousel-control-next {
+            height: 100%;
+          }
+          .carousel-control-prev-icon {
+            filter: invert(1)
+          }
+        
+          .carousel-control-next-icon {
+        
+            filter: invert(1)
+          }
         }
       }
       .GalleryPage_Video_Text{

@@ -8,6 +8,10 @@ import BgAB2 from "../assets/bg/bg1/about/2.png";
 import BgAB3 from "../assets/bg/bg1/about/3.png";
 import BgAB4 from "../assets/bg/bg1/about/4.png";
 
+import BgABpc1 from "../assets/bg/bgPC/about/15.png";
+import BgABpc2 from "../assets/bg/bgPC/about/16.png";
+import BgABpc3 from "../assets/bg/bgPC/about/17.png";
+
 function AboutPage() {
   const isMobile = /iPhone|iPod|Android/i.test(navigator.userAgent);
   return isMobile ? (
@@ -88,7 +92,7 @@ function AboutPage() {
         <Header />
       </div>
       <div className="Aboutpage_About1">
-        <img src={BgAB1} alt="" className="Aboutpage_About1_Bg" />
+        <img src={BgABpc1} alt="" className="Aboutpage_About1_Bg" />
         <div className="Aboutpage_About_Title">
           <div className="Aboutpage_About_Title1">
             ABOUT
@@ -107,6 +111,7 @@ function AboutPage() {
         </div>
       </div>
       <div className="Aboutpage_About2">
+        <img src={BgABpc2} alt="" className="Aboutpage_About2_Bg" />
         <div className="Aboutpage_About2_Img"></div>
         <div className="Aboutpage_About2_Text_Img">
           <div className="Aboutpage_About2_Text_Img_Img"></div>
@@ -119,6 +124,7 @@ function AboutPage() {
         </div>
       </div>
       <div className="Aboutpage_About3">
+        <img src={BgABpc3} alt="" className="Aboutpage_About3_Bg" />
         <div className="Aboutpage_About3_Img_Text">
           <div className="Aboutpage_About3_Img"></div>
           <div className="Aboutpage_About3_Img_Container">

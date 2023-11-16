@@ -67,7 +67,7 @@ body {
       justify-content: center;
       position: relative;
       background-color: #E4E1D8;
-      background-image:url('../assets/bg/bg/MainPage/1.jpg');
+      background-image:url('../assets/bg/bgPC/main/7.png');
       background-position: 0% 60%;
       background-repeat: no-repeat;
       background-size: 50%;
@@ -359,13 +359,7 @@ body {
     .Homepage_Seperate2{
       height: 10vh;
       width: 100%;
-      background-color: #555555;
-      position: relative;
-      .Homepage_Seperate2_Bg{
-        width: 100%;
-        height: 100%;
-        position: absolute;
-      }
+      background-color: #2d2e2d;
     }
     .Homepage_About{
       height: 80vh;
@@ -482,7 +476,7 @@ body {
     }
     .Homepage_Achive{
       position: relative;
-      height: 80vh;
+      height: 90vh;
       width: 100%;
       background-color: white;
       padding-top: 5%;
@@ -501,17 +495,18 @@ body {
         z-index: -2;
       }
       .Homepage_Achive_Title{
-        height: 20%;
+        height: 25%;
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
+
+
         .Homepage_Achive_Title1{
           font-size: 250%;
           font-family: "Ladyrose";
           letter-spacing: 2px;
           z-index: 1;
-          padding-bottom: 1%;
+
         }
           .Homepage_Achive_Title2{
           font-size: 250%;
@@ -527,7 +522,7 @@ body {
         align-items: center;
         width: 50%;
         height: 20%;
-        margin-bottom: 7%;
+        margin-bottom: 4%;
         letter-spacing: 0.5px;
         background-color: #2d2e2d;
         border-bottom-right-radius: 50px;
@@ -786,26 +781,58 @@ body {
         align-items: center;
         flex-direction: column;
         .Homepage_Gallery_Img_Styles{
-          width: 70%;
-
+          width: 60%;
           display: flex;
           align-items: center;
-          justify-content: space-evenly;
+          justify-content: flex-start;
           margin-bottom: 3%;
           letter-spacing: 1.5px;
-          .Homepage_Gallery_Img_Styles_Style{
-            color: gray;
-            font-family: "Ladyrose";
-            font-size: 80%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            cursor: pointer;
-            z-index: 2;
-          }
-         
-          .active{
-            color: white;
+          overflow-x:auto ;
+          overflow-y: hidden;
+          .Homepage_Gallery_Img_Styles_Border{
+            height: 100%;
+            padding-left: 10%;
+            padding-right: 10%;
+            z-index: 3;
+            .Homepage_Gallery_Img_Styles_Style1,.Homepage_Gallery_Img_Styles_Style2,.Homepage_Gallery_Img_Styles_Style3,.Homepage_Gallery_Img_Styles_Style4,.Homepage_Gallery_Img_Styles_Style5,.Homepage_Gallery_Img_Styles_Style6{
+              color: gray;
+              font-family: "Ladyrose";
+              font-size: 90%;
+              display: inline-flex;
+              align-items: center;
+              justify-content: center;
+              cursor: pointer;
+              z-index: 2;
+            }
+            .Homepage_Gallery_Img_Styles_Style1{
+              width: 100%;
+              height: 80%;
+            }
+            .Homepage_Gallery_Img_Styles_Style2{
+              width: 100%;
+              height: 80%;
+            }
+            .Homepage_Gallery_Img_Styles_Style3{
+              width: 100%;
+              height: 80%;
+            }
+            .Homepage_Gallery_Img_Styles_Style4{
+              width: 100%;
+              height: 80%;
+            }
+            .Homepage_Gallery_Img_Styles_Style5{
+              width: 100%;
+              height: 80%;
+            }
+            .Homepage_Gallery_Img_Styles_Style6{
+              width: 100%;
+              height: 80%;
+            }
+            .active{
+              
+              border-bottom: 2px solid white;
+              color: white;
+            }
           }
         }
 
@@ -917,24 +944,17 @@ body {
     .Homepage_Seperate3{
       height: 5vh;
       width: 100%;
-      position: relative;
-      background-color: #8a8989;
-      z-index: -1;
-      .Homepage_Seperate3_Bg{
-        position: absolute;
-        width: 100%;
-        height: 100%;
-      }
+      background-color: white;
     }
     .Homepage_Contact{
       position: relative;
-      background-color:#E4E1D8 ;
+      background-color:#E4E1D8;
       height: 80vh;
       width: 100%;
       display: flex;
       flex-direction: column;
       align-items: center;
-      z-index: -1;
+      z-index: -2;
       .Homepage_Contact_Bg{
         position: absolute;
         width: 100%;
@@ -951,9 +971,9 @@ body {
         align-items: center;
         font-size: 250%;
         letter-spacing: 5px;
-        z-index: 1;
-        margin-top: 4%;
 
+        margin-top: 4%;
+        z-index: 3;
 
       }
       .Homepage_Contact_Text{
@@ -965,16 +985,18 @@ body {
         display: flex;
         margin-left: 30%;
         align-items: center;
+        z-index: 3;
       }
       .Homepage_Map{
         height: 50%;
         width: 100%;
-
+          z-index: 3;
         .Homepage_Map_Size{
           margin-left: 30%;
           height: 100%;
           width: 40%;
           border: none;
+          z-index: 3;
         }
       }
       .Homepage_Contact_Content{
@@ -996,7 +1018,7 @@ body {
         }
       }
     }
-   
+  
     .Homepage_footer{
       height: 25vh;
     }
@@ -1673,47 +1695,61 @@ body {
         align-items: center;
         flex-direction: column;
         .Homepage_Gallery_Img_Styles{
-          width: 85%;
+          width: 80%;
           height: 7%;
-          display: grid;
-          grid-template-columns: 30% 30% 30%;
-          justify-content: center;
+          display: flex;
+         flex-direction: row;
+          justify-content: flex-start;
+          align-items: center;
           margin-bottom: 3%;
           letter-spacing: 1.5px;
-          .Homepage_Gallery_Img_Styles_Style{
-            color: gray;
-            font-family: "Ladyrose";
-            font-size: 60%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            cursor: pointer;
-            z-index: 2;
-          }
-          .Homepage_Gallery_Img_Styles_Style_Left{
-            color: gray;
-          font-family: "Ladyrose";
-          font-size: 60%;
-          display: flex;
+          overflow-x:auto ;
+          overflow-y: hidden;
+          .Homepage_Gallery_Img_Styles_Border{
 
-          align-items: center;
-
-          z-index: 2;
-          cursor: pointer;
-          }
-          .Homepage_Gallery_Img_Styles_Style_Right{
-            color: gray;
-            font-family: "Ladyrose";
-            font-size: 60%;
-            display: flex;
-            justify-content: end;
-            align-items: center;
-            text-align: left;
-            cursor: pointer;
-            z-index: 2;
-          }
-          .active{
-            color: white;
+            height: 100%;
+            padding-left: 10%;
+            padding-right: 10%;
+            z-index: 3;
+            .Homepage_Gallery_Img_Styles_Style1,.Homepage_Gallery_Img_Styles_Style2,.Homepage_Gallery_Img_Styles_Style3,.Homepage_Gallery_Img_Styles_Style4,.Homepage_Gallery_Img_Styles_Style5,.Homepage_Gallery_Img_Styles_Style6{
+              color: gray;
+              font-family: "Ladyrose";
+              font-size: 60%;
+              display: inline-flex;
+              align-items: center;
+              justify-content: center;
+              cursor: pointer;
+              z-index: 2;
+            }
+            .Homepage_Gallery_Img_Styles_Style1{
+              width: 100%;
+              height: 80%;
+            }
+            .Homepage_Gallery_Img_Styles_Style2{
+              width: 100%;
+              height: 80%;
+            }
+            .Homepage_Gallery_Img_Styles_Style3{
+              width: 100%;
+              height: 80%;
+            }
+            .Homepage_Gallery_Img_Styles_Style4{
+              width: 100%;
+              height: 80%;
+            }
+            .Homepage_Gallery_Img_Styles_Style5{
+              width: 100%;
+              height: 80%;
+            }
+            .Homepage_Gallery_Img_Styles_Style6{
+              width: 100%;
+              height: 80%;
+            }
+            .active{
+              
+              border-bottom: 2px solid white;
+              color: white;
+            }
           }
         }
 

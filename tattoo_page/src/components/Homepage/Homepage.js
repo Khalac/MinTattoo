@@ -28,6 +28,14 @@ import Conven from "../assets/Text/Conven.webp";
 import Exper from "../assets/Text/Exper.webp";
 import Trophies from "../assets/Text/Trophies.webp";
 
+import BgMPpc2 from "../assets/bg/bgPC/main/8.png";
+import BgMPpc3 from "../assets/bg/bgPC/main/9.png";
+import BgMPpc4 from "../assets/bg/bgPC/main/10.png";
+import BgMPpc5 from "../assets/bg/bgPC/main/11.png";
+import BgMPpc6 from "../assets/bg/bgPC/main/12.png";
+import BgMPpc7 from "../assets/bg/bgPC/main/13.png";
+import BgMPpc8 from "../assets/bg/bgPC/main/14.png";
+
 import BgMP2 from "../assets/bg/bg1/mainpage/2.png";
 import BgMP3 from "../assets/bg/bg1/mainpage/3.png";
 import BgMP4 from "../assets/bg/bg1/mainpage/4.png";
@@ -474,65 +482,77 @@ function Homepage() {
         </div>
         <div className="Homepage_Gallery_Img">
           <div className="Homepage_Gallery_Img_Styles">
-            <div
-              className={
-                activeRealism
-                  ? `Homepage_Gallery_Img_Styles_Style_Left active`
-                  : `Homepage_Gallery_Img_Styles_Style_Left`
-              }
-              onClick={setRealism}
-            >
-              REALISM
+            <div className="Homepage_Gallery_Img_Styles_Border">
+              <div
+                className={
+                  activeRealism
+                    ? `Homepage_Gallery_Img_Styles_Style1 active`
+                    : `Homepage_Gallery_Img_Styles_Style1`
+                }
+                onClick={setRealism}
+              >
+                REALISM
+              </div>
             </div>
-            <div
-              className={
-                activePortrait
-                  ? `Homepage_Gallery_Img_Styles_Style active`
-                  : `Homepage_Gallery_Img_Styles_Style`
-              }
-              onClick={setPortrait}
-            >
-              PORTRAIT
+            <div className="Homepage_Gallery_Img_Styles_Border">
+              <div
+                className={
+                  activePortrait
+                    ? `Homepage_Gallery_Img_Styles_Style2 active`
+                    : `Homepage_Gallery_Img_Styles_Style2`
+                }
+                onClick={setPortrait}
+              >
+                PORTRAIT
+              </div>
             </div>
-            <div
-              className={
-                activeFineLine
-                  ? `Homepage_Gallery_Img_Styles_Style_Right active`
-                  : `Homepage_Gallery_Img_Styles_Style_Right`
-              }
-              onClick={setFineLine}
-            >
-              LINEWORK
+            <div className="Homepage_Gallery_Img_Styles_Border">
+              <div
+                className={
+                  activeFineLine
+                    ? `Homepage_Gallery_Img_Styles_Style3 active`
+                    : `Homepage_Gallery_Img_Styles_Style3`
+                }
+                onClick={setFineLine}
+              >
+                LINEWORK
+              </div>
             </div>
-            <div
-              className={
-                activeColor
-                  ? `Homepage_Gallery_Img_Styles_Style_Left active`
-                  : `Homepage_Gallery_Img_Styles_Style_Left`
-              }
-              onClick={setColor}
-            >
-              COLOR
+            <div className="Homepage_Gallery_Img_Styles_Border">
+              <div
+                className={
+                  activeColor
+                    ? `Homepage_Gallery_Img_Styles_Style4 active`
+                    : `Homepage_Gallery_Img_Styles_Style4`
+                }
+                onClick={setColor}
+              >
+                COLOR
+              </div>
             </div>
-            <div
-              className={
-                activeBlackGrey
-                  ? `Homepage_Gallery_Img_Styles_Style active`
-                  : `Homepage_Gallery_Img_Styles_Style`
-              }
-              onClick={setBlackGrey}
-            >
-              BLACK&GREY
+            <div className="Homepage_Gallery_Img_Styles_Border">
+              <div
+                className={
+                  activeBlackGrey
+                    ? `Homepage_Gallery_Img_Styles_Style5 active`
+                    : `Homepage_Gallery_Img_Styles_Style5`
+                }
+                onClick={setBlackGrey}
+              >
+                BLACK&GREY
+              </div>
             </div>
-            <div
-              className={
-                activeAsian
-                  ? `Homepage_Gallery_Img_Styles_Style_Right active`
-                  : `Homepage_Gallery_Img_Styles_Style_Right`
-              }
-              onClick={setAsian}
-            >
-              ASIAN
+            <div className="Homepage_Gallery_Img_Styles_Border">
+              <div
+                className={
+                  activeAsian
+                    ? `Homepage_Gallery_Img_Styles_Style6 active`
+                    : `Homepage_Gallery_Img_Styles_Style6`
+                }
+                onClick={setAsian}
+              >
+                ASIAN
+              </div>
             </div>
           </div>
           <div className="Homepage_Gallery_Img_Container ">{style}</div>
@@ -619,14 +639,14 @@ function Homepage() {
       </div>
       <div className="Homepage_Seperate"></div>
       <div className="Homepage_Competition_Img">
-        <img src={BgMP2} alt="" className="Homepage_Competition_Img_Bg" />
+        <img src={BgMPpc2} alt="" className="Homepage_Competition_Img_Bg" />
         <div className="Homepage_Competition_Img1"></div>
         <div className="Homepage_Competition_Img2"></div>
         <div className="Homepage_Competition_Img3"></div>
         <div className="Homepage_Competition_Img4"></div>
       </div>
       <div className="Homepage_Competition_Logo">
-        <img src={BgMP3} alt="" className="Homepage_Competition_Logo_Bg" />
+        <img src={BgMPpc3} alt="" className="Homepage_Competition_Logo_Bg" />
         <div className="Homepage_Competition_Logo_Container">
           <img src={lgcom1} alt="Logo" className="Competition_Logo1"></img>
           <img src={lgcom2} alt="Logo" className="Competition_Logo2"></img>
@@ -642,7 +662,7 @@ function Homepage() {
         </div>
       </div>
       <div className="Homepage_Introduce">
-        <img src={BgMP4} alt="" className="Homepage_Introduce_Bg" />
+        <img src={BgMPpc4} alt="" className="Homepage_Introduce_Bg" />
         <div className="Homepage_Introduce_Text">
           <div className="Homepage_Introduce_Text_QuotationMark">
             <img
@@ -681,12 +701,10 @@ function Homepage() {
         </div>
       </div>
 
-      <div className="Homepage_Seperate2">
-        <img src={BgMP5} alt="" className="Homepage_Seperate2_Bg" />
-      </div>
+      <div className="Homepage_Seperate2"></div>
 
       <div className="Homepage_About">
-        <img src={BgMP6} alt="" className="Homepage_About_Bg" />
+        <img src={BgMPpc5} alt="" className="Homepage_About_Bg" />
         <div className="Homepage_About_Title">
           <div className="Homepage_About_Title1">
             ABOUT
@@ -709,7 +727,7 @@ function Homepage() {
       </div>
       <div className="sepereate"></div>
       <div className="Homepage_Achive">
-        <img src={BgMP7} alt="" className="Homepage_Achive_Bg" />
+        <img src={BgMPpc6} alt="" className="Homepage_Achive_Bg" />
         <div className="Homepage_Achive_Title">
           <div className="Homepage_Achive_Title1">WHY YOU SHOULD</div>
 
@@ -789,7 +807,7 @@ function Homepage() {
       </div>
 
       <div className="Homepage_Gallery">
-        <img src={BgMP8} alt="" className="Homepage_Gallery_Bg" />
+        <img src={BgMPpc7} alt="" className="Homepage_Gallery_Bg" />
         <div className="Homepage_Gallery_Name">PHAM MINH PHUC</div>
         <div className="Homepage_Gallery_Title">GALLERY</div>
         <div className="Homepage_Gallery_Text">
@@ -800,65 +818,77 @@ function Homepage() {
         </div>
         <div className="Homepage_Gallery_Img">
           <div className="Homepage_Gallery_Img_Styles">
-            <div
-              className={
-                activeRealism
-                  ? `Homepage_Gallery_Img_Styles_Style active`
-                  : `Homepage_Gallery_Img_Styles_Style`
-              }
-              onClick={setRealism}
-            >
-              REALISM
+            <div className="Homepage_Gallery_Img_Styles_Border">
+              <div
+                className={
+                  activeRealism
+                    ? `Homepage_Gallery_Img_Styles_Style1 active`
+                    : `Homepage_Gallery_Img_Styles_Style1`
+                }
+                onClick={setRealism}
+              >
+                REALISM
+              </div>
             </div>
-            <div
-              className={
-                activePortrait
-                  ? `Homepage_Gallery_Img_Styles_Style active`
-                  : `Homepage_Gallery_Img_Styles_Style`
-              }
-              onClick={setPortrait}
-            >
-              PORTRAIT
+            <div className="Homepage_Gallery_Img_Styles_Border">
+              <div
+                className={
+                  activePortrait
+                    ? `Homepage_Gallery_Img_Styles_Style2 active`
+                    : `Homepage_Gallery_Img_Styles_Style2`
+                }
+                onClick={setPortrait}
+              >
+                PORTRAIT
+              </div>
             </div>
-            <div
-              className={
-                activeFineLine
-                  ? `Homepage_Gallery_Img_Styles_Style active`
-                  : `Homepage_Gallery_Img_Styles_Style`
-              }
-              onClick={setFineLine}
-            >
-              LINEWORK
+            <div className="Homepage_Gallery_Img_Styles_Border">
+              <div
+                className={
+                  activeFineLine
+                    ? `Homepage_Gallery_Img_Styles_Style3 active`
+                    : `Homepage_Gallery_Img_Styles_Style3`
+                }
+                onClick={setFineLine}
+              >
+                LINEWORK
+              </div>
             </div>
-            <div
-              className={
-                activeColor
-                  ? `Homepage_Gallery_Img_Styles_Style active`
-                  : `Homepage_Gallery_Img_Styles_Style`
-              }
-              onClick={setColor}
-            >
-              COLOR
+            <div className="Homepage_Gallery_Img_Styles_Border">
+              <div
+                className={
+                  activeColor
+                    ? `Homepage_Gallery_Img_Styles_Style4 active`
+                    : `Homepage_Gallery_Img_Styles_Style4`
+                }
+                onClick={setColor}
+              >
+                COLOR
+              </div>
             </div>
-            <div
-              className={
-                activeBlackGrey
-                  ? `Homepage_Gallery_Img_Styles_Style active`
-                  : `Homepage_Gallery_Img_Styles_Style`
-              }
-              onClick={setBlackGrey}
-            >
-              BLACK&GREY
+            <div className="Homepage_Gallery_Img_Styles_Border">
+              <div
+                className={
+                  activeBlackGrey
+                    ? `Homepage_Gallery_Img_Styles_Style5 active`
+                    : `Homepage_Gallery_Img_Styles_Style5`
+                }
+                onClick={setBlackGrey}
+              >
+                BLACK&GREY
+              </div>
             </div>
-            <div
-              className={
-                activeAsian
-                  ? `Homepage_Gallery_Img_Styles_Style active`
-                  : `Homepage_Gallery_Img_Styles_Style`
-              }
-              onClick={setAsian}
-            >
-              ASIAN
+            <div className="Homepage_Gallery_Img_Styles_Border">
+              <div
+                className={
+                  activeAsian
+                    ? `Homepage_Gallery_Img_Styles_Style6 active`
+                    : `Homepage_Gallery_Img_Styles_Style6`
+                }
+                onClick={setAsian}
+              >
+                ASIAN
+              </div>
             </div>
           </div>
           <div className="Homepage_Gallery_Img_Container ">{style}</div>
@@ -868,11 +898,9 @@ function Homepage() {
         </div>
       </div>
 
-      <div className="Homepage_Seperate3">
-        <img src={BgMP9} alt="" className="Homepage_Seperate3_Bg" />
-      </div>
+      <div className="Homepage_Seperate3"></div>
       <div className="Homepage_Contact">
-        {/* <img src={BgMP10} alt="" className="Homepage_Contact_Bg" /> */}
+        <img src={BgMPpc8} alt="" className="Homepage_Contact_Bg" />
         <div className="Homepage_Contact_Title">CONTACT</div>
         <div className="Homepage_Contact_Text">
           TEXT ME FOR BOOKING OR MORE INFORMATION
