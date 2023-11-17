@@ -440,11 +440,8 @@ body {
         z-index: 1;
         text-align: right;
         position: absolute;
-<<<<<<< Updated upstream
-        top: 68%;
-=======
+
         top: 64%;
->>>>>>> Stashed changes
         left: 12%;
         .Homepage_About_Text_Text{
           font-family: "SemiBold15";
@@ -788,20 +785,13 @@ body {
           width: 60%;
           display: flex;
           align-items: center;
-          justify-content: flex-start;
+          justify-content: space-evenly;
           margin-bottom: 3%;
           letter-spacing: 1.5px;
-<<<<<<< Updated upstream
-          overflow-x:auto ;
-          overflow-y: hidden;
+
+
           .Homepage_Gallery_Img_Styles_Border{
             height: 100%;
-            padding-left: 10%;
-            padding-right: 10%;
-=======
-          .Homepage_Gallery_Img_Styles_Border{
-            height: 100%;
->>>>>>> Stashed changes
             z-index: 3;
             .Homepage_Gallery_Img_Styles_Style1,.Homepage_Gallery_Img_Styles_Style2,.Homepage_Gallery_Img_Styles_Style3,.Homepage_Gallery_Img_Styles_Style4,.Homepage_Gallery_Img_Styles_Style5,.Homepage_Gallery_Img_Styles_Style6{
               color: gray;
@@ -1704,24 +1694,6 @@ body {
         align-items: center;
         flex-direction: column;
         .Homepage_Gallery_Img_Styles{
-<<<<<<< Updated upstream
-          width: 80%;
-          height: 7%;
-          display: flex;
-         flex-direction: row;
-          justify-content: flex-start;
-          align-items: center;
-          margin-bottom: 3%;
-          letter-spacing: 1.5px;
-          overflow-x:auto ;
-          overflow-y: hidden;
-          .Homepage_Gallery_Img_Styles_Border{
-
-            height: 100%;
-            padding-left: 10%;
-            padding-right: 10%;
-            z-index: 3;
-=======
           width: 90%;
           height: 10%;
           display: grid;
@@ -1735,45 +1707,19 @@ body {
             height: 100%;
             z-index: 3;
             margin-left: 10%;
->>>>>>> Stashed changes
+
             .Homepage_Gallery_Img_Styles_Style1,.Homepage_Gallery_Img_Styles_Style2,.Homepage_Gallery_Img_Styles_Style3,.Homepage_Gallery_Img_Styles_Style4,.Homepage_Gallery_Img_Styles_Style5,.Homepage_Gallery_Img_Styles_Style6{
               color: gray;
               font-family: "Ladyrose";
               font-size: 60%;
-<<<<<<< Updated upstream
-              display: inline-flex;
-=======
               display: flex;
->>>>>>> Stashed changes
               align-items: center;
               justify-content: center;
               cursor: pointer;
               z-index: 2;
             }
             .Homepage_Gallery_Img_Styles_Style1{
-<<<<<<< Updated upstream
               width: 100%;
-              height: 80%;
-            }
-            .Homepage_Gallery_Img_Styles_Style2{
-              width: 100%;
-              height: 80%;
-            }
-            .Homepage_Gallery_Img_Styles_Style3{
-              width: 100%;
-              height: 80%;
-            }
-            .Homepage_Gallery_Img_Styles_Style4{
-              width: 100%;
-              height: 80%;
-            }
-            .Homepage_Gallery_Img_Styles_Style5{
-              width: 100%;
-              height: 80%;
-            }
-            .Homepage_Gallery_Img_Styles_Style6{
-              width: 100%;
-=======
               width: 70%;
               height: 80%;
             }
@@ -1795,7 +1741,6 @@ body {
             }
             .Homepage_Gallery_Img_Styles_Style6{
               width: 70%;
->>>>>>> Stashed changes
               height: 80%;
             }
             .active{
