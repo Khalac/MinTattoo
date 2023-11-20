@@ -21,7 +21,7 @@
     }
     .ContactPage_Title{
       width: 40%;
-      height: 10%;
+      height: 15%;
       font-family: "Ladyrose";
       color:#2d2e2d;
       display: flex;
@@ -45,7 +45,7 @@
       z-index: 3;
     }
     .ContactPage_Map{
-      height: 50%;
+      height: 45%;
       width: 100%;
       z-index: 3;
 
@@ -59,7 +59,7 @@
       }
     }
     .ContactPage_Contact_Content{
-      height: 15%;
+      height: 10%;
       width: 40%;
       display: grid;
       grid-template-columns: 50% 50%;
@@ -97,7 +97,7 @@
           background-size: cover;
     }
     .ContactPage_Content{
-      height: 35vh;
+      height: 40vh;
       width: 100%;
       background-color: black;
       background-image:url('../assets/bg/bg/MainPage/10.jpg');

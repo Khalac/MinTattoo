@@ -31,6 +31,7 @@ import { Carousel } from "react-bootstrap";
 import vid1 from "../assets/video/1.MOV";
 
 import vid2 from "../assets/video/main.mp4";
+import { useLocation } from "react-router-dom";
 
 const videoProperties = [
   {
@@ -48,6 +49,11 @@ const videoProperties = [
 ];
 
 function GalleryPage() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
   const [nameStyle, setNameStyle] = useState("Realism");
   const [style, setStyle] = useState();
 

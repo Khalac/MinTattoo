@@ -46,7 +46,14 @@ import BgMP8 from "../assets/bg/bg1/mainpage/8.png";
 import BgMP9 from "../assets/bg/bg1/mainpage/9.png";
 import BgMP10 from "../assets/bg/bg1/mainpage/10.png";
 
+import { useLocation } from "react-router-dom";
+
 function Homepage() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
   const [nameStyle, setNameStyle] = useState("Realism");
   const [style, setStyle] = useState();
 

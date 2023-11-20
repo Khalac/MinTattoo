@@ -2,6 +2,7 @@ import React from "react";
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 import "./AwardsPage.scss";
+import { useEffect } from "react";
 
 import Conven from "../assets/Text/Conven.webp";
 import Exper from "../assets/Text/Exper.webp";
@@ -29,7 +30,14 @@ import BgAWpc1 from "../assets/bg/bgPC/awards/18.png";
 import BgAWpc2 from "../assets/bg/bgPC/awards/19.png";
 import BgAWpc3 from "../assets/bg/bgPC/awards/20.png";
 
+import { useLocation } from "react-router-dom";
+
 function AwardsPage() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
   const isMobile = /iPhone|iPod|Android/i.test(navigator.userAgent);
   return isMobile ? (
     <div className="Awardspage">

@@ -2,6 +2,8 @@ import React from "react";
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 import "./AboutPage.scss";
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 
 import BgAB1 from "../assets/bg/bg1/about/1.png";
 import BgAB2 from "../assets/bg/bg1/about/2.png";
@@ -13,6 +15,11 @@ import BgABpc2 from "../assets/bg/bgPC/about/16.png";
 import BgABpc3 from "../assets/bg/bgPC/about/17.png";
 
 function AboutPage() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
   const isMobile = /iPhone|iPod|Android/i.test(navigator.userAgent);
   return isMobile ? (
     <div className="Aboutpage">
@@ -57,12 +64,9 @@ function AboutPage() {
           <div className="Aboutpage_About3_Text_Content">
             {" "}
             This move was the turning point of my life, it brought so many
-            challenges that required serious adjustment.
-            <div>
-              But, fortune favors the brave, I still managed to land a job at
-              one of the best tattoo shop in the city, the Firme Copias San
-              Antonio, Texas.
-            </div>
+            challenges that required serious adjustment. But, fortune favors the
+            brave, I still managed to land a job at one of the best tattoo shop
+            in the city, the Firme Copias San Antonio, Texas.
           </div>
         </div>
       </div>
@@ -73,11 +77,9 @@ function AboutPage() {
             {" "}
             Since then, my lifechanged forever, I met and learned from some of
             best and most amazing artists in town, and with self-learning about
-            original art and digital art, my skil set has improved rapidly.{" "}
-            <div>
-              So much so that I have competed in and won many competitions, all
-              across the States and the world.
-            </div>
+            original art and digital art, my skil set has improved rapidly. So
+            much so that I have competed in and won many competitions, all
+            across the States and the world.
           </div>
         </div>
         <div className="Aboutpage_About4_Img"></div>
@@ -106,7 +108,7 @@ function AboutPage() {
             how to create perfect tattoos. At 18 years old I enrolled in
             university to learn graphic design as I thought it was the right
             path, but 2 years later (2019) I moved to the United States so I was
-            unable to complete my degree..
+            unable to complete my degree.
           </div>
         </div>
       </div>

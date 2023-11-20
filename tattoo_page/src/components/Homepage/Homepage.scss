@@ -2,6 +2,12 @@ body {
   padding: 0;
   margin: 0;
 }
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
 
 @font-face {
   font-family: "BancheroBold";
@@ -61,19 +67,19 @@ body {
     }
     .Homepage_PageName{
       width: 100%;
-      height: 80vh;
+      height: 90vh;
       display: flex;
       flex-direction: column;
       justify-content: center;
       position: relative;
       background-color: #E4E1D8;
       background-image:url('../assets/bg/bgPC/main/7.png');
-      background-position: 0% 60%;
+      background-position: 0% 0%;
       background-repeat: no-repeat;
-      background-size: 50%;
+      background-size:50%;
       .Homepage_PageName_Minh{
-        width: 50%;
-        height: 28%;
+        width: 40%;
+        height: 24%;
         display: flex;
         margin-left: 13%;
         align-items: center;
@@ -86,7 +92,7 @@ body {
       }
       .Homepage_PageName_PMP{
         width: 58%;
-        height: 15%;
+        height: 11%;
         background-color: black;
         display: flex;
         align-items: center;
@@ -125,7 +131,7 @@ body {
       background-color: #cec8ba;
     }
     .Homepage_Competition_Img{
-      height: 80vh;
+      height: 100vh;
       background-color: #2d2e2d;
       display: grid;
       grid-template-columns: 20% 20% 25%;
@@ -180,7 +186,7 @@ body {
     }
     .Homepage_Competition_Logo{
       position: relative;
-      height: 70vh;
+      height: 75vh;
       width: 100%;
       display: flex;
       align-items: center;
@@ -362,7 +368,7 @@ body {
       background-color: #2d2e2d;
     }
     .Homepage_About{
-      height: 80vh;
+      height: 100vh;
       width: 100%;
       padding-top: 5%;
       background-color: #E4E1D8;
@@ -396,10 +402,11 @@ body {
           display: flex;
           justify-content: end;
           align-items: end;
+          padding-bottom: 12px;
         }
         .Homepage_About_Title2{
           height: 110%;
-          width: 20%;
+          width: 25%;
           display: flex;
 
           align-items: end;
@@ -421,8 +428,8 @@ body {
         .Homepage_About_Title_Img{
           position: absolute;
           top: 30%;
-          right: -120%;
-          height: 120%;
+          right: -130%;
+          height: 130%;
           width: 80%;
           background-image:url('../assets/imgBrother/mybrother7.webp');
           background-position: 50% 50%;
@@ -433,7 +440,7 @@ body {
         }
       }
       .Homepage_About_Text{
-        width: 40%;
+        width: 35%;
         height: 30%;
         line-height: 20px;
         letter-spacing: 0.5px;
@@ -441,8 +448,8 @@ body {
         text-align: right;
         position: absolute;
 
-        top: 64%;
-        left: 12%;
+        top: 63%;
+        left: 18%;
         .Homepage_About_Text_Text{
           font-family: "SemiBold15";
           font-size: 90%;
@@ -451,8 +458,8 @@ body {
     
       }
       .Homepage_About_Button{
-        width: 52%;
-        top: 72%;
+        width: 53%;
+        top: 74%;
 
         height: 10%;
         display: flex;
@@ -461,7 +468,7 @@ body {
         position: absolute;
         .Homepage_About_Button_Text{
           width: 85px;
-          height: 40%;
+          height: 30%;
           color: #E4E1D8;
           background-color: #2d2e2d;
           border: none;
@@ -477,11 +484,11 @@ body {
     }
     .Homepage_Achive{
       position: relative;
-      height: 90vh;
+      height: 100vh;
       width: 100%;
       background-color: white;
       padding-top: 5%;
-      padding-bottom: 8%;
+      padding-bottom: 5%;
       z-index: 0;
       display: flex;
       align-items: center;
@@ -496,20 +503,20 @@ body {
         z-index: -2;
       }
       .Homepage_Achive_Title{
-        height: 25%;
+        height: 20%;
         display: flex;
         flex-direction: column;
         align-items: center;
-
 
         .Homepage_Achive_Title1{
           font-size: 250%;
           font-family: "Ladyrose";
           letter-spacing: 2px;
           z-index: 1;
-
+          height:35%;
         }
           .Homepage_Achive_Title2{
+            height: 30%;
           font-size: 250%;
           font-family: "Ladyrose";
           letter-spacing: 2px;
@@ -521,9 +528,9 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 50%;
+        width: 45%;
         height: 20%;
-        margin-bottom: 4%;
+        margin-bottom: 6%;
         letter-spacing: 0.5px;
         background-color: #2d2e2d;
         border-bottom-right-radius: 50px;
@@ -533,13 +540,13 @@ body {
           font-family: "SemiBold15";
           font-size: 110%;
           text-align: center;
-          line-height: 20px;
+          line-height: 25px;
           z-index: 1;
           color: #E4E1D8;
         }
       }
       .Homepage_Achive_Achive{
-        height: 50%;
+        height: 45%;
         width: 100%;
         
         .Homepage_Achive_Achive_Content{
@@ -963,7 +970,7 @@ body {
       }
       .Homepage_Contact_Title{
         width: 40%;
-        height: 10%;
+        height: 13%;
         font-family: "Ladyrose";
         color:#2d2e2d;
         display: flex;
@@ -987,7 +994,7 @@ body {
         z-index: 3;
       }
       .Homepage_Map{
-        height: 50%;
+        height: 45%;
         width: 100%;
           z-index: 3;
         .Homepage_Map_Size{
@@ -999,7 +1006,7 @@ body {
         }
       }
       .Homepage_Contact_Content{
-        height: 15%;
+        height: 10%;
         width: 40%;
         display: grid;
         grid-template-columns: 50% 50%;
@@ -1123,7 +1130,7 @@ body {
       background-color: #cec8ba;
     }
     .Homepage_Competition_Img{
-      height: 50vh;
+      height: 60vh;
       background-color: #2d2e2d;
       display: grid;
       grid-template-columns: 25% 25% 25%;
@@ -1225,7 +1232,7 @@ body {
       .Competition_Logo5{
         margin: auto;
         width: 65%;
-        height: 50%;
+        height: 55%;
         grid-column: span 3;
         background-color: black;
         z-index: 1;
@@ -1254,7 +1261,7 @@ body {
       .Competition_Logo9{
         margin: auto;
         width: 70%;
-        height: 35%;
+        height: 40%;
         grid-column: span 4;
         z-index: 1;
       }
@@ -1407,7 +1414,7 @@ body {
         }
         .Homepage_About_Title_Img{
           position: absolute;
-          top: 17%;
+          top: 20%;
           left: 15%;
           height: 70%;
           width: 130%;
@@ -1919,7 +1926,7 @@ body {
     .Homepage_Contact{
       position: relative;
       background-color:#2d2e2d ;
-      height: 30vh;
+      height: 40vh;
       width: 100%;
 
       display: flex;

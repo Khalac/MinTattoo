@@ -58,8 +58,8 @@
         flex-direction: row;
         height:100%;
         background-color: #E4E1D8;
-        padding-top: 5%;
-        padding-bottom: 5%;
+        align-items: center;
+
         .Footer_Infor{
             height: 100%;
             width: 55%;
@@ -96,7 +96,7 @@
                     text-decoration: none;
                     margin-right: 10%;
                     .Footer_Infor_Icon_Icon{
-                        font-size: 150%;
+                        font-size: 120%;
                         margin-right: 10%;
                         text-decoration: none;
                         color: black;
@@ -107,7 +107,7 @@
         }
         .Footer_Link{
             width: 20%;
-            height: 100%;
+            height: 80%;
             display: flex;
             flex-direction: column;
             align-items: end;

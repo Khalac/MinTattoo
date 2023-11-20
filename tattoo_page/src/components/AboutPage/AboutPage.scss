@@ -7,7 +7,7 @@
     .Aboutpage_About1{
       height: 120vh;
       width: 100%;
-      padding-top: 5%;
+      padding-top: 7%;
       position: relative;
       display: flex;
       flex-direction: column;
@@ -23,13 +23,13 @@
         flex-direction: row;
         height: 40%;
         margin-left: 12%;
-        margin-top: 3%;
+
         .Aboutpage_About_Title1{
           font-size: 350%;
-          height: 80%;
+          height: 100%;
           width: 35%;
           font-family: "Ladyrose";
-          padding-top: 3%;
+
           position: relative;
           text-align: right;
           letter-spacing: 2px;
@@ -37,10 +37,11 @@
           display: flex;
           justify-content: end;
           align-items: end;
+          padding-bottom: 12px;
         }
         .Aboutpage_About_Title2{
-          height: 80%;
-          width: 20%;
+          height: 100%;
+          width: 25%;
           display: flex;
 
           align-items: end;
@@ -52,7 +53,7 @@
           font-family: "Ladyrose";
           margin-left: 1%;
           padding-left: 1%;
-          padding-top: 3%;
+
           color: #E4E1D8;
           letter-spacing: 2px;
           z-index: 1;
@@ -62,7 +63,7 @@
         .Aboutpage_About_Title_Img{
           position: absolute;
           top: 35%;
-          right: -120%;
+          right: -130%;
           height: 110%;
           width: 80%;
           background-image:url('../assets/imgBrother/mybrother7.webp');
@@ -73,7 +74,7 @@
         }
       }
       .Aboutpage_About_Text{
-        width: 40%;
+        width: 35%;
         height: 30%;
         line-height: 20px;
         letter-spacing: 0.5px;
@@ -81,9 +82,8 @@
         text-align: right;
         position: absolute;
 
-        top: 45%;
-
-        left: 10%;
+        top: 50%;
+        left: 18%;
         .Aboutpage_About_Text_Text{
           font-family: "SemiBold15";
           font-size: 90%;
@@ -104,10 +104,10 @@
       position: relative;
       .Aboutpage_About2_Bg{
         position: absolute;
-      width: 100%;
-      height: 100%;
-      top: 0;
-      z-index: 0;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        z-index: 0;
       }
       .Aboutpage_About2_Img{
         position: absolute;
@@ -129,9 +129,9 @@
         justify-content: center;
         z-index: 3;
         position: absolute;
-        bottom: 50%;
+        bottom: 47%;
         .Aboutpage_About2_Text_Img_Img{
-          height: 85%;
+          height: 80%;
           width: 100%;
           background-image:url('../assets/imgBrother/imgBrother8.webp');
           background-position: 50% 50%;
@@ -145,7 +145,7 @@
           display: flex;
           justify-content: center;
           align-items: center;
-          text-align: center;
+          text-align: left;
           font-family: "SemiBold15";
           line-height: 20px;
           font-size: 90%;
@@ -162,6 +162,11 @@
       background-color: white;
       align-items: center;
       position: relative;
+      .Aboutpage_About3_Bg{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+      }
       .Aboutpage_About3_Img_Text{
         z-index: 3;
         height: 55%;
@@ -190,6 +195,7 @@
           background-repeat: no-repeat;
           background-size: cover;
           bottom: 0;
+
         }
         .Aboutpage_About3_Img_Container{
           width: 80%;
@@ -429,7 +435,7 @@
         justify-content: end;
         align-items: center;
         height: 100%;
-        width: 60%;
+        width: 55%;
         .Aboutpage_About4_Text_Content{
           color: #E4E1D8;
           font-family: "SemiBold15";

@@ -9,11 +9,11 @@
     }
     .Awardspage_Achive{
       position: relative;
-      height: 80vh;
+      height: 100vh;
       width: 100%;
       background-color: white;
-      padding-top: 2%;
-
+      padding-top: 5%;
+      padding-bottom: 5%;
       z-index: 0;
       display: flex;
       align-items: center;
@@ -27,24 +27,25 @@
         z-index: 0;
      }
       .Awardspage_Achive_Title{
-        height: 25%;
+        height: 20%;
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
+
 
         .Awardspage_Achive_Title1{
           font-size: 250%;
           font-family: "Ladyrose";
           letter-spacing: 2px;
           z-index: 1;
-          padding-bottom: 1%;
+          height:35%;
         }
           .Awardspage_Achive_Title2{
-          font-size: 250%;
-          font-family: "Ladyrose";
-          letter-spacing: 2px;
-          z-index: 1;
+            height: 30%;
+            font-size: 250%;
+            font-family: "Ladyrose";
+            letter-spacing: 2px;
+            z-index: 1;
           }
 
       }
@@ -52,19 +53,19 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 50%;
+        width: 45%;
         height: 20%;
+        margin-bottom: 6%;
         letter-spacing: 0.5px;
         background-color: #2d2e2d;
         border-bottom-right-radius: 50px;
         border-top-left-radius: 50px;
-        margin-bottom: 5%;
         .Awardspage_Achive_Text_Content{
           width: 80%;
           font-family: "SemiBold15";
           font-size: 110%;
           text-align: center;
-          line-height: 20px;
+          line-height: 25px;
           z-index: 1;
           color: #E4E1D8;
         }
@@ -476,25 +477,33 @@
             align-items: center;      
 
             .Awardspage_List_Border_Item_Content1{
-              width: 60%;
+              width: 55%;
               font-family: "Ladyrose";
-              font-size: 110%;
+              font-size: 85%;
               text-align: left;
-
+              display: flex;
+              align-items: center;
+              justify-content: start;
 
             } 
             .Awardspage_List_Border_Item_Content_1{
-              width: 60%;
+              width: 55%;
               font-family: "Ladyrose";
-              font-size: 100%;
+              font-size: 85%;
               text-align: left;
+              display: flex;
+              align-items: center;
+              justify-content: start;
               z-index: 1;
             } 
             .Awardspage_List_Border_Item_Content2{
               font-family: "Medium15";
-              font-size: 100%;
-              width: 30%;
+              font-size: 80%;
+              width: 40%;
               text-align: left;
+              display: flex;
+              align-items: center;
+              justify-content: center;
 
             }
           }
@@ -567,7 +576,7 @@
           z-index: 1;
             .Awardspage_Achive_Title2{
              color: #E4E1D8;
-            font-size: 145%;
+            font-size: 150%;
             font-family: "Ladyrose";
             letter-spacing: 2px;
 
@@ -707,7 +716,7 @@
             display: flex;
             .Awards_Awards_Title_Title1_Box{
               height: 100%;
-              width: 55%;
+              width: 65%;
               background-color: white;
               color: #b38632;
               font-size: 130%;
@@ -728,7 +737,7 @@
             
             .Awards_Awards_Title_Title2_Box{
               height: 100%;
-              width: 55%;
+              width: 65%;
               background-color: #2d2e2d;
               color: #E4E1D8;
               font-size: 125%;
