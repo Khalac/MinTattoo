@@ -33,21 +33,6 @@ import vid1 from "../assets/video/1.MOV";
 import vid2 from "../assets/video/main.mp4";
 import { useLocation } from "react-router-dom";
 
-const videoProperties = [
-  {
-    id: 1,
-    src: vid1,
-  },
-  {
-    id: 2,
-    src: vid2,
-  },
-  {
-    id: 3,
-    src: vid1,
-  },
-];
-
 function GalleryPage() {
   const { pathname } = useLocation();
 
@@ -84,7 +69,7 @@ function GalleryPage() {
     if (nameStyle === "BlackGrey") setStyle(listImgBlackGrey);
     if (nameStyle === "Asian") setStyle(listImgAsian);
     if (nameStyle === "Portrait") setStyle(listImgPortrait);
-  });
+  }, [nameStyle]);
   function importAll(r) {
     let images = {};
     r.keys().forEach((item, index) => {
