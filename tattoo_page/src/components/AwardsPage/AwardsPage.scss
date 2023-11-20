@@ -264,7 +264,7 @@
         z-index: 1;
         .Awards_Awards_Competition_Logo_Container1{
           width: 60%;
-          height: 50%;
+          height: 45%;
           grid-column: span 3;
           margin: auto;
           .Competition_Logo1{
@@ -276,7 +276,7 @@
         .Awards_Awards_Competition_Logo_Container2{
           margin: auto;
           width: 45%;
-          height: 70%;
+          height: 65%;
           grid-column: span 3;
           .Competition_Logo2{
             width: 100%;
@@ -286,7 +286,7 @@
         .Awards_Awards_Competition_Logo_Container3{
           margin: auto;
           width: 50%;
-          height: 65%;
+          height: 60%;
           grid-column: span 3;
           .Competition_Logo3{
             width: 100%;
@@ -296,7 +296,7 @@
         .Awards_Awards_Competition_Logo_Container4{
           margin: auto;
           width: 35%;
-          height: 50%;
+          height: 45%;
           grid-column: span 3;
           .Competition_Logo4{
             width: 100%;
@@ -306,7 +306,7 @@
       .Awards_Awards_Competition_Logo_Container5{
         margin: auto;
         width: 70%;
-        height: 60%;
+        height: 50%;
         grid-column: span 3;
         background-color: black;
         .Competition_Logo5{
@@ -326,7 +326,7 @@
         .Awards_Awards_Competition_Logo_Container7{
           margin: auto;
           width: 70%;
-          height: 60%;
+          height: 50%;
           grid-column: span 3;
           .Competition_Logo7{
             width: 100%;
@@ -336,7 +336,7 @@
       .Awards_Awards_Competition_Logo_Container8{
       margin: auto;
           width: 60%;
-          height: 80%;
+          height: 75%;
           grid-column: span 3;
           .Competition_Logo8{
             width: 100%;
@@ -712,7 +712,7 @@
           justify-content: space-around;
           .Awards_Awards_Title_Title1{
             width: 100%;
-            height: 30%;
+            height: 40%;
             display: flex;
             .Awards_Awards_Title_Title1_Box{
               height: 100%;
@@ -730,7 +730,7 @@
           }
           .Awards_Awards_Title_Title2{
             width: 100%;
-            height: 30%;
+            height: 40%;
             display: flex;
 
             justify-content: end;
@@ -833,8 +833,8 @@
                 height: 100%;
             }
           }
-.Awards_Awards_Competition_Logo_Container8{
-  margin: auto;
+          .Awards_Awards_Competition_Logo_Container8{
+            margin: auto;
             width: 65%;
             height: 55%;
             grid-column: span 3;

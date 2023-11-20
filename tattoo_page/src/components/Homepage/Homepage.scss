@@ -199,7 +199,7 @@ html {
         grid-template-rows: auto auto auto;
         .Competition_Logo1{
           width: 60%;
-          height: 47%;
+          height: 40%;
           grid-column: span 3;
           margin: auto;
           z-index: 1;
@@ -207,28 +207,28 @@ html {
         .Competition_Logo2{
           margin: auto;
           width: 50%;
-          height: 63%;
+          height: 60%;
           grid-column: span 3;
           z-index: 1;
         }
         .Competition_Logo3{
           margin: auto;
           width: 55%;
-          height: 65%;
+          height: 60%;
           grid-column: span 3;
           z-index: 1;
         }
         .Competition_Logo4{
           margin: auto;
           width: 40%;
-          height: 47%;
+          height: 43%;
           grid-column: span 3;
           z-index: 1;
         }
         .Competition_Logo5{
           margin: auto;
           width: 65%;
-          height: 50%;
+          height: 45%;
           grid-column: span 3;
           background-color: black;
           z-index: 1;
@@ -236,41 +236,41 @@ html {
         .Competition_Logo6{
           margin: auto;
           width: 48%;
-          height: 65%;
+          height: 60%;
           grid-column: span 3;
           z-index: 1;
         }
         .Competition_Logo7{
           margin: auto;
           width: 70%;
-          height: 47%;
+          height: 40%;
           grid-column: span 3;
           z-index: 1;
         }
         .Competition_Logo8{
           margin: auto;
           width: 50%;
-          height: 65%;
+          height: 60%;
           grid-column: span 3;
           z-index: 1;
         }
         .Competition_Logo9{
           margin: auto;
           width: 70%;
-          height: 35%;
+          height: 30%;
           grid-column: span 4;
           z-index: 1;
         }
         .Competition_Logo10{
           width: 70%;
-          height: 52%;
+          height: 50%;
           grid-column: span 4;
           margin: auto;
           z-index: 1;
         }
         .Competition_Logo11{
           width: 75%;
-          height: 63%;
+          height: 57%;
           grid-column: span 4;
           margin: auto;
           z-index: 1;
@@ -466,6 +466,7 @@ html {
         align-items: center;
         justify-content: right;
         position: absolute;
+        z-index: 3;
         .Homepage_About_Button_Text{
           width: 85px;
           height: 30%;
@@ -789,7 +790,7 @@ html {
         align-items: center;
         flex-direction: column;
         .Homepage_Gallery_Img_Styles{
-          width: 60%;
+          width: 68%;
           display: flex;
           align-items: center;
           justify-content: space-evenly;
@@ -969,7 +970,7 @@ html {
         z-index: 0;
       }
       .Homepage_Contact_Title{
-        width: 40%;
+        width: 45%;
         height: 13%;
         font-family: "Ladyrose";
         color:#2d2e2d;
@@ -989,7 +990,7 @@ html {
         font-family: "Ladyrose";
         color:#b38632;
         display: flex;
-        margin-left: 30%;
+        margin-left: 25%;
         align-items: center;
         z-index: 3;
       }
@@ -998,16 +999,16 @@ html {
         width: 100%;
           z-index: 3;
         .Homepage_Map_Size{
-          margin-left: 30%;
+          margin-left: 27.5%;
           height: 100%;
-          width: 40%;
+          width: 42.5%;
           border: none;
           z-index: 3;
         }
       }
       .Homepage_Contact_Content{
         height: 10%;
-        width: 40%;
+        width: 45%;
         display: grid;
         grid-template-columns: 50% 50%;
         grid-template-rows: auto auto;
@@ -1016,7 +1017,7 @@ html {
           color: #2d2e2d;
           font-family: "Medium15";
           display: flex;
-
+          width: 100%;
           align-items: center;
           letter-spacing: 2px;
           font-size: 100%;
