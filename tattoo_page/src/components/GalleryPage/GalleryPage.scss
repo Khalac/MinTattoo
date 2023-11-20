@@ -60,22 +60,24 @@
         justify-content: center;
         .GalleryPage_Pricing_Text{
           width: 50%;
+          height: 100%;
           font-family: "Ladyrose";
           font-size: 250%;
           color: #2d2e2d;
-          display: flex;
+          display: inline-flex;
           align-items: center;
           justify-content: end;
           padding-right: 5%;
-
+          padding-top: 1%;
         }
         .GalleryPage_Pricing_Pricing{
+          height: 100%;
           width: 50%;
           font-family: "BancheroBold";
           font-size: 180%;
-          display: flex;
+          display: inline-flex;
           align-items: center;
-
+          padding-top: 1%;
         }
       }
       .GalleryPage_Pricing_Infor{
