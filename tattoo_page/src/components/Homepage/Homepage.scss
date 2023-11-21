@@ -600,7 +600,7 @@ html {
               justify-content: center;
               align-items: center;
               text-align: center;
-              font-family: "Light15";
+              font-family: "Medium15";
               font-size: 90%;
               line-height: 20px;
             }
@@ -649,7 +649,7 @@ html {
               justify-content: center;
               align-items: center;
               text-align: center;
-              font-family: "Light15";
+              font-family: "Medium15";
               font-size: 90%;
               line-height: 20px;
             }
@@ -692,15 +692,16 @@ html {
             }
             .Homepage_Achive_Achive_Trophies_Text_Detail
             {
-              width: 80%;
+              width: 70%;
               height: 15%;
               display: flex;
               justify-content: center;
               align-items: center;
               text-align: center;
-              font-family: "Light15";
+              font-family: "Medium15";
               font-size: 90%;
               line-height: 20px;
+
             }
           }
         }
@@ -855,6 +856,21 @@ html {
           row-gap: 20px;
           z-index: 4;
           position: relative;
+          &::-webkit-scrollbar {
+            width: 15px;
+        }
+  
+        &::-webkit-scrollbar-track {
+            background-color: #1E1E1E;
+
+        }
+  
+        &::-webkit-scrollbar-thumb {
+            background-color: #b38632bd;
+            border-radius: 180px;
+    border:3px solid transparent;
+    background-clip: content-box;
+        }
           .Realism_div_1, .Realism_div_2, .Realism_div_3, .Realism_div_4, .Realism_div_5, .Realism_div_6, .Realism_div_7, .Realism_div_8, .Realism_div_9, .Realism_div_10,.Realism_div_11, .Realism_div_12, .Realism_div_13, .Realism_div_14, .Realism_div_15, .Realism_div_23, .Realism_div_24, .Realism_div_25, .Realism_div_16, .Realism_div_17, .Realism_div_18, .Realism_div_19, .Realism_div_20, .Realism_div_21, .Realism_div_22{
             width: 100%;
             height: 100%;
@@ -961,6 +977,7 @@ html {
       display: flex;
       flex-direction: column;
       align-items: center;
+      justify-content: center;
       z-index: -2;
       .Homepage_Contact_Bg{
         position: absolute;
@@ -970,15 +987,15 @@ html {
         z-index: 0;
       }
       .Homepage_Contact_Title{
-        width: 45%;
+        width: 100%;
         height: 13%;
         font-family: "Ladyrose";
         color:#2d2e2d;
         display: flex;
         align-items: center;
+        justify-content: center;
         font-size: 250%;
         letter-spacing: 5px;
-
         margin-top: 4%;
         z-index: 3;
 
@@ -990,18 +1007,21 @@ html {
         font-family: "Ladyrose";
         color:#b38632;
         display: flex;
-        margin-left: 25%;
         align-items: center;
+        justify-content: center;
         z-index: 3;
       }
       .Homepage_Map{
         height: 45%;
         width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
           z-index: 3;
         .Homepage_Map_Size{
-          margin-left: 27.5%;
+
           height: 100%;
-          width: 42.5%;
+          width: 45%;
           border: none;
           z-index: 3;
         }
@@ -1013,12 +1033,24 @@ html {
         grid-template-columns: 50% 50%;
         grid-template-rows: auto auto;
         margin-top: 1%;
-        .Homepage_Contact_Content_Text{
+
+        .Homepage_Contact_Content_Text1{
           color: #2d2e2d;
-          font-family: "Medium15";
+          font-family: "SemiBold15";
           display: flex;
           width: 100%;
           align-items: center;
+          letter-spacing: 2px;
+          font-size: 100%;
+          z-index: 1;
+        }
+        .Homepage_Contact_Content_Text2{
+          color: #2d2e2d;
+          font-family: "SemiBold15";
+          display: flex;
+          width: 100%;
+          align-items: center;
+          justify-content: end;
           letter-spacing: 2px;
           font-size: 100%;
           z-index: 1;

@@ -922,19 +922,19 @@ function Homepage() {
           ></iframe>
         </div>
         <div className="Homepage_Contact_Content">
-          <div className="Homepage_Contact_Content_Text">
+          <div className="Homepage_Contact_Content_Text1">
             Tel: (210) 843-4253
           </div>
 
-          <div className="Homepage_Contact_Content_Text">
+          <div className="Homepage_Contact_Content_Text2">
             Ig: pham.minh.phuc
           </div>
 
-          <div className="Homepage_Contact_Content_Text">
+          <div className="Homepage_Contact_Content_Text1">
             Add: San Antonio, Texas
           </div>
 
-          <div className="Homepage_Contact_Content_Text">
+          <div className="Homepage_Contact_Content_Text2">
             Mail: phamminhphuc3673@gmail.com
           </div>
         </div>

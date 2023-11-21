@@ -23,12 +23,16 @@ function Footer() {
         <div className="Footer_Infor_Icon">
           <a
             href="https://www.facebook.com/phamminhphuc3673"
+            target="_blank"
+            rel="noopener noreferrer"
             className="Footer_Infor_Icon_Link"
           >
             <SlSocialFacebook className="Footer_Infor_Icon_Icon" />
           </a>
           <a
             href="https://www.instagram.com/pham.minh.phuc/"
+            target="_blank"
+            rel="noopener noreferrer"
             className="Footer_Infor_Icon_Link"
           >
             <SlSocialInstagram className="Footer_Infor_Icon_Icon" />
@@ -80,18 +84,23 @@ function Footer() {
         <div className="Footer_Infor_Icon">
           <a
             href="https://www.instagram.com/pham.minh.phuc/"
+            target="_blank"
+            rel="noopener noreferrer"
             className="Footer_Infor_Icon_Link"
           >
             <SlSocialInstagram className="Footer_Infor_Icon_Icon" />
           </a>
           <a
             href="https://www.facebook.com/phamminhphuc3673"
+            target="_blank"
+            rel="noopener noreferrer"
             className="Footer_Infor_Icon_Link"
           >
             <SlSocialFacebook className="Footer_Infor_Icon_Icon" />
           </a>
         </div>
       </div>
+      <div className="Footer_Text">Made in Vietnam</div>
     </div>
   );
 }
