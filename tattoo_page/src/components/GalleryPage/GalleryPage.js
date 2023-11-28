@@ -28,9 +28,10 @@ import ReactPlayer from "react-player";
 import "bootstrap/dist/css/bootstrap.css";
 import { Carousel } from "react-bootstrap";
 
-import vid1 from "../assets/video/1.MOV";
-
+import vid1 from "../assets/video/1.mp4";
+import vid3 from "../assets/video/2.mp4";
 import vid2 from "../assets/video/main.mp4";
+
 import { useLocation } from "react-router-dom";
 
 function GalleryPage() {
@@ -425,7 +426,7 @@ function GalleryPage() {
             </Carousel.Item>
             <Carousel.Item>
               <ReactPlayer
-                url={vid2}
+                url={vid3}
                 pip={true}
                 controls={true}
                 playing={false}
@@ -435,7 +436,7 @@ function GalleryPage() {
             </Carousel.Item>
             <Carousel.Item>
               <ReactPlayer
-                url={vid1}
+                url={vid2}
                 pip={true}
                 controls={true}
                 playing={false}
@@ -672,7 +673,7 @@ function GalleryPage() {
                 ref={video1Ref}
               >
                 <source
-                  src={require("../assets/video/1.MOV")}
+                  src={require("../assets/video/main.mp4")}
                   type="video/mp4"
                   onClick={handleVideo1}
                 />

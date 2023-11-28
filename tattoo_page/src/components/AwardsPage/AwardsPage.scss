@@ -60,13 +60,14 @@
         background-color: #2d2e2d;
         border-bottom-right-radius: 50px;
         border-top-left-radius: 50px;
+        z-index: 3;
         .Awardspage_Achive_Text_Content{
           width: 80%;
           font-family: "SemiBold15";
           font-size: 110%;
           text-align: center;
           line-height: 25px;
-          z-index: 1;
+          z-index: 3;
           color: #E4E1D8;
         }
       }
