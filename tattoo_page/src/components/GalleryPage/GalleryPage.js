@@ -12,16 +12,16 @@ import Trophies from "../assets/Text/Trophies.webp";
 
 import PMP from "../assets/Text/PMP.webp";
 
-import BgGR1 from "../assets/bg/bg1/tattoo/1.png";
-import BgGR2 from "../assets/bg/bg1/tattoo/2.png";
-import BgGR3 from "../assets/bg/bg1/tattoo/3.png";
-import BgGR4 from "../assets/bg/bg1/tattoo/4.png";
-import BgGR5 from "../assets/bg/bg1/tattoo/5.png";
+import BgGR1 from "../assets/bg/bg1/tattoo/1.webp";
+import BgGR2 from "../assets/bg/bg1/tattoo/2.webp";
+import BgGR3 from "../assets/bg/bg1/tattoo/3.webp";
+import BgGR4 from "../assets/bg/bg1/tattoo/4.webp";
+import BgGR5 from "../assets/bg/bg1/tattoo/5.webp";
 
-import BgGRpc1 from "../assets/bg/bgPC/gallery/21.png";
-import BgGRpc2 from "../assets/bg/bgPC/gallery/22.png";
-import BgGRpc3 from "../assets/bg/bgPC/gallery/23.png";
-import BgGRpc4 from "../assets/bg/bgPC/gallery/24.png";
+import BgGRpc1 from "../assets/bg/bgPC/gallery/21.webp";
+import BgGRpc2 from "../assets/bg/bgPC/gallery/22.webp";
+import BgGRpc3 from "../assets/bg/bgPC/gallery/23.webp";
+import BgGRpc4 from "../assets/bg/bgPC/gallery/24.webp";
 
 import bg from "../assets/bg/bgGallery.webp";
 import ReactPlayer from "react-player";

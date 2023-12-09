@@ -5,14 +5,14 @@ import "./AboutPage.scss";
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
-import BgAB1 from "../assets/bg/bg1/about/1.png";
-import BgAB2 from "../assets/bg/bg1/about/2.png";
-import BgAB3 from "../assets/bg/bg1/about/3.png";
-import BgAB4 from "../assets/bg/bg1/about/4.png";
+import BgAB1 from "../assets/bg/bg1/about/1.webp";
+import BgAB2 from "../assets/bg/bg1/about/2.webp";
+import BgAB3 from "../assets/bg/bg1/about/3.webp";
+import BgAB4 from "../assets/bg/bg1/about/4.webp";
 
-import BgABpc1 from "../assets/bg/bgPC/about/15.png";
-import BgABpc2 from "../assets/bg/bgPC/about/16.png";
-import BgABpc3 from "../assets/bg/bgPC/about/17.png";
+import BgABpc1 from "../assets/bg/bgPC/about/15.webp";
+import BgABpc2 from "../assets/bg/bgPC/about/16.webp";
+import BgABpc3 from "../assets/bg/bgPC/about/17.webp";
 
 function AboutPage() {
   const { pathname } = useLocation();

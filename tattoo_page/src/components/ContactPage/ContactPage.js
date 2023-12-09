@@ -9,7 +9,7 @@ import {
   FaRegEnvelope,
   FaLocationDot,
 } from "react-icons/fa6";
-import BgMPpc8 from "../assets/bg/bgPC/main/14.png";
+import BgMPpc8 from "../assets/bg/bgPC/main/14.webp";
 
 function ContactPage() {
   const isMobile = /iPhone|iPod|Android/i.test(navigator.userAgent);

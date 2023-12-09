@@ -22,13 +22,13 @@ import lgcom11 from "../assets/lgcom/lgcom11.webp";
 
 import { BsFillStarFill } from "react-icons/bs";
 
-import BgAW1 from "../assets/bg/bg1/awards/1.png";
-import BgAW2 from "../assets/bg/bg1/awards/2.png";
-import BgAW3 from "../assets/bg/bg1/awards/3.png";
+import BgAW1 from "../assets/bg/bg1/awards/1.webp";
+import BgAW2 from "../assets/bg/bg1/awards/2.webp";
+import BgAW3 from "../assets/bg/bg1/awards/3.webp";
 
-import BgAWpc1 from "../assets/bg/bgPC/awards/18.png";
-import BgAWpc2 from "../assets/bg/bgPC/awards/19.png";
-import BgAWpc3 from "../assets/bg/bgPC/awards/20.png";
+import BgAWpc1 from "../assets/bg/bgPC/awards/18.webp";
+import BgAWpc2 from "../assets/bg/bgPC/awards/19.webp";
+import BgAWpc3 from "../assets/bg/bgPC/awards/20.webp";
 
 import { useLocation } from "react-router-dom";
 

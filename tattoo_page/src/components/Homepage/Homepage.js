@@ -21,30 +21,30 @@ import lgcom9 from "../assets/lgcom/lgcom9.webp";
 import lgcom10 from "../assets/lgcom/lgcom10.webp";
 import lgcom11 from "../assets/lgcom/lgcom11.webp";
 
-import upperMark from "../assets/Text/upperMark.png";
-import lowerMark from "../assets/Text/lowerMark.png";
+import upperMark from "../assets/Text/upperMark.webp";
+import lowerMark from "../assets/Text/lowerMark.webp";
 
 import Conven from "../assets/Text/Conven.webp";
 import Exper from "../assets/Text/Exper.webp";
 import Trophies from "../assets/Text/Trophies.webp";
 
-import BgMPpc2 from "../assets/bg/bgPC/main/8.png";
-import BgMPpc3 from "../assets/bg/bgPC/main/9.png";
-import BgMPpc4 from "../assets/bg/bgPC/main/10.png";
-import BgMPpc5 from "../assets/bg/bgPC/main/11.png";
-import BgMPpc6 from "../assets/bg/bgPC/main/12.png";
-import BgMPpc7 from "../assets/bg/bgPC/main/13.png";
-import BgMPpc8 from "../assets/bg/bgPC/main/14.png";
+import BgMPpc2 from "../assets/bg/bgPC/main/8.webp";
+import BgMPpc3 from "../assets/bg/bgPC/main/9.webp";
+import BgMPpc4 from "../assets/bg/bgPC/main/10.webp";
+import BgMPpc5 from "../assets/bg/bgPC/main/11.webp";
+import BgMPpc6 from "../assets/bg/bgPC/main/12.webp";
+import BgMPpc7 from "../assets/bg/bgPC/main/13.webp";
+import BgMPpc8 from "../assets/bg/bgPC/main/14.webp";
 
-import BgMP2 from "../assets/bg/bg1/mainpage/2.png";
-import BgMP3 from "../assets/bg/bg1/mainpage/3.png";
-import BgMP4 from "../assets/bg/bg1/mainpage/4.png";
-import BgMP5 from "../assets/bg/bg1/mainpage/5.png";
-import BgMP6 from "../assets/bg/bg1/mainpage/6.png";
-import BgMP7 from "../assets/bg/bg1/mainpage/7.png";
-import BgMP8 from "../assets/bg/bg1/mainpage/8.png";
-import BgMP9 from "../assets/bg/bg1/mainpage/9.png";
-import BgMP10 from "../assets/bg/bg1/mainpage/10.png";
+import BgMP2 from "../assets/bg/bg1/mainpage/2.webp";
+import BgMP3 from "../assets/bg/bg1/mainpage/3.webp";
+import BgMP4 from "../assets/bg/bg1/mainpage/4.webp";
+import BgMP5 from "../assets/bg/bg1/mainpage/5.webp";
+import BgMP6 from "../assets/bg/bg1/mainpage/6.webp";
+import BgMP7 from "../assets/bg/bg1/mainpage/7.webp";
+import BgMP8 from "../assets/bg/bg1/mainpage/8.webp";
+import BgMP9 from "../assets/bg/bg1/mainpage/9.webp";
+import BgMP10 from "../assets/bg/bg1/mainpage/10.webp";
 
 import { useLocation } from "react-router-dom";
 
