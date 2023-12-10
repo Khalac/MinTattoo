@@ -11,22 +11,34 @@ function Header() {
   const linkToHome = () => {
     nav("/", { replace: true });
   };
+  const linkToAwards = () => {
+    nav("/Awards");
+  };
+  const linkToAbout = () => {
+    nav("/About");
+  };
+  const linkToGallery = () => {
+    nav("/Gallery");
+  };
+  const linkToContact = () => {
+    nav("/Contact");
+  };
   return (
     <div className="Header">
       <div className="Pages">
         <img src={Minh} alt="" className="Pages_Img" onClick={linkToHome} />
-        <Link to="/About" className="Page">
+        <div className="Page" onClick={() => linkToAbout()}>
           About
-        </Link>
-        <Link to="/Awards" className="Page">
+        </div>
+        <div to="/Awards" className="Page" onClick={() => linkToAwards()}>
           Awards
-        </Link>
-        <Link to="/Gallery" className="Page">
+        </div>
+        <div to="/Gallery" className="Page" onClick={() => linkToGallery()}>
           Gallery
-        </Link>
-        <Link to="/Contact" className="Page">
+        </div>
+        <div to="/Contact" className="Page" onClick={() => linkToContact()}>
           Contact
-        </Link>
+        </div>
       </div>
     </div>
   );
