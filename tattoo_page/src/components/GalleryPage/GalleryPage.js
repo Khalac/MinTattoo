@@ -36,10 +36,10 @@ import { useLocation } from "react-router-dom";
 
 function GalleryPage() {
   const { pathname } = useLocation();
-
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [pathname]);
+
   const [nameStyle, setNameStyle] = useState("Realism");
   const [style, setStyle] = useState();
 
@@ -493,9 +493,9 @@ function GalleryPage() {
           <div className="GalleryPage_Pricing_Booking_Text1">
             TEXT ME FOR BOOKING OR MORE INFORMATION
           </div>
-          <dvi className="GalleryPage_Pricing_Booking_Text2">
+          <div className="GalleryPage_Pricing_Booking_Text2">
             (210) 843-4253
-          </dvi>
+          </div>
         </div>
       </div>
       <div className="GalleryPage_Achive">
@@ -723,9 +723,9 @@ function GalleryPage() {
           <div className="GalleryPage_Pricing_Booking_Text1">
             TEXT ME FOR BOOKING OR MORE INFORMATION
           </div>
-          <dvi className="GalleryPage_Pricing_Booking_Text2">
+          <div className="GalleryPage_Pricing_Booking_Text2">
             (210) 843-4253
-          </dvi>
+          </div>
         </div>
       </div>
       <div className="GalleryPage_Achive">
